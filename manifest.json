@@ -1,4 +1,6 @@
 {
+  "name": "Faleria - Core Rules",
+  "version": "1.0.0",
   "sources": [
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/core.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/troll_expansion.json",

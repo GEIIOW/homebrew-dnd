@@ -1,0 +1,22 @@
+{
+  "item": [
+    {
+      "name": "Espada Longa",
+      "id": "longsword",
+      "type": "M",
+      "weaponCategory": "martial",
+      "rarity": "none",
+      "weight": 3,
+      "value": 1500,
+      "dmg1": "1d8",
+      "dmgType": "S",
+      "property": ["V"],
+      "range": "melee",
+      "entries": [
+        "Uma espada versátil usada por cavaleiros.",
+        "Se usada com as duas mãos, causa 1d10 de dano."
+      ],
+      "source": "PHB"
+    }
+  ]
+}

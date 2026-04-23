@@ -1,0 +1,25 @@
+{
+  "spell": [
+    {
+      "name": "Bola de Fogo",
+      "id": "fireball", 
+      "level": 3,
+      "school": "E",
+      "time": [{ "number": 1, "unit": "action" }],
+      "range": { "type": "point", "distance": { "type": "feet", "amount": 150 } },
+      "components": { "v": true, "s": true, "m": "uma pequena bola de guano de morcego e enxofre" },
+      "duration": [{ "type": "instant" }],
+      "classes": { "fromClassList": [{ "name": "Mago", "source": "PHB" }] },
+      "entries": [
+        "Uma explosão de fogo que se propaga pelos cantos.",
+        "Cada criatura numa esfera de 6 metros deve fazer um salvamento de Destreza.",
+        {
+          "type": "entries",
+          "name": "Dano Superior",
+          "entries": ["Quando conjuras esta magia usando um espaço de 4º nível ou superior, o dano aumenta em 1d6 para cada nível acima do 3º."]
+        }
+      ],
+      "source": "PHB"
+    }
+  ]
+}
