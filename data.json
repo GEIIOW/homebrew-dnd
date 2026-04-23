@@ -1,24 +1,34 @@
 {
   "races": [
     {
-      "id": "elfo_alto",
-      "name": "Alto Elfo",
-      "description": "Elfos com uma mente aguçada e afinidade para a magia.",
-      "modifiers": [
-        { "stat": "dexterity", "bonus": 2 },
-        { "stat": "intelligence", "bonus": 2 }
-      ],
-      "speed": 30
-    }, 
-    {
-      "id": "humano",
-      "name": "Humano",
-      "description": "Versáteis e ambiciosos.",
-      "modifiers": [
-        { "stat": "strength", "bonus": 1 },
-        { "stat": "dexterity", "bonus": 1 }
-      ],
-      "speed": 20
+      "id": "half_troll",
+      "name": "Half-Troll",
+      "description": "Meio-Trolls são altos, robustos e possuem capacidades regenerativas incríveis.",
+      "size": "Medium",
+      "speed": 9,
+      "asi": {
+        "type": "flexible",
+        "points": 3,
+        "max_per_stat": 2,
+        "description": "Escolhe aumentar um atributo em +2 e outro em +1, ou três atributos diferentes em +1."
+      },
+      "stat_maximums": {
+        "constitution": 22
+      },
+      "proficiencies": {
+        "armor": ["Medium Armor"],
+        "weapons": ["Javelins", "War Picks"]
+      },
+      "features": [
+        {
+          "name": "Half-Troll Regeneration",
+          "description": "Como ação bónus, podes gastar um Hit Dice para regenerar HP igual ao teu nível + modificador de CON. Não podes usar se sofreres dano de ácido ou fogo..."
+        },
+        {
+          "name": "Nÿjorsan Training",
+          "description": "És proficiente com armaduras médias, javelins e war picks."
+        }
+      ]
     }
   ]
 }
