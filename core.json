@@ -28,11 +28,22 @@
     {
       "id": "soldado",
       "name": "Soldado",
+      "proficiencies": {
+        "skills": ["athletics"],
+        "skillChoices": [
+          { 
+            "choose": 1, 
+            "options": ["acrobatics", "intimidation", "survival"] 
+          }
+        ]
+      },
       "money": "15gp",
       "items": "Uma insígnia de patente, um troféu de um inimigo caído, roupas comuns.",
       "languages": [
         { "name": "Comum", "level": "Proficiente" },
         { "name": "Orc", "level": "Broken" }
+
+
       ],
       "features": ["military_rank"]
     }
