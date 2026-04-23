@@ -42,9 +42,17 @@
       "description": "Seres tocados pelo poder cósmico do Ourolight.",
       "size": "Medium",
       "speed": 9,
-      "features": [
-        "solmosis"
-      ]
+      "subraces": [
+        {
+          "id": "kriteron_fallen",
+          "name": "Fallen",
+          "description": "Adaptados às montanhas nevadas e dotados de uma força monstruosa.",
+          "stat_maximums": {
+            "strength": 22
+          },
+          "features": ["ice_troll_res","solmosis"]
+        }
+      ]   
     }
   ]
 }
