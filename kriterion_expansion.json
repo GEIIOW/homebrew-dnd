@@ -1,0 +1,42 @@
+{
+  "name": "Expansão: Ourolight",
+  "features": {
+    "solmosis": {
+      "name": "Solmosis",
+      "description": "A tua ligação com o Ourolight fortalece-te! Aos níveis 1, 4, 8, 12, 16 e 19 ganhas um efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "sol_flight": {
+      "name": "Flight (Solmosis)",
+      "description": "Asas nascem das tuas costas. Tens velocidade de voo de 9m se não estiveres sobrecarregado."
+    },
+    "sol_radiance": {
+      "name": "Golden Radiance (Solmosis)",
+      "description": "Os teus olhos ficam dourados/prateados. Visão no Escuro (18m) apenas em tons de ouro."
+    },
+    "sol_aura": {
+      "name": "Flaming Aura (Solmosis)",
+      "description": "2/descanso curto como ação: crias uma aura de fogo (luz brilhante 6m, penumbra 3m)."
+    },
+    "sol_mark": {
+      "name": "Mark of the Protector (Solmosis)",
+      "description": "1/descanso longo como reação: podes conjurar um feitiço de 'self' num aliado a 9m."
+    },
+    "sol_crystal": {
+      "name": "Celestial Crystal (Solmosis)",
+      "description": "1/descanso longo como ação: tocas numa criatura e curas HP igual ao teu nível."
+    }
+  },
+  "races": [
+    {
+      "id": "kriteron",
+      "name": "Kriteron",
+      "description": "Seres tocados pelo poder cósmico do Ourolight.",
+      "size": "Medium",
+      "speed": 9,
+      "features": ["solmosis"]
+    }
+  ]
+}

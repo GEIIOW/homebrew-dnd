@@ -1,6 +1,7 @@
 {
   "sources": [
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/core.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/troll_expansion.json"
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/troll_expansion.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/kriteron_expansion.json"
   ]
 }
