@@ -1,0 +1,119 @@
+{
+  "name": "Paladin - Divine Warrior",
+  "features": {
+    "feat_pal_lay_on_hands": {
+      "name": "Lay on Hands",
+      "level": 1,
+      "description": "Restore HP from a pool equal to 5x your level as a Bonus Action. Can also spend 5 HP to cure Poison."
+    },
+    "feat_pal_spellcasting": {
+      "name": "Paladin's Spellcasting",
+      "level": 1,
+      "description": "Cast spells using prayer and a holy symbol. Charisma is your spellcasting ability."
+    },
+    "feat_pal_fighting_style": {
+      "name": "Paladin's Fighting Style",
+      "level": 2,
+      "description": "Choose a Fighting Style (Defense, Dueling, Blessed Warrior, etc.)."
+    },
+    "feat_pal_smite": {
+      "name": "Paladin's Smite",
+      "level": 2,
+      "description": "You always have Divine Smite prepared and can cast it once per long rest without a slot."
+    },
+    "feat_pal_channel_divinity": {
+      "name": "Channel Divinity",
+      "level": 3,
+      "description": "Fuel magical effects. You gain Divine Sense and additional options from your Oath."
+    },
+    "feat_pal_oath": {
+      "name": "Sacred Oath",
+      "level": 3,
+      "description": "You choose an oath that defines your holy mission."
+    },
+    "feat_pal_extra_attack": {
+      "name": "Extra Attack",
+      "level": 5,
+      "description": "Attack twice whenever you take the Attack action."
+    },
+    "feat_pal_aura_protection": {
+      "name": "Aura of Protection",
+      "level": 6,
+      "description": "You and allies within 10ft gain a bonus to saves equal to your Charisma modifier."
+    },
+    "feat_og_tenets": {
+      "name": "Tenets of Glory",
+      "level": 3,
+      "description": "Endeavor to be known by deeds, face hardship with courage, and inspire others."
+    },
+    "feat_og_inspiring_smite": {
+      "name": "Inspiring Smite",
+      "level": 3,
+      "description": "After casting Divine Smite, use Channel Divinity to grant Temporary HP to allies."
+    },
+    "feat_og_peerless_athlete": {
+      "name": "Peerless Athlete",
+      "level": 3,
+      "description": "Use Channel Divinity to gain Advantage on Athletics/Acrobatics and increase jump distance."
+    },
+    "feat_og_aura_alacrity": {
+      "name": "Aura of Alacrity",
+      "level": 7,
+      "description": "Your speed increases by 10ft; allies starting in your Aura gain speed too."
+    },
+    "feat_og_glorious_defense": {
+      "name": "Glorious Defense",
+      "level": 15,
+      "description": "Use a Reaction to grant an AC bonus to a nearby ally and potentially counterattack."
+    },
+    "feat_og_living_legend": {
+      "name": "Living Legend",
+      "level": 20,
+      "description": "Transform into a legend: Advantage on Charisma checks, reroll saves, and turn misses into hits."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_paladin",
+      "name": "Paladin",
+      "subclass_level": 3,
+      "hit_die": 10,
+      "proficiencies": {
+        "weapons": ["Simple weapons", "Martial weapons"],
+        "armor": ["Light", "Medium", "Heavy", "Shields"],
+        "saving_throws": ["Wisdom", "Charisma"],
+        "skillChoices": [{ "choose": 2, "options": ["Athletics", "Insight", "Intimidation", "Medicine", "Persuasion", "Religion"] }]
+      },
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_pal_lay_on_hands", "feat_pal_spellcasting"], "prepared_spells": 2, "spell_slots": [2, 0, 0, 0, 0] },
+        { "level": 2, "pb": "+2", "features": ["feat_pal_fighting_style", "feat_pal_smite"], "prepared_spells": 3, "spell_slots": [2, 0, 0, 0, 0] },
+        { "level": 3, "pb": "+2", "features": ["feat_pal_channel_divinity", "feat_pal_oath"], "prepared_spells": 4, "spell_slots": [3, 0, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 4, "pb": "+2", "features": ["feat_pal_asi"], "prepared_spells": 5, "spell_slots": [3, 0, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 5, "pb": "+3", "features": ["feat_pal_extra_attack", "feat_pal_faithful_steed"], "prepared_spells": 6, "spell_slots": [4, 2, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 6, "pb": "+3", "features": ["feat_pal_aura_protection"], "prepared_spells": 6, "spell_slots": [4, 2, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 7, "pb": "+3", "features": [], "prepared_spells": 7, "spell_slots": [4, 3, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 8, "pb": "+3", "features": ["feat_pal_asi"], "prepared_spells": 7, "spell_slots": [4, 3, 0, 0, 0], "channel_divinity": 2 },
+        { "level": 9, "pb": "+4", "features": ["feat_pal_abjure_foes"], "prepared_spells": 9, "spell_slots": [4, 3, 2, 0, 0], "channel_divinity": 2 },
+        { "level": 10, "pb": "+4", "features": ["feat_pal_aura_courage"], "prepared_spells": 9, "spell_slots": [4, 3, 2, 0, 0], "channel_divinity": 2 },
+        { "level": 11, "pb": "+4", "features": ["feat_pal_radiant_strikes"], "prepared_spells": 10, "spell_slots": [4, 3, 3, 0, 0], "channel_divinity": 3 },
+        { "level": 18, "pb": "+6", "features": ["feat_pal_aura_expansion"], "prepared_spells": 14, "spell_slots": [4, 3, 3, 3, 1], "channel_divinity": 3 }
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "sub_oath_glory",
+      "class_id": "class_paladin",
+      "name": "Oath of Glory",
+      "description": "Paladins of glory believe they and those around them are destined for greatness.",
+      "features": ["feat_og_tenets", "feat_og_inspiring_smite", "feat_og_peerless_athlete", "feat_og_aura_alacrity", "feat_og_glorious_defense", "feat_og_living_legend"],
+      "progression_ext": [
+        { "level": 3, "oath_spells": ["Guiding Bolt", "Heroism"] },
+        { "level": 5, "oath_spells": ["Enhance Ability", "Magic Weapon"] },
+        { "level": 9, "oath_spells": ["Haste", "Protection from Energy"] },
+        { "level": 13, "oath_spells": ["Compulsion", "Freedom of Movement"] },
+        { "level": 17, "oath_spells": ["Legend Lore", "Yolande's Regal Presence"] }
+      ]
+    }
+  ]
+}
