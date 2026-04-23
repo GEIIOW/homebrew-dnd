@@ -1,0 +1,82 @@
+{
+  "name": "Arcanist Class Expansion",
+  "features": {
+    "feat_arc_spellcasting": {
+      "name": "Arcanist's Spellcasting",
+      "level": 1,
+      "description": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. Your spellbook is your font of power. You must be wielding it to perform the Spellcasting feature of this class."
+    },
+    "feat_arc_recovery": {
+      "name": "Arcane Recovery",
+      "level": 1,
+      "description": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your arcanist level (rounded up), and none of the slots can be 6th level or higher."
+    },
+    "feat_arc_scripture": {
+      "name": "Arcane Scripture",
+      "level": 1,
+      "description": "Your spellbook is a unique compilation of arcane formulas. You can add new spells to it by finding scrolls or other spellbooks and spending time/gold to transcribe them."
+    },
+    "feat_arc_tradition": {
+      "name": "Arcane Tradition",
+      "level": 2,
+      "description": "When you reach 2nd level, you choose an arcane tradition (School), shaping your practice of magic. Your choice grants you features at 2nd, 6th, 10th, and 14th level."
+    },
+    "feat_arc_asi": {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+    },
+    "feat_arc_signature": {
+      "name": "Signature Spells",
+      "level": 20,
+      "description": "You gain mastery over two 3rd-level spells. They are always prepared and don't count against your limit. You can cast each once at 3rd level without expending a slot per short rest."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_arcanist",
+      "name": "Arcanist",
+      "subclass_level": 2,
+      "description": "A scholarly magic-user capable of manipulating the structures of reality through study and discipline.",
+      "hit_die": 6,
+      "proficiencies": {
+        "weapons": ["Daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
+        "saving_throws": ["Intelligence", "Wisdom"],
+        "skillChoices": [
+          {
+            "choose": 2,
+            "options": ["Arcana", "History", "Insight", "Investigation", "Medicine", "Religion"]
+          }
+        ]
+      },
+      "subclasses": [
+        { "id": "sub_enchantment", "name": "School of Enchantment" },
+        { "id": "sub_evocation", "name": "School of Evocation" },
+        { "id": "sub_necromancy", "name": "School of Necromancy" },
+        { "id": "sub_transmutation", "name": "School of Transmutation" }
+      ],
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_arc_spellcasting", "feat_arc_recovery", "feat_arc_scripture"], "spell_slots": [2, 0, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 2, "pb": "+2", "features": ["feat_arc_tradition"], "spell_slots": [3, 0, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 3, "pb": "+2", "features": [], "spell_slots": [4, 2, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 4, "pb": "+2", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 0, 0, 0, 0, 0, 0, 0] },
+        { "level": 5, "pb": "+3", "features": [], "spell_slots": [4, 3, 2, 0, 0, 0, 0, 0, 0] },
+        { "level": 6, "pb": "+3", "features": [], "spell_slots": [4, 3, 3, 0, 0, 0, 0, 0, 0] },
+        { "level": 7, "pb": "+3", "features": [], "spell_slots": [4, 3, 3, 1, 0, 0, 0, 0, 0] },
+        { "level": 8, "pb": "+3", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 2, 0, 0, 0, 0, 0] },
+        { "level": 9, "pb": "+4", "features": [], "spell_slots": [4, 3, 3, 3, 1, 0, 0, 0, 0] },
+        { "level": 10, "pb": "+4", "features": [], "spell_slots": [4, 3, 3, 3, 2, 0, 0, 0, 0] },
+        { "level": 11, "pb": "+4", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 0, 0, 0] },
+        { "level": 12, "pb": "+4", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 3, 2, 1, 0, 0, 0] },
+        { "level": 13, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 0, 0] },
+        { "level": 14, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 0, 0] },
+        { "level": 15, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 0] },
+        { "level": 16, "pb": "+5", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 0] },
+        { "level": 17, "pb": "+6", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 1] },
+        { "level": 18, "pb": "+6", "features": [], "spell_slots": [4, 3, 3, 3, 3, 1, 1, 1, 1] },
+        { "level": 19, "pb": "+6", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 3, 3, 2, 1, 1, 1] },
+        { "level": 20, "pb": "+6", "features": ["feat_arc_signature"], "spell_slots": [4, 3, 3, 3, 3, 2, 2, 1, 1] }
+      ]
+    }
+  ]
+}

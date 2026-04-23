@@ -1,0 +1,119 @@
+{
+  "name": "Sorcerer Class Expansion",
+  "features": {
+    "feat_sorcerer_spellcasting": {
+      "name": "Sorcerer's Spellcasting",
+      "level": 1,
+      "description": "An event in your past left an indelible mark on you, infusing you with arcane magic. You are both your own font of power and spellcasting focus. You use Spell Points instead of slots to fuel your magic. Charisma is your spellcasting ability."
+    },
+    "feat_sorcerous_origin": {
+      "name": "Sorcerous Origin",
+      "level": 1,
+      "description": "Choose a sorcerous origin, which describes the source of your innate magical power. Your choice grants you features at 1st, 6th, 14th, and 18th level."
+    },
+    "feat_font_of_magic": {
+      "name": "Font of Magic",
+      "level": 2,
+      "description": "You tap into a deep wellspring of magic represented by sorcery points. You can use these points to create additional spell slots or fuel other class features."
+    },
+    "feat_metamagic": {
+      "name": "Metamagic",
+      "level": 3,
+      "description": "You gain the ability to twist your spells to suit your needs. You choose two Metamagic options (e.g., Quickened, Twinned). You gain more at 10th and 17th level."
+    },
+    "feat_sorcerous_versatility": {
+      "name": "Sorcerous Versatility",
+      "level": 4,
+      "description": "Whenever you reach a level that grants an ASI, you can replace one Metamagic option you know with another one."
+    },
+    "feat_sorcerer_asi": {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+    },
+    "feat_magical_guidance": {
+      "name": "Magical Guidance",
+      "level": 5,
+      "description": "When you make an ability check that fails, you can spend 1 sorcery point to reroll the d20."
+    },
+    "feat_sorcerous_restoration": {
+      "name": "Sorcerous Restoration",
+      "level": 20,
+      "description": "You regain 4 expended sorcery points whenever you finish a short rest."
+    },
+    "feat_draconic_ancestor": {
+      "name": "Dragon Ancestor",
+      "level": 1,
+      "description": "You choose one type of dragon as your ancestor (e.g., Red/Fire). You can speak Primordial and double your PB for Charisma checks with dragons."
+    },
+    "feat_draconic_resilience": {
+      "name": "Draconic Resilience",
+      "level": 1,
+      "description": "Your HP maximum increases by 1 per level. While unarmored, your AC equals 13 + Dexterity modifier."
+    },
+    "feat_elemental_affinity": {
+      "name": "Elemental Affinity",
+      "level": 6,
+      "description": "Add your Charisma modifier to damage rolls of the type associated with your draconic ancestry."
+    },
+    "feat_dragon_wings": {
+      "name": "Dragon Wings",
+      "level": 14,
+      "description": "You can sprout dragon wings as a bonus action, gaining a flying speed equal to your current speed."
+    },
+    "feat_draconic_presence": {
+      "name": "Draconic Presence",
+      "level": 18,
+      "description": "Spend 5 sorcery points to exude an aura of awe or fear in a 60ft radius for 1 minute."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_sorcerer",
+      "name": "Sorcerer",
+      "subclass_level": 1,
+      "description": "A spellcaster who draws on inherent magic from a gift or bloodline. Magic is a part of who they are.",
+      "hit_die": 6,
+      "proficiencies": {
+        "weapons": ["Daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
+        "saving_throws": ["Constitution", "Charisma"],
+        "skillChoices": [
+          {
+            "choose": 2,
+            "options": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"]
+          }
+        ]
+      },
+      "subclasses": [
+        {
+          "id": "subclass_draconic_bloodline",
+          "name": "Draconic Bloodline",
+          "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
+          "features": ["feat_draconic_ancestor", "feat_draconic_resilience", "feat_elemental_affinity", "feat_dragon_wings", "feat_draconic_presence"]
+        }
+      ],
+      "progression": [
+        { "level": 1, "pb": "+2", "spell_points": 4, "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"] },
+        { "level": 2, "pb": "+2", "spell_points": 6, "features": ["feat_font_of_magic"] },
+        { "level": 3, "pb": "+2", "spell_points": 14, "features": ["feat_metamagic"] },
+        { "level": 4, "pb": "+2", "spell_points": 17, "features": ["feat_sorcerer_asi", "feat_sorcerous_versatility"] },
+        { "level": 5, "pb": "+3", "spell_points": 27, "features": ["feat_magical_guidance"] },
+        { "level": 6, "pb": "+3", "spell_points": 32, "features": [] },
+        { "level": 7, "pb": "+3", "spell_points": 38, "features": [] },
+        { "level": 8, "pb": "+3", "spell_points": 44, "features": ["feat_sorcerer_asi"] },
+        { "level": 9, "pb": "+4", "spell_points": 57, "features": [] },
+        { "level": 10, "pb": "+4", "spell_points": 64, "features": [] },
+        { "level": 11, "pb": "+4", "spell_points": 73, "features": [] },
+        { "level": 12, "pb": "+4", "spell_points": 73, "features": ["feat_sorcerer_asi"] },
+        { "level": 13, "pb": "+5", "spell_points": 83, "features": [] },
+        { "level": 14, "pb": "+5", "spell_points": 83, "features": [] },
+        { "level": 15, "pb": "+5", "spell_points": 94, "features": [] },
+        { "level": 16, "pb": "+5", "spell_points": 94, "features": ["feat_sorcerer_asi"] },
+        { "level": 17, "pb": "+6", "spell_points": 107, "features": [] },
+        { "level": 18, "pb": "+6", "spell_points": 114, "features": [] },
+        { "level": 19, "pb": "+6", "spell_points": 123, "features": ["feat_sorcerer_asi"] },
+        { "level": 20, "pb": "+6", "spell_points": 133, "features": ["feat_sorcerous_restoration"] }
+      ]
+    }
+  ]
+}
