@@ -10,5 +10,16 @@
       ],
       "speed": 30
     }
+
+        {
+      "id": "elfo",
+      "name": "Baixo Elfo",
+      "description": "Elfos com uma mente aguçada e afinidade para a magia.",
+      "modifiers": [
+        { "stat": "charism", "bonus": 5 },
+        { "stat": "intelligence", "bonus": 1 }
+      ],
+      "speed": 30
+    }
   ]
 }
