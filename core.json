@@ -20,6 +20,14 @@
     "bg_blood_son_specialty": {
       "name": "Specialty",
       "description": "During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose your role: 1. Officer | 2. Scout | 3. Infantry | 4. Cavalry | 5. Healer | 6. Quartermaster | 7. Standard-bearer | 8. Support staff."
+    },
+    "feat_ambassador_culture": {
+      "name": "Cultural Chameleon",
+      "description": "You have an uncanny ability to blend into foreign courts. You can accurately mimic the accent and cadence of a region you have studied for at least one week, allowing you to pass as a native to casual observers."
+    },
+    "feat_ambassador_secure_comm": {
+      "name": "Secure Communication",
+      "description": "You are masters of codes and ciphers. You can create written messages that can only be read by specific recipients you designate, or by creatures with a passive Investigation score higher than 20."
     }
   },
   "races": [
@@ -54,6 +62,55 @@
 
       ],
       "features": ["military_rank"]
+    },
+ {
+      "id": "test_ambassador",
+      "name": "Ambassador of the Lost Realms (TEST BG)",
+      "description": "You were trained from birth to represent your people in foreign lands, smoothing over conflicts and securing trade routes in realms that have long been isolated.",
+      "money": "25gp",
+      "items": "Fine Clothes, Signet Ring, Calligrapher's Supplies, Seal of Office",
+      
+      "//_comentario_languages": "Exemplo de línguas obrigatórias com níveis de proficiência",
+      "languages": [
+        { "name": "Common", "level": "Expertise" },
+        { "name": "Elvish", "level": "Proficient" }
+      ],
+
+      "//_comentario_languageChoices": "Exemplo de múltiplas escolhas de línguas com níveis diferentes",
+      "languageChoices": [
+        {
+          "choose": 1,
+          "level": "Proficient",
+          "options": ["Draconic", "Infernal", "Celestial"]
+        },
+        {
+          "choose": 1,
+          "level": "Half proficient",
+          "options": ["Dwarvish", "Gnomish", "Orc", "Halfling"]
+        }
+      ],
+
+      "proficiencies": {
+        "//_comentario_skills": "Skill obrigatória",
+        "skills": ["insight"],
+        
+        "tools": ["Calligrapher's Supplies"],
+
+        "//_comentario_skillChoices": "Exemplos de escolhas restritas e genéricas",
+        "skillChoices": [
+          {
+            "//_title": "Isso implementa a regra: 'Escolha uma skill de Charisma'",
+            "choose": 1,
+            "options": ["Deception", "Intimidation", "Persuasion"]
+          },
+          {
+            "//_title": "Escolha de conhecimento geral",
+            "choose": 1,
+            "options": ["History", "Arcana", "Religion"]
+          }
+        ]
+      },
+      "features": ["feat_ambassador_culture", "feat_ambassador_secure_comm"]
     },
     {
       "id": "blood_son",
