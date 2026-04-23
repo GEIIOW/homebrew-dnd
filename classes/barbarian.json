@@ -1,0 +1,108 @@
+{
+  "name": "Barbarian - Primal Fury",
+  "features": {
+    "feat_bar_rage": {
+      "name": "Rage",
+      "level": 1,
+      "description": "In combat, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. You gain advantage on Strength checks/saves, a bonus to damage rolls, and resistance to bludgeoning, piercing, and slashing damage."
+    },
+    "feat_bar_unarmored_defense": {
+      "name": "Unarmored Defense",
+      "level": 1,
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+    },
+    "feat_bar_reckless": {
+      "name": "Reckless Attack",
+      "level": 2,
+      "description": "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly, gaining advantage on melee weapon attack rolls using Strength, but at the cost of advantage on attacks against you."
+    },
+    "feat_bar_danger_sense": {
+      "name": "Danger Sense",
+      "level": 2,
+      "description": "You gain an uncanny sense of when things nearby aren't as they should be, giving you advantage on Dexterity saving throws against effects that you can see."
+    },
+    "feat_bar_path": {
+      "name": "Primal Path",
+      "level": 3,
+      "description": "You choose a path that shapes the nature of your rage. Your choice grants you features at 3rd, 6th, 10th, and 14th level."
+    },
+    "feat_bar_asi": {
+      "name": "Ability Score Improvement",
+      "level": 4,
+      "description": "Increase one ability score by 2, or two scores by 1."
+    },
+    "feat_bar_extra_attack": {
+      "name": "Extra Attack",
+      "level": 5,
+      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn."
+    },
+    "feat_bar_fast_movement": {
+      "name": "Fast Movement",
+      "level": 5,
+      "description": "Your speed increases by 10 feet while you aren't wearing heavy armor."
+    },
+    "feat_bar_feral_instinct": {
+      "name": "Feral Instinct",
+      "level": 7,
+      "description": "Your instincts are so honed that you have advantage on initiative rolls."
+    },
+    "feat_bar_brutal_critical": {
+      "name": "Brutal Critical",
+      "level": 9,
+      "description": "You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack."
+    },
+    "feat_tot_spirit_seeker": {
+      "name": "Spirit Seeker",
+      "level": 3,
+      "description": "You gain the ability to cast the Beast Sense and Speak with Animals spells, but only as rituals."
+    },
+    "feat_tot_spirit": {
+      "name": "Totem Spirit",
+      "level": 3,
+      "description": "You choose a totem spirit (Bear, Eagle, or Wolf) and gain its feature while raging. Bear: Resistance to all damage except psychic. Eagle: Dash as bonus action. Wolf: Advantage for allies."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_barbarian",
+      "name": "Barbarian",
+      "subclass_level": 3,
+      "description": "A fierce warrior of primitive background who can enter a battle rage.",
+      "hit_die": 12,
+      "proficiencies": {
+        "armor": ["Light armor", "Medium armor", "Shields"],
+        "weapons": ["Simple weapons", "Martial weapons"],
+        "saving_throws": ["Strength", "Constitution"],
+        "skillChoices": [
+          {
+            "choose": 2,
+            "options": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"]
+          }
+        ]
+      },
+      "subclasses": [
+        {
+          "id": "sub_totem_warrior",
+          "name": "Path of the Totem Warrior",
+          "description": "A spiritual journey that accepts a spirit animal as guide, protector, and inspiration.",
+          "features": ["feat_tot_spirit_seeker", "feat_tot_spirit"]
+        }
+      ],
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_bar_rage", "feat_bar_unarmored_defense"], "rages": "2", "rage_damage": "+2" },
+        { "level": 2, "pb": "+2", "features": ["feat_bar_reckless", "feat_bar_danger_sense"], "rages": "2", "rage_damage": "+2" },
+        { "level": 3, "pb": "+2", "features": ["feat_bar_path"], "rages": "3", "rage_damage": "+2" },
+        { "level": 4, "pb": "+2", "features": ["feat_bar_asi"], "rages": "3", "rage_damage": "+2" },
+        { "level": 5, "pb": "+3", "features": ["feat_bar_extra_attack", "feat_bar_fast_movement"], "rages": "3", "rage_damage": "+2" },
+        { "level": 6, "pb": "+3", "features": [], "rages": "4", "rage_damage": "+2" },
+        { "level": 7, "pb": "+3", "features": ["feat_bar_feral_instinct"], "rages": "4", "rage_damage": "+2" },
+        { "level": 8, "pb": "+3", "features": ["feat_bar_asi"], "rages": "4", "rage_damage": "+2" },
+        { "level": 9, "pb": "+4", "features": ["feat_bar_brutal_critical"], "rages": "4", "rage_damage": "+3" },
+        { "level": 12, "pb": "+4", "features": ["feat_bar_asi"], "rages": "5", "rage_damage": "+3" },
+        { "level": 16, "pb": "+5", "features": ["feat_bar_asi"], "rages": "5", "rage_damage": "+4" },
+        { "level": 19, "pb": "+6", "features": ["feat_bar_asi"], "rages": "6", "rage_damage": "+4" },
+        { "level": 20, "pb": "+6", "features": [], "rages": "Unlimited", "rage_damage": "+4" }
+      ]
+    }
+  ]
+}
