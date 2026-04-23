@@ -41,6 +41,7 @@
       "id": "sub_arcane_archer",
       "class_id": "class_fighter",
       "name": "Arcane Archer",
+      "subclass_level": 3,
       "description": "Masters of magical archery.",
       "features": ["feat_aa_shot", "feat_aa_magic_arrow"],
       "progression_ext": [
