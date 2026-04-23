@@ -8,14 +8,6 @@
     "elven_trance": {
       "name": "Transe",
       "description": "Elfos não precisam de dormir. Em vez disso, meditam profundamente durante 4 horas por dia."
-    },
-    "high_elf_cantrip": {
-      "name": "Truque Adicional",
-      "description": "Conheces um truque à tua escolha da lista de magias de Mago."
-    },
-    "human_versatility": {
-      "name": "Versatilidade Humana",
-      "description": "Ganhas proficiência numa perícia (skill) à tua escolha."
     }
   },
   "races": [
@@ -25,29 +17,10 @@
       "description": "Criaturas graciosas, mágicas e de longa vida.",
       "size": "Medium",
       "speed": 9,
-      "features": ["elven_darkvision", "elven_trance"],
-      "subraces": [
-        {
-          "id": "alto_elfo",
-          "name": "Alto Elfo",
-          "description": "Têm uma mente aguçada e afinidade para os estudos mágicos.",
-          "features": ["high_elf_cantrip"]
-        },
-        {
-          "id": "elfo_floresta",
-          "name": "Elfo da Floresta",
-          "description": "Os teus sentidos são apurados e moves-te rapidamente.",
-          "speed": 10.5
-        }
+      "features": [
+        "elven_darkvision",
+        "elven_trance"
       ]
-    },
-    {
-      "id": "humano",
-      "name": "Humano",
-      "description": "A raça mais adaptável e ambiciosa de todas.",
-      "size": "Medium",
-      "speed": 9,
-      "features": ["human_versatility"]
     }
   ]
 }
