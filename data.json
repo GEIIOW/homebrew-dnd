@@ -6,7 +6,7 @@
       "description": "Elfos com uma mente aguçada e afinidade para a magia.",
       "modifiers": [
         { "stat": "dexterity", "bonus": 2 },
-        { "stat": "intelligence", "bonus": 1 }
+        { "stat": "intelligence", "bonus": 2 }
       ],
       "speed": 30
     }
