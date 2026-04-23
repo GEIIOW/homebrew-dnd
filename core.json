@@ -28,6 +28,14 @@
     "feat_ambassador_secure_comm": {
       "name": "Secure Communication",
       "description": "You are masters of codes and ciphers. You can create written messages that can only be read by specific recipients you designate, or by creatures with a passive Investigation score higher than 20."
+    },
+    "feat_mirrish_well_read": {
+      "name": "Mirrish Arcanum Scholaris Student's Well Read",
+      "description": "To study for your classes you spent countless hours in a library reading scrolls. Once you learn something about your speciality you can recall it easily and without delay and most knowledge that would be commonplace for someone who has studied the subject is know to you as well. Specialists of that field would take a quick liking to you, if for nothing else, for your curiosity for the subject."
+    },
+    "feat_mirrish_specialty": {
+      "name": "Specialty",
+      "description": "During your time as a student, you studied a particular field to advance your curriculum. Roll a d10 or choose your role: 1. Botany | 2. Humanoid Anatomy | 3. Astronomy | 4. Zoology | 5. Arcanology | 6. Engineering | 7. Petrology | 8. Naval Architecture | 9. Alchemy | 10. Metallurgy."
     }
   },
   "races": [
@@ -63,6 +71,41 @@
       ],
       "features": ["military_rank"]
     },
+      {
+        "id": "mirrish_student",
+        "name": "Mirrish Arcanum Scholaris Student",
+        "description": "The Mirrish Arcanum Scholaris is an institute from the Silvermace Empire that prides itself on being the best in the world when it comes to molding and developing young minds into experts of magic and science.",
+        "money": "10gp",
+        "items": "Pouch, Common Clothes, Small Knife, Ink (Bottle), Quill, Colleague's Letter",
+        
+        "origins": ["Silvermace Empire"],
+        
+        "languages": [
+          { "name": "Silvanian", "level": "Expertise" }
+        ],
+        "languageChoices": [
+          {
+            "choose": 1,
+            "level": "Half proficient",
+            "options": ["Common", "Dwarvish", "Elvish", "Giant", "Gnomish", "Goblin", "Halfling", "Orc"]
+          }
+        ],
+
+        "proficiencies": {
+          "tools": ["Calligrapher's Supplies"],
+          "skillChoices": [
+            {
+              "choose": 1,
+              "options": ["Arcana", "History", "Investigation", "Nature", "Religion"]
+            },
+            {
+              "choose": 1,
+              "options": ["Animal Handling", "Insight", "Medicine", "Perception", "Survival"]
+            }
+          ]
+        },
+        "features": ["feat_mirrish_well_read", "feat_mirrish_specialty"]
+      },
  {
       "id": "test_ambassador",
       "name": "Ambassador of the Lost Realms (TEST BG)",
