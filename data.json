@@ -1,0 +1,14 @@
+{
+  "races": [
+    {
+      "id": "elfo_alto",
+      "name": "Alto Elfo",
+      "description": "Elfos com uma mente aguçada e afinidade para a magia.",
+      "modifiers": [
+        { "stat": "dexterity", "bonus": 2 },
+        { "stat": "intelligence", "bonus": 1 }
+      ],
+      "speed": 30
+    }
+  ]
+}
