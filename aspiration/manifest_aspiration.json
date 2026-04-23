@@ -1,0 +1,6 @@
+{
+  "sources": [
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspiration/mage.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspiration/warrior.json"
+  ]
+}
