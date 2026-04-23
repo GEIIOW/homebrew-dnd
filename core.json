@@ -12,6 +12,14 @@
     "military_rank": {
       "name": "Patente Militar",
       "description": "Tens uma patente oficial. Soldados de baixa patente respeitam a tua autoridade..."
+    },
+    "bg_blood_son_rank": {
+      "name": "Blood Son's Military Rank",
+      "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+    },
+    "bg_blood_son_specialty": {
+      "name": "Specialty",
+      "description": "During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose your role: 1. Officer | 2. Scout | 3. Infantry | 4. Cavalry | 5. Healer | 6. Quartermaster | 7. Standard-bearer | 8. Support staff."
     }
   },
   "races": [
@@ -46,6 +54,36 @@
 
       ],
       "features": ["military_rank"]
+    },
+    {
+      "id": "blood_son",
+      "name": "Blood Son",
+      "description": "Blood sons are military officers who are training to be a village leader. They have endured war against the Silvermace Empire and now seek something more.",
+      "money": "25gp",
+      "items": "Fine Clothes, Signet Ring, Scroll of Investiture, Purse",
+      "languages": [
+        {
+          "name": "Ixali",
+          "level": "Proficient"
+        },
+        {
+          "name": "Idioma de Issadrem (1 à escolha)",
+          "level": "Proficient"
+        }
+      ],
+      "proficiencies": {
+        "skills": [
+          "insight",
+          "persuasion"
+        ],
+        "tools": [
+          "Potter's Tools"
+        ]
+      },
+      "features": [
+        "bg_blood_son_rank",
+        "bg_blood_son_specialty"
+      ]
     }
   ]
 }
