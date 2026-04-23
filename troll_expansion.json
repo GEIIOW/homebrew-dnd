@@ -1,0 +1,41 @@
+{
+  "name": "Expansão: Sangue de Troll",
+  "features": {
+    "troll_regen": {
+      "name": "Regeneração Half-Troll",
+      "description": "Como ação bónus, podes gastar um Hit Dice para regenerar HP igual ao teu nível + modificador de CON. Não podes usar se sofreres dano de ácido ou fogo."
+    },
+    "troll_training": {
+      "name": "Treino Nÿjorsan",
+      "description": "És proficiente com armaduras médias, javelins e war picks."
+    },
+    "ice_troll_res": {
+      "name": "Resistência ao Frio",
+      "description": "Tens resistência a dano de frio e ignoras os efeitos de climas glaciares extremos."
+    }
+  },
+  "races": [
+    {
+      "id": "half_troll",
+      "name": "Half-Troll",
+      "description": "Trolls humanoides altos (1.95m - 2.25m), robustos e incrivelmente difíceis de abater.",
+      "size": "Medium",
+      "speed": 9,
+      "stat_maximums": {
+        "constitution": 22
+      },
+      "features": ["troll_regen", "troll_training"],
+      "subraces": [
+        {
+          "id": "troll_gelo",
+          "name": "Troll do Gelo",
+          "description": "Adaptados às montanhas nevadas e dotados de uma força monstruosa.",
+          "stat_maximums": {
+            "strength": 22
+          },
+          "features": ["ice_troll_res"]
+        }
+      ]
+    }
+  ]
+}
