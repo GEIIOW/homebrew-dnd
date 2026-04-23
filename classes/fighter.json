@@ -1,106 +1,38 @@
 {
-  "name": "Fighter - Martial Prowess",
   "features": {
-    "feat_fig_fighting_style": {
-      "name": "Fighting Style",
-      "level": 1,
-      "description": "You adopt a particular style of fighting as your specialty (Archery, Defense, etc.)."
-    },
-    "feat_fig_second_wind": {
-      "name": "Second Wind",
-      "level": 1,
-      "description": "Bonus action to regain HP equal to 1d10 + fighter level. Once per short/long rest."
-    },
-    "feat_fig_action_surge": {
-      "name": "Action Surge",
-      "level": 2,
-      "description": "Take one additional action on your turn. Once per short/long rest."
-    },
-    "feat_fig_archetype": {
-      "name": "Martial Archetype",
-      "level": 3,
-      "description": "Choose a Martial Archetype that defines your combat style."
-    },
-    "feat_fig_asi": {
-      "name": "Ability Score Improvement",
-      "level": 4,
-      "description": "Increase one score by 2 or two by 1."
-    },
-    "feat_fig_extra_attack": {
-      "name": "Extra Attack",
-      "level": 5,
-      "description": "Attack multiple times when you take the Attack action."
-    },
-    "feat_fig_indomitable": {
-      "name": "Indomitable",
-      "level": 9,
-      "description": "Reroll a failed saving throw."
-    },
-    "feat_aa_lore": {
-      "name": "Arcane Archer Lore",
-      "level": 3,
-      "description": "Gain proficiency in Arcana or Nature, and learn Prestidigitation or Druidcraft."
-    },
-    "feat_aa_shot": {
-      "name": "Arcane Shot",
-      "level": 3,
-      "description": "Apply magical effects to your arrows. Uses Arcane Shot options."
-    },
-    "feat_aa_magic_arrow": {
-      "name": "Magic Arrow",
-      "level": 7,
-      "description": "Arrows fired from a shortbow or longbow are considered magical."
-    },
-    "feat_aa_curving_shot": {
-      "name": "Curving Shot",
-      "level": 7,
-      "description": "Use a bonus action to redirect a missed arrow to another target."
-    },
-    "feat_aa_ready_shot": {
-      "name": "Ever-Ready Shot",
-      "level": 15,
-      "description": "Regain one use of Arcane Shot if you start combat with none."
-    }
+    "feat_fig_fighting_style": { "name": "Fighting Style", "level": 1, "description": "You adopt a particular style of fighting as your specialty." },
+    "feat_fig_second_wind": { "name": "Second Wind", "level": 1, "description": "Bonus action to regain 1d10 + level HP. Once per rest." },
+    "feat_fig_action_surge": { "name": "Action Surge", "level": 2, "description": "Take one additional action on your turn." },
+    "feat_fig_archetype": { "name": "Martial Archetype", "level": 3, "description": "Choose a subclass that defines your combat style." },
+    "feat_fig_asi": { "name": "Ability Score Improvement", "level": 4, "description": "Increase one score by 2 or two by 1." },
+    "feat_fig_extra_attack": { "name": "Extra Attack", "level": 5, "description": "Attack twice per action. Increases at 11th and 20th." },
+    "feat_fig_indomitable": { "name": "Indomitable", "level": 9, "description": "Reroll a failed saving throw." },
+    "feat_aa_shot": { "name": "Arcane Shot", "level": 3, "description": "Apply magical effects to your arrows." },
+    "feat_aa_magic_arrow": { "name": "Magic Arrow", "level": 7, "description": "Arrows count as magical." }
   },
   "classes": [
     {
       "id": "class_fighter",
       "name": "Fighter",
       "subclass_level": 3,
-      "description": "A master of martial combat, skilled with a variety of weapons and armor.",
       "hit_die": 10,
       "proficiencies": {
-        "weapons": ["Simple weapons", "Martial weapons"],
-        "armor": ["All armor", "Shields"],
         "saving_throws": ["Strength", "Constitution"],
-        "skillChoices": [
-          {
-            "choose": 2,
-            "options": ["Acrobatics", "Animal Handling", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"]
-          }
-        ]
+        "skillChoices": [{ "choose": 2, "options": ["Acrobatics", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"] }]
       },
       "progression": [
         { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
         { "level": 2, "pb": "+2", "features": ["feat_fig_action_surge"] },
-        { "level": 3, "pb": "+2", "features": ["feat_fig_archetype"], "arcane_shots": "2" },
-        { "level": 4, "pb": "+2", "features": ["feat_fig_asi"], "arcane_shots": "2" },
-        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"], "arcane_shots": "2" },
-        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"], "arcane_shots": "2" },
-        { "level": 7, "pb": "+3", "features": [], "arcane_shots": "2" },
-        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"], "arcane_shots": "2" },
-        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"], "arcane_shots": "2" },
-        { "level": 10, "pb": "+4", "features": [], "arcane_shots": "2" },
-        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"], "arcane_shots": "2" },
-        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"], "arcane_shots": "2" },
-        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable"], "arcane_shots": "2" },
-        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"], "arcane_shots": "2" },
-        { "level": 15, "pb": "+5", "features": [], "arcane_shots": "2 (Ready)" },
-        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"], "arcane_shots": "2 (Ready)" },
-        { "level": 17, "pb": "+6", "features": ["feat_fig_indomitable"], "arcane_shots": "2 (Ready)" },
-        { "level": 18, "pb": "+6", "features": [], "arcane_shots": "3" },
-        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"], "arcane_shots": "3" },
-        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"], "arcane_shots": "3" }
+        { "level": 3, "pb": "+2", "features": ["feat_fig_archetype"] },
+        { "level": 4, "pb": "+2", "features": ["feat_fig_asi"] },
+        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"] },
+        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"] },
+        { "level": 7, "pb": "+3", "features": [] },
+        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
+        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
+        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"] },
+        { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge", "feat_fig_indomitable"] },
+        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"] }
       ]
     }
   ],
@@ -109,8 +41,14 @@
       "id": "sub_arcane_archer",
       "class_id": "class_fighter",
       "name": "Arcane Archer",
-      "description": "An expert in blending elven archery with powerful arcane magic.",
-      "features": ["feat_aa_lore", "feat_aa_shot", "feat_aa_magic_arrow", "feat_aa_curving_shot", "feat_aa_ready_shot"]
+      "description": "Masters of magical archery.",
+      "features": ["feat_aa_shot", "feat_aa_magic_arrow"],
+      "progression_ext": [
+        { "level": 3, "arcane_shots": "2" },
+        { "level": 7, "arcane_shots": "2" },
+        { "level": 15, "arcane_shots": "2 (Ready)" },
+        { "level": 18, "arcane_shots": "3" }
+      ]
     }
   ]
 }
