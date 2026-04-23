@@ -1,0 +1,29 @@
+{
+  "classes": [
+    {
+      "id": "fighter_1",
+      "name": "Warrior",
+      "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+      "proficiencies": {
+        "armor": ["All armor", "Shields"],
+        "weapons": ["Simple weapons", "Martial weapons"],
+        "saving_throws": ["strength", "constitution"],
+        "skillChoices": [
+          {
+            "choose": 2,
+            "options": [
+              "Acrobatics",
+              "Animal Handling",
+              "Athletics",
+              "History",
+              "Insight",
+              "Intimidation",
+              "Perception",
+              "Survival"
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
