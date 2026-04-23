@@ -33,7 +33,12 @@
     "sol_crystal": {
       "name": "Celestial Crystal (Solmosis)",
       "description": "Uma vez por descanso longo como ação: tocas numa criatura e curas HP igual ao teu nível."
+    },
+      "resistance_necrotic": {
+      "name": "Necrotic Resistance",
+      "description": "You have resistance to necrotic damage."
     }
+    
   },
   "races": [
     {
@@ -42,6 +47,7 @@
       "description": "Seres tocados pelo poder cósmico do Ourolight.",
       "size": "Medium",
       "speed": 9,
+      "features": ["solmosis"],
       "subraces": [
         {
           "id": "kriteron_fallen",
@@ -50,7 +56,7 @@
           "stat_maximums": {
             "strength": 22
           },
-          "features": ["ice_troll_res","solmosis"]
+          "features": ["ice_troll_res","resistance_necrotic"]
         }
       ]   
     }
