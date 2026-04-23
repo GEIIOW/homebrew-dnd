@@ -16,7 +16,8 @@
     },
     "sol_flight": {
       "name": "Flight (Solmosis)",
-      "description": "Asas nascem das tuas costas. Tens velocidade de voo de 9m se não estiveres sobrecarregado."
+      "description": "Asas nascem das tuas costas. Tens velocidade de voo de 9m se não estiveres sobrecarregado.",
+      "speed": { "fly": 9 }
     },
     "sol_radiance": {
       "name": "Golden Radiance (Solmosis)",
