@@ -1,32 +1,40 @@
 {
   "races": [
     {
-      "id": "half_troll",
-      "name": "Half-Troll",
-      "description": "Meio-Trolls são altos, robustos e possuem capacidades regenerativas incríveis.",
+      "id": "elfo",
+      "name": "Elfo",
+      "description": "Criaturas graciosas e antigas.",
       "size": "Medium",
       "speed": 9,
-      "asi": {
-        "type": "flexible",
-        "points": 3,
-        "max_per_stat": 2,
-        "description": "Escolhe aumentar um atributo em +2 e outro em +1, ou três atributos diferentes em +1."
-      },
-      "stat_maximums": {
-        "constitution": 22
-      },
-      "proficiencies": {
-        "armor": ["Medium Armor"],
-        "weapons": ["Javelins", "War Picks"]
-      },
+      "modifiers": [
+        { "stat": "dexterity", "bonus": 2 }
+      ],
       "features": [
+        { "name": "Visão no Escuro", "description": "Consegues ver na escuridão até 18 metros." }
+      ],
+      "subraces": [
         {
-          "name": "Half-Troll Regeneration",
-          "description": "Como ação bónus, podes gastar um Hit Dice para regenerar HP igual ao teu nível + modificador de CON. Não podes usar se sofreres dano de ácido ou fogo..."
+          "id": "alto_elfo",
+          "name": "Alto Elfo",
+          "description": "Têm uma mente aguçada e afinidade para magia.",
+          "modifiers": [
+            { "stat": "intelligence", "bonus": 1 }
+          ],
+          "features": [
+            { "name": "Truque Adicional", "description": "Conheces um truque à tua escolha da lista de Mago." }
+          ]
         },
         {
-          "name": "Nÿjorsan Training",
-          "description": "És proficiente com armaduras médias, javelins e war picks."
+          "id": "elfo_floresta",
+          "name": "Elfo da Floresta",
+          "description": "Os teus sentidos são apurados e és mais rápido.",
+          "speed": 10.5,
+          "modifiers": [
+            { "stat": "wisdom", "bonus": 1 }
+          ],
+          "features": [
+            { "name": "Máscara da Natureza", "description": "Podes esconder-te mesmo quando apenas ligeiramente obscurecido." }
+          ]
         }
       ]
     }
