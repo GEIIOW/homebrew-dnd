@@ -28,7 +28,6 @@
       "proficiencies": {
         "armor": ["None"],
         "weapons": ["Simple weapons"],
-        "saving_throws": ["Wisdom"],
         "saveChoices": [
           {
             "choose": 1,
