@@ -4,62 +4,62 @@
     "feat_fig_fighting_style": {
       "name": "Fighting Style",
       "level": 1,
-      "description": "You adopt a particular style of fighting as your specialty. Choose one option (Archery, Defense, Dueling, Great Weapon Fighting, etc.)."
+      "description": "You adopt a particular style of fighting as your specialty (Archery, Defense, etc.)."
     },
     "feat_fig_second_wind": {
       "name": "Second Wind",
       "level": 1,
-      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain HP equal to 1d10 + your fighter level."
+      "description": "Bonus action to regain HP equal to 1d10 + fighter level. Once per short/long rest."
     },
     "feat_fig_action_surge": {
       "name": "Action Surge",
       "level": 2,
-      "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action on top of your regular action and a possible bonus action."
+      "description": "Take one additional action on your turn. Once per short/long rest."
     },
     "feat_fig_archetype": {
       "name": "Martial Archetype",
       "level": 3,
-      "description": "You choose an archetype that strives to perfect your martial prowess. Your choice grants features at 3rd, 7th, 10th, 15th, and 18th level."
-    },
-    "feat_fig_extra_attack": {
-      "name": "Extra Attack",
-      "level": 5,
-      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases to three at 11th level and four at 20th level."
-    },
-    "feat_fig_indomitable": {
-      "name": "Indomitable",
-      "level": 9,
-      "description": "You can reroll a saving throw that you fail. If you do so, you must use the new roll, and you can't use this feature again until you finish a long rest."
+      "description": "Choose a Martial Archetype that defines your combat style."
     },
     "feat_fig_asi": {
       "name": "Ability Score Improvement",
       "level": 4,
-      "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1."
+      "description": "Increase one score by 2 or two by 1."
+    },
+    "feat_fig_extra_attack": {
+      "name": "Extra Attack",
+      "level": 5,
+      "description": "Attack multiple times when you take the Attack action."
+    },
+    "feat_fig_indomitable": {
+      "name": "Indomitable",
+      "level": 9,
+      "description": "Reroll a failed saving throw."
     },
     "feat_aa_lore": {
       "name": "Arcane Archer Lore",
       "level": 3,
-      "description": "You gain proficiency in either the Arcana or Nature skill, and you learn the Prestidigitation or Druidcraft cantrip."
+      "description": "Gain proficiency in Arcana or Nature, and learn Prestidigitation or Druidcraft."
     },
     "feat_aa_shot": {
       "name": "Arcane Shot",
       "level": 3,
-      "description": "Once per turn when you fire an arrow from a shortbow or longbow, you can apply one of your Arcane Shot options to that arrow. You have two uses of this ability."
+      "description": "Apply magical effects to your arrows. Uses Arcane Shot options."
     },
     "feat_aa_magic_arrow": {
       "name": "Magic Arrow",
       "level": 7,
-      "description": "Whenever you fire a nonmagical arrow from a shortbow or longbow, you can make it magical for the purpose of overcoming resistance and immunity to nonmagical attacks."
+      "description": "Arrows fired from a shortbow or longbow are considered magical."
     },
     "feat_aa_curving_shot": {
       "name": "Curving Shot",
       "level": 7,
-      "description": "When you make an attack roll with a magic arrow and miss, you can use a bonus action to reroll the attack roll against a different target within 60 feet of the original."
+      "description": "Use a bonus action to redirect a missed arrow to another target."
     },
     "feat_aa_ready_shot": {
       "name": "Ever-Ready Shot",
       "level": 15,
-      "description": "If you roll initiative and have no uses of Arcane Shot left, you regain one use of it."
+      "description": "Regain one use of Arcane Shot if you start combat with none."
     }
   },
   "classes": [
@@ -80,36 +80,37 @@
           }
         ]
       },
-      "subclasses": [
-        {
-          "id": "sub_arcane_archer",
-          "name": "Arcane Archer",
-          "description": "An expert in blending elven archery with powerful arcane magic.",
-          "features": ["feat_aa_lore", "feat_aa_shot", "feat_aa_magic_arrow", "feat_aa_curving_shot", "feat_aa_ready_shot"]
-        }
-      ],
       "progression": [
         { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
         { "level": 2, "pb": "+2", "features": ["feat_fig_action_surge"] },
-        { "level": 3, "pb": "+2", "features": ["feat_fig_archetype"] },
-        { "level": 4, "pb": "+2", "features": ["feat_fig_asi"] },
-        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"] },
-        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"] },
-        { "level": 7, "pb": "+3", "features": [] },
-        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
-        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
-        { "level": 10, "pb": "+4", "features": [] },
-        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"] },
-        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"] },
-        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable"] },
-        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 15, "pb": "+5", "features": [] },
-        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 17, "pb": "+6", "features": ["feat_fig_indomitable"] },
-        { "level": 18, "pb": "+6", "features": [] },
-        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"] },
-        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"] }
+        { "level": 3, "pb": "+2", "features": ["feat_fig_archetype"], "arcane_shots": "2" },
+        { "level": 4, "pb": "+2", "features": ["feat_fig_asi"], "arcane_shots": "2" },
+        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"], "arcane_shots": "2" },
+        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"], "arcane_shots": "2" },
+        { "level": 7, "pb": "+3", "features": [], "arcane_shots": "2" },
+        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"], "arcane_shots": "2" },
+        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"], "arcane_shots": "2" },
+        { "level": 10, "pb": "+4", "features": [], "arcane_shots": "2" },
+        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"], "arcane_shots": "2" },
+        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"], "arcane_shots": "2" },
+        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable"], "arcane_shots": "2" },
+        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"], "arcane_shots": "2" },
+        { "level": 15, "pb": "+5", "features": [], "arcane_shots": "2 (Ready)" },
+        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"], "arcane_shots": "2 (Ready)" },
+        { "level": 17, "pb": "+6", "features": ["feat_fig_indomitable"], "arcane_shots": "2 (Ready)" },
+        { "level": 18, "pb": "+6", "features": [], "arcane_shots": "3" },
+        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"], "arcane_shots": "3" },
+        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"], "arcane_shots": "3" }
       ]
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "sub_arcane_archer",
+      "class_id": "class_fighter",
+      "name": "Arcane Archer",
+      "description": "An expert in blending elven archery with powerful arcane magic.",
+      "features": ["feat_aa_lore", "feat_aa_shot", "feat_aa_magic_arrow", "feat_aa_curving_shot", "feat_aa_ready_shot"]
     }
   ]
 }
