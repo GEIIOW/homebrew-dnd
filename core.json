@@ -3,11 +3,15 @@
   "features": {
     "elven_darkvision": {
       "name": "Visão no Escuro Élfica",
-      "description": "Consegues ver na penumbra até 18 metros como se fosse luz brilhante, e na escuridão como se fosse penumbra. Apenas em tons de ouro."
+      "description": "Consegues ver na penumbra até 18 metros como se fosse luz brilhante..."
     },
     "elven_trance": {
       "name": "Transe",
-      "description": "Elfos não precisam de dormir. Em vez disso, meditam profundamente durante 4 horas por dia."
+      "description": "Elfos não precisam de dormir..."
+    },
+    "military_rank": {
+      "name": "Patente Militar",
+      "description": "Tens uma patente oficial. Soldados de baixa patente respeitam a tua autoridade..."
     }
   },
   "races": [
@@ -17,10 +21,20 @@
       "description": "Criaturas graciosas, mágicas e de longa vida.",
       "size": "Medium",
       "speed": 9,
-      "features": [
-        "elven_darkvision",
-        "elven_trance"
-      ]
+      "features": ["elven_darkvision", "elven_trance"]
+    }
+  ],
+  "backgrounds": [
+    {
+      "id": "soldado",
+      "name": "Soldado",
+      "money": "15gp",
+      "items": "Uma insígnia de patente, um troféu de um inimigo caído, roupas comuns.",
+      "languages": [
+        { "name": "Comum", "level": "Proficiente" },
+        { "name": "Orc", "level": "Broken" }
+      ],
+      "features": ["military_rank"]
     }
   ]
 }
