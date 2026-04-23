@@ -18,7 +18,7 @@
         { "stat": "strength", "bonus": 1 },
         { "stat": "dexterity", "bonus": 1 }
       ],
-      "speed": 30
+      "speed": 20
     }
   ]
 }
