@@ -9,6 +9,16 @@
         { "stat": "intelligence", "bonus": 2 }
       ],
       "speed": 30
+    }, 
+    {
+      "id": "humano",
+      "name": "Humano",
+      "description": "Versáteis e ambiciosos.",
+      "modifiers": [
+        { "stat": "strength", "bonus": 1 },
+        { "stat": "dexterity", "bonus": 1 }
+      ],
+      "speed": 30
     }
   ]
 }
