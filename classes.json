@@ -30,6 +30,7 @@
     {
       "id": "class_arcanist",
       "name": "Arcanist",
+      "subclass_level": 2,
       "description": "A scholarly magic-user capable of manipulating the structures of reality.",
       "hit_die": 6,
       "proficiencies": {
