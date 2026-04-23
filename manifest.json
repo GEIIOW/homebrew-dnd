@@ -6,7 +6,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/troll_expansion.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/manifest_race.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/manifest_class.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspirations.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspirations/aspirations.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/patchnotes.json"
   ]
 }

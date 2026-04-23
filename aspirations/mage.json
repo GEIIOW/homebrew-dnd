@@ -1,0 +1,60 @@
+{
+  "name": "Mage Aspiration - The Spark",
+  "features": {
+    "feat_mage_untapped": {
+      "name": "Untapped Power",
+      "level": 0,
+      "description": "Only at level 0, you gain access to two cantrips of your choice (Blade Ward, Chill Touch, Fire Bolt, Guidance, Mending, Minor Illusion, Produce Flame, Vicious Mockery). Additionally, once per long rest you can cast the Arcane Fever spell."
+    },
+    "feat_mage_shard": {
+      "name": "Arcane Shard",
+      "level": 0,
+      "description": "You possess an Arcane Shard, a magically potent crystal. You must be holding this crystal to use your Untapped Power feature."
+    },
+    "feat_mage_from_whence": {
+      "name": "From Whence You Came",
+      "level": 1,
+      "description": "Upon reaching level 1 and choosing a class, you gain the Magic Initiate (Aspiration) feat."
+    },
+    "feat_magic_initiate_aspiration": {
+      "name": "Magic Initiate (Aspiration)",
+      "level": 1,
+      "description": "You learn two cantrips of your choice from your 1st level class's spell list. In addition, you learn the Arcane Fever spell and can cast it once per long rest without using a spell slot."
+    }
+  },
+  "classes": [
+    {
+      "id": "asp_mage",
+      "name": "Mage (Aspiration)",
+      "subclass_level": null,
+      "description": "Those who are starting their pursuit of arcane power through the study of a potent crystal shard.",
+      "hit_die": 6,
+      "proficiencies": {
+        "weapons": ["Simple weapons"],
+        "armor": ["None"],
+        "saving_throws": ["Wisdom"],
+        "saveChoices": [
+          {
+            "choose": 1,
+            "options": ["Intelligence", "Charisma"]
+          }
+        ],
+        "skills": ["Arcana"],
+        "skillChoices": []
+      },
+      "progression": [
+        { 
+          "level": 0, 
+          "pb": "+1", 
+          "features": ["feat_mage_untapped", "feat_mage_shard"] 
+        },
+        {
+          "level": 1,
+          "pb": "+2",
+          "features": ["feat_mage_from_whence"]
+        }
+      ]
+    }
+  ],
+  "subclasses": []
+}
