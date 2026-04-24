@@ -1,0 +1,106 @@
+{
+  "name": "Galitarko - The Philosophical Ursines",
+  "features": {
+    "feat_gal_asi": {
+      "name": "Galitarko Ability Score Increase",
+      "description": "Choose to increase one score by 2 and another by 1, or three different scores by 1. Your Strength maximum is 22.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["+2 / +1", "+1 / +1 / +1"]
+    },
+    "feat_gal_claws": {
+      "name": "Claws",
+      "description": "Your claws are natural weapons. You deal 1d6 + Strength modifier slashing damage.",
+      "actions": [
+        {
+          "name": "Claw Strike",
+          "type": "melee_attack",
+          "damage_dice": "1d6",
+          "damage_type": "slashing",
+          "ability": "strength"
+        }
+      ]
+    },
+    "feat_gal_mauling_strike": {
+      "name": "Mauling Strike",
+      "description": "Immediately after you move at least 6 meters, you can make one melee attack with your claws as a bonus action."
+    },
+    "feat_gal_bearable": {
+      "name": "Bearable",
+      "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+    },
+    "feat_pan_climber": {
+      "name": "High Climber (Panda)",
+      "description": "You have a climbing speed equal to your walking speed."
+    },
+    "feat_pan_bearfriend": {
+      "name": "Bearfriend",
+      "description": "You have advantage on Charisma (Persuasion) checks."
+    },
+    "feat_pan_rollup": {
+      "name": "Roll-Up",
+      "description": "If not in heavy armor, you are pushed 1.5m instead of being knocked prone. Standing up only costs 1.5m of movement."
+    },
+    "feat_pol_swim": {
+      "name": "Freezing Waters",
+      "description": "You have a swim speed equal to your walking speed."
+    },
+    "feat_pol_keen_sight": {
+      "name": "Keen Sight",
+      "description": "You have advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    "feat_pol_bearly_ready": {
+      "name": "Bearly Ready",
+      "description": "When rolling initiative, grant advantage to an ally within 9m while granting disadvantage to yourself."
+    },
+    "feat_griz_keen_smell": {
+      "name": "Keen Smell",
+      "description": "You have advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "feat_griz_bearware": {
+      "name": "Bearware",
+      "description": "It takes an additional creature for you to be flanked or affected by pack tactics."
+    }
+  },
+  "races": [
+    {
+      "id": "race_galitarko",
+      "name": "Galitarko",
+      "type": "humanoid",
+      "size": "Medium",
+      "speed": 9,
+      "height": "1.80m - 2.40m",
+      "weight": "140kg",
+      "description": "A resolute people ruled by philosophy, resembling powerful bears.",
+      "features": [
+        "feat_gal_asi",
+        "feat_gal_claws",
+        "feat_gal_mauling_strike",
+        "feat_gal_bearable"
+      ]
+    }
+  ],
+  "subraces": [
+    {
+      "id": "sub_gal_panda",
+      "race_id": "race_galitarko",
+      "name": "Panda Galitarko",
+      "description": "Selfless followers of the Iendu philosophy.",
+      "features": ["feat_pan_climber", "feat_pan_bearfriend", "feat_pan_rollup"]
+    },
+    {
+      "id": "sub_gal_polar",
+      "race_id": "race_galitarko",
+      "name": "Polar Galitarko",
+      "description": "Nomadic followers of the Stengul philosophy.",
+      "features": ["feat_pol_swim", "feat_pol_keen_sight", "feat_pol_bearly_ready"]
+    },
+    {
+      "id": "sub_gal_grizzly",
+      "race_id": "race_galitarko",
+      "name": "Grizzly Galitarko",
+      "description": "Brutish in appearance, but followers of the Lendo philosophy.",
+      "features": ["feat_pan_climber", "feat_griz_keen_smell", "feat_griz_bearware"]
+    }
+  ]
+}
