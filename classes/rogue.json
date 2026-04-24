@@ -1,0 +1,122 @@
+{
+  "name": "Rogue - Lethal Precision",
+  "features": {
+    "feat_rog_expertise": {
+      "name": "Expertise",
+      "level": 1,
+      "description": "Escolhe duas das tuas proficiências em perícias, ou uma perícia e as Thieves' Tools. O teu bónus de proficiência é duplicado para elas.",
+      "type": "choice",
+      "choose": 2
+    },
+    "feat_rog_sneak_attack": {
+      "name": "Sneak Attack",
+      "level": 1,
+      "description": "Uma vez por turno, podes causar dano extra a uma criatura que atinjas com um ataque se tiveres vantagem ou um aliado a 1.5m. Requer arma de acuidade ou à distância."
+    },
+    "feat_rog_thieves_cant": {
+      "name": "Thieves' Cant (Hidden Speech)",
+      "level": 1,
+      "description": "Compreendes um conjunto de sinais e símbolos secretos usados para transmitir mensagens simples entre guildas."
+    },
+    "feat_rog_cunning_action": {
+      "name": "Cunning Action",
+      "level": 2,
+      "description": "Podes usar uma ação bónus em cada um dos teus turnos para fazer Dash, Disengage ou Hide."
+    },
+    "feat_rog_steady_aim": {
+      "name": "Steady Aim",
+      "level": 3,
+      "description": "Como ação bónus, ganhas vantagem no próximo ataque neste turno. O teu movimento torna-se 0 até ao fim do turno."
+    },
+    "feat_rog_uncanny_dodge": {
+      "name": "Uncanny Dodge",
+      "level": 5,
+      "description": "Quando um atacante que possas ver te atinge, podes usar a tua reação para reduzir o dano de ataque para metade."
+    },
+    "feat_rog_evasion": {
+      "name": "Evasion",
+      "level": 7,
+      "description": "Quando és alvo de um efeito que exige um save de DEX para metade do dano, não sofres dano se passares e apenas metade se falhares."
+    },
+    "feat_rog_reliable_talent": {
+      "name": "Reliable Talent",
+      "level": 11,
+      "description": "Sempre que fizeres um teste de perícia em que sejas proficiente, qualquer resultado de 9 ou menos no d20 torna-se um 10."
+    },
+    "feat_swash_fancy_footwork": {
+      "name": "Fancy Footwork",
+      "level": 3,
+      "description": "Se fizeres um ataque corpo a corpo contra uma criatura, ela não pode fazer ataques de oportunidade contra ti no resto do turno."
+    },
+    "feat_swash_rakish_audacity": {
+      "name": "Rakish Audacity",
+      "level": 3,
+      "description": "Ganha bónus na iniciativa igual ao teu modificador de CHA. Podes usar Sneak Attack se estiveres a 1.5m do alvo e ninguém mais estiver perto de ti."
+    },
+    "feat_swash_panache": {
+      "name": "Panache",
+      "level": 9,
+      "description": "Usa Persuasão contra o Insight de uma criatura. Se fores bem sucedido, podes encantar ou desafiar o alvo para um duelo."
+    },
+    "feat_swash_elegant_maneuver": {
+      "name": "Elegant Maneuver",
+      "level": 13,
+      "description": "Podes usar uma ação bónus para ganhar vantagem no próximo teste de Atletismo ou Acrobacias que fizeres no mesmo turno."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_rogue",
+      "name": "Rogue",
+      "subclass_level": 3,
+      "hit_die": 8,
+      "proficiencies": {
+        "weapons": ["Simple weapons", "Hand crossbows", "Longswords", "Rapiers", "Shortswords"],
+        "armor": ["Light armor"],
+        "tools": ["Thieves' tools"],
+        "saving_throws": ["Dexterity", "Intelligence"],
+        "skillChoices": [
+          {
+            "choose": 4,
+            "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth"]
+          }
+        ]
+      },
+      "progression": [
+        { "level": 1, "pb": "+2", "sneak_attack": "1d6", "features": ["feat_rog_expertise", "feat_rog_sneak_attack", "feat_rog_thieves_cant"] },
+        { "level": 2, "pb": "+2", "sneak_attack": "1d6", "features": ["feat_rog_cunning_action"] },
+        { "level": 3, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_rog_steady_aim"] },
+        { "level": 4, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_fig_asi"] },
+        { "level": 5, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_uncanny_dodge"] },
+        { "level": 6, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_expertise"] },
+        { "level": 7, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_rog_evasion"] },
+        { "level": 8, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_fig_asi"] },
+        { "level": 9, "pb": "+4", "sneak_attack": "5d6", "features": [] },
+        { "level": 10, "pb": "+4", "sneak_attack": "5d6", "features": ["feat_fig_asi"] },
+        { "level": 11, "pb": "+4", "sneak_attack": "6d6", "features": ["feat_rog_reliable_talent"] },
+        { "level": 12, "pb": "+4", "sneak_attack": "6d6", "features": ["feat_fig_asi"] },
+        { "level": 13, "pb": "+5", "sneak_attack": "7d6", "features": [] },
+        { "level": 14, "pb": "+5", "sneak_attack": "7d6", "features": ["feat_rog_blindsense"] },
+        { "level": 15, "pb": "+5", "sneak_attack": "8d6", "features": ["feat_rog_slippery_mind"] },
+        { "level": 16, "pb": "+5", "sneak_attack": "8d6", "features": ["feat_fig_asi"] },
+        { "level": 17, "pb": "+6", "sneak_attack": "9d6", "features": [] },
+        { "level": 18, "pb": "+6", "sneak_attack": "9d6", "features": ["feat_rog_elusive"] },
+        { "level": 19, "pb": "+6", "sneak_attack": "10d6", "features": ["feat_fig_asi"] },
+        { "level": 20, "pb": "+6", "sneak_attack": "10d6", "features": ["feat_rog_stroke_luck"] }
+      ]
+    }
+  ],
+  "subclasses": [
+    {
+      "id": "sub_swashbuckler",
+      "class_id": "class_rogue",
+      "name": "Swashbuckler",
+      "description": "Focas-te na arte do duelo e na elegância do movimento.",
+      "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity", "feat_swash_panache", "feat_swash_elegant_maneuver"],
+      "progression_ext": [
+        { "level": 3, "special": "Fancy Footwork" },
+        { "level": 9, "special": "Panache" }
+      ]
+    }
+  ]
+}
