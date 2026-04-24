@@ -1,12 +1,13 @@
 {
-  "name": "Rogue - Lethal Precision",
+  "name": "Classe: Rogue",
   "features": {
     "feat_rog_expertise": {
       "name": "Expertise",
       "level": 1,
       "description": "Escolhe duas das tuas proficiências em perícias, ou uma perícia e as Thieves' Tools. O teu bónus de proficiência é duplicado para elas.",
       "type": "choice",
-      "choose": 2
+      "choose": 2,
+      "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth", "Thieves' Tools"]
     },
     "feat_rog_sneak_attack": {
       "name": "Sneak Attack",
@@ -14,7 +15,7 @@
       "description": "Uma vez por turno, podes causar dano extra a uma criatura que atinjas com um ataque se tiveres vantagem ou um aliado a 1.5m. Requer arma de acuidade ou à distância."
     },
     "feat_rog_thieves_cant": {
-      "name": "Thieves' Cant (Hidden Speech)",
+      "name": "Thieves' Cant",
       "level": 1,
       "description": "Compreendes um conjunto de sinais e símbolos secretos usados para transmitir mensagens simples entre guildas."
     },
@@ -27,6 +28,11 @@
       "name": "Steady Aim",
       "level": 3,
       "description": "Como ação bónus, ganhas vantagem no próximo ataque neste turno. O teu movimento torna-se 0 até ao fim do turno."
+    },
+    "feat_rog_asi": {
+      "name": "Ability Score Improvement / Feat",
+      "description": "Podes aumentar um atributo à tua escolha em 2, ou dois atributos em 1. Alternativamente, podes escolher um Talento (Feat).",
+      "type": "feat_selection"
     },
     "feat_rog_uncanny_dodge": {
       "name": "Uncanny Dodge",
@@ -43,6 +49,26 @@
       "level": 11,
       "description": "Sempre que fizeres um teste de perícia em que sejas proficiente, qualquer resultado de 9 ou menos no d20 torna-se um 10."
     },
+    "feat_rog_blindsense": {
+      "name": "Blindsense",
+      "level": 14,
+      "description": "Se fores capaz de ouvir, estás ciente da localização de qualquer criatura invisível ou escondida a 3 metros de ti."
+    },
+    "feat_rog_slippery_mind": {
+      "name": "Slippery Mind",
+      "level": 15,
+      "description": "A tua mente torna-se impenetrável. Ganhas proficiência em Saving Throws de Sabedoria (Wisdom)."
+    },
+    "feat_rog_elusive": {
+      "name": "Elusive",
+      "level": 18,
+      "description": "Nenhum ataque tem vantagem contra ti enquanto não estiveres incapacitado."
+    },
+    "feat_rog_stroke_luck": {
+      "name": "Stroke of Luck",
+      "level": 20,
+      "description": "Uma vez por descanso curto ou longo, se falhares um ataque, podes decidir que ele acerta. Se falhares um ability check, podes tratar o d20 rolado como um 20."
+    },
     "feat_swash_fancy_footwork": {
       "name": "Fancy Footwork",
       "level": 3,
@@ -51,7 +77,7 @@
     "feat_swash_rakish_audacity": {
       "name": "Rakish Audacity",
       "level": 3,
-      "description": "Ganha bónus na iniciativa igual ao teu modificador de CHA. Podes usar Sneak Attack se estiveres a 1.5m do alvo e ninguém mais estiver perto de ti."
+      "description": "Ganhas um bónus na iniciativa igual ao teu modificador de Carisma. Podes usar Sneak Attack se estiveres a 1.5m do alvo e ninguém mais estiver perto de ti."
     },
     "feat_swash_panache": {
       "name": "Panache",
@@ -62,13 +88,18 @@
       "name": "Elegant Maneuver",
       "level": 13,
       "description": "Podes usar uma ação bónus para ganhar vantagem no próximo teste de Atletismo ou Acrobacias que fizeres no mesmo turno."
+    },
+    "feat_swash_master_duelist": {
+      "name": "Master Duelist",
+      "level": 17,
+      "description": "Se falhares um ataque corpo a corpo, podes rolar novamente com vantagem. Podes usar esta habilidade uma vez por descanso curto ou longo."
     }
   },
   "classes": [
     {
       "id": "class_rogue",
       "name": "Rogue",
-      "description":"Rogue boss.",
+      "description": "Mestres da furtividade, do engano e de golpes precisos. Os Rogues especializam-se em encontrar vulnerabilidades nos seus inimigos.",
       "subclass_level": 3,
       "hit_die": 8,
       "proficiencies": {
@@ -87,36 +118,37 @@
         { "level": 1, "pb": "+2", "sneak_attack": "1d6", "features": ["feat_rog_expertise", "feat_rog_sneak_attack", "feat_rog_thieves_cant"] },
         { "level": 2, "pb": "+2", "sneak_attack": "1d6", "features": ["feat_rog_cunning_action"] },
         { "level": 3, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_rog_steady_aim"] },
-        { "level": 4, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_fig_asi"] },
+        { "level": 4, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_rog_asi"] },
         { "level": 5, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_uncanny_dodge"] },
         { "level": 6, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_expertise"] },
         { "level": 7, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_rog_evasion"] },
-        { "level": 8, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_fig_asi"] },
+        { "level": 8, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_rog_asi"] },
         { "level": 9, "pb": "+4", "sneak_attack": "5d6", "features": [] },
-        { "level": 10, "pb": "+4", "sneak_attack": "5d6", "features": ["feat_fig_asi"] },
+        { "level": 10, "pb": "+4", "sneak_attack": "5d6", "features": ["feat_rog_asi"] },
         { "level": 11, "pb": "+4", "sneak_attack": "6d6", "features": ["feat_rog_reliable_talent"] },
-        { "level": 12, "pb": "+4", "sneak_attack": "6d6", "features": ["feat_fig_asi"] },
+        { "level": 12, "pb": "+4", "sneak_attack": "6d6", "features": ["feat_rog_asi"] },
         { "level": 13, "pb": "+5", "sneak_attack": "7d6", "features": [] },
         { "level": 14, "pb": "+5", "sneak_attack": "7d6", "features": ["feat_rog_blindsense"] },
         { "level": 15, "pb": "+5", "sneak_attack": "8d6", "features": ["feat_rog_slippery_mind"] },
-        { "level": 16, "pb": "+5", "sneak_attack": "8d6", "features": ["feat_fig_asi"] },
+        { "level": 16, "pb": "+5", "sneak_attack": "8d6", "features": ["feat_rog_asi"] },
         { "level": 17, "pb": "+6", "sneak_attack": "9d6", "features": [] },
         { "level": 18, "pb": "+6", "sneak_attack": "9d6", "features": ["feat_rog_elusive"] },
-        { "level": 19, "pb": "+6", "sneak_attack": "10d6", "features": ["feat_fig_asi"] },
+        { "level": 19, "pb": "+6", "sneak_attack": "10d6", "features": ["feat_rog_asi"] },
         { "level": 20, "pb": "+6", "sneak_attack": "10d6", "features": ["feat_rog_stroke_luck"] }
-      ]
-    }
-  ],
-  "subclasses": [
-    {
-      "id": "sub_swashbuckler",
-      "class_id": "class_rogue",
-      "name": "Swashbuckler",
-      "description": "Focas-te na arte do duelo e na elegância do movimento.",
-      "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity", "feat_swash_panache", "feat_swash_elegant_maneuver"],
-      "progression_ext": [
-        { "level": 3, "special": "Fancy Footwork" },
-        { "level": 9, "special": "Panache" }
+      ],
+      "subclasses": [
+        {
+          "id": "sub_swashbuckler",
+          "name": "Swashbuckler",
+          "description": "Focas-te na arte do duelo e na elegância do movimento. A tua confiança em combate é a tua maior arma.",
+          "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity", "feat_swash_panache", "feat_swash_elegant_maneuver", "feat_swash_master_duelist"],
+          "progression_ext": [
+            { "level": 3, "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity"] },
+            { "level": 9, "features": ["feat_swash_panache"] },
+            { "level": 13, "features": ["feat_swash_elegant_maneuver"] },
+            { "level": 17, "features": ["feat_swash_master_duelist"] }
+          ]
+        }
       ]
     }
   ]
