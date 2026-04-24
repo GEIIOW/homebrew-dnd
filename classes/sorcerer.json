@@ -1,85 +1,72 @@
 {
   "name": "Sorcerer - Innate Magic",
-  "features": [
-    {
-      "id": "feat_sorcerer_spellcasting",
+  "features": {
+    "feat_sorcerer_spellcasting": {
       "name": "Sorcerer's Spellcasting",
       "level": 1,
       "description": "Innate magic infuses you. You use Spell Points instead of slots to fuel your magic. Charisma is your spellcasting ability."
     },
-    {
-      "id": "feat_sorcerous_origin",
+    "feat_sorcerous_origin": {
       "name": "Sorcerous Origin",
       "level": 1,
       "description": "Choose a sorcerous origin that describes the source of your innate power."
     },
-    {
-      "id": "feat_font_of_magic",
+    "feat_font_of_magic": {
       "name": "Font of Magic",
       "level": 2,
       "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features."
     },
-    {
-      "id": "feat_metamagic",
+    "feat_metamagic": {
       "name": "Metamagic",
       "level": 3,
       "description": "Twist your spells to suit your needs. Choose two Metamagic options (Quickened, Twinned, etc.)."
     },
-    {
-      "id": "feat_sorcerous_versatility",
+    "feat_sorcerous_versatility": {
       "name": "Sorcerous Versatility",
       "level": 4,
       "description": "Whenever you gain an ASI, you can replace one Metamagic option."
     },
-    {
-      "id": "feat_sorcerer_asi",
+    "feat_sorcerer_asi": {
       "name": "Ability Score Improvement",
       "level": 4,
       "description": "Increase one ability score by 2, or two scores by 1."
     },
-    {
-      "id": "feat_magical_guidance",
+    "feat_magical_guidance": {
       "name": "Magical Guidance",
       "level": 5,
       "description": "Spend 1 sorcery point to reroll a failed ability check."
     },
-    {
-      "id": "feat_sorcerous_restoration",
+    "feat_sorcerous_restoration": {
       "name": "Sorcerous Restoration",
       "level": 20,
       "description": "Regain 4 expended sorcery points whenever you finish a short rest."
     },
-    {
-      "id": "feat_draconic_ancestor",
+    "feat_draconic_ancestor": {
       "name": "Dragon Ancestor",
       "level": 1,
       "description": "Choose a dragon ancestor. Gain Primordial language and double PB on Charisma checks with dragons."
     },
-    {
-      "id": "feat_draconic_resilience",
+    "feat_draconic_resilience": {
       "name": "Draconic Resilience",
       "level": 1,
       "description": "HP increases by 1 per level. While unarmored, AC = 13 + Dex modifier."
     },
-    {
-      "id": "feat_elemental_affinity",
+    "feat_elemental_affinity": {
       "name": "Elemental Affinity",
       "level": 6,
       "description": "Add Charisma modifier to damage of your ancestor's element."
     },
-    {
-      "id": "feat_dragon_wings",
+    "feat_dragon_wings": {
       "name": "Dragon Wings",
       "level": 14,
       "description": "Sprout wings as a bonus action, gaining flying speed equal to current speed."
     },
-    {
-      "id": "feat_draconic_presence",
+    "feat_draconic_presence": {
       "name": "Draconic Presence",
       "level": 18,
       "description": "Spend 5 points to exude an aura of awe or fear for 1 minute."
     }
-  ],
+  },
   "classes": [
     {
       "id": "class_sorcerer",
@@ -88,50 +75,51 @@
       "description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
       "hit_die": 6,
       "proficiencies": {
+        "armor": [],
         "weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"],
         "saving_throws": ["Constitution", "Charisma"],
-        "skill_choices": [
+        "skillChoices": [
           {
             "choose": 2,
             "options": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"]
           }
         ]
       },
+      "subclasses": [
+        {
+          "id": "subclass_draconic_bloodline",
+          "name": "Draconic Bloodline",
+          "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
+          "features": [
+            "feat_draconic_ancestor", 
+            "feat_draconic_resilience", 
+            "feat_elemental_affinity", 
+            "feat_dragon_wings", 
+            "feat_draconic_presence"
+          ]
+        }
+      ],
       "progression": [
-        { "level": 1, "pb": "+2", "spell_points": 4, "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"] },
-        { "level": 2, "pb": "+2", "spell_points": 6, "features": ["feat_font_of_magic"] },
-        { "level": 3, "pb": "+2", "spell_points": 14, "features": ["feat_metamagic"] },
-        { "level": 4, "pb": "+2", "spell_points": 17, "features": ["feat_sorcerer_asi", "feat_sorcerous_versatility"] },
-        { "level": 5, "pb": "+3", "spell_points": 27, "features": ["feat_magical_guidance"] },
-        { "level": 6, "pb": "+3", "spell_points": 32, "features": [] },
-        { "level": 7, "pb": "+3", "spell_points": 38, "features": [] },
-        { "level": 8, "pb": "+3", "spell_points": 44, "features": ["feat_sorcerer_asi"] },
-        { "level": 9, "pb": "+4", "spell_points": 57, "features": [] },
-        { "level": 10, "pb": "+4", "spell_points": 64, "features": [] },
-        { "level": 11, "pb": "+4", "spell_points": 73, "features": [] },
-        { "level": 12, "pb": "+4", "spell_points": 73, "features": ["feat_sorcerer_asi"] },
-        { "level": 13, "pb": "+5", "spell_points": 83, "features": [] },
-        { "level": 14, "pb": "+5", "spell_points": 83, "features": [] },
-        { "level": 15, "pb": "+5", "spell_points": 94, "features": [] },
-        { "level": 16, "pb": "+5", "spell_points": 94, "features": ["feat_sorcerer_asi"] },
-        { "level": 17, "pb": "+6", "spell_points": 107, "features": [] },
-        { "level": 18, "pb": "+6", "spell_points": 114, "features": [] },
-        { "level": 19, "pb": "+6", "spell_points": 123, "features": ["feat_sorcerer_asi"] },
-        { "level": 20, "pb": "+6", "spell_points": 133, "features": ["feat_sorcerous_restoration"] }
-      ]
-    }
-  ],
-  "subclasses": [
-    {
-      "id": "subclass_draconic_bloodline",
-      "class_id": "class_sorcerer",
-      "name": "Draconic Bloodline",
-      "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
-      "progression": [
-        { "level": 1, "features": ["feat_draconic_ancestor", "feat_draconic_resilience"] },
-        { "level": 6, "features": ["feat_elemental_affinity"] },
-        { "level": 14, "features": ["feat_dragon_wings"] },
-        { "level": 18, "features": ["feat_draconic_presence"] }
+        { "level": 1, "pb": "+2", "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"], "sorcery_points": 0, "cantrips_known": 4, "spells_known": 2, "highest_spell_level": "1st", "spell_points": 4 },
+        { "level": 2, "pb": "+2", "features": ["feat_font_of_magic"], "sorcery_points": 2, "cantrips_known": 4, "spells_known": 3, "highest_spell_level": "1st", "spell_points": 6 },
+        { "level": 3, "pb": "+2", "features": ["feat_metamagic"], "sorcery_points": 3, "cantrips_known": 4, "spells_known": 4, "highest_spell_level": "2nd", "spell_points": 14 },
+        { "level": 4, "pb": "+2", "features": ["feat_sorcerer_asi", "feat_sorcerous_versatility"], "sorcery_points": 4, "cantrips_known": 5, "spells_known": 5, "highest_spell_level": "2nd", "spell_points": 17 },
+        { "level": 5, "pb": "+3", "features": ["feat_magical_guidance"], "sorcery_points": 5, "cantrips_known": 5, "spells_known": 6, "highest_spell_level": "3rd", "spell_points": 27 },
+        { "level": 6, "pb": "+3", "features": [], "sorcery_points": 6, "cantrips_known": 5, "spells_known": 7, "highest_spell_level": "3rd", "spell_points": 32 },
+        { "level": 7, "pb": "+3", "features": [], "sorcery_points": 7, "cantrips_known": 5, "spells_known": 8, "highest_spell_level": "4th", "spell_points": 38 },
+        { "level": 8, "pb": "+3", "features": ["feat_sorcerer_asi"], "sorcery_points": 8, "cantrips_known": 5, "spells_known": 9, "highest_spell_level": "4th", "spell_points": 44 },
+        { "level": 9, "pb": "+4", "features": [], "sorcery_points": 9, "cantrips_known": 5, "spells_known": 10, "highest_spell_level": "5th", "spell_points": 57 },
+        { "level": 10, "pb": "+4", "features": [], "sorcery_points": 10, "cantrips_known": 6, "spells_known": 11, "highest_spell_level": "5th", "spell_points": 64 },
+        { "level": 11, "pb": "+4", "features": [], "sorcery_points": 11, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
+        { "level": 12, "pb": "+4", "features": ["feat_sorcerer_asi"], "sorcery_points": 12, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
+        { "level": 13, "pb": "+5", "features": [], "sorcery_points": 13, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
+        { "level": 14, "pb": "+5", "features": [], "sorcery_points": 14, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
+        { "level": 15, "pb": "+5", "features": [], "sorcery_points": 15, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
+        { "level": 16, "pb": "+5", "features": ["feat_sorcerer_asi"], "sorcery_points": 16, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
+        { "level": 17, "pb": "+6", "features": [], "sorcery_points": 17, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 107 },
+        { "level": 18, "pb": "+6", "features": [], "sorcery_points": 18, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 114 },
+        { "level": 19, "pb": "+6", "features": ["feat_sorcerer_asi"], "sorcery_points": 19, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 123 },
+        { "level": 20, "pb": "+6", "features": ["feat_sorcerous_restoration"], "sorcery_points": 20, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 133 }
       ]
     }
   ]
