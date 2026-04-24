@@ -1,4 +1,10 @@
 {
+    "features": {
+    "bg_elirium_farmer_plebeian_charm": {
+        "name": "Plebeian Charm",
+        "description": "You have a face that is relatable to other commoners. Your simple roots are easily recognizable by people of low and high birth and will treat you accordingly. Some of your fellow plebeians might lend you a hand when you most need it, while some nobles might look at you as expendable."
+    },
+
   "id": "elirium_farmer",
   "name": "Elirium Farmer",
   "description": "You are a farmer from the Tripartate Valley, you were either subservient to House Kirko or their opposition. Regardless of your allegiances, you have lived a simple and peaceful life on a farm, broken only by the occasional raid by the Rouvyr Tribals.",
@@ -26,4 +32,5 @@
   "origin_options": [
     "Lesdownia"
   ]
+    }
 }
