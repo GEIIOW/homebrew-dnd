@@ -9,6 +9,14 @@
       "choose": 2,
       "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth", "Thieves' Tools"]
     },
+    "feat_rog_expertise_6": {
+      "name": "Expertise (Level 6)",
+      "level": 6,
+      "description": "Escolhe mais duas das tuas proficiências em perícias, ou uma perícia e as Thieves' Tools. O teu bónus de proficiência é duplicado para elas.",
+      "type": "choice",
+      "choose": 2,
+      "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth", "Thieves' Tools"]
+    },
     "feat_rog_sneak_attack": {
       "name": "Sneak Attack",
       "level": 1,
@@ -120,7 +128,7 @@
         { "level": 3, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_rog_steady_aim"] },
         { "level": 4, "pb": "+2", "sneak_attack": "2d6", "features": ["feat_rog_asi"] },
         { "level": 5, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_uncanny_dodge"] },
-        { "level": 6, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_expertise"] },
+        { "level": 6, "pb": "+3", "sneak_attack": "3d6", "features": ["feat_rog_expertise_6"] },
         { "level": 7, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_rog_evasion"] },
         { "level": 8, "pb": "+3", "sneak_attack": "4d6", "features": ["feat_rog_asi"] },
         { "level": 9, "pb": "+4", "sneak_attack": "5d6", "features": [] },
