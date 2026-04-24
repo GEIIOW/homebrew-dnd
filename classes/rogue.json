@@ -68,6 +68,7 @@
     {
       "id": "class_rogue",
       "name": "Rogue",
+      "description":"Rogue boss.",
       "subclass_level": 3,
       "hit_die": 8,
       "proficiencies": {
