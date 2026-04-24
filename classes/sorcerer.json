@@ -14,27 +14,71 @@
     "feat_font_of_magic": {
       "name": "Font of Magic",
       "level": 2,
-      "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features."
+      "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features. Podes usar uma Bonus Action para converter pontos."
     },
     "feat_metamagic": {
       "name": "Metamagic",
       "level": 3,
-      "description": "Twist your spells to suit your needs. Choose two Metamagic options (Quickened, Twinned, etc.)."
+      "description": "Twist your spells to suit your needs. Escolhe duas opções de Metamagic.",
+      "type": "choice",
+      "choose": 2,
+      "options": ["meta_quickened", "meta_twinned", "meta_subtle", "meta_empowered"]
+    },
+    "meta_quickened": {
+      "name": "Quickened Spell",
+      "description": "Ao conjurares uma magia que tem casting time de 1 Action, podes gastar 2 sorcery points para mudar o casting time para 1 Bonus Action."
+    },
+    "meta_twinned": {
+      "name": "Twinned Spell",
+      "description": "Ao conjurares uma magia de target único, podes gastar sorcery points para atingir um segundo alvo."
+    },
+    "meta_subtle": {
+      "name": "Subtle Spell",
+      "description": "Podes gastar 1 sorcery point para conjurar uma magia sem qualquer componente verbal ou somático."
+    },
+    "meta_empowered": {
+      "name": "Empowered Spell",
+      "description": "Quando rolas dano, podes gastar 1 sorcery point para rolar novamente um número de dados igual ao teu modificador de Carisma."
     },
     "feat_sorcerous_versatility": {
       "name": "Sorcerous Versatility",
       "level": 4,
       "description": "Whenever you gain an ASI, you can replace one Metamagic option."
     },
-    "feat_sorcerer_asi": {
+    "feat_sorcerer_asi_4": {
       "name": "Ability Score Improvement",
       "level": 4,
-      "description": "Increase one ability score by 2, or two scores by 1."
+      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "type": "feat_selection"
     },
     "feat_magical_guidance": {
       "name": "Magical Guidance",
       "level": 5,
-      "description": "Spend 1 sorcery point to reroll a failed ability check."
+      "description": "Spend 1 sorcery point as a Reaction to reroll a failed ability check."
+    },
+    "feat_sorcerer_asi_8": {
+      "name": "Ability Score Improvement",
+      "level": 8,
+      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "type": "feat_selection"
+    },
+    "feat_sorcerer_asi_12": {
+      "name": "Ability Score Improvement",
+      "level": 12,
+      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "type": "feat_selection"
+    },
+    "feat_sorcerer_asi_16": {
+      "name": "Ability Score Improvement",
+      "level": 16,
+      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "type": "feat_selection"
+    },
+    "feat_sorcerer_asi_19": {
+      "name": "Ability Score Improvement",
+      "level": 19,
+      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "type": "feat_selection"
     },
     "feat_sorcerous_restoration": {
       "name": "Sorcerous Restoration",
@@ -44,7 +88,30 @@
     "feat_draconic_ancestor": {
       "name": "Dragon Ancestor",
       "level": 1,
-      "description": "Choose a dragon ancestor. Gain Primordial language and double PB on Charisma checks with dragons."
+      "description": "Choose a dragon ancestor. Gain Primordial language and double PB on Charisma checks with dragons.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["ancestor_red", "ancestor_blue", "ancestor_green", "ancestor_white", "ancestor_black"]
+    },
+    "ancestor_red": {
+      "name": "Red Dragon (Fire)",
+      "description": "O teu ancestral era um Dragão Vermelho. Ficas ligado ao elemento de Fogo."
+    },
+    "ancestor_blue": {
+      "name": "Blue Dragon (Lightning)",
+      "description": "O teu ancestral era um Dragão Azul. Ficas ligado ao elemento de Lightning."
+    },
+    "ancestor_green": {
+      "name": "Green Dragon (Poison)",
+      "description": "O teu ancestral era um Dragão Verde. Ficas ligado ao elemento de Veneno."
+    },
+    "ancestor_white": {
+      "name": "White Dragon (Cold)",
+      "description": "O teu ancestral era um Dragão Branco. Ficas ligado ao elemento de Frio."
+    },
+    "ancestor_black": {
+      "name": "Black Dragon (Acid)",
+      "description": "O teu ancestral era um Dragão Negro. Ficas ligado ao elemento de Ácido."
     },
     "feat_draconic_resilience": {
       "name": "Draconic Resilience",
@@ -59,12 +126,13 @@
     "feat_dragon_wings": {
       "name": "Dragon Wings",
       "level": 14,
-      "description": "Sprout wings as a bonus action, gaining flying speed equal to current speed."
+      "description": "Sprout wings as a Bonus Action, gaining flying speed equal to current speed.",
+      "speed": { "fly": 9 }
     },
     "feat_draconic_presence": {
       "name": "Draconic Presence",
       "level": 18,
-      "description": "Spend 5 points to exude an aura of awe or fear for 1 minute."
+      "description": "As an Action, spend 5 points to exude an aura of awe or fear for 1 minute."
     }
   },
   "classes": [
@@ -96,6 +164,12 @@
             "feat_elemental_affinity", 
             "feat_dragon_wings", 
             "feat_draconic_presence"
+          ],
+          "progression_ext": [
+            { "level": 1, "features": ["feat_draconic_ancestor", "feat_draconic_resilience"] },
+            { "level": 6, "features": ["feat_elemental_affinity"] },
+            { "level": 14, "features": ["feat_dragon_wings"] },
+            { "level": 18, "features": ["feat_draconic_presence"] }
           ]
         }
       ],
@@ -103,22 +177,22 @@
         { "level": 1, "pb": "+2", "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"], "sorcery_points": 0, "cantrips_known": 4, "spells_known": 2, "highest_spell_level": "1st", "spell_points": 4 },
         { "level": 2, "pb": "+2", "features": ["feat_font_of_magic"], "sorcery_points": 2, "cantrips_known": 4, "spells_known": 3, "highest_spell_level": "1st", "spell_points": 6 },
         { "level": 3, "pb": "+2", "features": ["feat_metamagic"], "sorcery_points": 3, "cantrips_known": 4, "spells_known": 4, "highest_spell_level": "2nd", "spell_points": 14 },
-        { "level": 4, "pb": "+2", "features": ["feat_sorcerer_asi", "feat_sorcerous_versatility"], "sorcery_points": 4, "cantrips_known": 5, "spells_known": 5, "highest_spell_level": "2nd", "spell_points": 17 },
+        { "level": 4, "pb": "+2", "features": ["feat_sorcerer_asi_4", "feat_sorcerous_versatility"], "sorcery_points": 4, "cantrips_known": 5, "spells_known": 5, "highest_spell_level": "2nd", "spell_points": 17 },
         { "level": 5, "pb": "+3", "features": ["feat_magical_guidance"], "sorcery_points": 5, "cantrips_known": 5, "spells_known": 6, "highest_spell_level": "3rd", "spell_points": 27 },
         { "level": 6, "pb": "+3", "features": [], "sorcery_points": 6, "cantrips_known": 5, "spells_known": 7, "highest_spell_level": "3rd", "spell_points": 32 },
         { "level": 7, "pb": "+3", "features": [], "sorcery_points": 7, "cantrips_known": 5, "spells_known": 8, "highest_spell_level": "4th", "spell_points": 38 },
-        { "level": 8, "pb": "+3", "features": ["feat_sorcerer_asi"], "sorcery_points": 8, "cantrips_known": 5, "spells_known": 9, "highest_spell_level": "4th", "spell_points": 44 },
+        { "level": 8, "pb": "+3", "features": ["feat_sorcerer_asi_8"], "sorcery_points": 8, "cantrips_known": 5, "spells_known": 9, "highest_spell_level": "4th", "spell_points": 44 },
         { "level": 9, "pb": "+4", "features": [], "sorcery_points": 9, "cantrips_known": 5, "spells_known": 10, "highest_spell_level": "5th", "spell_points": 57 },
         { "level": 10, "pb": "+4", "features": [], "sorcery_points": 10, "cantrips_known": 6, "spells_known": 11, "highest_spell_level": "5th", "spell_points": 64 },
         { "level": 11, "pb": "+4", "features": [], "sorcery_points": 11, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
-        { "level": 12, "pb": "+4", "features": ["feat_sorcerer_asi"], "sorcery_points": 12, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
+        { "level": 12, "pb": "+4", "features": ["feat_sorcerer_asi_12"], "sorcery_points": 12, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
         { "level": 13, "pb": "+5", "features": [], "sorcery_points": 13, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
         { "level": 14, "pb": "+5", "features": [], "sorcery_points": 14, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
         { "level": 15, "pb": "+5", "features": [], "sorcery_points": 15, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
-        { "level": 16, "pb": "+5", "features": ["feat_sorcerer_asi"], "sorcery_points": 16, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
+        { "level": 16, "pb": "+5", "features": ["feat_sorcerer_asi_16"], "sorcery_points": 16, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
         { "level": 17, "pb": "+6", "features": [], "sorcery_points": 17, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 107 },
         { "level": 18, "pb": "+6", "features": [], "sorcery_points": 18, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 114 },
-        { "level": 19, "pb": "+6", "features": ["feat_sorcerer_asi"], "sorcery_points": 19, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 123 },
+        { "level": 19, "pb": "+6", "features": ["feat_sorcerer_asi_19"], "sorcery_points": 19, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 123 },
         { "level": 20, "pb": "+6", "features": ["feat_sorcerous_restoration"], "sorcery_points": 20, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 133 }
       ]
     }
