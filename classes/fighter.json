@@ -1,24 +1,42 @@
 {
+  "name": "Class: Fighter",
   "features": {
-    "feat_fig_fighting_style": { "name": "Fighting Style", "level": 1, "description": "You adopt a particular style of fighting as your specialty." },
-    "feat_fig_second_wind": { "name": "Second Wind", "level": 1, "description": "Bonus action to regain 1d10 + level HP. Once per rest." },
-    "feat_fig_action_surge": { "name": "Action Surge", "level": 2, "description": "Take one additional action on your turn." },
-    "feat_fig_archetype": { "name": "Martial Archetype", "level": 3, "description": "Choose a subclass that defines your combat style." },
-    "feat_fig_asi": { "name": "Ability Score Improvement", "level": 4, "description": "Increase one score by 2 or two by 1." },
-    "feat_fig_extra_attack": { "name": "Extra Attack", "level": 5, "description": "Attack twice per action. Increases at 11th and 20th." },
-    "feat_fig_indomitable": { "name": "Indomitable", "level": 9, "description": "Reroll a failed saving throw." },
-    "feat_aa_shot": { "name": "Arcane Shot", "level": 3, "description": "Apply magical effects to your arrows." },
-    "feat_aa_magic_arrow": { "name": "Magic Arrow", "level": 7, "description": "Arrows count as magical." }
+    "feat_fig_fighting_style": {
+      "name": "Fighting Style",
+      "level": 1,
+      "description": "Adotas um estilo particular de combate como tua especialidade. Não podes escolher a mesma opção mais de uma vez.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["feat_fs_archery", "feat_fs_defense", "feat_fs_dueling", "feat_fs_gwf"]
+    },
+    "feat_fs_archery": { "name": "Archery", "description": "Ganas um bónus de +2 nas jogadas de ataque com armas à distância." },
+    "feat_fs_defense": { "name": "Defense", "description": "Enquanto usares armadura, ganhas +1 na AC." },
+    "feat_fs_dueling": { "name": "Dueling", "description": "Quando empunhas uma arma corpo a corpo numa mão e nenhuma noutra, ganhas +2 nas rolagens de dano." },
+    "feat_fs_gwf": { "name": "Great Weapon Fighting", "description": "Podes rolar novamente os 1s e 2s nos dados de dano de ataques com armas de duas mãos." },
+    "feat_fig_second_wind": { "name": "Second Wind", "level": 1, "description": "Tens um poço de estamina. No teu turno, podes usar uma ação bónus para recuperar HP igual a 1d10 + o teu nível de Fighter." },
+    "feat_fig_action_surge": { "name": "Action Surge", "level": 2, "description": "Podes puxar pelos teus limites no teu turno. Podes realizar uma ação adicional." },
+    "feat_fig_archetype": { "name": "Martial Archetype", "level": 3, "description": "Escolhes um arquétipo que defines o teu estilo de combate." },
+    "feat_fig_asi": { "name": "Ability Score Improvement", "level": 4, "description": "Podes aumentar um atributo em 2, ou dois em 1. Em alternativa, podes escolher um Talento.", "type": "feat_selection" },
+    "feat_fig_extra_attack": { "name": "Extra Attack", "level": 5, "description": "Podes atacar duas vezes sempre que usares a ação de Ataque no teu turno." },
+    "feat_fig_indomitable": { "name": "Indomitable", "level": 9, "description": "Podes rolar novamente um saving throw que falhes. Deves usar o novo resultado." },
+    "feat_aa_shot": { "name": "Arcane Shot", "level": 3, "description": "Aprende a despoletar efeitos mágicos especiais com os teus ataques com arco." },
+    "feat_aa_magic_arrow": { "name": "Magic Arrow", "level": 7, "description": "As flechas que disparas contam como mágicas para propósito de ultrapassar resistência a ataques não-mágicos." }
   },
   "classes": [
     {
       "id": "class_fighter",
       "name": "Fighter",
+      "description": "Mestres do combate marcial, habilidosos com uma grande variedade de armas e armaduras.",
       "subclass_level": 3,
       "hit_die": 10,
       "proficiencies": {
         "saving_throws": ["Strength", "Constitution"],
-        "skillChoices": [{ "choose": 2, "options": ["Acrobatics", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"] }]
+        "skillChoices": [
+          {
+            "choose": 2,
+            "options": ["Acrobatics", "Animal Handling", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"]
+          }
+        ]
       },
       "progression": [
         { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
@@ -30,24 +48,32 @@
         { "level": 7, "pb": "+3", "features": [] },
         { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
         { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
+        { "level": 10, "pb": "+4", "features": [] },
         { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"] },
+        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"] },
+        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable"] },
+        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"] },
+        { "level": 15, "pb": "+5", "features": [] },
+        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"] },
         { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge", "feat_fig_indomitable"] },
+        { "level": 18, "pb": "+6", "features": [] },
+        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"] },
         { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"] }
-      ]
-    }
-  ],
-  "subclasses": [
-    {
-      "id": "sub_arcane_archer",
-      "class_id": "class_fighter",
-      "name": "Arcane Archer",
-      "description": "Masters of magical archery.",
-      "features": ["feat_aa_shot", "feat_aa_magic_arrow"],
-      "progression_ext": [
-        { "level": 3, "arcane_shots": "2" },
-        { "level": 7, "arcane_shots": "2" },
-        { "level": 15, "arcane_shots": "2 (Ready)" },
-        { "level": 18, "arcane_shots": "3" }
+      ],
+      "subclasses": [
+        {
+          "id": "sub_arcane_archer",
+          "name": "Arcane Archer",
+          "description": "Um guerreiro que estuda a arte élfica da arquearia mágica.",
+          "features": ["feat_aa_shot", "feat_aa_magic_arrow"],
+          "progression_ext": [
+            { "level": 3, "arcane_shots": "2", "features": ["feat_aa_shot"] },
+            { "level": 7, "arcane_shots": "2", "features": ["feat_aa_magic_arrow"] },
+            { "level": 10, "arcane_shots": "2" },
+            { "level": 15, "arcane_shots": "2" },
+            { "level": 18, "arcane_shots": "3" }
+          ]
+        }
       ]
     }
   ]
