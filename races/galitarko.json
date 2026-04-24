@@ -26,7 +26,7 @@
     },
     "pan_bearfriend": {
       "name": "Bearfriend",
-      "description": "Tens vantagem em testes de Carisma (Persuasão).",
+      "description": "You have advantage on Charisma (Persuasion) checks.",
       "proficiencies": {
         "skills": ["Persuasion"]
       }
