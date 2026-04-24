@@ -4,12 +4,19 @@
     "feat_pal_lay_on_hands": {
       "name": "Lay on Hands",
       "level": 1,
-      "description": "Restore HP from a pool equal to 5x your level as a Bonus Action. Can also spend 5 HP to cure Poison."
+      "description": "Restore HP from a pool equal to 5x your level as a Bonus Action. Can also spend 5 HP to cure Poison.",
+      "calc": {
+        "Healing Pool": "level * 5"
+      }
     },
     "feat_pal_spellcasting": {
       "name": "Paladin's Spellcasting",
       "level": 1,
-      "description": "Cast spells using prayer and a holy symbol. Charisma is your spellcasting ability."
+      "description": "Cast spells using prayer and a holy symbol. Charisma is your spellcasting ability.",
+      "calc": {
+        "Spell Save DC": "8 + pb + cha",
+        "Spell Attack Modifier": "pb + cha"
+      }
     },
     "feat_pal_fighting_style": {
       "name": "Fighting Style",
@@ -43,7 +50,10 @@
     "feat_pal_channel_divinity": {
       "name": "Channel Divinity",
       "level": 3,
-      "description": "Fuel magical effects. You gain Divine Sense as an Action and additional options from your Oath."
+      "description": "Fuel magical effects. You gain Divine Sense as an Action and additional options from your Oath.",
+      "calc": {
+        "Save DC": "8 + pb + cha"
+      }
     },
     "feat_pal_oath": {
       "name": "Sacred Oath",
@@ -83,7 +93,10 @@
     "feat_pal_abjure_foes": {
       "name": "Abjure Foes",
       "level": 9,
-      "description": "As an Action, you can present your Holy Symbol and use Channel Divinity to magically command creatures up to 60ft to grovel."
+      "description": "As an Action, you can present your Holy Symbol and use Channel Divinity to magically command creatures up to 60ft to grovel.",
+      "calc": {
+        "Save DC": "8 + pb + cha"
+      }
     },
     "feat_pal_aura_courage": {
       "name": "Aura of Courage",
@@ -130,7 +143,11 @@
     "feat_og_inspiring_smite": {
       "name": "Inspiring Smite",
       "level": 3,
-      "description": "Immediately after casting Divine Smite, you can use Channel Divinity as a Bonus Action to distribute Temporary HP to allies equal to 2d8 + level."
+      "description": "Immediately after casting Divine Smite, you can use Channel Divinity as a Bonus Action to distribute Temporary HP to allies equal to 2d8 + level.",
+      "healing": {
+        "dice": "2d8 +",
+        "formula": "level"
+      }
     },
     "feat_og_peerless_athlete": {
       "name": "Peerless Athlete",
