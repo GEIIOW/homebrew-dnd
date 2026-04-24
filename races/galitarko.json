@@ -5,10 +5,10 @@
       "name": "Claws",
       "description": "As tuas garras são armas naturais. Causas 1d6 + modificador de Força de dano cortante em vez do dano de impacto normal.",
       "attack": {
-        "name": "Claws",
-        "damage": "1d6",
+        "dice": "1d6",
+        "stat": "strength",
         "type": "slashing",
-        "ability": "strength"
+        "bonus": 0
       }
     },
     "gal_mauling_strike": {
@@ -26,10 +26,7 @@
     },
     "pan_bearfriend": {
       "name": "Bearfriend",
-      "description": "You have advantage on Charisma (Persuasion) checks.",
-      "proficiencies": {
-        "skills": ["Persuasion"]
-      }
+      "description": "Ganas proficiência e tens vantagem em testes de Carisma (Persuasão)."
     },
     "pan_rollup": {
       "name": "Roll-Up",
@@ -71,6 +68,9 @@
           "name": "Panda",
           "description": "Conhecidos pelo seu altruísmo e harmonia comunitária.",
           "stat_maximums": { "strength": 22 },
+          "proficiencies": {
+            "skills": ["Persuasion"]
+          },
           "features": ["pan_climber", "pan_bearfriend", "pan_rollup"]
         },
         {
