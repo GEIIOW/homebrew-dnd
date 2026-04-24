@@ -15,24 +15,24 @@
       ]
     },
     "sol_flight": {
-      "name": "Flight (Solmosis)",
+      "name": "Flight",
       "description": "Asas nascem das tuas costas. Tens velocidade de voo de 9m se não estiveres sobrecarregado.",
       "speed": { "fly": 9 }
     },
     "sol_radiance": {
-      "name": "Golden Radiance (Solmosis)",
+      "name": "Golden Radiance",
       "description": "Os teus olhos ficam dourados/prateados. Visão no Escuro (18m) apenas em tons de ouro."
     },
     "sol_aura": {
-      "name": "Flaming Aura (Solmosis)",
+      "name": "Flaming Aura",
       "description": "Duas vezes por descanso curto como ação: crias uma aura de fogo (luz brilhante 6m, penumbra 3m)."
     },
     "sol_mark": {
-      "name": "Mark of the Protector (Solmosis)",
+      "name": "Mark of the Protector",
       "description": "Uma vez por descanso longo como reação: podes conjurar um feitiço de 'self' num aliado a 9m."
     },
     "sol_crystal": {
-      "name": "Celestial Crystal (Solmosis)",
+      "name": "Celestial Crystal",
       "description": "Uma vez por descanso longo como ação: tocas numa criatura e curas HP igual ao teu nível."
     },
       "resistance_necrotic": {
