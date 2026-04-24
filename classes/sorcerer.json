@@ -1,72 +1,85 @@
 {
   "name": "Sorcerer - Innate Magic",
-  "features": {
-    "feat_sorcerer_spellcasting": {
+  "features": [
+    {
+      "id": "feat_sorcerer_spellcasting",
       "name": "Sorcerer's Spellcasting",
       "level": 1,
       "description": "Innate magic infuses you. You use Spell Points instead of slots to fuel your magic. Charisma is your spellcasting ability."
     },
-    "feat_sorcerous_origin": {
+    {
+      "id": "feat_sorcerous_origin",
       "name": "Sorcerous Origin",
       "level": 1,
       "description": "Choose a sorcerous origin that describes the source of your innate power."
     },
-    "feat_font_of_magic": {
+    {
+      "id": "feat_font_of_magic",
       "name": "Font of Magic",
       "level": 2,
       "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features."
     },
-    "feat_metamagic": {
+    {
+      "id": "feat_metamagic",
       "name": "Metamagic",
       "level": 3,
       "description": "Twist your spells to suit your needs. Choose two Metamagic options (Quickened, Twinned, etc.)."
     },
-    "feat_sorcerous_versatility": {
+    {
+      "id": "feat_sorcerous_versatility",
       "name": "Sorcerous Versatility",
       "level": 4,
       "description": "Whenever you gain an ASI, you can replace one Metamagic option."
     },
-    "feat_sorcerer_asi": {
+    {
+      "id": "feat_sorcerer_asi",
       "name": "Ability Score Improvement",
       "level": 4,
       "description": "Increase one ability score by 2, or two scores by 1."
     },
-    "feat_magical_guidance": {
+    {
+      "id": "feat_magical_guidance",
       "name": "Magical Guidance",
       "level": 5,
       "description": "Spend 1 sorcery point to reroll a failed ability check."
     },
-    "feat_sorcerous_restoration": {
+    {
+      "id": "feat_sorcerous_restoration",
       "name": "Sorcerous Restoration",
       "level": 20,
       "description": "Regain 4 expended sorcery points whenever you finish a short rest."
     },
-    "feat_draconic_ancestor": {
+    {
+      "id": "feat_draconic_ancestor",
       "name": "Dragon Ancestor",
       "level": 1,
       "description": "Choose a dragon ancestor. Gain Primordial language and double PB on Charisma checks with dragons."
     },
-    "feat_draconic_resilience": {
+    {
+      "id": "feat_draconic_resilience",
       "name": "Draconic Resilience",
       "level": 1,
       "description": "HP increases by 1 per level. While unarmored, AC = 13 + Dex modifier."
     },
-    "feat_elemental_affinity": {
+    {
+      "id": "feat_elemental_affinity",
       "name": "Elemental Affinity",
       "level": 6,
       "description": "Add Charisma modifier to damage of your ancestor's element."
     },
-    "feat_dragon_wings": {
+    {
+      "id": "feat_dragon_wings",
       "name": "Dragon Wings",
       "level": 14,
       "description": "Sprout wings as a bonus action, gaining flying speed equal to current speed."
     },
-    "feat_draconic_presence": {
+    {
+      "id": "feat_draconic_presence",
       "name": "Draconic Presence",
       "level": 18,
       "description": "Spend 5 points to exude an aura of awe or fear for 1 minute."
     }
-  },
+  ],
   "classes": [
     {
       "id": "class_sorcerer",
@@ -77,7 +90,7 @@
       "proficiencies": {
         "weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"],
         "saving_throws": ["Constitution", "Charisma"],
-        "skillChoices": [
+        "skill_choices": [
           {
             "choose": 2,
             "options": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"]
@@ -114,12 +127,11 @@
       "class_id": "class_sorcerer",
       "name": "Draconic Bloodline",
       "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
-      "features": [
-        "feat_draconic_ancestor", 
-        "feat_draconic_resilience", 
-        "feat_elemental_affinity", 
-        "feat_dragon_wings", 
-        "feat_draconic_presence"
+      "progression": [
+        { "level": 1, "features": ["feat_draconic_ancestor", "feat_draconic_resilience"] },
+        { "level": 6, "features": ["feat_elemental_affinity"] },
+        { "level": 14, "features": ["feat_dragon_wings"] },
+        { "level": 18, "features": ["feat_draconic_presence"] }
       ]
     }
   ]
