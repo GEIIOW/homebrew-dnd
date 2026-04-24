@@ -1,18 +1,53 @@
 {
   "name": "Expansão: Ourolight",
   "features": {
-    "solmosis": {
+    "solmosis_1": {
       "name": "Solmosis",
-      "description": "A tua ligação com o Ourolight fortalece-te! Aos níveis 1, 4, 8, 12, 16 e 19 ganhas um efeito permanente.",
+      "level": 1,
+      "description": "A tua ligação com o Ourolight fortalece-te. Escolhe o teu primeiro efeito permanente.",
       "type": "choice",
       "choose": 1,
-      "options": [
-        "sol_flight",
-        "sol_radiance",
-        "sol_aura",
-        "sol_mark",
-        "sol_crystal"
-      ]
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "solmosis_4": {
+      "name": "Solmosis (Nível 4)",
+      "level": 4,
+      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "solmosis_8": {
+      "name": "Solmosis (Nível 8)",
+      "level": 8,
+      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "solmosis_12": {
+      "name": "Solmosis (Nível 12)",
+      "level": 12,
+      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "solmosis_16": {
+      "name": "Solmosis (Nível 16)",
+      "level": 16,
+      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
+    },
+    "solmosis_19": {
+      "name": "Solmosis (Nível 19)",
+      "level": 19,
+      "description": "A tua ligação com o Ourolight atinge o zénite. Escolhe o teu último efeito permanente.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
     },
     "sol_flight": {
       "name": "Flight",
@@ -35,11 +70,14 @@
       "name": "Celestial Crystal",
       "description": "Uma vez por descanso longo como ação: tocas numa criatura e curas HP igual ao teu nível."
     },
-      "resistance_necrotic": {
+    "resistance_necrotic": {
       "name": "Necrotic Resistance",
-      "description": "You have resistance to necrotic damage."
+      "description": "Tens resistência a dano necrótico (necrotic damage)."
+    },
+    "ice_troll_res": {
+      "name": "Ice Troll Resilience",
+      "description": "A tua adaptação às montanhas nevadas concede-te resistência a dano de Gelo (Cold)."
     }
-    
   },
   "races": [
     {
@@ -48,7 +86,14 @@
       "description": "Seres tocados pelo poder cósmico do Ourolight.",
       "size": "Medium",
       "speed": 9,
-      "features": ["solmosis"],
+      "features": [
+        "solmosis_1", 
+        "solmosis_4", 
+        "solmosis_8", 
+        "solmosis_12", 
+        "solmosis_16", 
+        "solmosis_19"
+      ],
       "subraces": [
         {
           "id": "kriteron_fallen",
@@ -57,7 +102,7 @@
           "stat_maximums": {
             "strength": 22
           },
-          "features": ["ice_troll_res","resistance_necrotic"]
+          "features": ["ice_troll_res", "resistance_necrotic"]
         }
       ]   
     }
