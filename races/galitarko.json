@@ -26,7 +26,10 @@
     },
     "pan_bearfriend": {
       "name": "Bearfriend",
-      "description": "Tens vantagem em testes de Carisma (Persuasão)."
+      "description": "Tens vantagem em testes de Carisma (Persuasão).",
+      "proficiencies": {
+        "skills": ["Persuasion"]
+      }
     },
     "pan_rollup": {
       "name": "Roll-Up",
