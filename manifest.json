@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "sources": [
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/core.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/troll_expansion.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/manifest_item.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/manifest_race.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/manifest_class.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspiration/manifest_aspiration.json",
