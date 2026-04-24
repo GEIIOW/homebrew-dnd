@@ -1,0 +1,29 @@
+{
+  "id": "elirium_farmer",
+  "name": "Elirium Farmer",
+  "description": "You are a farmer from the Tripartate Valley, you were either subservient to House Kirko or their opposition. Regardless of your allegiances, you have lived a simple and peaceful life on a farm, broken only by the occasional raid by the Rouvyr Tribals.",
+  "money": "5gp",
+  "items": "Common Clothes, Family Trinket, Small Knife, Pouch",
+  "languages": [
+    {
+      "name": "One non-legacy language from Lesdownia",
+      "level": "Half-Proficient"
+    }
+  ],
+  "proficiencies": {
+    "skills": [
+      "athletics",
+      "nature"
+    ],
+    "tools": [
+      "Cook's Utensils",
+      "One instrument of your choice"
+    ]
+  },
+  "features": [
+    "bg_elirium_farmer_plebeian_charm"
+  ],
+  "origin_options": [
+    "Lesdownia"
+  ]
+}
