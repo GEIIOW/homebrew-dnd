@@ -1,0 +1,39 @@
+{
+  "name": "Beginner's Guide",
+  "features": {
+    "dwa_dwarven_darkvision": {
+      "name": "Dwarven Darkvision",
+      "description": "While underground, you can see in dim light within 18 meters of you as if it were bright light, and in darkness as if it was dim light. You can’t discern color in darkness, only shades of gray."
+    },
+    "dwa_dwarven_cunning": {
+      "name": "Dwarven Cunning",
+      "description": "The dwarves learned a lot of Yilvor’s techniques while in his forge. While forging an item you can choose to substitute one of it’s ingredients for another of the same cost or rarity.\n\nAdditionaly, while casting a spell that requires material components, you can choose to substitute one of it’s components for another of the same cost."
+    },
+    "dwa_tool_proficiency": {
+      "name": "Tool Proficiency",
+      "description": "You gain proficiency with one artisan’s tools of your choice from: smith’s tools, mason’s tools and cook’s utensils.",
+      "type": "choice",
+      "options": [
+        "smith’s tools",
+        "mason’s tools",
+        "cook’s utensils"
+      ]
+    }
+  },
+  "races": [
+    {
+      "id": "dwarf",
+      "name": "Dwarf",
+      "description": "\"Gran Caster Mezerys once told me that I should never underestimate a dwarfs skill, but I never quite understood him, until yesterday. I've been struggling to design a functional soul container for months. A single dwarf, Drugra Blaereus, did it in a day with only a piece of string, cobalt, ice and the sound of a cat's footsteps. His masterful prowess of the anvil could never be inferred from the way that he eats. After he was done, all he did was stroke his enormous red beard and gave me a satisfied look. His fine work will allow mine to flourish.\"\n\n\n - Y. Mageshell, Manyhals of Death\n \n\n\nThe one thing dwarves love more than their trusty mounts is to forge. Many dwarven kingdoms have gotten rich out of selling items of imense value that they had crafted. Their usefulness makes them targets to kingdoms who are bold enough to think they can enslave them, while others forge alliances to gather their favour. Whatever may be the case, dwarves will only pay attention after they've had their 17th cup of ale.\n\n\n\n\nChildren of the Forge\nIt is said that dwarves were one of the three primary Kássian races, the second to emerge in Faleria, being created alongside Humans and Elves by Yivor, Myllad and Kássia as servants in their godly works. Dwarves were created as payment to Yivor, the Smith, for his contribution in the creation of these mortals. Throughout many years, dwarves mined and polished the finest metals for Yivor's forge and, while performing their task, watched the great smith carefully, to learn his craft, while others chose to leave and settle in the many continents of Faleria.\n\n\n\n\nWarhearts\nWhile the Great Penury was underway, Yivor and his dwarves remained neutral to this mortal conflict. The other gods begged Yivor to lend them his aid but he didn't budge. Only the hand in marriage of Lypsosi, the Aspect of Lust, would sway him. After a vote, the gods decided the smiths help was too important to dismiss and gave in to his demands, in spite of Lypsosi's and Esnerel's protests. After the wedding ceremony, Yivor did keep his word. He forged three items for three legendary heroes and allowed his dwarves to go help in the war effort.\n\n\n\n\nIron and Steel\nAfter the war, many dwarves lingered in Faleria, having found purpose and a new home. They bonded with other mortals and took their place in the world as the great masters of crafting. Their architecture, inspired by their creator, was sharp and rigid. They found themselves reinforced by their time serving Yivor, with better vision than most and a hardened body. They settled closest to the materials they needed, inside mountains and caves and grew communities around the ores that they would forge into art.\n\n\n\n\nDwarf Names\nDwarves have a habit of rolling their tongue when they speak and that carries over to their names. It's hard to find a dwarf with no R, L or F in their name. Dwarven names can be Gundren, Forgen, Agalar and Lidsa, among others.",
+      "size": "Medium",
+      "speed": 7,
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1766147758943x769311986854121300/Hero-Portrait%20%2863%29.png",
+      "features": [
+        "dwa_dwarven_darkvision",
+        "dwa_dwarven_cunning",
+        "dwa_tool_proficiency"
+      ],
+      "subraces": []
+    }
+  ]
+}
