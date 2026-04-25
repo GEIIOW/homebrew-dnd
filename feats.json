@@ -1,0 +1,41 @@
+{
+  "feats": {
+    "feat_alert": {
+      "name": "Alert",
+      "description": "Always on the lookout for danger, you gain the following benefits:\n• You gain a +5 bonus to initiative.\n• You can't be surprised while you are conscious.\n• Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you."
+    },
+    "feat_great_weapon_master": {
+      "name": "Great Weapon Master",
+      "description": "You've learned to put the weight of a weapon to your advantage, letting its momentum empower your strikes:\n• On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.\n• Before you make a melee attack with a heavy weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+    },
+    "feat_lucky": {
+      "name": "Lucky",
+      "description": "You have inexplicable luck that seems to kick in at exactly the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You regain your expended luck points when you finish a long rest."
+    },
+    "feat_resilient": {
+      "name": "Resilient",
+      "description": "Choose one ability score. You gain the following benefits:\n• Increase the chosen ability score by 1, to a maximum of 20.\n• You gain proficiency in saving throws using the chosen ability.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Strength_Save", "Dexterity_Save", "Constitution_Save", "Intelligence_Save", "Wisdom_Save", "Charisma_Save"]
+    },
+    "feat_sharpshooter": {
+      "name": "Sharpshooter",
+      "description": "You have mastered ranged weapons and can make shots that others find impossible:\n• Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.\n• Your ranged weapon attacks ignore half cover and three-quarters cover.\n• Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
+    },
+    "feat_tough": {
+      "name": "Tough",
+      "description": "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
+      "effects": [
+        {
+          "type": "custom",
+          "raw": "hp_bonus_per_level=2"
+        }
+      ]
+    },
+    "feat_war_caster": {
+      "name": "War Caster",
+      "description": "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:\n• You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.\n• You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.\n• When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
+    }
+  }
+}
