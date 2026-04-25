@@ -22,7 +22,7 @@
       "asiChoices": [
         {
           "choose": 1,
-          "options": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
+          "options": ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"],
           "bonus": 1
         }
       ],
@@ -30,7 +30,7 @@
         "saveChoices": [
           {
             "choose": 1,
-            "options": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"]
+            "options": ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
           }
         ]
       }
