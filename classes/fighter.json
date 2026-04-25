@@ -4,7 +4,7 @@
     "feat_fig_fighting_style": {
       "name": "Fighter's Fighting Style",
       "level": 1,
-      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once.",
+      "description": "You adopt a style of fighting as your specialty. Choose one option. You can't take the same Fighting Style option more than once.",
       "type": "choice",
       "choose": 1,
       "options": [
@@ -112,17 +112,9 @@
       "type": "active",
       "action_type": "Bonus Action"
     },
-    "feat_fig_action_surge_2": {
+    "feat_fig_action_surge": {
       "name": "Action Surge",
-      "level": 2,
-      "description": "On your turn, you can take one additional action, except the Magic action. Once you use this feature, you can't do so again until you finish a short or long rest.",
-      "type": "active",
-      "action_type": "Free"
-    },
-    "feat_fig_action_surge_17": {
-      "name": "Action Surge (2 Uses)",
-      "level": 17,
-      "description": "You can use Action Surge twice between rests.",
+      "description": "On your turn, you can take one additional action, except the Magic action. Once you use this feature, you can't use it again until you finish a short or long rest.",
       "type": "active",
       "action_type": "Free"
     },
@@ -170,93 +162,19 @@
       "description": "Whenever you gain an Ability Score Improvement, you can replace one Fighting Style you know with another Fighter Fighting Style. If you know maneuvers, you can also replace one maneuver with another.",
       "type": "passive"
     },
-
-    "feat_fig_asi_4": {
+    "feat_fig_asi": {
       "name": "Ability Score Improvement / Feat",
-      "level": 4,
       "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
-    "feat_fig_asi_6": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 6,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_8": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 8,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_10": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 10,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_12": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 12,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_14": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 14,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_16": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 16,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-    "feat_fig_asi_19": {
-      "name": "Ability Score Improvement / Feat",
-      "level": 19,
-      "description": "You can increase one ability score by 2, or two ability scores by 1. Alternatively, you can choose a Feat.",
-      "type": "feat_selection"
-    },
-
-    "feat_fig_extra_attack_5": {
+    "feat_fig_extra_attack": {
       "name": "Extra Attack",
-      "level": 5,
-      "description": "You can attack twice instead of once whenever you take the Attack action on your turn.",
+      "description": "You can attack more times when you take the Attack action on your turn.",
       "type": "passive"
     },
-    "feat_fig_extra_attack_11": {
-      "name": "Extra Attack (2)",
-      "level": 11,
-      "description": "You can attack three times instead of once whenever you take the Attack action on your turn.",
-      "type": "passive"
-    },
-    "feat_fig_extra_attack_20": {
-      "name": "Extra Attack (3)",
-      "level": 20,
-      "description": "You can attack four times instead of once whenever you take the Attack action on your turn.",
-      "type": "passive"
-    },
-
-    "feat_fig_indomitable_9": {
+    "feat_fig_indomitable": {
       "name": "Indomitable",
-      "level": 9,
       "description": "When you fail a saving throw, you can choose to succeed instead of rolling the save by spending one use of this feature.",
-      "type": "active",
-      "action_type": "Free"
-    },
-    "feat_fig_indomitable_13": {
-      "name": "Indomitable (2 Uses)",
-      "level": 13,
-      "description": "You gain a second use of Indomitable between rests.",
-      "type": "active",
-      "action_type": "Free"
-    },
-    "feat_fig_indomitable_17": {
-      "name": "Indomitable (3 Uses)",
-      "level": 17,
-      "description": "You gain a third use of Indomitable between rests.",
       "type": "active",
       "action_type": "Free"
     },
@@ -468,26 +386,8 @@
       "type": "active",
       "action_type": "Bonus Action"
     },
-    "feat_sub_additional_arcane_shot_option_7": {
+    "feat_sub_additional_arcane_shot_option": {
       "name": "Additional Arcane Shot Option",
-      "level": 7,
-      "description": "You gain one additional Arcane Shot option.",
-      "type": "choice",
-      "choose": 1,
-      "options": [
-        "arcane_shot_banishing_arrow",
-        "arcane_shot_beguiling_arrow",
-        "arcane_shot_bursting_arrow",
-        "arcane_shot_enfeebling_arrow",
-        "arcane_shot_grasping_arrow",
-        "arcane_shot_piercing_arrow",
-        "arcane_shot_seeking_arrow",
-        "arcane_shot_shadow_arrow"
-      ]
-    },
-    "feat_sub_additional_arcane_shot_option_10": {
-      "name": "Additional Arcane Shot Option",
-      "level": 10,
       "description": "You gain one additional Arcane Shot option.",
       "type": "choice",
       "choose": 1,
@@ -507,40 +407,6 @@
       "level": 15,
       "description": "If you roll initiative and have no uses of Arcane Shot remaining, you regain half of them, rounded up.",
       "type": "passive"
-    },
-    "feat_sub_additional_arcane_shot_option_15": {
-      "name": "Additional Arcane Shot Option",
-      "level": 15,
-      "description": "You gain one additional Arcane Shot option.",
-      "type": "choice",
-      "choose": 1,
-      "options": [
-        "arcane_shot_banishing_arrow",
-        "arcane_shot_beguiling_arrow",
-        "arcane_shot_bursting_arrow",
-        "arcane_shot_enfeebling_arrow",
-        "arcane_shot_grasping_arrow",
-        "arcane_shot_piercing_arrow",
-        "arcane_shot_seeking_arrow",
-        "arcane_shot_shadow_arrow"
-      ]
-    },
-    "feat_sub_additional_arcane_shot_option_18": {
-      "name": "Additional Arcane Shot Option",
-      "level": 18,
-      "description": "You gain one additional Arcane Shot option.",
-      "type": "choice",
-      "choose": 1,
-      "options": [
-        "arcane_shot_banishing_arrow",
-        "arcane_shot_beguiling_arrow",
-        "arcane_shot_bursting_arrow",
-        "arcane_shot_enfeebling_arrow",
-        "arcane_shot_grasping_arrow",
-        "arcane_shot_piercing_arrow",
-        "arcane_shot_seeking_arrow",
-        "arcane_shot_shadow_arrow"
-      ]
     },
 
     "feat_sub_student_of_war": {
@@ -585,9 +451,8 @@
         "man_trip"
       ]
     },
-    "feat_sub_additional_maneuvers_7": {
+    "feat_sub_additional_maneuvers": {
       "name": "Additional Maneuvers",
-      "level": 7,
       "description": "You learn two additional maneuvers of your choice.",
       "type": "choice",
       "choose": 2,
@@ -617,9 +482,8 @@
         "man_trip"
       ]
     },
-    "feat_sub_additional_superiority_die_7": {
+    "feat_sub_additional_superiority_die": {
       "name": "Additional Superiority Die",
-      "level": 7,
       "description": "You gain one additional superiority die.",
       "type": "passive"
     },
@@ -629,80 +493,10 @@
       "description": "After observing a creature for at least 1 minute, you can learn whether it is superior, equal, or inferior relative to you in several categories.",
       "type": "passive"
     },
-    "feat_sub_additional_maneuvers_10": {
-      "name": "Additional Maneuvers",
-      "level": 10,
-      "description": "You learn two additional maneuvers of your choice.",
-      "type": "choice",
-      "choose": 2,
-      "options": [
-        "man_ambush",
-        "man_bait_switch",
-        "man_brace",
-        "man_commanders_strike",
-        "man_commanding_presence",
-        "man_disarming",
-        "man_distracting_strike",
-        "man_evasive_footwork",
-        "man_feinting_attack",
-        "man_goading_attack",
-        "man_grappling_strike",
-        "man_lunging_attack",
-        "man_maneuvering_attack",
-        "man_menacing_attack",
-        "man_parry",
-        "man_precision_attack",
-        "man_pushing_attack",
-        "man_quick_toss",
-        "man_rally",
-        "man_riposte",
-        "man_sweeping_attack",
-        "man_tactical_assessment",
-        "man_trip"
-      ]
-    },
     "feat_sub_improved_superiority_d8": {
       "name": "Improved Combat Superiority",
       "level": 10,
       "description": "Your superiority dice become d8s.",
-      "type": "passive"
-    },
-    "feat_sub_additional_maneuvers_15": {
-      "name": "Additional Maneuvers",
-      "level": 15,
-      "description": "You learn two additional maneuvers of your choice.",
-      "type": "choice",
-      "choose": 2,
-      "options": [
-        "man_ambush",
-        "man_bait_switch",
-        "man_brace",
-        "man_commanders_strike",
-        "man_commanding_presence",
-        "man_disarming",
-        "man_distracting_strike",
-        "man_evasive_footwork",
-        "man_feinting_attack",
-        "man_goading_attack",
-        "man_grappling_strike",
-        "man_lunging_attack",
-        "man_maneuvering_attack",
-        "man_menacing_attack",
-        "man_parry",
-        "man_precision_attack",
-        "man_pushing_attack",
-        "man_quick_toss",
-        "man_rally",
-        "man_riposte",
-        "man_sweeping_attack",
-        "man_tactical_assessment",
-        "man_trip"
-      ]
-    },
-    "feat_sub_additional_superiority_die_15": {
-      "name": "Additional Superiority Die",
-      "level": 15,
-      "description": "You gain one additional superiority die.",
       "type": "passive"
     },
     "feat_sub_restless": {
@@ -965,24 +759,8 @@
       "type": "active",
       "action_type": "Reaction"
     },
-    "feat_sub_additional_rune_known_7": {
+    "feat_sub_additional_rune_known": {
       "name": "Additional Rune Known",
-      "level": 7,
-      "description": "You learn one additional rune.",
-      "type": "choice",
-      "choose": 1,
-      "options": [
-        "rune_cloud",
-        "rune_fire",
-        "rune_frost",
-        "rune_hill",
-        "rune_stone",
-        "rune_storm"
-      ]
-    },
-    "feat_sub_additional_rune_known_10": {
-      "name": "Additional Rune Known",
-      "level": 10,
       "description": "You learn one additional rune.",
       "type": "choice",
       "choose": 1,
@@ -1000,21 +778,6 @@
       "level": 10,
       "description": "Your rune magic permanently alters your body and your stature continues to grow.",
       "type": "passive"
-    },
-    "feat_sub_additional_rune_known_15": {
-      "name": "Additional Rune Known",
-      "level": 15,
-      "description": "You learn one additional rune.",
-      "type": "choice",
-      "choose": 1,
-      "options": [
-        "rune_cloud",
-        "rune_fire",
-        "rune_frost",
-        "rune_hill",
-        "rune_stone",
-        "rune_storm"
-      ]
     },
     "feat_sub_master_of_runes": {
       "name": "Master of Runes",
@@ -1046,111 +809,70 @@
       "proficiencies_desc": {
         "armor": "Light armor, medium armor, heavy armor, shields",
         "weapons": "Simple weapons, martial weapons",
-        "tools": "",
         "saving_throws": "Strength, Constitution",
         "skills": "Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, or Survival"
       },
-      "starting_equipment_desc": "Choose between: (a) hide armor; (b) leather armor; (c) 10 gc. (a) ranged simple weapon and 20 munitions; (b) shield. (a) 2 melee simple weapons; (b) melee martial weapon (below 30 gc). (a) dungeoneer's pack; (b) explorer's pack.",
+      "starting_equipment_desc": "Choose one from each group.",
       "starting_equipment": [
         {
-          "type": "choice",
           "choose": 1,
           "options": [
             {
-              "label": "Hide armor",
-              "items": [
-                "Hide armor"
-              ]
+              "label": "Chain mail",
+              "items": ["Chain mail"]
             },
             {
-              "label": "Leather armor",
-              "items": [
-                "Leather armor"
-              ]
-            },
-            {
-              "label": "10 gc",
-              "items": [
-                "10 gc"
-              ]
+              "label": "Leather armor, longbow, and 20 arrows",
+              "items": ["Leather armor", "Longbow", "20 arrows"]
             }
           ]
         },
         {
-          "type": "choice",
           "choose": 1,
           "options": [
             {
-              "label": "Ranged simple weapon and 20 munitions",
-              "items": [
-                "Ranged simple weapon",
-                "20 munitions"
-              ]
+              "label": "Martial weapon and shield",
+              "items": ["Martial weapon", "Shield"]
             },
             {
-              "label": "Shield",
-              "items": [
-                "Shield"
-              ]
+              "label": "Two martial weapons",
+              "items": ["Martial weapon", "Martial weapon"]
             }
           ]
         },
         {
-          "type": "choice",
           "choose": 1,
           "options": [
             {
-              "label": "2 melee simple weapons",
-              "items": [
-                "Melee simple weapon",
-                "Melee simple weapon"
-              ]
+              "label": "Light crossbow and 20 bolts",
+              "items": ["Light crossbow", "20 bolts"]
             },
             {
-              "label": "Melee martial weapon (below 30 gc)",
-              "items": [
-                "Melee martial weapon"
-              ]
+              "label": "Two handaxes",
+              "items": ["Handaxe", "Handaxe"]
             }
           ]
         },
         {
-          "type": "choice",
           "choose": 1,
           "options": [
             {
               "label": "Dungeoneer's pack",
-              "items": [
-                "Dungeoneer's pack"
-              ]
+              "items": ["Dungeoneer's pack"]
             },
             {
               "label": "Explorer's pack",
-              "items": [
-                "Explorer's pack"
-              ]
+              "items": ["Explorer's pack"]
             }
           ]
         }
       ],
-      "quick_build": "You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee weapons or on archery (or finesse weapons). Your next-highest score should be Constitution, or Intelligence if you plan to adopt the Eldritch Knight martial archetype. Second, choose the soldier background.",
-      "multiclassing": "Ability Score Minimum: Strength 13 or Dexterity 13. When you gain a level in a class other than your first, you gain only some of that class's starting proficiencies: Light armor, medium armor and shields; simple and martial weapons.",
+      "quick_build": "Make Strength or Dexterity your highest ability score. Your next-highest score should be Constitution, or Intelligence if you plan to become an Eldritch Knight. Choose the soldier background.",
+      "multiclassing": "Ability Score Minimum: Strength 13 or Dexterity 13. Proficiencies gained from multiclassing: light armor, medium armor, shields, simple weapons, and martial weapons.",
       "proficiencies": {
-        "weapons": [
-          "Simple weapons",
-          "Martial weapons"
-        ],
-        "armor": [
-          "Light armor",
-          "Medium armor",
-          "Heavy armor",
-          "Shields"
-        ],
-        "tools": [],
-        "saving_throws": [
-          "Strength",
-          "Constitution"
-        ],
+        "weapons": ["Simple weapons", "Martial weapons"],
+        "armor": ["Light armor", "Medium armor", "Heavy armor", "Shields"],
+        "saving_throws": ["Strength", "Constitution"],
         "skillChoices": [
           {
             "choose": 2,
@@ -1171,300 +893,110 @@
         {
           "level": 1,
           "pb": "+2",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": "—",
-          "signature_maneuvers_known": "—",
-          "martial_archetype": "—",
-          "martial_versatility": "—",
-          "extra_attacks": 1,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_fighting_style",
-            "feat_fig_second_wind"
-          ]
+          "features": ["feat_fig_fighting_style", "feat_fig_second_wind"]
         },
         {
           "level": 2,
           "pb": "+2",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": "—",
-          "martial_versatility": "—",
-          "extra_attacks": 1,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_action_surge_2",
-            "feat_fig_signature_maneuver"
-          ]
+          "features": ["feat_fig_action_surge", "feat_fig_signature_maneuver"],
+          "action_surge_uses": 1
         },
         {
           "level": 3,
           "pb": "+2",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": "—",
-          "extra_attacks": 1,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_martial_archetype"
-          ]
+          "features": ["feat_fig_martial_archetype"]
         },
         {
           "level": 4,
           "pb": "+2",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 1,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_martial_versatility",
-            "feat_fig_asi_4"
-          ]
+          "features": ["feat_fig_martial_versatility", "feat_fig_asi"]
         },
         {
           "level": 5,
           "pb": "+3",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_extra_attack_5"
-          ]
+          "features": ["feat_fig_extra_attack"],
+          "extra_attacks": 2
         },
         {
           "level": 6,
           "pb": "+3",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_asi_6"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 7,
           "pb": "+3",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": "—",
           "features": []
         },
         {
           "level": 8,
           "pb": "+3",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": "—",
-          "features": [
-            "feat_fig_asi_8"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 9,
           "pb": "+4",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": 1,
-          "features": [
-            "feat_fig_indomitable_9"
-          ]
+          "features": ["feat_fig_indomitable"],
+          "indomitable_uses": 1
         },
         {
           "level": 10,
           "pb": "+4",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 2,
-          "indomitable_uses": 1,
-          "features": [
-            "feat_fig_asi_10"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 11,
           "pb": "+4",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 1,
-          "features": [
-            "feat_fig_extra_attack_11"
-          ]
+          "features": ["feat_fig_extra_attack"],
+          "extra_attacks": 3
         },
         {
           "level": 12,
           "pb": "+4",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 1,
-          "features": [
-            "feat_fig_asi_12"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 13,
           "pb": "+5",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 2,
-          "features": [
-            "feat_fig_indomitable_13"
-          ]
+          "features": ["feat_fig_indomitable"],
+          "indomitable_uses": 2
         },
         {
           "level": 14,
           "pb": "+5",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 2,
-          "features": [
-            "feat_fig_asi_14"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 15,
           "pb": "+5",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 2,
           "features": []
         },
         {
           "level": 16,
           "pb": "+5",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 1,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 2,
-          "features": [
-            "feat_fig_asi_16"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 17,
           "pb": "+6",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
+          "features": ["feat_fig_action_surge", "feat_fig_indomitable"],
           "action_surge_uses": 2,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 3,
-          "features": [
-            "feat_fig_action_surge_17",
-            "feat_fig_indomitable_17"
-          ]
+          "indomitable_uses": 3
         },
         {
           "level": 18,
           "pb": "+6",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 2,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 3,
           "features": []
         },
         {
           "level": 19,
           "pb": "+6",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 2,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 3,
-          "indomitable_uses": 3,
-          "features": [
-            "feat_fig_asi_19"
-          ]
+          "features": ["feat_fig_asi"]
         },
         {
           "level": 20,
           "pb": "+6",
-          "fighting_styles_known": 1,
-          "second_wind_uses": 1,
-          "action_surge_uses": 2,
-          "signature_maneuvers_known": 1,
-          "martial_archetype": true,
-          "martial_versatility": true,
-          "extra_attacks": 4,
-          "indomitable_uses": 3,
-          "features": [
-            "feat_fig_extra_attack_20"
-          ]
+          "features": ["feat_fig_extra_attack"],
+          "extra_attacks": 4
         }
       ],
       "subclasses": [
@@ -1477,76 +1009,44 @@
             "feat_sub_arcane_shot",
             "feat_sub_magic_arrow",
             "feat_sub_curving_shot",
-            "feat_sub_additional_arcane_shot_option_7",
-            "feat_sub_additional_arcane_shot_option_10",
-            "feat_sub_ever_ready_shot",
-            "feat_sub_additional_arcane_shot_option_15",
-            "feat_sub_additional_arcane_shot_option_18"
+            "feat_sub_additional_arcane_shot_option",
+            "feat_sub_ever_ready_shot"
           ],
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_arcane_archer_lore",
-                "feat_sub_arcane_shot"
-              ],
+              "features": ["feat_sub_arcane_archer_lore", "feat_sub_arcane_shot"],
               "arcane_shots_known": 3,
               "arcane_shot_uses": 2,
-              "arcane_shot_die": "1d6",
-              "magic_arrow": "—",
-              "curving_shot": "—",
-              "ever_ready_shot": "—"
+              "arcane_shot_die": "1d6"
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_magic_arrow",
-                "feat_sub_curving_shot",
-                "feat_sub_additional_arcane_shot_option_7"
-              ],
+              "features": ["feat_sub_magic_arrow", "feat_sub_curving_shot", "feat_sub_additional_arcane_shot_option"],
               "arcane_shots_known": 4,
               "arcane_shot_uses": 2,
-              "arcane_shot_die": "1d6",
-              "magic_arrow": true,
-              "curving_shot": true,
-              "ever_ready_shot": "—"
+              "arcane_shot_die": "1d6"
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_additional_arcane_shot_option_10"
-              ],
+              "features": ["feat_sub_additional_arcane_shot_option"],
               "arcane_shots_known": 5,
               "arcane_shot_uses": 2,
-              "arcane_shot_die": "1d6",
-              "magic_arrow": true,
-              "curving_shot": true,
-              "ever_ready_shot": "—"
+              "arcane_shot_die": "1d6"
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_ever_ready_shot",
-                "feat_sub_additional_arcane_shot_option_15"
-              ],
+              "features": ["feat_sub_ever_ready_shot", "feat_sub_additional_arcane_shot_option"],
               "arcane_shots_known": 6,
               "arcane_shot_uses": 2,
-              "arcane_shot_die": "1d6",
-              "magic_arrow": true,
-              "curving_shot": true,
-              "ever_ready_shot": true
+              "arcane_shot_die": "1d6"
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_additional_arcane_shot_option_18"
-              ],
+              "features": ["feat_sub_additional_arcane_shot_option"],
               "arcane_shots_known": 6,
               "arcane_shot_uses": 2,
-              "arcane_shot_die": "2d6",
-              "magic_arrow": true,
-              "curving_shot": true,
-              "ever_ready_shot": true
+              "arcane_shot_die": "2d6"
             }
           ]
         },
@@ -1557,77 +1057,48 @@
           "features": [
             "feat_sub_student_of_war",
             "feat_sub_combat_superiority",
-            "feat_sub_additional_maneuvers_7",
-            "feat_sub_additional_superiority_die_7",
+            "feat_sub_additional_maneuvers",
+            "feat_sub_additional_superiority_die",
             "feat_sub_know_enemy",
-            "feat_sub_additional_maneuvers_10",
             "feat_sub_improved_superiority_d8",
-            "feat_sub_additional_maneuvers_15",
-            "feat_sub_additional_superiority_die_15",
             "feat_sub_restless",
             "feat_sub_improved_superiority_d10"
           ],
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_student_of_war",
-                "feat_sub_combat_superiority"
-              ],
+              "features": ["feat_sub_student_of_war", "feat_sub_combat_superiority"],
               "maneuvers_known": 3,
               "superiority_dice": 4,
-              "die_size": "d6",
-              "know_enemy": "—",
-              "restless": "—"
+              "die_size": "d6"
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_additional_maneuvers_7",
-                "feat_sub_additional_superiority_die_7",
-                "feat_sub_know_enemy"
-              ],
+              "features": ["feat_sub_additional_maneuvers", "feat_sub_additional_superiority_die", "feat_sub_know_enemy"],
               "maneuvers_known": 5,
               "superiority_dice": 5,
-              "die_size": "d6",
-              "know_enemy": true,
-              "restless": "—"
+              "die_size": "d6"
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_additional_maneuvers_10",
-                "feat_sub_improved_superiority_d8"
-              ],
+              "features": ["feat_sub_additional_maneuvers", "feat_sub_improved_superiority_d8"],
               "maneuvers_known": 7,
               "superiority_dice": 5,
-              "die_size": "d8",
-              "know_enemy": true,
-              "restless": "—"
+              "die_size": "d8"
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_additional_maneuvers_15",
-                "feat_sub_additional_superiority_die_15",
-                "feat_sub_restless"
-              ],
+              "features": ["feat_sub_additional_maneuvers", "feat_sub_additional_superiority_die", "feat_sub_restless"],
               "maneuvers_known": 9,
               "superiority_dice": 6,
-              "die_size": "d8",
-              "know_enemy": true,
-              "restless": true
+              "die_size": "d8"
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_improved_superiority_d10"
-              ],
+              "features": ["feat_sub_improved_superiority_d10"],
               "maneuvers_known": 9,
               "superiority_dice": 6,
-              "die_size": "d10",
-              "know_enemy": true,
-              "restless": true
+              "die_size": "d10"
             }
           ]
         },
@@ -1647,70 +1118,23 @@
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_cavalier_bonus_proficiency",
-                "feat_sub_born_to_the_saddle",
-                "feat_sub_unwavering_mark"
-              ],
-              "bonus_proficiency": true,
-              "born_to_the_saddle": true,
-              "unwavering_mark": true,
-              "warding_maneuver": "—",
-              "hold_the_line": "—",
-              "ferocious_charger": "—",
-              "vigilant_defender": "—"
+              "features": ["feat_sub_cavalier_bonus_proficiency", "feat_sub_born_to_the_saddle", "feat_sub_unwavering_mark"]
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_warding_maneuver"
-              ],
-              "bonus_proficiency": true,
-              "born_to_the_saddle": true,
-              "unwavering_mark": true,
-              "warding_maneuver": true,
-              "hold_the_line": "—",
-              "ferocious_charger": "—",
-              "vigilant_defender": "—"
+              "features": ["feat_sub_warding_maneuver"]
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_hold_the_line"
-              ],
-              "bonus_proficiency": true,
-              "born_to_the_saddle": true,
-              "unwavering_mark": true,
-              "warding_maneuver": true,
-              "hold_the_line": true,
-              "ferocious_charger": "—",
-              "vigilant_defender": "—"
+              "features": ["feat_sub_hold_the_line"]
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_ferocious_charger"
-              ],
-              "bonus_proficiency": true,
-              "born_to_the_saddle": true,
-              "unwavering_mark": true,
-              "warding_maneuver": true,
-              "hold_the_line": true,
-              "ferocious_charger": true,
-              "vigilant_defender": "—"
+              "features": ["feat_sub_ferocious_charger"]
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_vigilant_defender"
-              ],
-              "bonus_proficiency": true,
-              "born_to_the_saddle": true,
-              "unwavering_mark": true,
-              "warding_maneuver": true,
-              "hold_the_line": true,
-              "ferocious_charger": true,
-              "vigilant_defender": true
+              "features": ["feat_sub_vigilant_defender"]
             }
           ]
         },
@@ -1728,58 +1152,28 @@
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_improved_critical"
-              ],
-              "critical_range": "19-20",
-              "remarkable_athlete": "—",
-              "additional_fighting_style": "—",
-              "superior_critical": "—",
-              "survivor": "—"
+              "features": ["feat_sub_improved_critical"],
+              "critical_range": "19-20"
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_remarkable_athlete"
-              ],
-              "critical_range": "19-20",
-              "remarkable_athlete": true,
-              "additional_fighting_style": "—",
-              "superior_critical": "—",
-              "survivor": "—"
+              "features": ["feat_sub_remarkable_athlete"],
+              "critical_range": "19-20"
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_additional_fighting_style"
-              ],
-              "critical_range": "19-20",
-              "remarkable_athlete": true,
-              "additional_fighting_style": true,
-              "superior_critical": "—",
-              "survivor": "—"
+              "features": ["feat_sub_additional_fighting_style"],
+              "critical_range": "19-20"
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_superior_critical"
-              ],
-              "critical_range": "18-20",
-              "remarkable_athlete": true,
-              "additional_fighting_style": true,
-              "superior_critical": true,
-              "survivor": "—"
+              "features": ["feat_sub_superior_critical"],
+              "critical_range": "18-20"
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_survivor"
-              ],
-              "critical_range": "18-20",
-              "remarkable_athlete": true,
-              "additional_fighting_style": true,
-              "superior_critical": true,
-              "survivor": true
+              "features": ["feat_sub_survivor"],
+              "critical_range": "18-20"
             }
           ]
         },
@@ -1798,275 +1192,194 @@
           "spellcasting": {
             "ability": "Intelligence",
             "focus": "Arcane focus",
-            "restricted_schools": [
-              "Abjuration",
-              "Evocation",
-              "Necromancy"
-            ]
+            "restricted_schools": ["Abjuration", "Evocation", "Necromancy"]
           },
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_spellcasting",
-                "feat_sub_weapon_bond"
-              ],
+              "features": ["feat_sub_spellcasting", "feat_sub_weapon_bond"],
               "cantrips_known": 2,
               "spells_known": 3,
-              "spell_slots_1": 2,
-              "spell_slots_2": "—",
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": "—",
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 2
+              }
             },
             {
               "level": 4,
               "features": [],
               "cantrips_known": 2,
               "spells_known": 4,
-              "spell_slots_1": 3,
-              "spell_slots_2": "—",
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": "—",
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 3
+              }
             },
             {
               "level": 5,
               "features": [],
               "cantrips_known": 2,
               "spells_known": 4,
-              "spell_slots_1": 3,
-              "spell_slots_2": "—",
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": "—",
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 3
+              }
             },
             {
               "level": 6,
               "features": [],
               "cantrips_known": 2,
               "spells_known": 4,
-              "spell_slots_1": 3,
-              "spell_slots_2": "—",
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": "—",
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 3
+              }
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_war_magic"
-              ],
+              "features": ["feat_sub_war_magic"],
               "cantrips_known": 2,
               "spells_known": 5,
-              "spell_slots_1": 4,
-              "spell_slots_2": 2,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 2
+              }
             },
             {
               "level": 8,
               "features": [],
               "cantrips_known": 2,
               "spells_known": 6,
-              "spell_slots_1": 4,
-              "spell_slots_2": 2,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 2
+              }
             },
             {
               "level": 9,
               "features": [],
               "cantrips_known": 2,
               "spells_known": 6,
-              "spell_slots_1": 4,
-              "spell_slots_2": 2,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": "—",
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 2
+              }
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_eldritch_strike"
-              ],
+              "features": ["feat_sub_eldritch_strike"],
               "cantrips_known": 3,
               "spells_known": 7,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3
+              }
             },
             {
               "level": 11,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 8,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3
+              }
             },
             {
               "level": 12,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 8,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": "—",
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3
+              }
             },
             {
               "level": 13,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 9,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 2,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 2
+              }
             },
             {
               "level": 14,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 10,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 2,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": "—",
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 2
+              }
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_arcane_charge"
-              ],
+              "features": ["feat_sub_arcane_charge"],
               "cantrips_known": 3,
               "spells_known": 10,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 2,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 2
+              }
             },
             {
               "level": 16,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 11,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 3,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 3
+              }
             },
             {
               "level": 17,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 11,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 3,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": "—"
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 3
+              }
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_improved_war_magic"
-              ],
+              "features": ["feat_sub_improved_war_magic"],
               "cantrips_known": 3,
               "spells_known": 11,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 3,
-              "spell_slots_4": "—",
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": true
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 3
+              }
             },
             {
               "level": 19,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 12,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 3,
-              "spell_slots_4": 1,
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": true
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 3,
+                "4": 1
+              }
             },
             {
               "level": 20,
               "features": [],
               "cantrips_known": 3,
               "spells_known": 13,
-              "spell_slots_1": 4,
-              "spell_slots_2": 3,
-              "spell_slots_3": 3,
-              "spell_slots_4": 1,
-              "war_magic": true,
-              "eldritch_strike": true,
-              "arcane_charge": true,
-              "improved_war_magic": true
+              "spell_slots": {
+                "1": 4,
+                "2": 3,
+                "3": 3,
+                "4": 1
+              }
             }
           ]
         },
@@ -2086,70 +1399,23 @@
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_knighthood",
-                "feat_sub_rallying",
-                "feat_sub_knights_standard"
-              ],
-              "bonus_proficiency": true,
-              "rallying": true,
-              "knights_standard": true,
-              "royal_envoy": "—",
-              "bulwark": "—",
-              "legion_commander": "—",
-              "uncheckable": "—"
+              "features": ["feat_sub_knighthood", "feat_sub_rallying", "feat_sub_knights_standard"]
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_royal_envoy"
-              ],
-              "bonus_proficiency": true,
-              "rallying": true,
-              "knights_standard": true,
-              "royal_envoy": true,
-              "bulwark": "—",
-              "legion_commander": "—",
-              "uncheckable": "—"
+              "features": ["feat_sub_royal_envoy"]
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_bulwark"
-              ],
-              "bonus_proficiency": true,
-              "rallying": true,
-              "knights_standard": true,
-              "royal_envoy": true,
-              "bulwark": true,
-              "legion_commander": "—",
-              "uncheckable": "—"
+              "features": ["feat_sub_bulwark"]
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_legion_commander"
-              ],
-              "bonus_proficiency": true,
-              "rallying": true,
-              "knights_standard": true,
-              "royal_envoy": true,
-              "bulwark": true,
-              "legion_commander": true,
-              "uncheckable": "—"
+              "features": ["feat_sub_legion_commander"]
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_uncheckable"
-              ],
-              "bonus_proficiency": true,
-              "rallying": true,
-              "knights_standard": true,
-              "royal_envoy": true,
-              "bulwark": true,
-              "legion_commander": true,
-              "uncheckable": true
+              "features": ["feat_sub_uncheckable"]
             }
           ]
         },
@@ -2161,82 +1427,41 @@
             "feat_sub_rune_carver",
             "feat_sub_giants_might",
             "feat_sub_runic_shield",
-            "feat_sub_additional_rune_known_7",
+            "feat_sub_additional_rune_known",
             "feat_sub_great_stature",
-            "feat_sub_additional_rune_known_10",
             "feat_sub_master_of_runes",
-            "feat_sub_additional_rune_known_15",
             "feat_sub_runic_juggernaut"
           ],
           "progression_ext": [
             {
               "level": 3,
-              "features": [
-                "feat_sub_rune_carver",
-                "feat_sub_giants_might"
-              ],
+              "features": ["feat_sub_rune_carver", "feat_sub_giants_might"],
               "runes_known": 2,
-              "giants_might_uses": 1,
-              "giants_might_size": "Large",
-              "runic_shield_uses": "—",
-              "great_stature": "—",
-              "master_of_runes": "—",
-              "runic_juggernaut": "—"
+              "giants_might_uses": 1
             },
             {
               "level": 7,
-              "features": [
-                "feat_sub_runic_shield",
-                "feat_sub_additional_rune_known_7"
-              ],
+              "features": ["feat_sub_runic_shield", "feat_sub_additional_rune_known"],
               "runes_known": 3,
-              "giants_might_uses": 1,
-              "giants_might_size": "Large",
-              "runic_shield_uses": 1,
-              "great_stature": "—",
-              "master_of_runes": "—",
-              "runic_juggernaut": "—"
+              "giants_might_uses": 1
             },
             {
               "level": 10,
-              "features": [
-                "feat_sub_great_stature",
-                "feat_sub_additional_rune_known_10"
-              ],
+              "features": ["feat_sub_great_stature", "feat_sub_additional_rune_known"],
               "runes_known": 4,
-              "giants_might_uses": 2,
-              "giants_might_size": "Large",
-              "runic_shield_uses": 1,
-              "great_stature": true,
-              "master_of_runes": "—",
-              "runic_juggernaut": "—"
+              "giants_might_uses": 2
             },
             {
               "level": 15,
-              "features": [
-                "feat_sub_master_of_runes",
-                "feat_sub_additional_rune_known_15"
-              ],
+              "features": ["feat_sub_master_of_runes", "feat_sub_additional_rune_known"],
               "runes_known": 5,
-              "giants_might_uses": 2,
-              "giants_might_size": "Large",
-              "runic_shield_uses": 1,
-              "great_stature": true,
-              "master_of_runes": true,
-              "runic_juggernaut": "—"
+              "giants_might_uses": 2
             },
             {
               "level": 18,
-              "features": [
-                "feat_sub_runic_juggernaut"
-              ],
+              "features": ["feat_sub_runic_juggernaut"],
               "runes_known": 5,
-              "giants_might_uses": 2,
-              "giants_might_size": "Huge",
-              "runic_shield_uses": 1,
-              "great_stature": true,
-              "master_of_runes": true,
-              "runic_juggernaut": true
+              "giants_might_uses": 2
             }
           ]
         }
