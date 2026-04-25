@@ -1,5 +1,5 @@
 {
-  "name": "Classe: Rogue",
+  "name": "Rogue",
   "features": {
     "feat_rog_expertise": {
       "name": "Expertise",
@@ -20,7 +20,10 @@
     "feat_rog_sneak_attack": {
       "name": "Sneak Attack",
       "level": 1,
-      "description": "Uma vez por turno, podes causar dano extra a uma criatura que atinjas com um ataque se tiveres vantagem ou um aliado a 1.5m. Requer arma de acuidade ou à distância."
+      "description": "Uma vez por turno, podes causar dano extra a uma criatura que atinjas com um ataque se tiveres vantagem ou um aliado a 1.5m. Requer arma de acuidade ou à distância.",
+      "calc": {
+        "Sneak Attack Dice": "Math.ceil(level / 2) + 'd6'"
+      }
     },
     "feat_rog_thieves_cant": {
       "name": "Thieves' Cant",
@@ -85,7 +88,10 @@
     "feat_swash_rakish_audacity": {
       "name": "Rakish Audacity",
       "level": 3,
-      "description": "Ganhas um bónus na iniciativa igual ao teu modificador de Carisma. Podes usar Sneak Attack se estiveres a 1.5m do alvo e ninguém mais estiver perto de ti."
+      "description": "Ganhas um bónus na iniciativa igual ao teu modificador de Carisma. Podes usar Sneak Attack se estiveres a 1.5m do alvo e ninguém mais estiver perto de ti.",
+      "calc": {
+        "Initiative Bonus": "cha"
+      }
     },
     "feat_swash_panache": {
       "name": "Panache",
@@ -108,8 +114,24 @@
       "id": "class_rogue",
       "name": "Rogue",
       "description": "Mestres da furtividade, do engano e de golpes precisos. Os Rogues especializam-se em encontrar vulnerabilidades nos seus inimigos.",
+      "image": "https://i.imgur.com/K3ZWe3D.jpeg",
       "subclass_level": 3,
       "hit_die": 8,
+      "hp_details": {
+        "hit_dice": "1d8 per Rogue level",
+        "at_first_level": "8 + your Constitution modifier",
+        "at_higher_levels": "1d8 (or 5) + your Constitution modifier per Rogue level after 1st"
+      },
+      "proficiencies_desc": {
+        "armor": "Light armor",
+        "weapons": "Simple weapons, hand crossbows, longswords, rapiers, shortswords",
+        "tools": "Thieves' tools",
+        "saving_throws": "Dexterity, Intelligence",
+        "skills": "Choose four from Acrobatics, Athletics, Deception, Insight, Intimidation, Investigation, Perception, Performance, Persuasion, Sleight of Hand, and Stealth"
+      },
+      "starting_equipment": "Choose between:\n(a) a rapier or (b) a shortsword\n(a) a shortbow and quiver of 20 arrows or (b) a shortsword\n(a) a burglar's pack, (b) a dungeoneer's pack, or (c) an explorer's pack\nLeather armor, two daggers, and thieves' tools",
+      "quick_build": "You can make a rogue quickly by following these suggestions. First, Dexterity should be your highest ability score. Make Intelligence your next-highest if you want to excel at Investigation, or Charisma instead if you plan to emphasize deception and social interaction. Second, choose the charlatan background.",
+      "multiclassing": "Ability Score Minimum: Dexterity 13",
       "proficiencies": {
         "weapons": ["Simple weapons", "Hand crossbows", "Longswords", "Rapiers", "Shortswords"],
         "armor": ["Light armor"],
