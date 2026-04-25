@@ -14,125 +14,125 @@
     "feat_font_of_magic": {
       "name": "Font of Magic",
       "level": 2,
-      "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features. Podes usar uma Bonus Action para converter pontos."
+      "description": "Tap into a wellspring of magic (Sorcery Points) to create spell slots or fuel features. You can use a Bonus Action to convert points between them."
     },
     "feat_metamagic": {
       "name": "Metamagic",
       "level": 3,
-      "description": "Twist your spells to suit your needs. Escolhe duas opções de Metamagic.",
+      "description": "Twist your spells to suit your needs. Choose two Metamagic options.",
       "type": "choice",
       "choose": 2,
       "options": ["meta_quickened", "meta_twinned", "meta_subtle", "meta_empowered"]
     },
     "meta_quickened": {
       "name": "Quickened Spell",
-      "description": "Ao conjurares uma magia que tem casting time de 1 Action, podes gastar 2 sorcery points para mudar o casting time para 1 Bonus Action."
+      "description": "When you cast a spell that has a casting time of 1 Action, you can spend 2 sorcery points to change the casting time to 1 Bonus Action for this casting."
     },
     "meta_twinned": {
       "name": "Twinned Spell",
-      "description": "Ao conjurares uma magia de target único, podes gastar sorcery points para atingir um segundo alvo."
+      "description": "When you cast a spell that targets only one creature and doesn't have a range of self, you can spend sorcery points to target a second creature in range with the same spell."
     },
     "meta_subtle": {
       "name": "Subtle Spell",
-      "description": "Podes gastar 1 sorcery point para conjurar uma magia sem qualquer componente verbal ou somático."
+      "description": "You can spend 1 sorcery point to cast a spell without any verbal or somatic components."
     },
     "meta_empowered": {
       "name": "Empowered Spell",
-      "description": "Quando rolas dano, podes gastar 1 sorcery point para rolar novamente um número de dados igual ao teu modificador de Carisma."
+      "description": "When you roll damage for a spell, you can spend 1 sorcery point to reroll a number of the damage dice up to your Charisma modifier (minimum of one). You must use the new rolls."
     },
     "feat_sorcerous_versatility": {
       "name": "Sorcerous Versatility",
       "level": 4,
-      "description": "Whenever you gain an ASI, you can replace one Metamagic option."
+      "description": "Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of the Metamagic options you know with another."
     },
     "feat_sorcerer_asi_4": {
       "name": "Ability Score Improvement",
       "level": 4,
-      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
     "feat_magical_guidance": {
       "name": "Magical Guidance",
       "level": 5,
-      "description": "Spend 1 sorcery point as a Reaction to reroll a failed ability check."
+      "description": "You can spend 1 sorcery point as a Reaction to reroll a failed ability check. You must use the new roll."
     },
     "feat_sorcerer_asi_8": {
       "name": "Ability Score Improvement",
       "level": 8,
-      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
     "feat_sorcerer_asi_12": {
       "name": "Ability Score Improvement",
       "level": 12,
-      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
     "feat_sorcerer_asi_16": {
       "name": "Ability Score Improvement",
       "level": 16,
-      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
     "feat_sorcerer_asi_19": {
       "name": "Ability Score Improvement",
       "level": 19,
-      "description": "Increase one ability score by 2, or two scores by 1. Alternativamente, podes escolher um Talento.",
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
       "type": "feat_selection"
     },
     "feat_sorcerous_restoration": {
       "name": "Sorcerous Restoration",
       "level": 20,
-      "description": "Regain 4 expended sorcery points whenever you finish a short rest."
+      "description": "You regain 4 expended sorcery points whenever you finish a short rest."
     },
     "feat_draconic_ancestor": {
       "name": "Dragon Ancestor",
       "level": 1,
-      "description": "Choose a dragon ancestor. Gain Primordial language and double PB on Charisma checks with dragons.",
+      "description": "Choose a dragon ancestor. You can speak, read, and write Primordial. Additionally, whenever you make a Charisma check when interacting with dragons, your proficiency bonus is doubled if it applies to the check.",
       "type": "choice",
       "choose": 1,
       "options": ["ancestor_red", "ancestor_blue", "ancestor_green", "ancestor_white", "ancestor_black"]
     },
     "ancestor_red": {
       "name": "Red Dragon (Fire)",
-      "description": "O teu ancestral era um Dragão Vermelho. Ficas ligado ao elemento de Fogo."
+      "description": "Your ancestor was a Red Dragon. You are deeply connected to the element of Fire."
     },
     "ancestor_blue": {
       "name": "Blue Dragon (Lightning)",
-      "description": "O teu ancestral era um Dragão Azul. Ficas ligado ao elemento de Lightning."
+      "description": "Your ancestor was a Blue Dragon. You are deeply connected to the element of Lightning."
     },
     "ancestor_green": {
       "name": "Green Dragon (Poison)",
-      "description": "O teu ancestral era um Dragão Verde. Ficas ligado ao elemento de Veneno."
+      "description": "Your ancestor was a Green Dragon. You are deeply connected to the element of Poison."
     },
     "ancestor_white": {
       "name": "White Dragon (Cold)",
-      "description": "O teu ancestral era um Dragão Branco. Ficas ligado ao elemento de Frio."
+      "description": "Your ancestor was a White Dragon. You are deeply connected to the element of Cold."
     },
     "ancestor_black": {
       "name": "Black Dragon (Acid)",
-      "description": "O teu ancestral era um Dragão Negro. Ficas ligado ao elemento de Ácido."
+      "description": "Your ancestor was a Black Dragon. You are deeply connected to the element of Acid."
     },
     "feat_draconic_resilience": {
       "name": "Draconic Resilience",
       "level": 1,
-      "description": "HP increases by 1 per level. While unarmored, AC = 13 + Dex modifier."
+      "description": "Your hit point maximum increases by 1, and it increases by 1 again whenever you gain a level in this class. Additionally, when you aren't wearing armor, your AC equals 13 + your Dexterity modifier."
     },
     "feat_elemental_affinity": {
       "name": "Elemental Affinity",
       "level": 6,
-      "description": "Add Charisma modifier to damage of your ancestor's element."
+      "description": "When you cast a spell that deals damage of the type associated with your draconic ancestry, you can add your Charisma modifier to one damage roll of that spell."
     },
     "feat_dragon_wings": {
       "name": "Dragon Wings",
       "level": 14,
-      "description": "Sprout wings as a Bonus Action, gaining flying speed equal to current speed.",
+      "description": "You gain the ability to sprout a pair of dragon wings from your back as a Bonus Action, gaining a flying speed equal to your current speed.",
       "speed": { "fly": 9 }
     },
     "feat_draconic_presence": {
       "name": "Draconic Presence",
       "level": 18,
-      "description": "As an Action, spend 5 points to exude an aura of awe or fear for 1 minute."
+      "description": "As an Action, you can spend 5 sorcery points to exude an aura of awe or fear to a distance of 60 feet. For 1 minute or until you lose your concentration, each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed or frightened (your choice) until the aura ends."
     }
   },
   "classes": [
