@@ -10,14 +10,30 @@
     },
     "feat_lucky": {
       "name": "Lucky",
-      "description": "You have inexplicable luck that seems to kick in at exactly the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You regain your expended luck points when you finish a long rest."
+      "description": "You have inexplicable luck that seems to kick in at exactly the right moment. You have 3 luck points. Whenever you make an attack roll, an ability check, or a saving throw, you can spend one luck point to roll an additional d20. You can choose to spend one of your luck points after you roll the die, but before the outcome is determined. You choose which of the d20s is used for the attack roll, ability check, or saving throw. You regain your expended luck points when you finish a long rest.",
+      "resources": {
+        "max": 3,
+        "reset": "long_rest"
+      }
     },
     "feat_resilient": {
       "name": "Resilient",
       "description": "Choose one ability score. You gain the following benefits:\n• Increase the chosen ability score by 1, to a maximum of 20.\n• You gain proficiency in saving throws using the chosen ability.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Strength_Save", "Dexterity_Save", "Constitution_Save", "Intelligence_Save", "Wisdom_Save", "Charisma_Save"]
+      "asiChoices": [
+        {
+          "choose": 1,
+          "options": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"],
+          "bonus": 1
+        }
+      ],
+      "proficiencies": {
+        "saveChoices": [
+          {
+            "choose": 1,
+            "options": ["strength", "dexterity", "constitution", "intelligence", "wisdom", "charisma"]
+          }
+        ]
+      }
     },
     "feat_sharpshooter": {
       "name": "Sharpshooter",
