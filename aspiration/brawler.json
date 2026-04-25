@@ -1,0 +1,71 @@
+{
+  "name": "Aspiration: Brawler",
+  "features": {
+    "feat_brawler_young_blood": {
+      "name": "Young Blood",
+      "level": 0,
+      "description": "Only at level 0, you gain a +1 bonus to your hit point maximum and your unarmed strikes deal 1d4 bludgeoning damage plus your Strength or Dexterity modifier.",
+      "attack": {
+        "dice": "1d4",
+        "type": "Bludgeoning"
+      }
+    },
+    "feat_brawler_fwyc": {
+      "name": "From Whence You Came",
+      "level": 0,
+      "description": "Upon reaching level 1, you may choose a feat to represent the training from your humble beginnings.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["feat_athlete_asp", "feat_tavern_brawler_asp"]
+    },
+    "feat_athlete_asp": {
+      "name": "Athlete (Aspiration)",
+      "description": "You have undergone extensive physical training to gain the following benefits:\n\n* When you are prone, standing up uses only 1.5 meters of your movement.\n* Climbing doesn't cost you extra movement.\n* You can make a running long jump or a running high jump after moving only 1.5 meters on foot, rather than 3 meters."
+    },
+    "feat_tavern_brawler_asp": {
+      "name": "Tavern Brawler (Aspiration)",
+      "description": "Accustomed to rough-and-tumble fighting using whatever weapons happen to be at hand, you gain the following benefits:\n\n* You are proficient with improvised weapons.\n* Your unarmed strike uses a d4 for damage.\n* When you hit a creature with an unarmed strike or an improvised weapon on your turn, you can use a Bonus Action to attempt to grapple the target."
+    }
+  },
+  "aspirations": [
+    {
+      "id": "asp_brawler",
+      "name": "Brawler",
+      "description": "A beginner's guide to raw combat, throwing punches, and enduring blows.",
+      "image": "https://i.imgur.com/kH10E6W.jpeg",
+      "hit_die": 6,
+      "money": "5 gp",
+      "items": "Common clothes, 2 rations, waterskin, Trinket",
+      "hp_details": {
+        "hit_dice": "1d6",
+        "at_first_level": "6 + 1 (Young Blood) + your Constitution modifier"
+      },
+      "proficiencies_desc": {
+        "saving_throws": "Strength or Dexterity (only at level 0)",
+        "skills": "Athletics or Acrobatics (only at level 0)"
+      },
+      "starting_equipment": "You start with the following equipment, in addition to the equipment granted by your background:\n* 5 gold pieces\n* Common clothes, 2 rations, waterskin\n* Trinket",
+      "proficiencies": {
+        "saveChoices": [
+          {
+            "choose": 1,
+            "options": ["Strength", "Dexterity"]
+          }
+        ],
+        "skillChoices": [
+          {
+            "choose": 1,
+            "options": ["Athletics", "Acrobatics"]
+          }
+        ]
+      },
+      "progression": [
+        {
+          "level": 0,
+          "pb": "+1",
+          "features": ["feat_brawler_young_blood", "feat_brawler_fwyc"]
+        }
+      ]
+    }
+  ]
+}
