@@ -1,35 +1,45 @@
 {
-  "name": "Barbarian - Primal Fury",
+  "name": "Barbarian",
   "features": {
     "feat_bar_rage": {
       "name": "Rage",
       "level": 1,
-      "description": "In combat, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. You gain advantage on Strength checks/saves, a bonus to damage rolls, and resistance to bludgeoning, piercing, and slashing damage."
+      "description": "In battle, you fight with primal ferocity. On your turn, you can enter a rage as a bonus action. While raging, you gain advantage on Strength checks/saves, resistance to bludgeoning, piercing, and slashing damage, and a bonus to damage rolls.\n\nYour rage lasts 1 minute. It ends early if you are knocked unconscious or if your turn ends and you haven't attacked a hostile creature since your last turn or taken damage.",
+      "calc": {
+        "Rage Damage": "rage_damage",
+        "Rages per Day": "rages"
+      }
     },
     "feat_bar_unarmored_defense": {
       "name": "Unarmored Defense",
       "level": 1,
-      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit."
+      "description": "While you are not wearing any armor, your Armor Class equals 10 + your Dexterity modifier + your Constitution modifier. You can use a shield and still gain this benefit.",
+      "calc": {
+        "Unarmored AC": "10 + dex + con"
+      }
     },
     "feat_bar_reckless": {
       "name": "Reckless Attack",
       "level": 2,
-      "description": "You can throw aside all concern for defense to attack with fierce desperation. When you make your first attack on your turn, you can decide to attack recklessly, gaining advantage on melee weapon attack rolls using Strength, but at the cost of advantage on attacks against you."
+      "description": "When you make your first attack on your turn, you can decide to attack recklessly. Doing so gives you advantage on melee weapon attack rolls using Strength during this turn, but attack rolls against you have advantage until your next turn."
     },
     "feat_bar_danger_sense": {
       "name": "Danger Sense",
       "level": 2,
-      "description": "You gain an uncanny sense of when things nearby aren't as they should be, giving you advantage on Dexterity saving throws against effects that you can see."
+      "description": "You have advantage on Dexterity saving throws against effects that you can see, such as traps and spells, while not blinded, deafened, or incapacitated."
     },
-    "feat_bar_path": {
-      "name": "Primal Path",
+    "feat_bar_primal_knowledge": {
+      "name": "Primal Knowledge",
       "level": 3,
-      "description": "You choose a path that shapes the nature of your rage. Your choice grants you features at 3rd, 6th, 10th, and 14th level."
+      "description": "You gain proficiency in one skill of your choice from the barbarian skill list. You gain another at 10th level.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Animal Handling", "Athletics", "Intimidation", "Nature", "Perception", "Survival"]
     },
     "feat_bar_asi": {
       "name": "Ability Score Improvement",
-      "level": 4,
-      "description": "Increase one ability score by 2, or two scores by 1."
+      "description": "Increase one ability score by 2, or two scores by 1. Alternatively, you can choose a Feat.",
+      "type": "feat_selection"
     },
     "feat_bar_extra_attack": {
       "name": "Extra Attack",
@@ -39,36 +49,95 @@
     "feat_bar_fast_movement": {
       "name": "Fast Movement",
       "level": 5,
-      "description": "Your speed increases by 10 feet while you aren't wearing heavy armor."
+      "description": "Your speed increases by 3 meters (10 feet) while you aren't wearing heavy armor."
     },
     "feat_bar_feral_instinct": {
       "name": "Feral Instinct",
       "level": 7,
-      "description": "Your instincts are so honed that you have advantage on initiative rolls."
+      "description": "You have advantage on initiative rolls. Additionally, if you are surprised at the beginning of combat and aren't incapacitated, you can act normally if you enter your rage."
+    },
+    "feat_bar_instinctive_pounce": {
+      "name": "Instinctive Pounce",
+      "level": 7,
+      "description": "As part of the bonus action you take to enter your rage, you can move up to half your speed."
     },
     "feat_bar_brutal_critical": {
       "name": "Brutal Critical",
       "level": 9,
-      "description": "You can roll one additional weapon damage die when determining the extra damage for a critical hit with a melee attack."
+      "description": "You can roll additional weapon damage dice when determining the extra damage for a critical hit with a melee attack.",
+      "calc": {
+        "Extra Dice": "Math.floor((level - 9) / 4) + 1"
+      }
     },
-    "feat_tot_spirit_seeker": {
-      "name": "Spirit Seeker",
-      "level": 3,
-      "description": "You gain the ability to cast the Beast Sense and Speak with Animals spells, but only as rituals."
+    "feat_bar_relentless_rage": {
+      "name": "Relentless Rage",
+      "level": 11,
+      "description": "If you drop to 0 hit points while raging and don't die outright, you can make a DC 10 Constitution save to drop to 1 HP instead. Each time you use this, the DC increases by 5 until a short/long rest."
     },
-    "feat_tot_spirit": {
-      "name": "Totem Spirit",
+    "feat_bar_persistent_rage": {
+      "name": "Persistent Rage",
+      "level": 15,
+      "description": "Your rage ends early only if you fall unconscious or if you choose to end it."
+    },
+    "feat_bar_indomitable_might": {
+      "name": "Indomitable Might",
+      "level": 18,
+      "description": "If your total for a Strength check is less than your Strength score, you can use that score in place of the total.",
+      "calc": {
+        "Minimum Str Check": "str_score"
+      }
+    },
+    "feat_bar_primal_champion": {
+      "name": "Primal Champion",
+      "level": 20,
+      "description": "Your Strength and Constitution scores increase by 4. Your maximum for those scores is now 24."
+    },
+    "feat_anc_protectors": {
+      "name": "Ancestral Protectors",
       "level": 3,
-      "description": "You choose a totem spirit (Bear, Eagle, or Wolf) and gain its feature while raging. Bear: Resistance to all damage except psychic. Eagle: Dash as bonus action. Wolf: Advantage for allies."
+      "description": "While raging, the first creature you hit with an attack on your turn has disadvantage on attacks against anyone but you, and allies have resistance to its damage."
+    },
+    "feat_anc_spirit_shield": {
+      "name": "Spirit Shield",
+      "level": 6,
+      "description": "If you are raging and a creature within 30 feet takes damage, you can use your reaction to reduce that damage.",
+      "calc": {
+        "Damage Reduction": "level >= 14 ? '4d6' : (level >= 10 ? '3d6' : '2d6')"
+      }
+    },
+    "feat_anc_consult_spirits": {
+      "name": "Consult the Spirits",
+      "level": 10,
+      "description": "You can cast Augury or Clairvoyance without spell slots or material components using Wisdom as your spellcasting ability."
+    },
+    "feat_anc_vengeful_ancestors": {
+      "name": "Vengeful Ancestors",
+      "level": 14,
+      "description": "When you use Spirit Shield to reduce damage, the attacker takes force damage equal to the amount prevented."
     }
   },
   "classes": [
     {
       "id": "class_barbarian",
       "name": "Barbarian",
-      "subclass_level": 3,
       "description": "A fierce warrior of primitive background who can enter a battle rage.",
+      "image": "https://i.imgur.com/868d5c.png",
+      "subclass_level": 3,
       "hit_die": 12,
+      "hp_details": {
+        "hit_dice": "1d12 per Barbarian level",
+        "at_first_level": "12 + your Constitution modifier",
+        "at_higher_levels": "1d12 (or 7) + your Constitution modifier per Barbarian level after 1st"
+      },
+      "proficiencies_desc": {
+        "armor": "Light armor, medium armor, shields",
+        "weapons": "Simple weapons, martial weapons",
+        "saving_throws": "Strength, Constitution",
+        "skills": "Choose two from Animal Handling, Athletics, Intimidation, Nature, Perception, or Survival"
+      },
+      "starting_equipment": "Choose between:\n(a) hide armor, (b) leather armor, or (c) 10 gc\n(a) two handaxes or (b) martial weapon (below 30gc)\n(a) battleaxe or (b) any two simple melee weapons\n(a) explorer’s pack or (b) 4 javelins and a quiver",
+      "quick_build": "Put your highest score in Strength, followed by Constitution. Choose the Outlander background.",
+      "multiclassing": "Ability Score Minimum: Strength 13. Proficiencies gained: Shields, Simple and Martial weapons.",
       "proficiencies": {
         "armor": ["Light armor", "Medium armor", "Shields"],
         "weapons": ["Simple weapons", "Martial weapons"],
@@ -80,28 +149,41 @@
           }
         ]
       },
+      "progression": [
+        { "level": 1, "pb": "+2", "rages": "2", "rage_damage": "+2", "features": ["feat_bar_rage", "feat_bar_unarmored_defense"] },
+        { "level": 2, "pb": "+2", "rages": "2", "rage_damage": "+2", "features": ["feat_bar_reckless", "feat_bar_danger_sense"] },
+        { "level": 3, "pb": "+2", "rages": "3", "rage_damage": "+2", "features": ["feat_bar_primal_knowledge"] },
+        { "level": 4, "pb": "+2", "rages": "3", "rage_damage": "+2", "features": ["feat_bar_asi"] },
+        { "level": 5, "pb": "+3", "rages": "3", "rage_damage": "+2", "features": ["feat_bar_extra_attack", "feat_bar_fast_movement"] },
+        { "level": 6, "pb": "+3", "rages": "4", "rage_damage": "+2", "features": [] },
+        { "level": 7, "pb": "+3", "rages": "4", "rage_damage": "+2", "features": ["feat_bar_feral_instinct", "feat_bar_instinctive_pounce"] },
+        { "level": 8, "pb": "+3", "rages": "4", "rage_damage": "+2", "features": ["feat_bar_asi"] },
+        { "level": 9, "pb": "+4", "rages": "4", "rage_damage": "+3", "features": ["feat_bar_brutal_critical"] },
+        { "level": 10, "pb": "+4", "rages": "4", "rage_damage": "+3", "features": [] },
+        { "level": 11, "pb": "+4", "rages": "4", "rage_damage": "+3", "features": ["feat_bar_relentless_rage"] },
+        { "level": 12, "pb": "+4", "rages": "5", "rage_damage": "+3", "features": ["feat_bar_asi"] },
+        { "level": 13, "pb": "+5", "rages": "5", "rage_damage": "+3", "features": [] },
+        { "level": 14, "pb": "+5", "rages": "5", "rage_damage": "+3", "features": [] },
+        { "level": 15, "pb": "+5", "rages": "5", "rage_damage": "+3", "features": ["feat_bar_persistent_rage"] },
+        { "level": 16, "pb": "+5", "rages": "5", "rage_damage": "+4", "features": ["feat_bar_asi"] },
+        { "level": 17, "pb": "+6", "rages": "6", "rage_damage": "+4", "features": [] },
+        { "level": 18, "pb": "+6", "rages": "6", "rage_damage": "+4", "features": ["feat_bar_indomitable_might"] },
+        { "level": 19, "pb": "+6", "rages": "6", "rage_damage": "+4", "features": ["feat_bar_asi"] },
+        { "level": 20, "pb": "+6", "rages": "Unlimited", "rage_damage": "+4", "features": ["feat_bar_primal_champion"] }
+      ],
       "subclasses": [
         {
-          "id": "sub_totem_warrior",
-          "name": "Path of the Totem Warrior",
-          "description": "A spiritual journey that accepts a spirit animal as guide, protector, and inspiration.",
-          "features": ["feat_tot_spirit_seeker", "feat_tot_spirit"]
+          "id": "sub_ancestral_guardian",
+          "name": "Path of the Ancestral Guardian",
+          "description": "Some barbarians hail from cultures that revere their ancestors. These spirits provide protection to the warrior and their kin.",
+          "features": ["feat_anc_protectors", "feat_anc_spirit_shield", "feat_anc_consult_spirits", "feat_anc_vengeful_ancestors"],
+          "progression_ext": [
+            { "level": 3, "features": ["feat_anc_protectors"] },
+            { "level": 6, "features": ["feat_anc_spirit_shield"] },
+            { "level": 10, "features": ["feat_anc_consult_spirits"] },
+            { "level": 14, "features": ["feat_anc_vengeful_ancestors"] }
+          ]
         }
-      ],
-      "progression": [
-        { "level": 1, "pb": "+2", "features": ["feat_bar_rage", "feat_bar_unarmored_defense"], "rages": "2", "rage_damage": "+2" },
-        { "level": 2, "pb": "+2", "features": ["feat_bar_reckless", "feat_bar_danger_sense"], "rages": "2", "rage_damage": "+2" },
-        { "level": 3, "pb": "+2", "features": ["feat_bar_path"], "rages": "3", "rage_damage": "+2" },
-        { "level": 4, "pb": "+2", "features": ["feat_bar_asi"], "rages": "3", "rage_damage": "+2" },
-        { "level": 5, "pb": "+3", "features": ["feat_bar_extra_attack", "feat_bar_fast_movement"], "rages": "3", "rage_damage": "+2" },
-        { "level": 6, "pb": "+3", "features": [], "rages": "4", "rage_damage": "+2" },
-        { "level": 7, "pb": "+3", "features": ["feat_bar_feral_instinct"], "rages": "4", "rage_damage": "+2" },
-        { "level": 8, "pb": "+3", "features": ["feat_bar_asi"], "rages": "4", "rage_damage": "+2" },
-        { "level": 9, "pb": "+4", "features": ["feat_bar_brutal_critical"], "rages": "4", "rage_damage": "+3" },
-        { "level": 12, "pb": "+4", "features": ["feat_bar_asi"], "rages": "5", "rage_damage": "+3" },
-        { "level": 16, "pb": "+5", "features": ["feat_bar_asi"], "rages": "5", "rage_damage": "+4" },
-        { "level": 19, "pb": "+6", "features": ["feat_bar_asi"], "rages": "6", "rage_damage": "+4" },
-        { "level": 20, "pb": "+6", "features": [], "rages": "Unlimited", "rage_damage": "+4" }
       ]
     }
   ]
