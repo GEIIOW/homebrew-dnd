@@ -1,0 +1,179 @@
+{
+  "name": "Ranger",
+  "features": {
+    "feat_ran_favored_enemy": {
+      "name": "Favored Enemy",
+      "level": 1,
+      "description": "Escolhes um tipo de inimigo: aberrações, feras, celestiais, construtos, dragões, elementais, feéricos, gigantes, monstruosidades, lodos, plantas ou mortos-vivos. Ganhas vantagem em testes de Survival para rastreá-los e Intelligence para obter informações sobre eles. Ganhas um idioma falado por eles."
+    },
+    "feat_ran_natural_explorer": {
+      "name": "Natural Explorer",
+      "level": 1,
+      "description": "És perito num tipo de ambiente (Ártico, Costa, Deserto, Floresta, Montanha, Pântano, Planície ou Underdark). No teu terreno favorito, o teu bónus de proficiência é duplicado para testes de Intelligence e Wisdom relacionados com o ambiente. O grupo não pode perder-se (exceto por magia) e podes encontrar comida com facilidade."
+    },
+    "feat_ran_fighting_style": {
+      "name": "Fighting Style",
+      "level": 2,
+      "description": "Adotas um estilo particular de combate como a tua especialidade.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["feat_style_archery", "feat_style_defense", "feat_style_dueling", "feat_style_twf"]
+    },
+    "feat_style_archery": {
+      "name": "Archery",
+      "description": "Ganhas um bónus de +2 nas jogadas de ataque que faças com armas à distância."
+    },
+    "feat_style_defense": {
+      "name": "Defense",
+      "description": "Enquanto usares armadura, ganhas +1 de bónus na tua AC."
+    },
+    "feat_style_dueling": {
+      "name": "Dueling",
+      "description": "Quando empunhas uma arma de ataque corpo a corpo numa mão e nenhuma outra arma, ganhas +2 de bónus nas jogadas de dano com essa arma."
+    },
+    "feat_style_twf": {
+      "name": "Two-Weapon Fighting",
+      "description": "Quando combates com duas armas, podes adicionar o teu modificador de atributo ao dano do segundo ataque."
+    },
+    "feat_ran_spellcasting": {
+      "name": "Ranger Spellcasting",
+      "level": 2,
+      "description": "Utilizas a essência da natureza para conjurar feitiços. Wisdom é o teu atributo para conjuração.\n\n**Spell Save DC:** 8 + PB + Wisdom Modifier\n**Spell Attack Modifier:** PB + Wisdom Modifier",
+      "calc": {
+        "Spell Save DC": "8 + pb + wis",
+        "Spell Attack": "pb + wis"
+      }
+    },
+    "feat_ran_primeval_awareness": {
+      "name": "Primeval Awareness",
+      "level": 3,
+      "description": "Podes usar uma Action e gastar um spell slot para detetar se as seguintes criaturas estão a 1.5km de ti: aberrações, celestiais, dragões, elementais, feéricos, demónios ou mortos-vivos."
+    },
+    "feat_ran_asi": {
+      "name": "Ability Score Improvement",
+      "description": "Aumentas um atributo à tua escolha em 2, ou dois atributos em 1. Podes em alternativa escolher um Talento (Feat).",
+      "type": "feat_selection"
+    },
+    "feat_ran_extra_attack": {
+      "name": "Extra Attack",
+      "level": 5,
+      "description": "Podes atacar duas vezes, em vez de uma, sempre que usares a Action de Ataque no teu turno."
+    },
+    "feat_ran_lands_stride": {
+      "name": "Land's Stride",
+      "level": 8,
+      "description": "Moveres-te através de terreno difícil não mágico não te custa movimento extra. Também podes passar por plantas não mágicas sem sofrer dano ou ficar enredado."
+    },
+    "feat_ran_hide_plain_sight": {
+      "name": "Hide in Plain Sight",
+      "level": 10,
+      "description": "Podes passar 1 minuto a criar camuflagem para ti. Ganhas +10 em testes de Stealth enquanto permaneceres imóvel contra uma superfície natural."
+    },
+    "feat_ran_vanish": {
+      "name": "Vanish",
+      "level": 14,
+      "description": "Podes usar a Bonus Action de Hide no teu turno. Além disso, não podes ser rastreado por meios não mágicos, a menos que decidas deixar rasto."
+    },
+    "feat_ran_feral_senses": {
+      "name": "Feral Senses",
+      "level": 18,
+      "description": "Quando atacas uma criatura que não consegues ver, a tua incapacidade de vê-la não te dá desvantagem. Também estás ciente de criaturas invisíveis a 9 metros de ti."
+    },
+    "feat_ran_foe_slayer": {
+      "name": "Foe Slayer",
+      "level": 20,
+      "description": "Uma vez por turno, podes adicionar o teu modificador de Wisdom à jogada de ataque ou de dano contra um dos teus Favored Enemies.",
+      "calc": {
+        "Bonus to Hit/Dmg": "wis"
+      }
+    },
+    "feat_ran_hunter_prey": {
+      "name": "Hunter's Prey",
+      "level": 3,
+      "description": "Escolhes uma especialização para caçar as tuas presas.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["feat_hun_colossus", "feat_hun_giant", "feat_hun_horde"]
+    },
+    "feat_hun_colossus": {
+      "name": "Colossus Slayer",
+      "description": "Uma vez por turno, quando atinges uma criatura com um ataque de arma, a criatura sofre 1d8 de dano extra se já estiver abaixo do seu máximo de HP."
+    },
+    "feat_hun_giant": {
+      "name": "Giant Killer",
+      "description": "Quando uma criatura Large ou maior a 1.5m de ti te atinge ou falha um ataque, podes usar a tua Reaction para atacá-la imediatamente."
+    },
+    "feat_hun_horde": {
+      "name": "Horde Breaker",
+      "description": "Uma vez em cada um dos teus turnos, quando fazes um ataque de arma, podes fazer outro ataque com a mesma arma contra uma criatura diferente que esteja a 1.5m do alvo original."
+    }
+  },
+  "classes": [
+    {
+      "id": "class_ranger",
+      "name": "Ranger",
+      "description": "Guerreiros da fronteira que utilizam habilidades de combate e magia natural para caçar ameaças nos limites da civilização.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756207236766x719575896698146300/Ranger%20Ivaladir%20Shattermoon-Portrait%20%281%29.png",
+      "subclass_level": 3,
+      "hit_die": 10,
+      "hp_details": {
+        "hit_dice": "1d10 per Ranger level",
+        "at_first_level": "10 + your Constitution modifier",
+        "at_higher_levels": "1d10 (or 6) + your Constitution modifier per Ranger level after 1st"
+      },
+      "proficiencies_desc": {
+        "armor": "Light armor, medium armor, shields",
+        "weapons": "Simple weapons, martial weapons",
+        "saving_throws": "Strength, Dexterity",
+        "skills": "Choose three from Animal Handling, Athletics, Insight, Investigation, Nature, Perception, Stealth, and Survival"
+      },
+      "starting_equipment": "Choose between:\n(a) scale mail or (b) leather armor\n(a) two shortswords or (b) two simple melee weapons\n(a) a dungeoneer’s pack or (b) an explorer’s pack\nA longbow and a quiver of 20 arrows",
+      "quick_build": "Dexterity should be your highest score, followed by Wisdom (for spellcasting). Choose the Outlander background.",
+      "multiclassing": "Ability Score Minimum: Dexterity 13 and Wisdom 13",
+      "proficiencies": {
+        "weapons": ["Simple weapons", "Martial weapons"],
+        "armor": ["Light armor", "Medium armor", "Shields"],
+        "saving_throws": ["Strength", "Dexterity"],
+        "skillChoices": [
+          {
+            "choose": 3,
+            "options": ["Animal Handling", "Athletics", "Insight", "Investigation", "Nature", "Perception", "Stealth", "Survival"]
+          }
+        ]
+      },
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_ran_favored_enemy", "feat_ran_natural_explorer"] },
+        { "level": 2, "pb": "+2", "features": ["feat_ran_fighting_style", "feat_ran_spellcasting"], "spell_slots": [2, 0, 0, 0, 0] },
+        { "level": 3, "pb": "+2", "features": ["feat_ran_primeval_awareness"], "spell_slots": [3, 0, 0, 0, 0] },
+        { "level": 4, "pb": "+2", "features": ["feat_ran_asi"], "spell_slots": [3, 0, 0, 0, 0] },
+        { "level": 5, "pb": "+3", "features": ["feat_ran_extra_attack"], "spell_slots": [4, 2, 0, 0, 0] },
+        { "level": 6, "pb": "+3", "features": [], "spell_slots": [4, 2, 0, 0, 0] },
+        { "level": 7, "pb": "+3", "features": [], "spell_slots": [4, 3, 0, 0, 0] },
+        { "level": 8, "pb": "+3", "features": ["feat_ran_lands_stride", "feat_ran_asi"], "spell_slots": [4, 3, 0, 0, 0] },
+        { "level": 9, "pb": "+4", "features": [], "spell_slots": [4, 3, 2, 0, 0] },
+        { "level": 10, "pb": "+4", "features": ["feat_ran_hide_plain_sight"], "spell_slots": [4, 3, 2, 0, 0] },
+        { "level": 11, "pb": "+4", "features": [], "spell_slots": [4, 3, 3, 0, 0] },
+        { "level": 12, "pb": "+4", "features": ["feat_ran_asi"], "spell_slots": [4, 3, 3, 0, 0] },
+        { "level": 13, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 1, 0] },
+        { "level": 14, "pb": "+5", "features": ["feat_ran_vanish"], "spell_slots": [4, 3, 3, 1, 0] },
+        { "level": 15, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 2, 0] },
+        { "level": 16, "pb": "+5", "features": ["feat_ran_asi"], "spell_slots": [4, 3, 3, 2, 0] },
+        { "level": 17, "pb": "+6", "features": [], "spell_slots": [4, 3, 3, 3, 1] },
+        { "level": 18, "pb": "+6", "features": ["feat_ran_feral_senses"], "spell_slots": [4, 3, 3, 3, 1] },
+        { "level": 19, "pb": "+6", "features": ["feat_ran_asi"], "spell_slots": [4, 3, 3, 3, 2] },
+        { "level": 20, "pb": "+6", "features": ["feat_ran_foe_slayer"], "spell_slots": [4, 3, 3, 3, 2] }
+      ],
+      "subclasses": [
+        {
+          "id": "sub_hunter",
+          "name": "Hunter",
+          "description": "Emulas o arquétipo clássico do caçador, especializando-te em abater presas específicas através de táticas defensivas e ofensivas.",
+          "features": ["feat_ran_hunter_prey"],
+          "progression_ext": [
+            { "level": 3, "features": ["feat_ran_hunter_prey"] }
+          ]
+        }
+      ]
+    }
+  ]
+}
