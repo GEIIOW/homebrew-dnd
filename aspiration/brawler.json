@@ -1,10 +1,16 @@
 {
   "name": "Aspiration: Brawler",
+  "available_classes": [
+    "Barbarian",
+    "Monk"
+  ],
   "features": {
     "feat_brawler_young_blood": {
       "name": "Young Blood",
       "level": 0,
-      "description": "Only at level 0, you gain a +1 bonus to your hit point maximum and your unarmed strikes deal 1d4 bludgeoning damage plus your Strength or Dexterity modifier.",
+      "description": "Only at level 0, you gain a +1 bonus to your hit point maximum. Your unarmed strikes deal 1d4 bludgeoning damage plus your Strength or Dexterity modifier.",
+      "type": "passive",
+      "hp_bonus": 1,
       "attack": {
         "dice": "1d4",
         "type": "Bludgeoning"
@@ -13,10 +19,13 @@
     "feat_brawler_fwyc": {
       "name": "From Whence You Came",
       "level": 0,
-      "description": "Upon reaching level 1, you may choose a feat to represent the training from your humble beginnings.",
+      "description": "Once you level out of this class, gain the Athlete (Aspiration) or Tavern Brawler feat.",
       "type": "choice",
       "choose": 1,
-      "options": ["feat_athlete_asp", "feat_tavern_brawler_asp"]
+      "options": [
+        "feat_athlete_asp",
+        "feat_tavern_brawler_asp"
+      ]
     },
     "feat_athlete_asp": {
       "name": "Athlete (Aspiration)",
@@ -31,9 +40,10 @@
     {
       "id": "asp_brawler",
       "name": "Brawler",
-      "description": "A beginner's guide to raw combat, throwing punches, and enduring blows.",
+      "description": "Brawlers are people who push their bodies into becoming deadly weapons. Some choose to be as swift as a coursing river, others choose to be as strong as a great typhoon.",
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756669403696x703330513480839800/Hero-Portrait%20%2831%29.png",
       "hit_die": 6,
+      "proficiency_bonus": "+1",
       "money": "5 gp",
       "items": "Common clothes, 2 rations, waterskin, Trinket",
       "hp_details": {
@@ -49,13 +59,19 @@
         "saveChoices": [
           {
             "choose": 1,
-            "options": ["Strength", "Dexterity"]
+            "options": [
+              "Strength",
+              "Dexterity"
+            ]
           }
         ],
         "skillChoices": [
           {
             "choose": 1,
-            "options": ["Athletics", "Acrobatics"]
+            "options": [
+              "Athletics",
+              "Acrobatics"
+            ]
           }
         ]
       },
@@ -63,7 +79,10 @@
         {
           "level": 0,
           "pb": "+1",
-          "features": ["feat_brawler_young_blood", "feat_brawler_fwyc"]
+          "features": [
+            "feat_brawler_young_blood",
+            "feat_brawler_fwyc"
+          ]
         }
       ]
     }
