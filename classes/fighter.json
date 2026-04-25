@@ -1,80 +1,141 @@
 {
-  "name": "Class: Fighter",
   "features": {
     "feat_fig_fighting_style": {
-      "name": "Fighting Style",
+      "name": "Fighter's Fighting Style",
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the options available (Archery, Defense, Dueling, etc.). You can't take the same Fighting Style option more than once.",
       "level": 1,
-      "description": "Adotas um estilo particular de combate como tua especialidade. Não podes escolher a mesma opção mais de uma vez.",
       "type": "choice",
       "choose": 1,
-      "options": ["feat_fs_archery", "feat_fs_defense", "feat_fs_dueling", "feat_fs_gwf"]
+      "options": ["feat_fig_style_archery", "feat_fig_style_defense", "feat_fig_style_dueling", "feat_fig_style_gwf", "feat_fig_style_interception", "feat_fig_style_protection", "feat_fig_style_superior", "feat_fig_style_thrown", "feat_fig_style_twf", "feat_fig_style_unarmed"]
     },
-    "feat_fs_archery": { "name": "Archery", "description": "Ganas um bónus de +2 nas jogadas de ataque com armas à distância." },
-    "feat_fs_defense": { "name": "Defense", "description": "Enquanto usares armadura, ganhas +1 na AC." },
-    "feat_fs_dueling": { "name": "Dueling", "description": "Quando empunhas uma arma corpo a corpo numa mão e nenhuma noutra, ganhas +2 nas rolagens de dano." },
-    "feat_fs_gwf": { "name": "Great Weapon Fighting", "description": "Podes rolar novamente os 1s e 2s nos dados de dano de ataques com armas de duas mãos." },
-    "feat_fig_second_wind": { "name": "Second Wind", "level": 1, "description": "Tens um poço de estamina. No teu turno, podes usar uma ação bónus para recuperar HP igual a 1d10 + o teu nível de Fighter." },
-    "feat_fig_action_surge": { "name": "Action Surge", "level": 2, "description": "Podes puxar pelos teus limites no teu turno. Podes realizar uma ação adicional." },
-    "feat_fig_archetype": { "name": "Martial Archetype", "level": 3, "description": "Escolhes um arquétipo que defines o teu estilo de combate." },
-    "feat_fig_asi": { "name": "Ability Score Improvement", "level": 4, "description": "Podes aumentar um atributo em 2, ou dois em 1. Em alternativa, podes escolher um Talento.", "type": "feat_selection" },
-    "feat_fig_extra_attack": { "name": "Extra Attack", "level": 5, "description": "Podes atacar duas vezes sempre que usares a ação de Ataque no teu turno." },
-    "feat_fig_indomitable": { "name": "Indomitable", "level": 9, "description": "Podes rolar novamente um saving throw que falhes. Deves usar o novo resultado." },
-    "feat_aa_shot": { "name": "Arcane Shot", "level": 3, "description": "Aprende a despoletar efeitos mágicos especiais com os teus ataques com arco." },
-    "feat_aa_magic_arrow": { "name": "Magic Arrow", "level": 7, "description": "As flechas que disparas contam como mágicas para propósito de ultrapassar resistência a ataques não-mágicos." }
+    "feat_fig_second_wind": {
+      "name": "Second Wind",
+      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
+      "level": 1,
+      "type": "active",
+      "action_type": "Bonus Action",
+      "duration": "Instantaneous",
+      "healing": { "dice": "1d10", "formula": "fighter_level" }
+    },
+    "feat_fig_action_surge": {
+      "name": "Action Surge",
+      "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action. Once you use this feature, you can't do so again until you finish a Short or Long Rest.",
+      "level": 2,
+      "type": "active",
+      "action_type": "Free",
+      "calc": { "charges": "1" }
+    },
+    "feat_fig_signature_maneuver": {
+      "name": "Signature Maneuver",
+      "description": "Your training has had you perfect a fighting maneuver. Choose a maneuver from the maneuver list that you can use with a d6 as your superiority die. You can use this maneuver once per initiative.",
+      "level": 2,
+      "type": "choice",
+      "choose": 1,
+      "options": ["maneuver_ambush", "maneuver_brace", "maneuver_disarming", "maneuver_trip", "maneuver_parry"]
+    },
+    "feat_fig_extra_attack": {
+      "name": "Extra Attack",
+      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases at level 11 (3) and level 20 (4).",
+      "level": 5,
+      "type": "passive"
+    },
+    "feat_fig_indomitable": {
+      "name": "Indomitable",
+      "description": "When you are asked to roll a saving throw, you can choose to succeed instead of rolling the save by spending an available charge of this feature.",
+      "level": 9,
+      "type": "active",
+      "calc": { "charges": "1" }
+    },
+    "feat_fig_asi": {
+      "name": "Ability Score Improvement",
+      "description": "Increase one ability score of your choice by 2, or two scores by 1, up to a maximum of 20. Alternatively, take a feat.",
+      "type": "feat_selection"
+    }
   },
   "classes": [
     {
       "id": "class_fighter",
       "name": "Fighter",
-      "description": "Mestres do combate marcial, habilidosos com uma grande variedade de armas e armaduras.",
-      "subclass_level": 3,
+      "description": "A master of martial combat, skilled with a variety of weapons and armor.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756209384242x966925665290828700/Fighter%20Jasserin-Portrait%20%282%29.png",
       "hit_die": 10,
-      "proficiencies": {
-        "saving_throws": ["Strength", "Constitution"],
-        "skillChoices": [
-          {
-            "choose": 2,
-            "options": ["Acrobatics", "Animal Handling", "Athletics", "History", "Insight", "Intimidation", "Perception", "Survival"]
-          }
-        ]
+      "subclass_level": 3,
+      "hp_details": {
+        "hit_dice": "1d10 per level",
+        "at_first_level": "10 + CON mod",
+        "at_higher_levels": "1d10 (6) + CON mod"
       },
-      "progression": [
-        { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
-        { "level": 2, "pb": "+2", "features": ["feat_fig_action_surge"] },
-        { "level": 3, "pb": "+2", "features": ["feat_fig_archetype"] },
-        { "level": 4, "pb": "+2", "features": ["feat_fig_asi"] },
-        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"] },
-        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"] },
-        { "level": 7, "pb": "+3", "features": [] },
-        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
-        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
-        { "level": 10, "pb": "+4", "features": [] },
-        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"] },
-        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"] },
-        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable"] },
-        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 15, "pb": "+5", "features": [] },
-        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge", "feat_fig_indomitable"] },
-        { "level": 18, "pb": "+6", "features": [] },
-        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"] },
-        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"] }
-      ],
-      "subclasses": [
+      "proficiencies": {
+        "saving_throws": ["strength", "constitution"],
+        "armor": ["light_armor", "medium_armor", "heavy_armor", "shields"],
+        "weapons": ["simple_weapons", "martial_weapons"],
+        "tools": []
+      },
+      "proficiencies_desc": {
+        "skills": "Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, or Survival"
+      },
+      "multiclass_req": {
+        "strength": 13,
+        "dexterity": 13
+      },
+      "starting_equipment": [
         {
-          "id": "sub_arcane_archer",
-          "name": "Arcane Archer",
-          "description": "Um guerreiro que estuda a arte élfica da arquearia mágica.",
-          "features": ["feat_aa_shot", "feat_aa_magic_arrow"],
-          "progression_ext": [
-            { "level": 3, "arcane_shots": "2", "features": ["feat_aa_shot"] },
-            { "level": 7, "arcane_shots": "2", "features": ["feat_aa_magic_arrow"] },
-            { "level": 10, "arcane_shots": "2" },
-            { "level": 15, "arcane_shots": "2" },
-            { "level": 18, "arcane_shots": "3" }
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            { "label": "Hide Armor", "grants": [{ "item": "hide_armor", "quantity": 1 }] },
+            { "label": "Leather Armor", "grants": [{ "item": "leather_armor", "quantity": 1 }] },
+            { "label": "10 Gold Pieces", "grants": [{ "item": "gold_pieces", "quantity": 10 }] }
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            { "label": "Ranged simple weapon and 20 munitions", "grants": [{ "item_category": "simple_ranged", "quantity": 1 }, { "item": "ammunition", "quantity": 20 }] },
+            { "label": "Shield", "grants": [{ "item": "shield", "quantity": 1 }] }
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            { "label": "2 Melee simple weapons", "grants": [{ "item_category": "simple_melee", "quantity": 2 }] },
+            { "label": "Melee martial weapon (below 30gc)", "grants": [{ "item_category": "martial_melee", "quantity": 1 }] }
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            { "label": "Dungeoneer Pack", "grants": [{ "item": "dungeoneer_pack", "quantity": 1 }] },
+            { "label": "Explorer's Pack", "grants": [{ "item": "explorers_pack", "quantity": 1 }] }
           ]
         }
-      ]
+      ],
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
+        { "level": 2, "pb": "+2", "features": ["feat_fig_action_surge", "feat_fig_signature_maneuver"] },
+        { "level": 3, "pb": "+2", "features": ["feat_fig_martial_archetype"] },
+        { "level": 4, "pb": "+2", "features": ["feat_fig_asi", "feat_fig_martial_versatility"] },
+        { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"] },
+        { "level": 6, "pb": "+3", "features": ["feat_fig_asi"] },
+        { "level": 7, "pb": "+3", "features": ["feat_fig_subclass_feature"] },
+        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
+        { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
+        { "level": 10, "pb": "+4", "features": ["feat_fig_subclass_feature"] },
+        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack_2"] },
+        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"] },
+        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable_2"] },
+        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"] },
+        { "level": 15, "pb": "+5", "features": ["feat_fig_subclass_feature"] },
+        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"] },
+        { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge_2", "feat_fig_indomitable_3"] },
+        { "level": 18, "pb": "+6", "features": ["feat_fig_subclass_feature"] },
+        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"] },
+        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack_3"] }
+      ],
+      "subclasses": []
     }
   ]
 }
