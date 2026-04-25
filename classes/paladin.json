@@ -180,8 +180,23 @@
     {
       "id": "class_paladin",
       "name": "Paladin",
+      "description": "A holy warrior bound to a sacred oath.",
+      "image": "https://i.imgur.com/vHq7oOh.jpg",
       "subclass_level": 3,
       "hit_die": 10,
+      "hp_details": {
+        "hit_dice": "1d10 per Paladin level",
+        "at_first_level": "10 + your Constitution modifier",
+        "at_higher_levels": "1d10 (or 6) + your Constitution modifier per Paladin level after 1st"
+      },
+      "proficiencies_desc": {
+        "weapons": "Simple weapons, martial weapons",
+        "saving_throws": "Wisdom, Charisma",
+        "skills": "Choose two from Athletics, Insight, Intimidation, Medicine, Persuasion, and Religion"
+      },
+      "starting_equipment": "Choose between:\n(a) a martial weapon and a shield or (b) two martial weapons\n(a) five javelins or (b) any simple melee weapon\n(a) a priest's pack or (b) an explorer's pack\nChain mail and a holy symbol",
+      "quick_build": "You can make a paladin quickly by following these suggestions. First, Strength should be your highest ability score, followed by Charisma. Second, choose the noble background.",
+      "multiclassing": "Ability Score Minimum: Strength 13 and Charisma 13",
       "proficiencies": {
         "weapons": ["Simple weapons", "Martial weapons"],
         "armor": ["Light", "Medium", "Heavy", "Shields"],
