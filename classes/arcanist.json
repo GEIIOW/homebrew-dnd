@@ -1,60 +1,121 @@
 {
-  "name": "Arcanist Class Expansion",
+  "name": "Arcanist",
   "features": {
     "feat_arc_spellcasting": {
       "name": "Arcanist's Spellcasting",
       "level": 1,
-      "description": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power. Your spellbook is your font of power. You must be wielding it to perform the Spellcasting feature of this class."
+      "description": "As a student of arcane magic, you have a spellbook containing spells that show the first glimmerings of your true power.\n\n**Font of Power:** Your spellbook is your font of power. You must be wielding it to perform the Spellcasting feature of this class.\n\n**Cantrips:** You know two cantrips from the arcanist list. You can transcribe more into your book (1h and 25gc each).\n\n**Preparing Spells:** You don't need to 'prepare' in the traditional sense; while wielding your spellbook, you can cast any spell inscribed in it, provided you have the slots.\n\n**Spellcasting Ability:** Intelligence is your ability for Arcanist spells.\n* **Spell Save DC:** 8 + PB + Intelligence Modifier\n* **Spell Attack Modifier:** PB + Intelligence Modifier",
+      "calc": {
+        "Spell Save DC": "8 + pb + int",
+        "Spell Attack": "pb + int"
+      }
     },
     "feat_arc_recovery": {
       "name": "Arcane Recovery",
       "level": 1,
-      "description": "You have learned to regain some of your magical energy by studying your spellbook. Once per day when you finish a short rest, you can choose expended spell slots to recover. The spell slots can have a combined level that is equal to or less than half your arcanist level (rounded up), and none of the slots can be 6th level or higher."
+      "description": "Once per day when you finish a Short Rest, you can recover expended spell slots. The combined level of slots must be equal to or less than half your arcanist level (rounded up), and none can be 6th level or higher.",
+      "calc": {
+        "Max Combined Levels": "Math.ceil(level / 2)"
+      }
     },
     "feat_arc_scripture": {
       "name": "Arcane Scripture",
       "level": 1,
-      "description": "Your spellbook is a unique compilation of arcane formulas. You can add new spells to it by finding scrolls or other spellbooks and spending time/gold to transcribe them."
+      "description": "Both your books and scrolls derive magic from their incantations, written in Arcanian runes. You have Expertise in Arcanian and another language with which you are proficient already.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth"],
+      "proficiencies": {
+        "expertise": ["Arcanian"]
+      }
     },
     "feat_arc_tradition": {
       "name": "Arcane Tradition",
       "level": 2,
-      "description": "When you reach 2nd level, you choose an arcane tradition (School), shaping your practice of magic. Your choice grants you features at 2nd, 6th, 10th, and 14th level."
+      "description": "At 2nd level, you choose an arcane tradition, shaping your practice of magic through a specific school."
     },
     "feat_arc_asi": {
       "name": "Ability Score Improvement",
-      "level": 4,
-      "description": "You can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature."
+      "description": "You can increase one ability score of your choice by 2, or two scores by 1. Alternatively, you can choose a Feat.",
+      "type": "feat_selection"
+    },
+    "feat_arc_spell_mastery": {
+      "name": "Spell Mastery",
+      "level": 18,
+      "description": "Choose a 1st-level and a 2nd-level arcanist spell in your spellbook. You can cast those spells at their lowest level without expending a spell slot when you have them prepared."
     },
     "feat_arc_signature": {
       "name": "Signature Spells",
       "level": 20,
-      "description": "You gain mastery over two 3rd-level spells. They are always prepared and don't count against your limit. You can cast each once at 3rd level without expending a slot per short rest."
+      "description": "Choose two 3rd-level spells in your spellbook. They are always prepared and don't count against your limit. You can cast each once at 3rd level without expending a slot per short rest."
+    },
+    "feat_arc_evo_savant": {
+      "name": "Evocation Savant",
+      "level": 2,
+      "description": "The gold and time you must spend to copy an evocation spell into your spellbook is halved."
+    },
+    "feat_arc_evo_sculpt": {
+      "name": "Sculpt Spells",
+      "level": 2,
+      "description": "When you cast an evocation spell that affects other creatures, you can choose a number of them equal to 1 + the spell's level. The chosen creatures automatically succeed on their saving throws and take no damage.",
+      "calc": {
+        "Safe Creatures": "1 + 'Spell Level'"
+      }
+    },
+    "feat_arc_evo_potent": {
+      "name": "Potent Cantrip",
+      "level": 6,
+      "description": "When a creature succeeds on a saving throw against your cantrip, it takes half damage (if any) but suffers no additional effects."
+    },
+    "feat_arc_evo_empowered": {
+      "name": "Empowered Evocation",
+      "level": 10,
+      "description": "You can add your Intelligence modifier to one damage roll of any arcanist evocation spell you cast.",
+      "calc": {
+        "Damage Bonus": "int"
+      }
+    },
+    "feat_arc_evo_overchannel": {
+      "name": "Overchannel",
+      "level": 14,
+      "description": "When you cast an arcanist spell of 1st through 5th-level that deals damage, you can deal maximum damage. The first time is safe; subsequent uses before a long rest deal 2d12 necrotic damage to you per spell level, increasing by 1d12 each time.",
+      "calc": {
+        "Necrotic Damage (2nd use)": "'2d12 * spell level'"
+      }
     }
   },
   "classes": [
     {
       "id": "class_arcanist",
       "name": "Arcanist",
-      "subclass_level": 2,
       "description": "A scholarly magic-user capable of manipulating the structures of reality through study and discipline.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756227934209x120279590896847920/Hero-Portrait%20%2822%29.png",
+      "subclass_level": 2,
       "hit_die": 6,
+      "hp_details": {
+        "hit_dice": "1d6 per Arcanist level",
+        "at_first_level": "6 + your Constitution modifier",
+        "at_higher_levels": "1d6 (or 4) + your Constitution modifier per Arcanist level after 1st"
+      },
+      "proficiencies_desc": {
+        "weapons": "Daggers, darts, slings, quarterstaffs, light crossbows",
+        "saving_throws": "Intelligence, Wisdom",
+        "skills": "Choose two from Arcana, History, Insight, Investigation, Medicine, or Religion"
+      },
+      "starting_equipment": "Choose between:\n(a) fine clothes or (b) a tool (below 30gp)\n(a) a quarterstaff or (b) a dagger\n(a) a component pouch or (b) an arcane focus\n(a) a scholar's pack or (b) an explorer's pack\nSpellbook",
+      "quick_build": "Intelligence should be your highest score, followed by Constitution or Dexterity. Choose the Sage background. For spells, pick Mage Hand, Light, Ray of Frost, and 1st-level spells like Magic Missile and Mage Armor.",
+      "multiclassing": "Ability Score Minimum: Intelligence 13",
       "proficiencies": {
-        "weapons": ["Daggers", "darts", "slings", "quarterstaffs", "light crossbows"],
+        "weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light crossbows"],
         "saving_throws": ["Intelligence", "Wisdom"],
         "skillChoices": [
           {
             "choose": 2,
             "options": ["Arcana", "History", "Insight", "Investigation", "Medicine", "Religion"]
           }
-        ]
+        ],
+        "expertise": ["Arcanian"]
       },
-      "subclasses": [
-        { "id": "sub_enchantment", "name": "School of Enchantment" },
-        { "id": "sub_evocation", "name": "School of Evocation" },
-        { "id": "sub_necromancy", "name": "School of Necromancy" },
-        { "id": "sub_transmutation", "name": "School of Transmutation" }
-      ],
       "progression": [
         { "level": 1, "pb": "+2", "features": ["feat_arc_spellcasting", "feat_arc_recovery", "feat_arc_scripture"], "spell_slots": [2, 0, 0, 0, 0, 0, 0, 0, 0] },
         { "level": 2, "pb": "+2", "features": ["feat_arc_tradition"], "spell_slots": [3, 0, 0, 0, 0, 0, 0, 0, 0] },
@@ -73,9 +134,26 @@
         { "level": 15, "pb": "+5", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 0] },
         { "level": 16, "pb": "+5", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 0] },
         { "level": 17, "pb": "+6", "features": [], "spell_slots": [4, 3, 3, 3, 2, 1, 1, 1, 1] },
-        { "level": 18, "pb": "+6", "features": [], "spell_slots": [4, 3, 3, 3, 3, 1, 1, 1, 1] },
+        { "level": 18, "pb": "+6", "features": ["feat_arc_spell_mastery"], "spell_slots": [4, 3, 3, 3, 3, 1, 1, 1, 1] },
         { "level": 19, "pb": "+6", "features": ["feat_arc_asi"], "spell_slots": [4, 3, 3, 3, 3, 2, 1, 1, 1] },
         { "level": 20, "pb": "+6", "features": ["feat_arc_signature"], "spell_slots": [4, 3, 3, 3, 3, 2, 2, 1, 1] }
+      ],
+      "subclasses": [
+        { 
+          "id": "sub_evocation", 
+          "name": "School of Evocation",
+          "description": "You focus your study on magic that creates powerful elemental effects.",
+          "features": ["feat_arc_evo_savant", "feat_arc_evo_sculpt", "feat_arc_evo_potent", "feat_arc_evo_empowered", "feat_arc_evo_overchannel"],
+          "progression_ext": [
+            { "level": 2, "features": ["feat_arc_evo_savant", "feat_arc_evo_sculpt"] },
+            { "level": 6, "features": ["feat_arc_evo_potent"] },
+            { "level": 10, "features": ["feat_arc_evo_empowered"] },
+            { "level": 14, "features": ["feat_arc_evo_overchannel"] }
+          ]
+        },
+        { "id": "sub_enchantment", "name": "School of Enchantment", "description": "Your magic focuses on influencing the minds of others." },
+        { "id": "sub_necromancy", "name": "School of Necromancy", "description": "You explore the cosmic forces of life, death, and undeath." },
+        { "id": "sub_transmutation", "name": "School of Transmutation", "description": "You study the physical properties of matter and how to alter them." }
       ]
     }
   ]
