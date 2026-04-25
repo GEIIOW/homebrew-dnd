@@ -1,0 +1,86 @@
+{
+  "name": "Aspiration: Faithful",
+  "features": {
+    "feat_faithful_to_pray": {
+      "name": "To Pray",
+      "level": 0,
+      "description": "Only at level 0, you gain a +1 bonus to your hit point maximum and to your global AC.",
+      "type": "passive"
+    },
+    "feat_faithful_fwyc": {
+      "name": "From Whence You Came",
+      "level": 0,
+      "description": "Upon reaching level 1, you gain the Zealot's Bond feat. If you stop worshiping or serving your Deity, you lose this feat.",
+      "type": "passive"
+    },
+    "feat_zealots_bond": {
+      "name": "Zealot's Bond",
+      "description": "You learn one cantrip from the Cleric or Warlock spell list. In addition, choose a 1st-level spell from that same spell list to learn. Choose between Wisdom and Charisma as your spellcasting ability.\n\nWhen you cast the 1st-level spell through your bond, you can expend one of your Hit Dice and roll it. If you roll an even number, you gain a number of temporary hit points equal to the number rolled. If you roll an odd number, one random creature within 9 meters of you (not including you) takes force damage equal to the number rolled. If no other creatures are in range, you take the damage.\n\nIf you stop worshiping or serving your Deity, you lose this feat.",
+      "type": "passive"
+    }
+  },
+  "aspirations": [
+    {
+      "id": "asp_faithful",
+      "name": "Faithful",
+      "description": "A beginner's guide to devotion, prayer, and divine or profane power.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756223903156x358791434317523800/Hero-Portrait%20%2821%29.png",
+      "hit_die": 6,
+      "money": "10 gp",
+      "items": "Common clothes, 2 rations, waterskin, Holy Symbol",
+      "hp_details": {
+        "hit_dice": "1d6",
+        "at_first_level": "6 + 1 (To Pray) + your Constitution modifier",
+        "at_higher_levels": "1d6 (or 4) + your Constitution modifier per level after 1st"
+      },
+      "proficiencies_desc": {
+        "weapons": "Simple weapons",
+        "saving_throws": "Choose Charisma or Wisdom (only at level 0)",
+        "skills": "Religion (only at level 0)"
+      },
+      "starting_equipment": "You start with the following equipment, in addition to the equipment granted by your background:\n(a) 10 gold pieces\n(b) Common clothes, 2 rations, waterskin\n(c) Holy Symbol",
+      "quick_build": "Choose Wisdom or Charisma as your focus. If you want to lean into divine protection, choose Wisdom; if you want to lean into presence, persuasion, or occult devotion, choose Charisma.",
+      "multiclassing": "Ability Score Minimum: Wisdom 13 or Charisma 13. Proficiencies gained from multiclassing: simple weapons.",
+      "proficiencies": {
+        "weapons": [
+          "Simple weapons"
+        ],
+        "armor": [],
+        "tools": [],
+        "saving_throws": [],
+        "skillChoices": [
+          {
+            "choose": 1,
+            "options": [
+              "Religion"
+            ]
+          }
+        ],
+        "saveChoices": [
+          {
+            "choose": 1,
+            "options": [
+              "Charisma",
+              "Wisdom"
+            ]
+          }
+        ]
+      },
+      "progression": [
+        {
+          "level": 0,
+          "pb": "+1",
+          "features": [
+            "feat_faithful_to_pray",
+            "feat_faithful_fwyc"
+          ],
+          "special_features": [
+            "To Pray: +1 hit point maximum and +1 global AC",
+            "From Whence You Came: at level 1, gain Zealot's Bond"
+          ]
+        }
+      ],
+      "subclasses": []
+    }
+  ]
+}
