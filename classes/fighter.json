@@ -2,55 +2,58 @@
   "features": {
     "feat_fig_fighting_style": {
       "name": "Fighter's Fighting Style",
-      "description": "You adopt a particular style of fighting as your specialty. Choose one of the options available (Archery, Defense, Dueling, etc.). You can't take the same Fighting Style option more than once.",
-      "level": 1,
+      "description": "You adopt a particular style of fighting as your specialty. Choose one of the following options. You can't take the same Fighting Style option more than once.",
       "type": "choice",
       "choose": 1,
-      "options": ["feat_fig_style_archery", "feat_fig_style_defense", "feat_fig_style_dueling", "feat_fig_style_gwf", "feat_fig_style_interception", "feat_fig_style_protection", "feat_fig_style_superior", "feat_fig_style_thrown", "feat_fig_style_twf", "feat_fig_style_unarmed"]
+      "options": ["style_archery", "style_blind_fighting", "style_defense", "style_dueling", "style_gwf", "style_interception", "style_protection", "style_superior_technique", "style_thrown", "style_twf", "style_unarmed"]
     },
+    "style_archery": { "name": "Archery", "description": "You gain a +2 bonus to attack rolls you make with ranged weapons.", "type": "passive" },
+    "style_blind_fighting": { "name": "Blind Fighting", "description": "You have blindsight with a range of 3 meters.", "type": "passive" },
+    "style_defense": { "name": "Defense", "description": "While you are wearing armor, you gain a +1 bonus to AC.", "type": "passive" },
+    "style_dueling": { "name": "Dueling", "description": "When you are wielding a melee weapon in one hand and no other weapons, you gain a +2 bonus to damage rolls with that weapon.", "type": "passive" },
+    "style_gwf": { "name": "Great Weapon Fighting", "description": "When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die.", "type": "passive" },
+    "style_interception": { "name": "Interception", "description": "Use your reaction to reduce damage to a target within range by 1d10 + PB.", "type": "active", "action_type": "Reaction" },
+    "style_protection": { "name": "Protection", "description": "Use your reaction to impose disadvantage on an attack against an ally while wielding a shield.", "type": "active", "action_type": "Reaction" },
+    "style_superior_technique": { "name": "Superior Technique", "description": "You learn one maneuver of your choice and gain one d6 superiority die.", "type": "choice", "choose": 1, "options": ["man_ambush", "man_bait_switch", "man_brace"] },
+    "style_thrown": { "name": "Thrown Weapon Fighting", "description": "You can draw a weapon with the thrown property as part of the attack. +2 to damage rolls.", "type": "passive" },
+    "style_twf": { "name": "Two-Weapon Fighting", "description": "Add your ability modifier to the damage of the second attack.", "type": "passive" },
+    "style_unarmed": { "name": "Unarmed Fighting", "description": "Unarmed strikes deal 1d6 (or 1d8) + STR. Deal 1d4 to grappled creatures.", "type": "passive" },
+
     "feat_fig_second_wind": {
       "name": "Second Wind",
-      "description": "You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your fighter level. Once you use this feature, you must finish a short or long rest before you can use it again.",
-      "level": 1,
+      "description": "Bonus action to regain 1d10 + Fighter level HP. (1/Short Rest)",
       "type": "active",
       "action_type": "Bonus Action",
-      "duration": "Instantaneous",
       "healing": { "dice": "1d10", "formula": "fighter_level" }
     },
     "feat_fig_action_surge": {
       "name": "Action Surge",
-      "description": "You can push yourself beyond your normal limits for a moment. On your turn, you can take one additional action, except the Magic action. Once you use this feature, you can't do so again until you finish a Short or Long Rest.",
-      "level": 2,
+      "description": "Take one additional action on your turn. (1/Short Rest, 2 at Lvl 17).",
       "type": "active",
-      "action_type": "Free",
-      "calc": { "charges": "1" }
+      "action_type": "Free"
     },
     "feat_fig_signature_maneuver": {
       "name": "Signature Maneuver",
-      "description": "Your training has had you perfect a fighting maneuver. Choose a maneuver from the maneuver list that you can use with a d6 as your superiority die. You can use this maneuver once per initiative.",
-      "level": 2,
+      "description": "Choose a maneuver you can use once per initiative with a d6.",
       "type": "choice",
       "choose": 1,
-      "options": ["maneuver_ambush", "maneuver_brace", "maneuver_disarming", "maneuver_trip", "maneuver_parry"]
+      "options": ["man_ambush", "man_bait_switch", "man_brace", "man_disarming", "man_trip"]
     },
-    "feat_fig_extra_attack": {
-      "name": "Extra Attack",
-      "description": "You can attack twice, instead of once, whenever you take the Attack action on your turn. The number of attacks increases at level 11 (3) and level 20 (4).",
-      "level": 5,
-      "type": "passive"
-    },
-    "feat_fig_indomitable": {
-      "name": "Indomitable",
-      "description": "When you are asked to roll a saving throw, you can choose to succeed instead of rolling the save by spending an available charge of this feature.",
-      "level": 9,
-      "type": "active",
-      "calc": { "charges": "1" }
-    },
-    "feat_fig_asi": {
-      "name": "Ability Score Improvement",
-      "description": "Increase one ability score of your choice by 2, or two scores by 1, up to a maximum of 20. Alternatively, take a feat.",
-      "type": "feat_selection"
-    }
+    "feat_fig_extra_attack": { "name": "Extra Attack", "description": "You can attack twice (lvl 5), three times (lvl 11), or four times (lvl 20).", "type": "passive" },
+    "feat_fig_indomitable": { "name": "Indomitable", "description": "Spend a charge to succeed on a failed saving throw.", "type": "active", "calc": { "charges": "1" } },
+    "feat_fig_martial_versatility": { "name": "Martial Versatility", "description": "Replace a fighting style or maneuver when you gain an ASI.", "type": "passive" },
+    "feat_fig_asi": { "name": "Ability Score Improvement", "description": "Increase ability scores or select a feat.", "type": "feat_selection" },
+
+    "man_ambush": { "name": "Ambush", "description": "Add superiority die to Stealth or Initiative.", "type": "active" },
+    "man_bait_switch": { "name": "Bait and Switch", "description": "Switch places with a willing creature; add die to AC.", "type": "active" },
+    "man_brace": { "name": "Brace", "description": "Reaction attack when a creature enters reach.", "type": "active", "action_type": "Reaction" },
+    "man_disarming": { "name": "Disarming Attack", "description": "Force target to drop an item on hit.", "type": "active" },
+    "man_trip": { "name": "Trip Attack", "description": "Attempt to knock a target prone on hit.", "type": "active" },
+    "man_parry": { "name": "Parry", "description": "Reduce damage from a melee attack by die + DEX.", "type": "active", "action_type": "Reaction" },
+
+    "feat_sub_improved_critical": { "name": "Improved Critical", "description": "Score a critical hit on 19-20.", "type": "passive" },
+    "feat_sub_remarkable_athlete": { "name": "Remarkable Athlete", "description": "Add half PB to STR/DEX/CON checks. Increased jump distance.", "type": "passive" },
+    "feat_sub_survivor": { "name": "Survivor", "description": "Regain 5 + CON mod HP at start of turn if below half HP.", "type": "passive" }
   },
   "classes": [
     {
@@ -60,82 +63,80 @@
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=768,h=768,f=auto,dpr=1,fit=contain/f1756209384242x966925665290828700/Fighter%20Jasserin-Portrait%20%282%29.png",
       "hit_die": 10,
       "subclass_level": 3,
-      "hp_details": {
-        "hit_dice": "1d10 per level",
-        "at_first_level": "10 + CON mod",
-        "at_higher_levels": "1d10 (6) + CON mod"
-      },
       "proficiencies": {
         "saving_throws": ["strength", "constitution"],
         "armor": ["light_armor", "medium_armor", "heavy_armor", "shields"],
         "weapons": ["simple_weapons", "martial_weapons"],
         "tools": []
       },
-      "proficiencies_desc": {
-        "skills": "Choose two from Acrobatics, Animal Handling, Athletics, History, Insight, Intimidation, Perception, or Survival"
-      },
-      "multiclass_req": {
-        "strength": 13,
-        "dexterity": 13
-      },
       "starting_equipment": [
-        {
-          "type": "choice",
-          "choose": 1,
-          "options": [
-            { "label": "Hide Armor", "grants": [{ "item": "hide_armor", "quantity": 1 }] },
-            { "label": "Leather Armor", "grants": [{ "item": "leather_armor", "quantity": 1 }] },
-            { "label": "10 Gold Pieces", "grants": [{ "item": "gold_pieces", "quantity": 10 }] }
-          ]
-        },
-        {
-          "type": "choice",
-          "choose": 1,
-          "options": [
-            { "label": "Ranged simple weapon and 20 munitions", "grants": [{ "item_category": "simple_ranged", "quantity": 1 }, { "item": "ammunition", "quantity": 20 }] },
-            { "label": "Shield", "grants": [{ "item": "shield", "quantity": 1 }] }
-          ]
-        },
-        {
-          "type": "choice",
-          "choose": 1,
-          "options": [
-            { "label": "2 Melee simple weapons", "grants": [{ "item_category": "simple_melee", "quantity": 2 }] },
-            { "label": "Melee martial weapon (below 30gc)", "grants": [{ "item_category": "martial_melee", "quantity": 1 }] }
-          ]
-        },
-        {
-          "type": "choice",
-          "choose": 1,
-          "options": [
-            { "label": "Dungeoneer Pack", "grants": [{ "item": "dungeoneer_pack", "quantity": 1 }] },
-            { "label": "Explorer's Pack", "grants": [{ "item": "explorers_pack", "quantity": 1 }] }
-          ]
-        }
+        { "type": "choice", "choose": 1, "options": [
+          { "label": "Hide Armor", "grants": [{"item": "hide_armor", "quantity": 1}] },
+          { "label": "Leather Armor", "grants": [{"item": "leather_armor", "quantity": 1}] },
+          { "label": "10gc", "grants": [{"item": "gold_coin", "quantity": 10}] }
+        ]},
+        { "type": "choice", "choose": 1, "options": [
+          { "label": "Ranged Simple Weapon + 20 Munitions", "grants": [{"item_category": "simple_ranged", "quantity": 1}, {"item": "munitions", "quantity": 20}] },
+          { "label": "Shield", "grants": [{"item": "shield", "quantity": 1}] }
+        ]}
       ],
       "progression": [
         { "level": 1, "pb": "+2", "features": ["feat_fig_fighting_style", "feat_fig_second_wind"] },
         { "level": 2, "pb": "+2", "features": ["feat_fig_action_surge", "feat_fig_signature_maneuver"] },
         { "level": 3, "pb": "+2", "features": ["feat_fig_martial_archetype"] },
-        { "level": 4, "pb": "+2", "features": ["feat_fig_asi", "feat_fig_martial_versatility"] },
+        { "level": 4, "pb": "+2", "features": ["feat_fig_martial_versatility", "feat_fig_asi"] },
         { "level": 5, "pb": "+3", "features": ["feat_fig_extra_attack"] },
         { "level": 6, "pb": "+3", "features": ["feat_fig_asi"] },
-        { "level": 7, "pb": "+3", "features": ["feat_fig_subclass_feature"] },
-        { "level": 8, "pb": "+3", "features": ["feat_fig_asi"] },
         { "level": 9, "pb": "+4", "features": ["feat_fig_indomitable"] },
-        { "level": 10, "pb": "+4", "features": ["feat_fig_subclass_feature"] },
-        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack_2"] },
-        { "level": 12, "pb": "+4", "features": ["feat_fig_asi"] },
-        { "level": 13, "pb": "+5", "features": ["feat_fig_indomitable_2"] },
-        { "level": 14, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 15, "pb": "+5", "features": ["feat_fig_subclass_feature"] },
-        { "level": 16, "pb": "+5", "features": ["feat_fig_asi"] },
-        { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge_2", "feat_fig_indomitable_3"] },
-        { "level": 18, "pb": "+6", "features": ["feat_fig_subclass_feature"] },
-        { "level": 19, "pb": "+6", "features": ["feat_fig_asi"] },
-        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack_3"] }
+        { "level": 11, "pb": "+4", "features": ["feat_fig_extra_attack"] },
+        { "level": 17, "pb": "+6", "features": ["feat_fig_action_surge", "feat_fig_indomitable"] },
+        { "level": 20, "pb": "+6", "features": ["feat_fig_extra_attack"] }
       ],
-      "subclasses": []
+      "subclasses": [
+        {
+          "id": "sub_fig_champion",
+          "name": "Champion",
+          "description": "Focuses on raw physical power and honing deadly critical hits.",
+          "features": ["feat_sub_improved_critical"],
+          "progression_ext": [
+            { "level": 7, "features": ["feat_sub_remarkable_athlete"] },
+            { "level": 10, "features": ["feat_fig_fighting_style"] },
+            { "level": 15, "features": ["feat_sub_improved_critical"] },
+            { "level": 18, "features": ["feat_sub_survivor"] }
+          ]
+        },
+        {
+          "id": "sub_fig_battle_master",
+          "name": "Battle Master",
+          "description": "Masters of battlefield tactics and maneuvers.",
+          "features": ["feat_sub_student_of_war", "feat_sub_combat_superiority"],
+          "progression_ext": [
+            { "level": 7, "features": ["feat_sub_know_enemy"] },
+            { "level": 10, "features": ["feat_sub_improved_superiority_d8"] },
+            { "level": 15, "features": ["feat_sub_restless"] }
+          ]
+        },
+        {
+          "id": "sub_fig_rune_knight",
+          "name": "Rune Knight",
+          "description": "Uses the power of giant runes to augment martial prowess.",
+          "features": ["feat_sub_rune_carver", "feat_sub_giants_might"],
+          "progression_ext": [
+            { "level": 7, "features": ["feat_sub_runic_shield"] },
+            { "level": 10, "features": ["feat_sub_great_stature"] }
+          ]
+        },
+        {
+          "id": "sub_fig_eldritch_knight",
+          "name": "Eldritch Knight",
+          "description": "Combines martial mastery with arcanist spellcasting.",
+          "features": ["feat_sub_spellcasting", "feat_sub_weapon_bond"],
+          "progression_ext": [
+            { "level": 7, "features": ["feat_sub_war_magic"] },
+            { "level": 10, "features": ["feat_sub_eldritch_strike"] }
+          ]
+        }
+      ]
     }
   ]
 }
