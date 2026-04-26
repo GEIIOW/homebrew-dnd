@@ -11,7 +11,6 @@
         "dexterity": 22
       },
       "features": [
-        "feat_kouniklo_creature_type",
         "feat_kouniklo_ability_increase",
         "feat_kouniklo_hare_trigger",
         "feat_kouniklo_leporine_senses",
@@ -22,10 +21,6 @@
     }
   ],
   "features": {
-    "feat_kouniklo_creature_type": {
-      "name": "Creature Type",
-      "description": "Kouniklos are 0,60-1,10 meters tall, average 30 kg and are humanoids. Kouniklos reach adulthood at the age of 2 but are considered young until the age of 7. On average, they live about 25 years."
-    },
     "feat_kouniklo_ability_increase": {
       "name": "Kouniklos' Ability Score Increase",
       "description": "You may choose to increase an ability score by 2 and one other ability score by 1 or increase three different ability scores by 1. Your Dexterity score maximum is 22, instead of the normal 20."
