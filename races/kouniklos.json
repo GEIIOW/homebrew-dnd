@@ -3,17 +3,18 @@
     {
       "id": "kouniklos",
       "name": "Kouniklos",
-      "description": "Kouniklos are small, rabbit-like humanoids known for their intense energy, incredible speed and sharp senses.",
+      "description": "Kouniklos are small, rabbit-like humanoids known for their intense energy, incredible speed and sharp senses. Reaching adulthood at only 2 years old and living an average of 25, they live life at a different pace than most mortals in Faleria.",
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753107739977x674246502557061900/Hero-Portrait%20%2810%29.png",
       "speed": 9,
       "size": "Small",
-      "stat_maximums": { "dexterity": 22 },
-      "proficiencies": {
-        "skills": ["Perception"] 
+      "stat_maximums": {
+        "dexterity": 22
       },
       "features": [
+        "feat_kouniklo_creature_type",
         "feat_kouniklo_ability_increase",
         "feat_kouniklo_hare_trigger",
+        "feat_kouniklo_leporine_senses",
         "feat_kouniklo_lucky_footwork",
         "feat_kouniklo_rabbits_foot",
         "feat_kouniklo_rabbit_hop"
@@ -21,28 +22,47 @@
     }
   ],
   "features": {
+    "feat_kouniklo_creature_type": {
+      "name": "Creature Type",
+      "description": "Kouniklos are 0,60-1,10 meters tall, average 30 kg and are humanoids. Kouniklos reach adulthood at the age of 2 but are considered young until the age of 7. On average, they live about 25 years."
+    },
     "feat_kouniklo_ability_increase": {
-      "name": "Ability Score Increase",
-      "description": "Increase Dex by 2 and one other by 1, or three by 1. Dex max is 22."
+      "name": "Kouniklos' Ability Score Increase",
+      "description": "You may choose to increase an ability score by 2 and one other ability score by 1 or increase three different ability scores by 1. Your Dexterity score maximum is 22, instead of the normal 20."
     },
     "feat_kouniklo_hare_trigger": {
       "name": "Hare-Trigger",
-      "description": "Add your proficiency bonus to initiative.",
-      "modifiers": { "initiative": "pb" }
+      "description": "You can add your proficiency bonus to your initiative rolls.",
+      "modifiers": {
+        "initiative": "pb"
+      }
+    },
+    "feat_kouniklo_leporine_senses": {
+      "name": "Leporine Senses",
+      "description": "You have proficiency in the Perception skill.",
+      "proficiencies": {
+        "skills": ["perception"]
+      }
     },
     "feat_kouniklo_lucky_footwork": {
       "name": "Lucky Footwork",
-      "description": "Reaction to add 1d4 to failed Dex save."
+      "description": "When you fail a Dexterity saving throw, you can use your reaction to roll a d4 and add it to the save, potentially turning the failure into a success. You can't use this reaction if your speed is 0."
     },
     "feat_kouniklo_rabbits_foot": {
       "name": "Rabbit's Foot",
-      "description": "Reroll a 1 on a d20 test (1/Long Rest).",
-      "resources": { "max": 1, "reset": "long_rest" }
+      "description": "Once per long rest, when you roll a 1 on the d20 of a D20 Test, you can reroll the die, and you must use the new roll.",
+      "resources": {
+        "max": 1,
+        "reset": "long_rest"
+      }
     },
     "feat_kouniklo_rabbit_hop": {
       "name": "Rabbit Hop",
-      "description": "Bonus action jump. Uses equal to PB.",
-      "resources": { "max": "pb", "reset": "long_rest" }
+      "description": "As a bonus action, you can make a horizontal jump equal to your movement speed or a vertical jump equal to half your movement speed, without provoking opportunity attacks. You can use it a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.",
+      "resources": {
+        "max": "pb",
+        "reset": "long_rest"
+      }
     }
   }
 }
