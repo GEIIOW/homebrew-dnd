@@ -44,13 +44,10 @@
     },
     "feat_tough": {
       "name": "Tough",
-      "description": "Your hit point maximum increases by an amount equal to twice your level when you gain this feat. Whenever you gain a level thereafter, your hit point maximum increases by an additional 2 hit points.",
-      "effects": [
-        {
-          "type": "custom",
-          "raw": "hp_bonus_per_level=2"
-        }
-      ]
+      "description": "Your hit point maximum increases by an amount...",
+      "modifiers": {
+        "hp_per_level": 2
+      }
     },
     "feat_war_caster": {
       "name": "War Caster",
