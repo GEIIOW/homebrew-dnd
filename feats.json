@@ -18,12 +18,12 @@
     },
     "feat_resilient": {
       "name": "Resilient",
-      "description": "Choose one ability score. You gain the following benefits:\n• Increase the chosen ability score by 1, to a maximum of 20.\n• You gain proficiency in saving throws using the chosen ability.",
+      "description": "Choose one ability score. You gain the following benefits: ...",
+      "linked_asi_save": true, 
       "asiChoices": [
         {
           "choose": 1,
-          "options": ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"],
-          "bonus": 1
+          "options": ["Strength", "Dexterity", "Constitution", "Intelligence", "Wisdom", "Charisma"]
         }
       ],
       "proficiencies": {
