@@ -1,93 +1,93 @@
 {
-  "name": "Expansão: Galitarko",
-  "features": {
-    "gal_claws": {
-      "name": "Claws",
-      "description": "As tuas garras são armas naturais. Causas 1d6 + modificador de Força de dano cortante em vez do dano de impacto normal.",
-      "attack": {
-        "dice": "1d6",
-        "stat": "strength",
-        "type": "slashing",
-        "bonus": 0
-      }
-    },
-    "gal_mauling_strike": {
-      "name": "Mauling Strike",
-      "description": "Imediatamente após te moveres pelo menos 6 metros, podes fazer um ataque corpo a corpo com as tuas garras como uma ação bónus."
-    },
-    "gal_bearable": {
-      "name": "Bearable",
-      "description": "Contas como um tamanho maior para determinar a tua capacidade de carga e o peso que podes empurrar, arrastar ou levantar."
-    },
-    "pan_climber": {
-      "name": "High Climber",
-      "description": "Tens velocidade de escalada igual à tua velocidade de caminhada.",
-      "speed": { "climb": 9 }
-    },
-    "pan_bearfriend": {
-      "name": "Bearfriend",
-      "description": "Ganas proficiência e tens vantagem em testes de Carisma (Persuasão)."
-    },
-    "pan_rollup": {
-      "name": "Roll-Up",
-      "description": "Se não usares armadura pesada e fores empurrado para a condição caído, és empurrado 1,5m em vez disso. Levantar custa apenas 1,5m de movimento."
-    },
-    "pol_swim": {
-      "name": "Freezing Waters",
-      "description": "Tens velocidade de natação igual à tua velocidade de caminhada.",
-      "speed": { "swim": 9 }
-    },
-    "pol_keen_sight": {
-      "name": "Keen Sight",
-      "description": "Tens vantagem em testes de Sabedoria (Perceção) baseados na visão."
-    },
-    "pol_bearly_ready": {
-      "name": "Bearly Ready",
-      "description": "Ao rolar iniciativa, podes dar vantagem a um aliado a 9m, mas recebes desvantagem na tua própria iniciativa."
-    },
-    "griz_keen_smell": {
-      "name": "Keen Smell",
-      "description": "Tens vantagem em testes de Sabedoria (Perceção) baseados no olfato."
-    },
-    "griz_bearware": {
-      "name": "Bearware",
-      "description": "É necessária uma criatura adicional para seres flanqueado ou afetado por táticas de matilha."
-    }
-  },
   "races": [
     {
       "id": "galitarko",
       "name": "Galitarko",
-      "description": "Um povo resiliente regido pela filosofia, com aspeto de ursos poderosos.",
-      "size": "Medium",
+      "description": "A resilient people guided by philosophy, possessing the imposing form of powerful bears. Galitarkos value community and wisdom as much as their physical strength.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753212892285x989085947797114400/token_5%20%286%29.png",
       "speed": 9,
+      "size": "Medium",
       "features": ["gal_claws", "gal_mauling_strike", "gal_bearable"],
       "subraces": [
         {
           "id": "galitarko_panda",
           "name": "Panda",
-          "description": "Conhecidos pelo seu altruísmo e harmonia comunitária.",
+          "description": "Known for their altruism and communal harmony, Pandas often act as mediators and keepers of peace.",
           "stat_maximums": { "strength": 22 },
-          "proficiencies": {
-            "skills": ["Persuasion"]
-          },
           "features": ["pan_climber", "pan_bearfriend", "pan_rollup"]
         },
         {
           "id": "galitarko_polar",
           "name": "Polar",
-          "description": "Nómadas solitários que priorizam a sobrevivência do grupo próximo.",
+          "description": "Solitary nomads who prioritize the survival of their immediate group in the harshest environments.",
           "stat_maximums": { "strength": 22 },
           "features": ["pol_swim", "pol_keen_sight", "pol_bearly_ready"]
         },
         {
           "id": "galitarko_grizzly",
           "name": "Grizzly",
-          "description": "Guerreiros imponentes que trabalham pelo bem comum.",
+          "description": "Imposing warriors and builders who work tirelessly for the common good of their people.",
           "stat_maximums": { "strength": 22 },
           "features": ["pan_climber", "griz_keen_smell", "griz_bearware"]
         }
       ]
     }
-  ]
+  ],
+  "features": {
+    "gal_claws": {
+      "name": "Claws",
+      "description": "Your claws are natural weapons. You deal 1d6 + Strength modifier Slashing damage instead of the normal bludgeoning damage for unarmed strikes.",
+      "attack": {
+        "dice": "1d6",
+        "stat": "strength",
+        "type": "Slashing",
+        "bonus": 0
+      }
+    },
+    "gal_mauling_strike": {
+      "name": "Mauling Strike",
+      "description": "Immediately after you move at least 6 meters, you can make one melee attack with your claws as a Bonus Action."
+    },
+    "gal_bearable": {
+      "name": "Bearable",
+      "description": "You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+    },
+    "pan_climber": {
+      "name": "High Climber",
+      "description": "You have a climbing speed equal to your walking speed.",
+      "modifiers": { "climb_speed": 9 }
+    },
+    "pan_bearfriend": {
+      "name": "Bearfriend",
+      "description": "You gain proficiency and have Advantage on Charisma (Persuasion) checks.",
+      "proficiencies": {
+        "skills": ["persuasion"]
+      }
+    },
+    "pan_rollup": {
+      "name": "Roll-Up",
+      "description": "If you are not wearing heavy armor and are knocked prone, you are pushed 1.5m instead. Standing up costs only 1.5m of movement."
+    },
+    "pol_swim": {
+      "name": "Freezing Waters",
+      "description": "You have a swimming speed equal to your walking speed.",
+      "modifiers": { "swim_speed": 9 }
+    },
+    "pol_keen_sight": {
+      "name": "Keen Sight",
+      "description": "You have Advantage on Wisdom (Perception) checks that rely on sight."
+    },
+    "pol_bearly_ready": {
+      "name": "Bearly Ready",
+      "description": "When rolling Initiative, you can grant Advantage to an ally within 9m, but you suffer Disadvantage on your own Initiative roll."
+    },
+    "griz_keen_smell": {
+      "name": "Keen Smell",
+      "description": "You have Advantage on Wisdom (Perception) checks that rely on smell."
+    },
+    "griz_bearware": {
+      "name": "Bearware",
+      "description": "An additional creature is required to successfully flank you or affect you with pack tactics."
+    }
+  }
 }
