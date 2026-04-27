@@ -116,8 +116,15 @@
 
     "feat_fig_second_wind": {
       "name": "Second Wind",
-      "description": "• Use a Bonus Action to regain HP equal to 1d10 + Fighter level.\n• Regain use after a Short Rest or Long Rest.",
-      "resources": { "max": 1, "reset": "short_rest" }
+      "description": "• Use a Bonus Action to regain HP.\n• Regain use after a Short Rest.",
+      "resources": { "max": 1, "reset": "short_rest" },
+      "actions": {
+        "heal": {
+          "name": "Quick Recovery",
+          "formula": "1d10 + class_level",
+          "type": "healing"
+        }
+      }
     },
     "feat_fig_action_surge": {
       "name": "Action Surge",
