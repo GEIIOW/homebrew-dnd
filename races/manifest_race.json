@@ -1,7 +1,7 @@
 {
   "sources": [
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/kriteron.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/troll.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/half_troll.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/dwarf.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/human.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/kouniklos.json",

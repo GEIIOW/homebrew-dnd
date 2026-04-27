@@ -3,13 +3,11 @@
     {
       "id": "half_troll",
       "name": "Half-Troll",
-      "description": "Born from the unlikely and often bizarre union between trolls and other mortals, Half-Trolls are capable warriors known for their tusks and incredible regenerative blood. Though they lack a unified nation, they share a deep sense of fellowship across Faleria.",
+      "description": "Born from unlikely unions, Half-Trolls are resilient warriors with regenerative blood and imposing tusks. While new to Faleria, they have spread rapidly, forming tight bonds of fellowship.",
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1766152327693x663996141781298700/Goddardian%20Elite-Portrait%20%2812%29.png",
       "speed": 9,
       "size": "Medium",
-      "stat_maximums": {
-        "constitution": 22
-      },
+      "stat_maximums": { "constitution": 22 },
       "features": [
         "feat_halftroll_creature_type",
         "feat_halftroll_ability_increase",
@@ -19,7 +17,7 @@
         {
           "id": "half_troll_ice",
           "name": "Ice Half-Troll",
-          "description": "Descendants of ice trolls with white or light blue skin impervious to cold. They are expert shipmasters and javelin fishers.",
+          "description": "Impervious to cold with light blue or white skin, these descendants of the shipmaster Gaelea are masters of javelin fishing.",
           "proficiencies": {
             "armor": ["medium"],
             "weapons": ["javelin", "war pick"],
@@ -39,7 +37,7 @@
         {
           "id": "half_troll_sand",
           "name": "Sand Half-Troll",
-          "description": "Descendants of sand trolls with skin tones ranging from red to yellow. They are adapted to the harsh Scandurian deserts.",
+          "description": "Impervious to heat, these red or orange-skinned trolls are descendants of the wormeater Fejuin, adapted to sandstorms.",
           "proficiencies": {
             "armor": ["light"],
             "weapons": ["heavy sling", "kwikwik"],
@@ -59,7 +57,7 @@
         {
           "id": "half_troll_tropical",
           "name": "Tropical Half-Troll",
-          "description": "Descendants of swamp trolls with blue or green skin. They are master explorers of the moist Bysso Isles.",
+          "description": "Impervious to moisture with blue or green skin, these descendants of Shima are explorers of the bug-filled Bysso Isles.",
           "proficiencies": {
             "armor": ["shield"],
             "weapons": ["longbow", "spear"],
@@ -79,7 +77,7 @@
         {
           "id": "half_troll_war",
           "name": "War Half-Troll",
-          "description": "Descendants of lake trolls with cyan or aqua skin. They are perpetual nomads accustomed to the warring Manyhal continent.",
+          "description": "Always on the move with green or aqua skin, these lake troll descendants are the scouts of the warring Manyhal continent.",
           "proficiencies": {
             "armor": ["medium"],
             "weapons": ["light crossbow", "greatclub"],
@@ -102,7 +100,7 @@
   "features": {
     "feat_halftroll_creature_type": {
       "name": "Creature Type",
-      "description": "You are a Humanoid. You stand between 1.95 and 2.25 meters tall and reach adulthood at the age of 15."
+      "description": "• You are a Humanoid.\n• You stand between 1.95 and 2.25 meters tall.\n• You reach adulthood at age 15 and live up to 70 years."
     },
     "feat_halftroll_ability_increase": {
       "name": "Ability Score Increase",
@@ -110,19 +108,16 @@
     },
     "feat_halftroll_regeneration": {
       "name": "Half-Troll Regeneration",
-      "description": "• As a Bonus Action, you can expend one Hit Die to regain hit points equal to your lvl + con modifier.\n• If you have taken Fire or Acid damage, you cannot use this feature until the start of your next turn.\n• You can use this to recuperate limbs or heal injuries instead of gaining hit points. You cannot regenerate your head.",
-      "resources": {
-        "max": "pb",
-        "reset": "long_rest"
-      }
+      "description": "• As a Bonus Action, you can expend one Hit Die to regain HP equal to your Level + Constitution modifier.\n• If you took Fire or Acid damage, this is disabled until your next turn.\n• You can use this to recuperate limbs or heal injuries instead of gaining HP. You cannot regenerate your head.",
+      "resources": { "max": "pb", "reset": "long_rest" }
     },
     "feat_halftroll_reicing": {
       "name": "Re-icing",
-      "description": "When using Half-Troll Regeneration, you may choose to heal yourself of one disease, Poisoned effect, or short-term curse instead of regaining hit points."
+      "description": "When using Regeneration, you may choose to heal one disease, Poisoned effect, or short-term curse instead of HP."
     },
     "feat_halftroll_sandstrum": {
       "name": "Sandstrum",
-      "description": "You can see in lightly obscured areas within 9 meters as if they were not obscured, and in heavily obscured areas as if they were lightly obscured."
+      "description": "You can see in lightly obscured areas within 9m as if they were not obscured, and in heavily obscured areas as if they were lightly obscured."
     },
     "feat_halftroll_swamp_spirit": {
       "name": "Swamp Spirit",
@@ -130,10 +125,8 @@
     },
     "feat_halftroll_unprovoked": {
       "name": "Unprovoked",
-      "description": "You have Advantage when rolling for Initiative.",
-      "modifiers": {
-        "initiative_advantage": true
-      }
+      "description": "You have Advantage on Initiative rolls.",
+      "modifiers": { "initiative_advantage": true }
     }
   }
 }
