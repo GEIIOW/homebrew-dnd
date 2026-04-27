@@ -1,25 +1,66 @@
 {
-  "spell": [
-    {
-      "name": "Bola de Fogo",
-      "id": "fireball", 
-      "level": 3,
-      "school": "E",
-      "time": [{ "number": 1, "unit": "action" }],
-      "range": { "type": "point", "distance": { "type": "feet", "amount": 150 } },
-      "components": { "v": true, "s": true, "m": "uma pequena bola de guano de morcego e enxofre" },
-      "duration": [{ "type": "instant" }],
-      "classes": { "fromClassList": [{ "name": "Mago", "source": "PHB" }] },
-      "entries": [
-        "Uma explosão de fogo que se propaga pelos cantos.",
-        "Cada criatura numa esfera de 6 metros deve fazer um salvamento de Destreza.",
-        {
-          "type": "entries",
-          "name": "Dano Superior",
-          "entries": ["Quando conjuras esta magia usando um espaço de 4º nível ou superior, o dano aumenta em 1d6 para cada nível acima do 3º."]
-        }
-      ],
-      "source": "PHB"
+  "spells": {
+    "spell_light": {
+      "name": "Light",
+      "level": 0,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "Touch",
+      "components": { "v": true, "m": "a firefly or phosphorescent moss" },
+      "duration": "1 hour",
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\nIf you target an object held or worn by a hostile creature, that creature must succeed on a DEX save to avoid the spell."
+    },
+    "spell_mage_hand": {
+      "name": "Mage Hand",
+      "level": 0,
+      "school": "Conjuration",
+      "casting_time": "1 Action",
+      "range": "30 feet",
+      "components": { "v": true, "s": true },
+      "duration": "1 minute",
+      "description": "A spectral, floating hand appears at a point you choose within range. The hand lasts for the duration or until you dismiss it as an action. The hand vanishes if it is ever more than 30 feet away from you or if you cast this spell again.\nYou can use your action to control the hand. You can use the hand to manipulate an object, open an unlocked door or container, stow or retrieve an item from an open container, or pour the contents out of a vial. You can move the hand up to 30 feet each time you use it.\nThe hand can't attack, activate magic items, or carry more than 10 pounds."
+    },
+    "spell_magic_missile": {
+      "name": "Magic Missile",
+      "level": 1,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "120 feet",
+      "components": { "v": true, "s": true },
+      "duration": "Instantaneous",
+      "description": "You create three glowing darts of magical force. Each dart hits a creature of your choice that you can see within range. A dart deals 1d4 + 1 force damage to its target. The darts all strike simultaneously, and you can direct them to hit one creature or several.",
+      "higher_levels": "When you cast this spell using a spell slot of 2nd level or higher, the spell creates one more dart for each slot level above 1st."
+    },
+    "spell_shield": {
+      "name": "Shield",
+      "level": 1,
+      "school": "Abjuration",
+      "casting_time": "1 Reaction",
+      "range": "Self",
+      "components": { "v": true, "s": true },
+      "duration": "1 round",
+      "description": "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
     }
-  ]
+  },
+  "backgrounds": [
+    {
+      "id": "bg_mage_apprentice",
+      "name": "Mage Apprentice",
+      "description": "You spent years studying basic magical theory under a master wizard.",
+      "proficiencies": {
+        "skills": ["arcana", "history"]
+      },
+      "features": ["feat_apprentice_magic"]
+    }
+  ],
+  "features": {
+    "feat_apprentice_magic": {
+      "name": "Apprentice Magic",
+      "description": "Your studies have paid off. You learn two Cantrips of your choice from the wizard spell list. Additionally, you learn one 1st-level spell and can cast it once per long rest without expending a spell slot.",
+      "resources": {
+        "max": 1,
+        "reset": "long_rest"
+      }
+    }
+  }
 }
