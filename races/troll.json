@@ -1,41 +1,139 @@
 {
-  "name": "Expansão: Sangue de Troll",
-  "features": {
-    "troll_regen": {
-      "name": "Regeneração Half-Troll",
-      "description": "Como ação bónus, podes gastar um Hit Dice para regenerar HP igual ao teu nível + modificador de CON. Não podes usar se sofreres dano de ácido ou fogo."
-    },
-    "troll_training": {
-      "name": "Treino Nÿjorsan",
-      "description": "És proficiente com armaduras médias, javelins e war picks."
-    },
-    "ice_troll_res": {
-      "name": "Resistência ao Frio",
-      "description": "Tens resistência a dano de frio e ignoras os efeitos de climas glaciares extremos."
-    }
-  },
   "races": [
     {
       "id": "half_troll",
       "name": "Half-Troll",
-      "description": "Trolls humanoides altos (1.95m - 2.25m), robustos e incrivelmente difíceis de abater.",
-      "size": "Medium",
+      "description": "Born from the unlikely and often bizarre union between trolls and other mortals, Half-Trolls are capable warriors known for their tusks and incredible regenerative blood. Though they lack a unified nation, they share a deep sense of fellowship across Faleria.",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1766152327693x663996141781298700/Goddardian%20Elite-Portrait%20%2812%29.png",
       "speed": 9,
+      "size": "Medium",
       "stat_maximums": {
         "constitution": 22
       },
-      "features": ["troll_regen", "troll_training"],
+      "features": [
+        "feat_halftroll_creature_type",
+        "feat_halftroll_ability_increase",
+        "feat_halftroll_regeneration"
+      ],
       "subraces": [
         {
-          "id": "troll_gelo",
-          "name": "Troll do Gelo",
-          "description": "Adaptados às montanhas nevadas e dotados de uma força monstruosa.",
-          "stat_maximums": {
-            "strength": 22
+          "id": "half_troll_ice",
+          "name": "Ice Half-Troll",
+          "description": "Descendants of ice trolls with white or light blue skin impervious to cold. They are expert shipmasters and javelin fishers.",
+          "proficiencies": {
+            "armor": ["medium"],
+            "weapons": ["javelin", "war pick"],
+            "tools": ["water vehicles"]
           },
-          "features": ["ice_troll_res"]
+          "choice_configs": [
+            {
+              "id": "ice_troll_skills",
+              "name": "Cold Shores Skills",
+              "type": "skill_selection",
+              "count": 2,
+              "options": ["athletics", "acrobatics", "investigation", "perception", "survival"]
+            }
+          ],
+          "features": ["feat_halftroll_reicing"]
+        },
+        {
+          "id": "half_troll_sand",
+          "name": "Sand Half-Troll",
+          "description": "Descendants of sand trolls with skin tones ranging from red to yellow. They are adapted to the harsh Scandurian deserts.",
+          "proficiencies": {
+            "armor": ["light"],
+            "weapons": ["heavy sling", "kwikwik"],
+            "tools": ["land vehicles"]
+          },
+          "choice_configs": [
+            {
+              "id": "sand_troll_skills",
+              "name": "Desert Traveller Skills",
+              "type": "skill_selection",
+              "count": 2,
+              "options": ["athletics", "acrobatics", "animal handling", "insight", "survival"]
+            }
+          ],
+          "features": ["feat_halftroll_sandstrum"]
+        },
+        {
+          "id": "half_troll_tropical",
+          "name": "Tropical Half-Troll",
+          "description": "Descendants of swamp trolls with blue or green skin. They are master explorers of the moist Bysso Isles.",
+          "proficiencies": {
+            "armor": ["shield"],
+            "weapons": ["longbow", "spear"],
+            "tools": ["water vehicles"]
+          },
+          "choice_configs": [
+            {
+              "id": "tropical_troll_skills",
+              "name": "Island Explorer Skills",
+              "type": "skill_selection",
+              "count": 2,
+              "options": ["athletics", "acrobatics", "medicine", "nature", "survival"]
+            }
+          ],
+          "features": ["feat_halftroll_swamp_spirit"]
+        },
+        {
+          "id": "half_troll_war",
+          "name": "War Half-Troll",
+          "description": "Descendants of lake trolls with cyan or aqua skin. They are perpetual nomads accustomed to the warring Manyhal continent.",
+          "proficiencies": {
+            "armor": ["medium"],
+            "weapons": ["light crossbow", "greatclub"],
+            "tools": ["land vehicles"]
+          },
+          "choice_configs": [
+            {
+              "id": "war_troll_skills",
+              "name": "War Scout Skills",
+              "type": "skill_selection",
+              "count": 2,
+              "options": ["athletics", "acrobatics", "animal handling", "intimidation", "religion"]
+            }
+          ],
+          "features": ["feat_halftroll_unprovoked"]
         }
       ]
     }
-  ]
+  ],
+  "features": {
+    "feat_halftroll_creature_type": {
+      "name": "Creature Type",
+      "description": "You are a Humanoid. You stand between 1.95 and 2.25 meters tall and reach adulthood at the age of 15."
+    },
+    "feat_halftroll_ability_increase": {
+      "name": "Ability Score Increase",
+      "description": "Increase one score by 2 and another by 1, or three different scores by 1. Your Constitution maximum is 22."
+    },
+    "feat_halftroll_regeneration": {
+      "name": "Half-Troll Regeneration",
+      "description": "• As a Bonus Action, you can expend one Hit Die to regain hit points equal to your lvl + con modifier.\n• If you have taken Fire or Acid damage, you cannot use this feature until the start of your next turn.\n• You can use this to recuperate limbs or heal injuries instead of gaining hit points. You cannot regenerate your head.",
+      "resources": {
+        "max": "pb",
+        "reset": "long_rest"
+      }
+    },
+    "feat_halftroll_reicing": {
+      "name": "Re-icing",
+      "description": "When using Half-Troll Regeneration, you may choose to heal yourself of one disease, Poisoned effect, or short-term curse instead of regaining hit points."
+    },
+    "feat_halftroll_sandstrum": {
+      "name": "Sandstrum",
+      "description": "You can see in lightly obscured areas within 9 meters as if they were not obscured, and in heavily obscured areas as if they were lightly obscured."
+    },
+    "feat_halftroll_swamp_spirit": {
+      "name": "Swamp Spirit",
+      "description": "You are unaffected by nonmagical difficult terrain."
+    },
+    "feat_halftroll_unprovoked": {
+      "name": "Unprovoked",
+      "description": "You have Advantage when rolling for Initiative.",
+      "modifiers": {
+        "initiative_advantage": true
+      }
+    }
+  }
 }
