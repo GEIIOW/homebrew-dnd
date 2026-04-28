@@ -63,8 +63,7 @@
               "scaling": "+1d4 per spell slot"
             }
           ]
-        }
-      },
+        },
     "spell_darkness": {
       "id": "spell_darkness",
       "name": "Darkness",
