@@ -47,6 +47,7 @@
           "name": "Healing Word",
           "level": 1,
           "school": "Evocation",
+          "classes": ["Sorcerer", "Warlock", "Wizard"],
           "casting_time": "1 Bonus Action",
           "range": "18 m",
           "components": "V",
