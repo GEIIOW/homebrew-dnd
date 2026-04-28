@@ -42,29 +42,6 @@
         }
       ]
     },
-    "healing_word": {
-          "id": "healing_word",
-          "name": "Healing Word",
-          "level": 1,
-          "school": "Evocation",
-          "casting_time": "1 Bonus Action",
-          "range": "18 m",
-          "components": "V",
-          "duration": "Instantaneous",
-          "description": "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs.",
-          "higher_level": "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st.",
-          "source": "Player Handbook (2014)",
-          "icon": "game-icons:heart-wings",
-          "classes": ["Sorcerer", "Warlock", "Wizard"],
-          "vtt_rolls": [
-            {
-              "label": "Healing",
-              "dice": "1d4",
-              "damage_type": "Healing",
-              "scaling": "+1d4 per spell slot"
-            }
-          ]
-        },
     "spell_darkness": {
       "id": "spell_darkness",
       "name": "Darkness",
@@ -171,6 +148,35 @@
       "icon": "game-icons:invisible",
       "classes": ["Artificer", "Bard", "Sorcerer", "Warlock", "Wizard"]
     },
+
+  "spells": {
+    "fireball": {
+      "id": "fireball",
+      "name": "Fireball",
+      "description": "Uma fogo qualquer",
+      "level": 0,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "18m",
+      "duration": "Instantaneous",
+      "components": {
+        "v": true,
+        "s": true,
+        "m": false
+      },
+      "classes": [
+        "wizard"
+      ],
+      "effects": [
+        {
+          "type": "heal",
+          "formula": "wis",
+          "damage_type": "Slashing",
+          "dice": "1d9"
+        }
+      ]
+    }
+  },
     "spell_eldritch_storm": {
     "id": "spell_eldritch_storm",
     "name": "Eldritch Storm",
