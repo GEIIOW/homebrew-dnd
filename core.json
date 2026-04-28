@@ -1,43 +1,4 @@
 {
-  "name": "Livro de Regras Básico",
-  "features": {
-    "elven_darkvision": {
-      "name": "Visão no Escuro Élfica",
-      "description": "Consegues ver na penumbra até 18 metros como se fosse luz brilhante..."
-    },
-    "elven_trance": {
-      "name": "Transe",
-      "description": "Elfos não precisam de dormir..."
-    },
-    "military_rank": {
-      "name": "Patente Militar",
-      "description": "Tens uma patente oficial. Soldados de baixa patente respeitam a tua autoridade..."
-    },
-    "bg_blood_son_rank": {
-      "name": "Blood Son's Military Rank",
-      "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
-    },
-    "bg_blood_son_specialty": {
-      "name": "Specialty",
-      "description": "During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose your role: 1. Officer | 2. Scout | 3. Infantry | 4. Cavalry | 5. Healer | 6. Quartermaster | 7. Standard-bearer | 8. Support staff."
-    },
-    "feat_ambassador_culture": {
-      "name": "Cultural Chameleon",
-      "description": "You have an uncanny ability to blend into foreign courts. You can accurately mimic the accent and cadence of a region you have studied for at least one week, allowing you to pass as a native to casual observers."
-    },
-    "feat_ambassador_secure_comm": {
-      "name": "Secure Communication",
-      "description": "You are masters of codes and ciphers. You can create written messages that can only be read by specific recipients you designate, or by creatures with a passive Investigation score higher than 20."
-    },
-    "feat_mirrish_well_read": {
-      "name": "Mirrish Arcanum Scholaris Student's Well Read",
-      "description": "To study for your classes you spent countless hours in a library reading scrolls. Once you learn something about your speciality you can recall it easily and without delay and most knowledge that would be commonplace for someone who has studied the subject is know to you as well. Specialists of that field would take a quick liking to you, if for nothing else, for your curiosity for the subject."
-    },
-    "feat_mirrish_specialty": {
-      "name": "Specialty",
-      "description": "During your time as a student, you studied a particular field to advance your curriculum. Roll a d10 or choose your role: 1. Botany | 2. Humanoid Anatomy | 3. Astronomy | 4. Zoology | 5. Arcanology | 6. Engineering | 7. Petrology | 8. Naval Architecture | 9. Alchemy | 10. Metallurgy."
-    }
-  },
   "races": [
     {
       "id": "elfo",

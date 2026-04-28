@@ -1,0 +1,259 @@
+{
+  "mortal_types": {
+    "race_elf": {
+      "id": "race_elf",
+      "name": "Elf",
+        "image_url": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1766146451134x545674489115742800/ACR%20Steel%20Plate%20Armor%20Copy%20Cop-Portrait%20%287%29.png",
+      "quote": "\"Far greater is the admiration I harbor for the elves than for any other type of mortal in this world of ours. Only the Gods could stand in my way, had I been gifted with an elven body at birth. I admit to be envious of their natural link with magic, even if most misuse it. My own dear friend, the late Emperor Talahil, showed me what his kind was capable of when he partook in a tourney some time before his tragic end. I regret having no part in the ceremonies following his death, and even more not having been able to place him back on his throne yet. Soon. If all my research bears fruit, that crown will fall back into its rightful head.\"\n\n- Y. Mageshell, Manyhals of Death",
+      "description": "The tall and slender elves were born into magic. Many are the elves that adore the finer things in life, such as silk, silver and adornments that connect them with the life around them. Due to their long life they may come off as uncaring, stagnant or even lazy, when in reality they just see the world in a completly different way than any other mortal could hope to. They have the rare luxury of both time and patience. To an elf twenty years are the equivalent to four human years. When the whole world is burning, why prevent it when it will all blow over in no time? To others it might be years, an eternity, but for elves it's just another decade.\n\n**Arcane Masters**\nIt's said that of the three primary Kássian races elves were the last to emerge in Faleria, being created alongside humans and dwarves by Yivor, Myllad and Kássia as servants in their godly works. Elves were created for Myllad, God of knowledge, magic and libraries, to serve in his vast library. Through the years, elves organized and catalogued his many scrolls and tomes and, sometimes, even conducted field research, alongside humans. Due to these many tasks, they slowly absorved the pages' magic into their own bodies.\n\n**Elf Names**\nElven names are full of voiced sounds, making it difficult to find and elf with an f, s, sh, p, t, c or k in their name. Furthermore, elven names tend to involve diphthongs, l's and r's. Examples of elven names are Hemcriel, Zavandriel and Emaria.\n\n**Broken People**\nElves had already settled in Faleria for many generations once the Great Penury broke out. The large elven population in Scanduri was heavily affected by the demonic hordes' attacks. A local elf called Balágriel became a legendary figure during this period, recieving a silver greatmace from Yivor. Once the war ended, he rallied his fellow elves and some other allies into following him to conquer all of Faleria, starting with Zeiloryn. Frustrated by the seemingly worthless catastrophic losses they endured during the war, a huge number of elves followed him into his conquest, deeming all other elves who refused the call as traitors.\n\nSo the Silvermace Empire was founded and quickly established itself as a military power that was impossible to ignore. As they gained more territory, they proclaimed themselves as the capital of the world. Scanduri was still in ruins due to the Penury, Manyhal had not yet been united under Halwin, Nyjörsa was as it is today, a frozen tundra, and neither Raydis nor the Bysso Isles had been discovered, leaving the elven nation as the most powerful and dangerous nation in Faleria. As some elves tried to commune with nature and others tried to rebuild homes, the ancestors of the imperial elves razed fields and enlarged their new empire.",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": 9,
+      "age": "Reach adulthood at 108, considered young until 150. Live about 500 years.",
+      "weight_height": "1,75-2 meters tall, average 68 kg.",
+      "features": [
+        { "id": "feat_elf_asi", "level": 1 },
+        { "id": "feat_elf_darkvision", "level": 1 },
+        { "id": "feat_elf_keen_senses", "level": 1 },
+        { "id": "feat_elf_researchers", "level": 1 },
+        { "id": "feat_elf_rest", "level": 1 }
+      ],
+      "subtypes": [
+        "subtype_dark_elf",
+        "subtype_imperial_elf",
+        "subtype_light_elf",
+        "subtype_night_elf"
+      ]
+    }
+  },
+  "subtypes": {
+    "subtype_dark_elf": {
+      "id": "subtype_dark_elf",
+      "name": "Dark Elf",
+      "description": "Dark Elves are natural to the frozen tundras of Nyjörsa. They are often mistaken for dwarves in literature due to both being described as “ice-born” in silvanian, but physically they are very different. Like most elves, these are a tall and slender people, but dark elves tend to be the bulkiest of the elves. They have a distinct charcoal or dark blue skin, purple or pink eyes and silver white hair.",
+      "features": [
+        { "id": "feat_dark_elf_vision", "level": 1 },
+        { "id": "feat_dark_elf_shadowborn_1", "level": 1 },
+        { "id": "feat_dark_elf_shadowborn_3", "level": 3 },
+        { "id": "feat_dark_elf_shadowborn_5", "level": 5 }
+      ]
+    },
+    "subtype_imperial_elf": {
+      "id": "subtype_imperial_elf",
+      "name": "Imperial Elf",
+      "description": "Imperial Elves are closely related to light elves, directly deriving from them in “recent” times. Over the centuries, they have been raised only to serve the emperor. These elves have blonde or light brown hair, blue or green eyes and fair skin. Their ears are the longest of any elf, their length being a symbol of virtue, being adorned elegantly to show power or achievements.",
+      "features": [
+        { "id": "feat_imperial_elf_training", "level": 1 },
+        { "id": "feat_imperial_elf_highborn_1", "level": 1 },
+        { "id": "feat_imperial_elf_highborn_3", "level": 3 },
+        { "id": "feat_imperial_elf_highborn_5", "level": 5 }
+      ]
+    },
+    "subtype_light_elf": {
+      "id": "subtype_light_elf",
+      "name": "Light Elf",
+      "description": "Light Elves are the long lost cousins to the imperial elves. Natural to Scanduri, they are descendants of the elves that chose not to join the empire. These elves have brownish skin, brown or black hair, brown or black eyes and have the shortest ears of all elvish subtypes, with some being mistaken for Half-Elves. Despite their darker features, they call themselves light elves due to their enlightened decision to stay in Scanduri. Imperial elves only call them traitors.",
+      "features": [
+        { "id": "feat_light_elf_vision", "level": 1 },
+        { "id": "feat_light_elf_lightborn_1", "level": 1 },
+        { "id": "feat_light_elf_lightborn_3", "level": 3 },
+        { "id": "feat_light_elf_lightborn_5", "level": 5 }
+      ]
+    },
+    "subtype_night_elf": {
+      "id": "subtype_night_elf",
+      "name": "Night Elf",
+      "description": "Night Elves were the first elves to set foot in Faleria. Their purpose is lost to time, but now they remain in Manyhal. Having spent millenea in this world, their magic has attuned with the very nature that surrounds them. Their bodies have adapted to nature and transformed to resemble it. Their hair comes in almost any colour, as long as nature presents it. Their eyes either have a humanlike iris or an iris that covers their whole eye and these can be orange, yellow, brown, green or blue. Their skin has become a variation of the colour of tree trunks, so in a range from spruce to dark oak.",
+      "features": [
+        { "id": "feat_night_elf_ancestral", "level": 1 },
+        { "id": "feat_night_elf_oakborn_1", "level": 1 },
+        { "id": "feat_night_elf_oakborn_3", "level": 3 },
+        { "id": "feat_night_elf_oakborn_5", "level": 5 }
+      ]
+    }
+  },
+  "features": {
+    "feat_elf_asi": {
+      "id": "feat_elf_asi",
+      "name": "Elven Ability Score Increase",
+      "description": "You may choose to increase an ability score by 2 and one other ability score by 1 or increase three different ability scores by 1. Your Intelligence score maximum is 22, instead of the normal 20.",
+      "type": "asi_choice"
+    },
+    "feat_elf_darkvision": {
+      "id": "feat_elf_darkvision",
+      "name": "Elven Darkvision",
+      "description": "You can see in dim light within 18 meters of you as if it were bright light, and in darkness as if it was dim light. You can’t discern color in darkness, only shades of gold."
+    },
+    "feat_elf_keen_senses": {
+      "id": "feat_elf_keen_senses",
+      "name": "Keen Senses",
+      "description": "You have proficiency in the Perception skill.",
+      "proficiencies": {
+        "skills": ["Perception"]
+      }
+    },
+    "feat_elf_researchers": {
+      "id": "feat_elf_researchers",
+      "name": "Researchers of Myllad",
+      "description": "You have advantage on saving throws against exhaustion, and magic can’t put you to sleep."
+    },
+    "feat_elf_rest": {
+      "id": "feat_elf_rest",
+      "name": "Elvish Rest",
+      "description": "When performing a long rest, elves don’t need to sleep. Instead, they can enter a meditative state for only 4 hours. The clear state of mind gained by meditating in this way grants you the ability to cast your Mortal Subtype's level 1 spell twice instead of once.\n\nYou may instead rest for the normal 8 hours, which grants you 1d10 temporary hit points.",
+      "calc": {
+        "Rest (8 hours)": "1d10 THP"
+      }
+    },
+    "feat_dark_elf_vision": {
+      "id": "feat_dark_elf_vision",
+      "name": "Facing Shadows",
+      "description": "You have superior vision in dark and dim conditions. You can see in dim light within 36 meters of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of silver."
+    },
+    "feat_dark_elf_shadowborn_1": {
+      "id": "feat_dark_elf_shadowborn_1",
+      "name": "Shadowborn (Cantrip)",
+      "description": "You know the *Control Flames* cantrip.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for this spell. Make sure to select it below.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Intelligence", "Wisdom", "Charisma"],
+      "grantedSpells": ["spell_control_flames"]
+    },
+    "feat_dark_elf_shadowborn_3": {
+      "id": "feat_dark_elf_shadowborn_3",
+      "name": "Shadowborn (Level 1 Spell)",
+      "description": "You can cast the *Ice Knife* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_ice_knife"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_dark_elf_shadowborn_5": {
+      "id": "feat_dark_elf_shadowborn_5",
+      "name": "Shadowborn (Level 2 Spell)",
+      "description": "You can cast the *Darkness* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_darkness"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_imperial_elf_training": {
+      "id": "feat_imperial_elf_training",
+      "name": "Imperial Training",
+      "description": "You have proficiency with the shortsword, mace, shortbow and longbow.",
+      "proficiencies": {
+        "weapons": ["Shortsword", "Mace", "Shortbow", "Longbow"]
+      }
+    },
+    "feat_imperial_elf_highborn_1": {
+      "id": "feat_imperial_elf_highborn_1",
+      "name": "Highborn (Cantrip)",
+      "description": "You know the *True Strike* cantrip.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for this spell. Make sure to select it below.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Intelligence", "Wisdom", "Charisma"],
+      "grantedSpells": ["spell_true_strike"]
+    },
+    "feat_imperial_elf_highborn_3": {
+      "id": "feat_imperial_elf_highborn_3",
+      "name": "Highborn (Level 1 Spell)",
+      "description": "You can cast the *Wrathful Smite* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_wrathful_smite"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_imperial_elf_highborn_5": {
+      "id": "feat_imperial_elf_highborn_5",
+      "name": "Highborn (Level 2 Spell)",
+      "description": "You can cast the *Crown of Madness* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_crown_of_madness"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_light_elf_vision": {
+      "id": "feat_light_elf_vision",
+      "name": "Lightvision",
+      "description": "You are immune to the blinded condition if it would be caused by light."
+    },
+    "feat_light_elf_lightborn_1": {
+      "id": "feat_light_elf_lightborn_1",
+      "name": "Lightborn (Cantrip)",
+      "description": "You know the *Light* cantrip.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for this spell. Make sure to select it below.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Intelligence", "Wisdom", "Charisma"],
+      "grantedSpells": ["spell_light"]
+    },
+    "feat_light_elf_lightborn_3": {
+      "id": "feat_light_elf_lightborn_3",
+      "name": "Lightborn (Level 1 Spell)",
+      "description": "You can cast the *Faerie Fire* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_faerie_fire"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_light_elf_lightborn_5": {
+      "id": "feat_light_elf_lightborn_5",
+      "name": "Lightborn (Level 2 Spell)",
+      "description": "You can cast the *Invisibility* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_invisibility"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_night_elf_ancestral": {
+      "id": "feat_night_elf_ancestral",
+      "name": "Ancestral Knowledge",
+      "description": "You gain proficiency on a Wisdom skill of your choice.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Animal Handling", "Insight", "Medicine", "Perception", "Survival"]
+    },
+    "feat_night_elf_oakborn_1": {
+      "id": "feat_night_elf_oakborn_1",
+      "name": "Oakborn (Cantrip)",
+      "description": "You know the *Druidcraft* cantrip.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for this spell. Make sure to select it below.",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Intelligence", "Wisdom", "Charisma"],
+      "grantedSpells": ["spell_druidcraft"]
+    },
+    "feat_night_elf_oakborn_3": {
+      "id": "feat_night_elf_oakborn_3",
+      "name": "Oakborn (Level 1 Spell)",
+      "description": "You can cast the *Entangle* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_entangle"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    },
+    "feat_night_elf_oakborn_5": {
+      "id": "feat_night_elf_oakborn_5",
+      "name": "Oakborn (Level 2 Spell)",
+      "description": "You can cast the *Moonbeam* spell with this trait. Once you cast it with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast it using any spell slots you have of the appropriate level.",
+      "grantedSpells": ["spell_moonbeam"],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest",
+        "type": "uses"
+      }
+    }
+  }
+}
