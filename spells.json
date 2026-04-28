@@ -171,35 +171,6 @@
       "icon": "game-icons:invisible",
       "classes": ["Artificer", "Bard", "Sorcerer", "Warlock", "Wizard"]
     },
-
-  "spells": {
-    "fireball": {
-      "id": "fireball",
-      "name": "Fireball",
-      "description": "Uma fogo qualquer",
-      "level": 0,
-      "school": "Evocation",
-      "casting_time": "1 Action",
-      "range": "18m",
-      "duration": "Instantaneous",
-      "components": {
-        "v": true,
-        "s": true,
-        "m": false
-      },
-      "classes": [
-        "wizard"
-      ],
-      "effects": [
-        {
-          "type": "heal",
-          "formula": "wis",
-          "damage_type": "Slashing",
-          "dice": "1d9"
-        }
-      ]
-    }
-  },
     "spell_eldritch_storm": {
     "id": "spell_eldritch_storm",
     "name": "Eldritch Storm",
