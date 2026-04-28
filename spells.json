@@ -148,6 +148,58 @@
       "icon": "game-icons:invisible",
       "classes": ["Artificer", "Bard", "Sorcerer", "Warlock", "Wizard"]
     },
+"spell_eldritch_storm": {
+    "id": "spell_eldritch_storm",
+    "name": "Eldritch Storm",
+    "level": 3,
+    "school": "Evocation",
+    "casting_time": "1 Action",
+    "range": "120 feet",
+    "components": "V, S, M (a vial of glowing purple liquid worth 50 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": "A swirling storm of chaotic magical energy erupts in a 20-foot-radius sphere centered on a point you choose within range. Each creature in that area must make a Dexterity saving throw. A target takes 4d6 force damage and 4d6 necrotic damage on a failed save, or half as much damage on a successful one.\n\nWhile you maintain concentration, the storm persists. Any creature that ends its turn inside the storm takes 2d6 necrotic damage.",
+    "higher_level": "When you cast this spell using a spell slot of 4th level or higher, the initial force damage increases by 1d6 for each slot level above 3rd.",
+    "source": "Faleria Core Rulebook V2",
+    "icon": "game-icons:magic-swirl",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard",
+      "Eldritch Knight"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Initial Force",
+        "dice": "4d6",
+        "damage_type": "Force",
+        "scaling": "+1d6 per slot lvl"
+      },
+      {
+        "label": "Initial Necrotic",
+        "dice": "4d6",
+        "damage_type": "Necrotic",
+        "scaling": ""
+      },
+      {
+        "label": "Lingering Storm",
+        "dice": "2d6",
+        "damage_type": "Necrotic",
+        "scaling": ""
+      }
+    ],
+    "errata": [
+      {
+        "date": "2026-04-20",
+        "note": "Reduced Lingering damage from 3d6 to 2d6. The area denial was too punishing for melee enemies in tight spaces.",
+        "previous_version": "While you maintain concentration, the storm persists. Any creature that ends its turn inside the storm takes 3d6 necrotic damage."
+      },
+      {
+        "date": "2025-11-05",
+        "note": "Added 'Sorcerer' to the list of available classes. Originally it was restricted to Warlocks and Wizards.",
+        "previous_version": ""
+      }
+    ]
+  },
     "spell_druidcraft": {
       "id": "spell_druidcraft",
       "name": "Druidcraft",
@@ -176,6 +228,7 @@
       "icon": "game-icons:vine-whip",
       "classes": ["Druid"]
     },
+    
     "spell_moonbeam": {
       "id": "spell_moonbeam",
       "name": "Moonbeam",
