@@ -114,9 +114,8 @@
         "formula": "1d6 + 4" 
       },
       "spells": [
-        { "spell_id": "burning_hands_001", "cost": 1 },
-        { "spell_id": "fireball_001", "cost": 3 },
-        { "spell_id": "wall_of_fire_001", "cost": 4 }
+        { "spell_id": "spell_darkness", "cost": 1 },
+        { "spell_id": "spell_fireball", "cost": 3 }
       ],
       
       "isContainer": false,

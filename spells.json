@@ -1,129 +1,351 @@
 {
-  "items": {
-    "longsword_001": {
-      "name": "Longsword",
-      "icon": "ph:sword-bold",
-      "description": "A classic versatile weapon, forged in steel.",
-      "category": "Weapon",
-      "subCategory": "Martial Melee",
-      "rarity": "Mundane",
-      "price": 15,
-      "weight": 3,
-      "unique": false,
-      "stackable": false,
-      "isConsumable": false,
-      
-      "equippable": true,
-      "equipmentSlot": "Hold", 
-      "attunement": false,
-      
-      "properties": ["Versatile", "Slashing"],
-      "range": "5 ft",
-      
+  "spells": {
+    "spell_control_flames": {
+      "id": "spell_control_flames",
+      "name": "Control Flames",
+      "level": 0,
+      "school": "Transmutation",
+      "casting_time": "1 Action",
+      "range": "60 feet",
+      "components": "S",
+      "duration": "Instantaneous or 1 hour",
+      "description": "You choose nonmagical flame that you can see within range and that fits within a 5-foot cube. You affect it in one of the following ways:\n\n* You instantaneously expand the flame 5 feet in one direction, provided that wood or other fuel is present in the new location.\n* You instantaneously extinguish the flames within the cube.\n* You double or halve the area of bright light and dim light cast by the flame, change its color, or both. The change lasts for 1 hour.\n* You cause simple shapes—such as the vague form of a creature, an inanimate object, or a location—to appear within the flames and animate as you like. The shapes last for 1 hour.\n\nIf you cast this spell multiple times, you can have up to three non-instantaneous effects active at a time, and you can dismiss such an effect as an action.",
+      "source": "Xanathar's Guide To Everything",
+      "icon": "game-icons:flame",
+      "classes": ["Druid", "Sorcerer", "Wizard"]
+    },
+    "spell_ice_knife": {
+      "id": "spell_ice_knife",
+      "name": "Ice Knife",
+      "level": 1,
+      "school": "Conjuration",
+      "casting_time": "1 Action",
+      "range": "60 feet",
+      "components": "S, M (a drop of water or piece of ice)",
+      "duration": "Instantaneous",
+      "description": "You create a shard of ice and fling it at one creature within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 piercing damage. Hit or miss, the shard then explodes. The target and each creature within 5 feet of it must succeed on a DEX save or take 2d6 cold damage.",
+      "higher_level": "The cold damage increases by 1d6 for each slot level above 1st.",
+      "source": "Xanathar's Guide To Everything",
+      "icon": "game-icons:ice-cube",
+      "classes": ["Druid", "Sorcerer", "Wizard"],
       "vtt_rolls": [
         {
-          "label": "Base Attack (1-Handed)",
-          "dice": "1d8",
-          "damage_type": "Slashing",
-          "scaling": "STR"
+          "label": "Impact (Hit)",
+          "dice": "1d10",
+          "damage_type": "Piercing"
         },
         {
-          "label": "Versatile Attack (2-Handed)",
-          "dice": "1d10",
-          "damage_type": "Slashing",
-          "scaling": "STR"
+          "label": "Explosion (Save)",
+          "dice": "2d6",
+          "damage_type": "Cold",
+          "scaling": "+1d6 per slot lvl"
         }
-      ],
-      "vtt_modifiers": {},
-      "spells": [],
-      
-      "isContainer": false,
-      "capacityKg": 0,
-      "canTieItems": false,
-      "tieCapacity": 0,
-      "source": "Core Rulebook"
+      ]
     },
-
-    "adventurers_backpack_001": {
-      "name": "Adventurer's Backpack",
-      "icon": "ph:backpack-bold",
-      "description": "A sturdy leather backpack. Perfect for carrying all your dungeon loot.",
-      "category": "Gear",
-      "subCategory": "Adventuring Gear",
-      "rarity": "Mundane",
-      "price": 2,
-      "weight": 5,
-      "unique": false,
-      "stackable": false,
-      "isConsumable": false,
-      
-      "equippable": true,
-      "equipmentSlot": "Back",
-      "attunement": false,
-      
-      "properties": [],
-      "range": null,
-      
-      "vtt_rolls": [],
-      "vtt_modifiers": {},
-      "spells": [],
-      
-      "isContainer": true,
-      "capacityKg": 15.0,
-      "canTieItems": true,
-      "tieCapacity": 3,
-      "source": "Core Rulebook"
+    "spell_darkness": {
+      "id": "spell_darkness",
+      "name": "Darkness",
+      "level": 2,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "60 feet",
+      "components": "V, M (bat fur and a drop of pitch or piece of coal)",
+      "duration": "Concentration, up to 10 minutes",
+      "description": "Magical darkness spreads from a point you choose within range to fill a 15-foot-radius sphere for the duration. The darkness spreads around corners. A creature with darkvision can't see through this darkness, and nonmagical light can't illuminate it.\n\nIf the point you choose is on an object you are holding or one that isn't being worn or carried, the darkness emanates from the object and moves with it. Completely covering the source of the darkness with an opaque object, such as a bowl or a helm, blocks the darkness.\n\nIf any of this spell's area overlaps with an area of light created by a spell of 2nd level or lower, the spell that created the light is dispelled.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:eclipse",
+      "classes": ["Sorcerer", "Warlock", "Wizard"]
     },
-
-    "staff_of_fire_001": {
-      "name": "Staff of Fire",
-      "icon": "ph:magic-wand-bold",
-      "description": "A staff made of brass and obsidian. You can use an action to expend charges and cast fire spells.",
-      "category": "Weapon",
-      "subCategory": "Simple Melee",
-      "rarity": "Very Rare",
-      "price": 8000,
-      "weight": 4,
-      "unique": true,
-      "stackable": false,
-      "isConsumable": false,
-      
-      "equippable": true,
-      "equipmentSlot": "Hold",
-      "attunement": true,
-      
-      "properties": ["Focus", "Versatile"],
-      "range": "5 ft",
-      
+    "spell_true_strike": {
+      "id": "spell_true_strike",
+      "name": "True Strike",
+      "level": 0,
+      "school": "Divination",
+      "casting_time": "1 Action",
+      "range": "30 feet",
+      "components": "S",
+      "duration": "Concentration, up to 1 round",
+      "description": "You extend your hand and point a finger at a target in range. Your magic grants you a brief insight into the target's defenses. On your next turn, you gain advantage on your first attack roll against the target, provided that this spell hasn't ended.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:crosshair",
+      "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+    },
+    "spell_wrathful_smite": {
+      "id": "spell_wrathful_smite",
+      "name": "Wrathful Smite",
+      "level": 1,
+      "school": "Evocation",
+      "casting_time": "1 Bonus Action",
+      "range": "Self",
+      "components": "V",
+      "duration": "Concentration, up to 1 minute",
+      "description": "The next time you hit with a melee weapon attack during this spell's duration, your attack deals an extra 1d6 psychic damage. Additionally, if the target is a creature, it must make a WIS save or be frightened of you until the spell ends. As an action, the creature can make a WIS check against your spell save DC to steel its resolve and end this spell.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:angry-eyes",
+      "classes": ["Paladin"],
       "vtt_rolls": [
         {
-          "label": "Strike",
+          "label": "Smite Extra Damage",
           "dice": "1d6",
-          "damage_type": "Bludgeoning",
-          "scaling": "STR"
+          "damage_type": "Psychic"
         }
-      ],
-      "vtt_modifiers": {
-        "fire_resistance": true,
-        "spell_attack_bonus": 2
+      ]
+    },
+    "spell_crown_of_madness": {
+      "id": "spell_crown_of_madness",
+      "name": "Crown of Madness",
+      "level": 2,
+      "school": "Enchantment",
+      "casting_time": "1 Action",
+      "range": "120 feet",
+      "components": "V, S",
+      "duration": "Concentration, up to 1 minute",
+      "description": "One humanoid of your choice that you can see within range must succeed on a WIS save or become charmed by you for the duration. While the target is charmed in this way, a twisted crown of jagged iron appears on its head, and a madness glows in its eyes.\n\nThe charmed target must use its action before moving on each of its turns to make a melee attack against a creature other than itself that you mentally choose. The target can act normally on its turn if you choose no creature or if none are within its reach.\n\nOn your subsequent turns, you must use your action to maintain control over the target, or the spell ends. Also, the target can make a WIS save at the end of each of its turns. On a success, the spell ends.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:crown-of-thorns",
+      "classes": ["Bard", "Sorcerer", "Warlock", "Wizard"]
+    },
+    "spell_light": {
+      "id": "spell_light",
+      "name": "Light",
+      "level": 0,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "Touch",
+      "components": "V, M (a firefly or phosphorescent moss)",
+      "duration": "1 hour",
+      "description": "You touch one object that is no larger than 10 feet in any dimension. Until the spell ends, the object sheds bright light in a 20-foot radius and dim light for an additional 20 feet. The light can be colored as you like. Completely covering the object with something opaque blocks the light. The spell ends if you cast it again or dismiss it as an action.\n\nIf you target an object held or worn by a hostile creature, that creature must succeed on a DEX save to avoid the spell.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:glowing-artifact",
+      "classes": ["Artificer", "Bard", "Cleric", "Sorcerer", "Wizard"]
+    },
+    "spell_faerie_fire": {
+      "id": "spell_faerie_fire",
+      "name": "Faerie Fire",
+      "level": 1,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "60 feet",
+      "components": "V",
+      "duration": "Concentration, up to 1 minute",
+      "description": "Each object in a 20-foot cube within range is outlined in blue, green, or violet light (your choice). Any creature in the area when the spell is cast is also outlined in light if it fails a DEX save. For the duration, objects and affected creatures shed dim light in a 10-foot radius.\n\nAny attack roll against an affected creature or object has advantage if the attacker can see it, and the affected creature or object can't benefit from being invisible.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:fairy-wings",
+      "classes": ["Artificer", "Bard", "Druid"]
+    },
+    "spell_invisibility": {
+      "id": "spell_invisibility",
+      "name": "Invisibility",
+      "level": 2,
+      "school": "Illusion",
+      "casting_time": "1 Action",
+      "range": "Touch",
+      "components": "V, S, M (an eyelash encased in gum arabic)",
+      "duration": "Concentration, up to 1 hour",
+      "description": "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell.",
+      "higher_level": "You can target one additional creature for each slot level above 2nd.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:invisible",
+      "classes": ["Artificer", "Bard", "Sorcerer", "Warlock", "Wizard"]
+    },
+    "spell_eldritch_storm": {
+    "id": "spell_eldritch_storm",
+    "name": "Eldritch Storm",
+    "level": 3,
+    "school": "Evocation",
+    "casting_time": "1 Action",
+    "range": "120 feet",
+    "components": "V, S, M (a vial of glowing purple liquid worth 50 gp)",
+    "duration": "Concentration, up to 1 minute",
+    "description": "A swirling storm of chaotic magical energy erupts in a 20-foot-radius sphere centered on a point you choose within range. Each creature in that area must make a Dexterity saving throw. A target takes 4d6 force damage and 4d6 necrotic damage on a failed save, or half as much damage on a successful one.\n\nWhile you maintain concentration, the storm persists. Any creature that ends its turn inside the storm takes 2d6 necrotic damage.",
+    "higher_level": "When you cast this spell using a spell slot of 4th level or higher, the initial force damage increases by 1d6 for each slot level above 3rd.",
+    "source": "Faleria Core Rulebook V2",
+    "icon": "game-icons:magic-swirl",
+    "classes": [
+      "Sorcerer",
+      "Warlock",
+      "Wizard",
+      "Eldritch Knight"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Initial Force",
+        "dice": "4d6",
+        "damage_type": "Force",
+        "scaling": "+1d6 per slot lvl"
       },
-      
-      "charges": {
-        "max": 10,
-        "reset": "dawn",
-        "formula": "1d6 + 4" 
+      {
+        "label": "Initial Necrotic",
+        "dice": "4d6",
+        "damage_type": "Necrotic",
+        "scaling": ""
       },
-      "spells": [
-        { "spell_id": "burning_hands_001", "cost": 1 },
-        { "spell_id": "spell_fireball", "cost": 3 },
-        { "spell_id": "wall_of_fire_001", "cost": 4 }
+      {
+        "label": "Lingering Storm",
+        "dice": "2d6",
+        "damage_type": "Necrotic",
+        "scaling": ""
+      }
+    ],
+    "errata": [
+      {
+        "date": "2026-04-20",
+        "note": "Reduced Lingering damage from 3d6 to 2d6. The area denial was too punishing for melee enemies in tight spaces.",
+        "previous_version": "While you maintain concentration, the storm persists. Any creature that ends its turn inside the storm takes 3d6 necrotic damage."
+      },
+      {
+        "date": "2025-11-05",
+        "note": "Added 'Sorcerer' to the list of available classes. Originally it was restricted to Warlocks and Wizards.",
+        "previous_version": ""
+      }
+    ]
+    },
+    "spell_firebolt": {
+      "id": "spell_firebolt",
+      "name": "Firebolt",
+      "level": 0,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "120 feet",
+      "components": "V, S",
+      "duration": "Instantaneous",
+      "description": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.",
+      "higher_level": "The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).",
+      "source": "Player Handbook 2014",
+      "icon": "game-icons:fire-tail",
+      "classes": [
+        "Artificer",
+        "Sorcerer",
+        "Wizard"
       ],
-      
-      "isContainer": false,
-      "capacityKg": 0,
-      "canTieItems": false,
-      "tieCapacity": 0,
-      "source": "Core Rulebook"
+      "vtt_rolls": [
+        {
+          "label": "Damage",
+          "dice": "1d10",
+          "damage_type": "Fire",
+          "scaling": "+1d10 (at level 5,11 and 17)"
+        }
+      ]
+    },
+    "spell_druidcraft": {
+      "id": "spell_druidcraft",
+      "name": "Druidcraft",
+      "level": 0,
+      "school": "Transmutation",
+      "casting_time": "1 Action",
+      "range": "30 feet",
+      "components": "V, S",
+      "duration": "Instantaneous",
+      "description": "Whispering to the spirits of nature, you create one of the following effects within range:\n\n* You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on.\n* You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.\n* You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.\n* You instantly light or snuff out a candle, a torch, or a small campfire.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:leaf-swirl",
+      "classes": ["Druid"]
+    },
+    "spell_entangle": {
+      "id": "spell_entangle",
+      "name": "Entangle",
+      "level": 1,
+      "school": "Conjuration",
+      "casting_time": "1 Action",
+      "range": "90 feet",
+      "components": "V, S",
+      "duration": "Concentration, up to 1 minute",
+      "description": "Grasping weeds and vines sprout from the ground in a 20-foot square starting from a point within range. For the duration, these plants turn the ground in the area into difficult terrain.\n\nA creature in the area when you cast the spell must succeed on a STR save or be restrained by the entangling plants until the spell ends. A creature restrained by the plants can use its action to make a STR check against your spell save DC. On a success, it frees itself.\n\nWhen the spell ends, the conjured plants wilt away.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:vine-whip",
+      "classes": ["Druid"]
+    },
+  "spell_spectral_wave": {
+    "id": "spell_spectral_wave",
+    "name": "Spectral Wave",
+    "level": 4,
+    "school": "Soul Magic",
+    "casting_time": "1 Action",
+    "range": "30 m",
+    "components": "V, S, M (80 Soul Power, which the spell consumes)",
+    "duration": "Instantaneous",
+    "description": "You summon a group of collected souls in the form of a gigantic wave that crashes down on an area within range. The wave can be up to 4.5 meters wide, and up to 9 meters tall, and travels in a 15 meter line. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d10 cold damage and becomes withered. On a successful save, a creature takes half as much damage and isn’t withered.",
+    "saving_throw": "dexterity",
+    "source": "Faleria Core Rulebook",
+    "icon": "game-icons:static-waves",
+    "classes": [
+      "Soul Gatherer"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Damage",
+        "dice": "4d10",
+        "damage_type": "Cold",
+        "scaling": ""
+      }
+    ]
+  },
+    "spell_moonbeam": {
+      "id": "spell_moonbeam",
+      "name": "Moonbeam",
+      "level": 2,
+      "school": "Evocation",
+      "casting_time": "1 Action",
+      "range": "120 feet",
+      "components": "V, S, M (several seeds of any moonseed plant and a piece of opalescent feldspar)",
+      "duration": "Concentration, up to 1 minute",
+      "description": "A silvery beam of pale light shines down in a 5-foot-radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.\n\nWhen a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a CON save. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.\n\nA shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light.\n\nOn each of your turns after you cast this spell, you can use an action to move the beam up to 60 feet in any direction.",
+      "higher_level": "The damage increases by 1d10 for each slot level above 2nd.",
+      "source": "Player's Handbook",
+      "icon": "game-icons:laser-sparks",
+      "classes": ["Druid"],
+      "vtt_rolls": [
+        {
+          "label": "Moonbeam Damage",
+          "dice": "2d10",
+          "damage_type": "Radiant",
+          "scaling": "+1d10 per slot lvl"
+        }
+      ]
+  },
+  "spell_fireball": {
+    "id": "spell_fireball",
+    "name": "Fireball",
+    "level": 3,
+    "school": "Evocation",
+    "casting_time": "1 Action",
+    "range": "45m",
+    "components": "V, S, M (a tiny ball of bat guano and sulfur)",
+    "duration": "Instantaneous",
+    "description": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 6-meters-radius sphere centered on that point must make a Dexterity saving throw. A target takes 6d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried.",
+    "saving_throw": "dexterity",
+    "higher_level": "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd.",
+    "source": "Player's Handbook 2014",
+    "icon": "game-icons:fire-tail",
+    "classes": [
+      "Sorcerer"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Damage",
+        "dice": "6d6",
+        "damage_type": "Fire",
+        "scaling": "+1d6 for each slot level above 3rd."
+      }
+    ],
+    "errata": [
+      {
+        "date": "2026-04-29",
+        "note": "Damaged reduced from 8d6 to 6d6.",
+        "previous_version": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 6-meters-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+      }
+    ]
     }
-  }
+  },
+  "backgrounds": [
+    {
+      "id": "bg_mage_apprentice",
+      "name": "Mage Apprentice",
+      "description": "You spent years studying basic magical theory under a master wizard.",
+      "proficiencies": {
+        "skills": ["arcana", "history"]
+      },
+      "features": ["feat_apprentice_magic"]
+    }
+  ]
 }
