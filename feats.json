@@ -68,30 +68,27 @@
       "name": "War Caster",
       "description": "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:\n• You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.\n• You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.\n• When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
     },
-      "feat_astral_herald": {
-        "name": "Herald of the Astral Weave",
-        "icon": "ph:auto-fix-bold",
-        "source": "Cosmic Expansion",
-        "prerequisites": "Intelligence or Wisdom 13+, Ability to cast at least one spell",
-        "description": "You have touched the fabric of the Astral Sea, granting you unparalleled versatility.\n\n• You gain a bonus to initiative and defense.\n• Your mind expands, granting you new spells and skills.\n• You can tap into astral energy to empower your actions.",
-        "vtt_data": {
-          "modifiers": { "initiative": 5, "ac": 1 },
-          "asi": { "choose": 1, "amount": 1, "options": ["INT", "WIS", "CHA"] },
-          "proficiencies": {
-            "fixed": ["Arcana"],
-            "choice": { "amount": 1, "options": ["History", "Religion", "Nature"] }
-          },
-          "resources": { "name": "Astral Charges", "max": 3, "reset": "long_rest" },
-          "spells": {
-            "fixed": ["spell_misty_step"],
-            "choice": { "amount": 2, "level": 0, "class": "Sorcerer", "note": "Any school" }
-          },
-          "traits": ["Advantage on Saving Throws against Spells", "Darkvision 60ft"]
-        },
-        "errata": [
-          { "date": "2026-04-20", "note": "Increased Initiative bonus from +3 to +5." }
-        ]
-      }
+    "feat_astral_herald": {
+      "name": "Herald of the Astral Weave",
+      "icon": "ph:auto-fix-bold",
+      "source": "Cosmic Expansion",
+      "prerequisites": "Intelligence 13+",
+      "description": "You have touched the fabric of the Astral Sea, granting you unparalleled versatility...",
+      "vtt_data": {
+        "modifiers": [
+          { "label": "Initiative", "value": "+5", "type": "initiative" },
+          { "label": "Armor Class", "value": "+1", "type": "ac" }
+        ],
+        "resources": [
+          { "label": "Astral Charges", "value": "3", "reset": "Long Rest", "type": "resource" }
+        ],
+        "spells_fixed": ["Misty Step", "Detect Magic"],
+        "spells_choice": "2x Level 0 Sorcerer Spells"
+      },
+      "errata": [
+        { "date": "2026-04-20", "note": "Adjusted initiative bonus for VTT balance." }
+      ]
+    }
   }
   
 }
