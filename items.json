@@ -1,6 +1,6 @@
 {
   "items": {
-    "longsword_001": {
+    "item_longsword": {
       "name": "Longsword",
       "icon": "ph:sword-bold",
       "description": "A classic versatile weapon, forged in steel.",
@@ -12,13 +12,14 @@
       "unique": false,
       "stackable": false,
       "isConsumable": false,
+      "canBeTied": true,
       
       "equippable": true,
       "equipmentSlot": "Hold", 
       "attunement": false,
       
       "properties": ["Versatile", "Slashing"],
-      "range": "5 ft",
+      "range": "5",
       
       "vtt_rolls": [
         {
@@ -44,7 +45,7 @@
       "source": "Core Rulebook"
     },
 
-    "adventurers_backpack_001": {
+    "item_adventurers_backpack": {
       "name": "Adventurer's Backpack",
       "icon": "ph:backpack-bold",
       "description": "A sturdy leather backpack. Perfect for carrying all your dungeon loot.",
@@ -56,6 +57,7 @@
       "unique": false,
       "stackable": false,
       "isConsumable": false,
+      "canBeTied": false,
       
       "equippable": true,
       "equipmentSlot": "Back",
@@ -75,7 +77,7 @@
       "source": "Core Rulebook"
     },
 
-    "staff_of_fire_001": {
+    "item_staff_of_fire": {
       "name": "Staff of Fire",
       "icon": "ph:magic-wand-bold",
       "description": "A staff made of brass and obsidian. You can use an action to expend charges and cast fire spells.",
@@ -87,13 +89,14 @@
       "unique": true,
       "stackable": false,
       "isConsumable": false,
+      "canBeTied": true,
       
       "equippable": true,
       "equipmentSlot": "Hold",
       "attunement": true,
       
       "properties": ["Focus", "Versatile"],
-      "range": "5 ft",
+      "range": "5",
       
       "vtt_rolls": [
         {
@@ -118,6 +121,44 @@
         { "spell_id": "spell_fireball", "cost": 3 }
       ],
       
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
+    },
+
+    "item_javelin": {
+      "name": "Javelin",
+      "icon": "ph:spear-bold",
+      "description": "A light spear meant to be thrown.",
+      "category": "Weapon",
+      "subCategory": "Simple Melee",
+      "rarity": "Mundane",
+      "price": 0.5,
+      "weight": 2,
+      "unique": false,
+      "stackable": true,
+      "isConsumable": false,
+      "canBeTied": true,
+      
+      "equippable": true,
+      "equipmentSlot": "Hold",
+      "attunement": false,
+      
+      "properties": ["Thrown", "Piercing"],
+      "range": "30/120",
+      
+      "vtt_rolls": [
+        {
+          "label": "Throw / Poke",
+          "dice": "1d6",
+          "damage_type": "Piercing",
+          "scaling": "STR"
+        }
+      ],
+      "vtt_modifiers": {},
+      "spells": [],
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
