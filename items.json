@@ -2,88 +2,128 @@
   "items": {
     "longsword_001": {
       "name": "Longsword",
+      "icon": "ph:sword-bold",
+      "description": "A classic versatile weapon, forged in steel.",
       "category": "Weapon",
       "subCategory": "Martial Melee",
       "rarity": "Mundane",
-      "equipmentSlot": "Hold (mao direita)",
-      "weight": 3,
       "price": 15,
-      "source": "Core Rulebook",
-      "icon": "ph:sword-bold",
-      "description": "A classic versatile weapon. Does 1d8 slashing damage, or 1d10 if used with two hands."
-    },
-    "plate_armor_001": {
-      "name": "Plate Armor",
-      "category": "Armor",
-      "subCategory": "Heavy Armor",
-      "rarity": "Mundane",
-      "equipmentSlot": "Armor",
-      "weight": 65,
-      "price": 1500,
-      "source": "Core Rulebook",
-      "icon": "ph:shield-chevron-bold",
-      "description": "Plate consists of shaped, interlocking metal plates to cover the entire body. AC equals 18.",
-      "vtt_data": {
-        "modifiers": {
-          "AC": 18
-        }
-      }
-    },
-    "boots_of_speed_001": {
-      "name": "Boots of Speed",
-      "category": "Wondrous Item",
-      "subCategory": "Footwear",
-      "rarity": "Rare",
-      "equipmentSlot": "Boots",
-      "weight": 1,
-      "price": 4000,
-      "attunement": true,
-      "source": "Core Rulebook",
-      "icon": "ph:boot-bold",
-      "description": "While you wear these boots, you can use a bonus action to click the heels together. Your walking speed is doubled.",
-      "vtt_data": {
-        "modifiers": {
-          "speed": 30
-        }
-      }
-    },
-    "ring_of_protection_001": {
-      "name": "Ring of Protection",
-      "category": "Wondrous Item",
-      "subCategory": "Jewelry",
-      "rarity": "Rare",
-      "equipmentSlot": "Rings 1",
-      "weight": 0,
-      "price": 3500,
-      "attunement": true,
-      "source": "Core Rulebook",
-      "icon": "ph:unite-bold",
-      "description": "You gain a +1 bonus to AC and saving throws while wearing this ring.",
-      "vtt_data": {
-        "modifiers": {
-          "AC": 1,
-          "saving_throws": 1
-        }
-      }
-    },
-    "holy_avenger_001": {
-      "name": "Holy Avenger",
-      "category": "Weapon",
-      "subCategory": "Legendary Sword",
-      "rarity": "Legendary",
-      "equipmentSlot": "Hold (mao direita)",
       "weight": 3,
-      "price": 50000,
-      "attunement": true,
-      "source": "Core Rulebook",
-      "icon": "ph:sword-bold",
-      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead, it takes an extra 2d10 radiant damage.",
-      "vtt_data": {
-        "modifiers": {
-          "attack_bonus": 3,
-          "damage_bonus": 3
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      
+      "equippable": true,
+      "equipmentSlot": "Hold", 
+      "attunement": false,
+      
+      "properties": ["Versatile", "Slashing"],
+      "range": "5 ft",
+      
+      "vtt_rolls": [
+        {
+          "label": "Base Attack (1-Handed)",
+          "dice": "1d8",
+          "damage_type": "Slashing",
+          "scaling": "STR"
+        },
+        {
+          "label": "Versatile Attack (2-Handed)",
+          "dice": "1d10",
+          "damage_type": "Slashing",
+          "scaling": "STR"
         }
-      }
+      ],
+      "vtt_modifiers": {},
+      "spells": [],
+      
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
+    },
+
+    "adventurers_backpack_001": {
+      "name": "Adventurer's Backpack",
+      "icon": "ph:backpack-bold",
+      "description": "A sturdy leather backpack. Perfect for carrying all your dungeon loot.",
+      "category": "Gear",
+      "subCategory": "Adventuring Gear",
+      "rarity": "Mundane",
+      "price": 2,
+      "weight": 5,
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      
+      "equippable": true,
+      "equipmentSlot": "Back",
+      "attunement": false,
+      
+      "properties": [],
+      "range": null,
+      
+      "vtt_rolls": [],
+      "vtt_modifiers": {},
+      "spells": [],
+      
+      "isContainer": true,
+      "capacityKg": 15.0,
+      "canTieItems": true,
+      "tieCapacity": 3,
+      "source": "Core Rulebook"
+    },
+
+    "staff_of_fire_001": {
+      "name": "Staff of Fire",
+      "icon": "ph:magic-wand-bold",
+      "description": "A staff made of brass and obsidian. You can use an action to expend charges and cast fire spells.",
+      "category": "Weapon",
+      "subCategory": "Simple Melee",
+      "rarity": "Very Rare",
+      "price": 8000,
+      "weight": 4,
+      "unique": true,
+      "stackable": false,
+      "isConsumable": false,
+      
+      "equippable": true,
+      "equipmentSlot": "Hold",
+      "attunement": true,
+      
+      "properties": ["Focus", "Versatile"],
+      "range": "5 ft",
+      
+      "vtt_rolls": [
+        {
+          "label": "Strike",
+          "dice": "1d6",
+          "damage_type": "Bludgeoning",
+          "scaling": "STR"
+        }
+      ],
+      "vtt_modifiers": {
+        "fire_resistance": true,
+        "spell_attack_bonus": 2
+      },
+      
+      "charges": {
+        "max": 10,
+        "reset": "dawn",
+        "formula": "1d6 + 4" 
+      },
+      "spells": [
+        { "spell_id": "burning_hands_001", "cost": 1 },
+        { "spell_id": "fireball_001", "cost": 3 },
+        { "spell_id": "wall_of_fire_001", "cost": 4 }
+      ],
+      
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
     }
   }
 }
