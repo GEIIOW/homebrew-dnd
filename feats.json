@@ -38,6 +38,18 @@
         ]
       }
     },
+    "feat_apprentice_magic": {
+          "name": "Apprentice Magic",
+          "description": "Your studies have paid off. You learn two Cantrips of your choice from the wizard spell list. Additionally, you learn one 1st-level spell and can cast it once per long rest without expending a spell slot.",
+          "spellChoices": [
+            { "choose": 2, "level": 0, "label": "Cantrips" },
+            { "choose": 1, "level": 1, "label": "1st-Level Spell" }
+          ],
+          "resources": {
+            "max": 1,
+            "reset": "long_rest"
+          }
+        },
     "feat_sharpshooter": {
       "name": "Sharpshooter",
       "description": "You have mastered ranged weapons and can make shots that others find impossible:\n• Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.\n• Your ranged weapon attacks ignore half cover and three-quarters cover.\n• Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."

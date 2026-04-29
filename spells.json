@@ -262,19 +262,5 @@
       },
       "features": ["feat_apprentice_magic"]
     }
-  ],
-  "features": {
-    "feat_apprentice_magic": {
-      "name": "Apprentice Magic",
-      "description": "Your studies have paid off. You learn two Cantrips of your choice from the wizard spell list. Additionally, you learn one 1st-level spell and can cast it once per long rest without expending a spell slot.",
-      "spellChoices": [
-        { "choose": 2, "level": 0, "label": "Cantrips" },
-        { "choose": 1, "level": 1, "label": "1st-Level Spell" }
-      ],
-      "resources": {
-        "max": 1,
-        "reset": "long_rest"
-      }
-    }
-  }
+  ]
 }
