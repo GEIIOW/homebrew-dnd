@@ -72,22 +72,14 @@
       "name": "Herald of the Astral Weave",
       "icon": "ph:auto-fix-bold",
       "source": "Cosmic Expansion",
-      "prerequisites": "Intelligence 13+",
-      "description": "You have touched the fabric of the Astral Sea, granting you unparalleled versatility...",
       "vtt_data": {
         "modifiers": [
-          { "label": "Initiative", "value": "+5", "type": "initiative" },
-          { "label": "Armor Class", "value": "+1", "type": "ac" }
+          { "label": "Initiative", "value": "+5", "type": "initiative" }
         ],
-        "resources": [
-          { "label": "Astral Charges", "value": "3", "reset": "Long Rest", "type": "resource" }
-        ],
-        "spells_fixed": ["Misty Step", "Detect Magic"],
+        "spells_fixed": ["spell_misty_step", "spell_detect_magic"],
         "spells_choice": "2x Level 0 Sorcerer Spells"
       },
-      "errata": [
-        { "date": "2026-04-20", "note": "Adjusted initiative bonus for VTT balance." }
-      ]
+      "description": "You have touched the fabric of the Astral Sea..."
     }
   }  
 }
