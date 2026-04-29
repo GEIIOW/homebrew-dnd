@@ -302,7 +302,6 @@
           "scaling": "+1d10 per slot lvl"
         }
       ]
-    }
   },
   "spell_fireball": {
     "id": "spell_fireball",
