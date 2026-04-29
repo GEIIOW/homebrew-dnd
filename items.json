@@ -1,0 +1,89 @@
+{
+  "items": {
+    "longsword_001": {
+      "name": "Longsword",
+      "category": "Weapon",
+      "subCategory": "Martial Melee",
+      "rarity": "Mundane",
+      "equipmentSlot": "Hold (mao direita)",
+      "weight": "3 lb.",
+      "price": "15 gp",
+      "source": "Core Rulebook",
+      "icon": "ph:sword-bold",
+      "description": "A classic versatile weapon. Does 1d8 slashing damage, or 1d10 if used with two hands."
+    },
+    "plate_armor_001": {
+      "name": "Plate Armor",
+      "category": "Armor",
+      "subCategory": "Heavy Armor",
+      "rarity": "Mundane",
+      "equipmentSlot": "Armor",
+      "weight": "65 lb.",
+      "price": "1,500 gp",
+      "source": "Core Rulebook",
+      "icon": "ph:shield-chevron-bold",
+      "description": "Plate consists of shaped, interlocking metal plates to cover the entire body. AC equals 18.",
+      "vtt_data": {
+        "modifiers": {
+          "AC": 18
+        }
+      }
+    },
+    "boots_of_speed_001": {
+      "name": "Boots of Speed",
+      "category": "Wondrous Item",
+      "subCategory": "Footwear",
+      "rarity": "Rare",
+      "equipmentSlot": "Boots",
+      "weight": "1 lb.",
+      "price": "4,000 gp",
+      "attunement": true,
+      "source": "Core Rulebook",
+      "icon": "ph:boot-bold",
+      "description": "While you wear these boots, you can use a bonus action to click the heels together. Your walking speed is doubled.",
+      "vtt_data": {
+        "modifiers": {
+          "speed": 30
+        }
+      }
+    },
+    "ring_of_protection_001": {
+      "name": "Ring of Protection",
+      "category": "Wondrous Item",
+      "subCategory": "Jewelry",
+      "rarity": "Rare",
+      "equipmentSlot": "Rings 1",
+      "weight": "—",
+      "price": "3,500 gp",
+      "attunement": true,
+      "source": "Core Rulebook",
+      "icon": "ph:unite-bold",
+      "description": "You gain a +1 bonus to AC and saving throws while wearing this ring.",
+      "vtt_data": {
+        "modifiers": {
+          "AC": 1,
+          "saving_throws": 1
+        }
+      }
+    },
+    "holy_avenger_001": {
+      "name": "Holy Avenger",
+      "category": "Weapon",
+      "subCategory": "Legendary Sword",
+      "rarity": "Legendary",
+      "equipmentSlot": "Hold (mao direita)",
+      "weight": "3 lb.",
+      "price": "50,000 gp",
+      "attunement": true,
+      "source": "Core Rulebook",
+      "icon": "ph:sword-bold",
+      "description": "You gain a +3 bonus to attack and damage rolls made with this magic weapon. When you hit a fiend or an undead, it takes an extra 2d10 radiant damage.",
+      "vtt_data": {
+        "modifiers": {
+          "attack_bonus": 3,
+          "damage_bonus": 3
+        }
+      }
+    }
+  }
+}
