@@ -13,14 +13,11 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": true,
-      
       "equippable": true,
-      "equipmentSlot": "Hold", 
+      "equipmentSlot": ["Hold", "Back"],
       "attunement": false,
-      
       "properties": ["Versatile", "Slashing"],
       "range": "5",
-      
       "vtt_rolls": [
         {
           "label": "Base Attack (1-Handed)",
@@ -37,7 +34,6 @@
       ],
       "vtt_modifiers": {},
       "spells": [],
-      
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
@@ -57,14 +53,11 @@
       "stackable": true,
       "isConsumable": true,
       "canBeTied": false,
-      
       "equippable": false,
       "equipmentSlot": null,
       "attunement": false,
-      
       "properties": [],
       "range": null,
-      
       "vtt_rolls": [
         {
           "label": "Heal",
@@ -75,18 +68,16 @@
       ],
       "vtt_modifiers": {},
       "spells": [],
-      
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
-
     "item_mithral_half_plate": {
       "name": "Mithral Half Plate",
       "icon": "ph:shirt-folded-bold",
-      "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps. Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks, the mithral version of the armor doesn't.",
+      "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks, the mithral version of the armor doesn't.",
       "category": "Armor",
       "subCategory": "Medium Armor",
       "rarity": "Uncommon",
@@ -96,14 +87,11 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": true,
-      
       "equippable": true,
-      "equipmentSlot": "Body",
+      "equipmentSlot": ["Body"],
       "attunement": false,
-      
       "properties": [],
       "range": null,
-      
       "vtt_rolls": [],
       "vtt_modifiers": {
         "ac_base": 15,
@@ -111,18 +99,16 @@
         "stealth_disadvantage": false
       },
       "spells": [],
-      
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
-
     "item_thieves_tools": {
       "name": "Thieves' Tools",
       "icon": "ph:wrench-bold",
-      "description": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.",
+      "description": "This set of tools includes lock picks, a file, and pliers. Proficiency lets you add your bonus to disarm traps or open locks.",
       "category": "Gear",
       "subCategory": "Tools",
       "rarity": "Mundane",
@@ -132,29 +118,24 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": true,
-      
       "equippable": false,
       "equipmentSlot": null,
       "attunement": false,
-      
       "properties": [],
       "range": null,
-      
       "vtt_rolls": [],
       "vtt_modifiers": {},
       "spells": [],
-      
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
-
     "item_omega_gauntlet": {
       "name": "Omega Gauntlet of the Archmage",
       "icon": "ph:hand-fist-bold",
-      "description": "An overwhelmingly complex artifact forged at the dawn of time. It acts as a devastating melee weapon, a magical conduit, and somehow contains a localized pocket dimension within its primary gemstone. It practically radiates raw, unstable power.",
+      "description": "An overwhelmingly complex artifact forged at the dawn of time. Acts as a melee weapon and magical conduit.",
       "category": "Weapon",
       "subCategory": "Artifact Melee",
       "rarity": "Artifact",
@@ -164,32 +145,17 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": false,
-      
       "equippable": true,
-      "equipmentSlot": "Hands",
+      "equipmentSlot": ["Hands"],
       "attunement": true,
-      
       "properties": ["Versatile", "Thrown", "Focus", "Heavy", "Bludgeoning"],
       "range": "20/60",
-      
       "vtt_rolls": [
         {
           "label": "Titan Punch (Melee)",
           "dice": "2d10",
           "damage_type": "Bludgeoning",
           "scaling": "STR"
-        },
-        {
-          "label": "Energy Blast (Ranged)",
-          "dice": "3d6",
-          "damage_type": "Force",
-          "scaling": "CHA"
-        },
-        {
-          "label": "Overload Burst",
-          "dice": "1d12",
-          "damage_type": "Radiant",
-          "scaling": ""
         }
       ],
       "vtt_modifiers": {
@@ -198,47 +164,32 @@
         "immune_fire": true,
         "immune_cold": true
       },
-      
       "charges": {
         "max": 50,
         "reset": "dawn",
-        "formula": "4d10 + 10" 
+        "formula": "4d10 + 10"
       },
       "spells": [
         { "spell_id": "spell_fireball", "cost": 3 },
-        { "spell_id": "spell_invisibility", "cost": 2 },
-        { "spell_id": "spell_eldritch_storm", "cost": 5 }
+        { "spell_id": "spell_invisibility", "cost": 2 }
       ],
-      
       "isContainer": true,
       "capacityKg": 500,
       "canTieItems": true,
       "tieCapacity": 5,
       "source": "Ancient Mythos",
-      
       "errata": [
         {
           "date": "2026-05-10",
-          "note": "Reduced pocket dimension capacity from 1000kg to 500kg. Players were exploiting it to carry literal dragons.",
+          "note": "Reduced pocket dimension capacity.",
           "previous_version": "\"capacityKg\": 1000"
-        },
-        {
-          "date": "2025-12-01",
-          "note": "Added the 'Focus' property so spellcasters can use it without dropping it.",
-          "previous_version": "Did not act as a spellcasting focus."
-        },
-        {
-          "date": "2025-08-15",
-          "note": "Removed 'Finesse' property. A giant metal gauntlet shouldn't be scaling with Dexterity.",
-          "previous_version": "\"properties\": [\"Finesse\", \"Versatile\", \"Thrown\"]"
         }
       ]
     },
-
     "item_adventurers_backpack": {
       "name": "Adventurer's Backpack",
       "icon": "ph:backpack-bold",
-      "description": "A sturdy leather backpack. Perfect for carrying all your dungeon loot.",
+      "description": "A sturdy leather backpack.",
       "category": "Gear",
       "subCategory": "Adventuring Gear",
       "rarity": "Mundane",
@@ -248,79 +199,64 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": false,
-      
       "equippable": true,
-      "equipmentSlot": "Back",
+      "equipmentSlot": ["Back"],
       "attunement": false,
-      
       "properties": [],
       "range": null,
-      
       "vtt_rolls": [],
       "vtt_modifiers": {},
       "spells": [],
-      
       "isContainer": true,
       "capacityKg": 15.0,
       "canTieItems": true,
       "tieCapacity": 3,
       "source": "Core Rulebook"
     },
- "item_winds_daggers": {
-  "name": "Wind's Daggers",
-  "icon": "ph:knife-bold",
-  "description": "This magic dagger is composed of five blades, that can be combined to form a single dagger. While they're all combined, they act as a regular dagger and cannot use any of its special properties.\n\nThis dagger has 5 charges and regains 1d4 + 1 expended charges daily at dawn. You can choose to activate these daggers at will, making them float around you as you wish. While they float around you, they can be used to attack as if you had a dagger on each hand, but can only be used as such when you are holding no other weapons or shields. While the daggers are floating and as a bonus action, you can choose to spend some of its charges to send daggers flying at a creature. This throw must follow the original weapon's throwing property's range. For each charge spent a dagger will be thrown, but you must roll to hit each throw. Once you throw the last of these daggers that is on your person, one of them flies back into your hand.",
-  "category": "Weapon",
-  "subCategory": "Simple Melee",
-  "rarity": "Uncommon",
-  "price": 200,
-  "weight": 1,
-  "unique": true,
-  "stackable": false,
-  "isConsumable": false,
-  "canBeTied": true,
-  
-  "equippable": true,
-  "equipmentSlot": "Hold",
-  "attunement": true,
-  
-  "properties": ["Finesse", "Light", "Thrown"],
-  "range": "20/60",
-  
-  "vtt_rolls": [
-    {
-      "label": "Melee / Thrown Strike",
-      "dice": "1d4",
-      "damage_type": "Piercing",
-      "scaling": "DEX"
+    "item_winds_daggers": {
+      "name": "Wind's Daggers",
+      "icon": "ph:knife-bold",
+      "description": "This magic dagger is composed of five blades. Floating or held weapons.",
+      "category": "Weapon",
+      "subCategory": "Simple Melee",
+      "rarity": "Uncommon",
+      "price": 200,
+      "weight": 1,
+      "unique": true,
+      "stackable": false,
+      "isConsumable": false,
+      "canBeTied": true,
+      "equippable": true,
+      "equipmentSlot": ["Hold", "Back", "Wrist"],
+      "attunement": true,
+      "properties": ["Finesse", "Light", "Thrown"],
+      "range": "20/60",
+      "vtt_rolls": [
+        {
+          "label": "Melee / Thrown Strike",
+          "dice": "1d4",
+          "damage_type": "Piercing",
+          "scaling": "DEX"
+        }
+      ],
+      "vtt_modifiers": {},
+      "spells": [],
+      "charges": {
+        "max": 5,
+        "reset": "dawn",
+        "formula": "1d4 + 1"
+      },
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Custom Item",
+      "errata": []
     },
-    {
-      "label": "Flying Dagger (Bonus Action)",
-      "dice": "1d4",
-      "damage_type": "Piercing",
-      "scaling": "DEX"
-    }
-  ],
-  "vtt_modifiers": {},
-  "spells": [],
-  
-  "charges": {
-    "max": 5,
-    "reset": "dawn",
-    "formula": "1d4 + 1"
-  },
-  
-  "isContainer": false,
-  "capacityKg": 0,
-  "canTieItems": false,
-  "tieCapacity": 0,
-  "source": "Custom Item",
-  "errata": []
-},
     "item_staff_of_fire": {
       "name": "Staff of Fire",
       "icon": "ph:magic-wand-bold",
-      "description": "A staff made of brass and obsidian. You can use an action to expend charges and cast fire spells.",
+      "description": "A staff made of brass and obsidian.",
       "category": "Weapon",
       "subCategory": "Simple Melee",
       "rarity": "Very Rare",
@@ -330,14 +266,11 @@
       "stackable": false,
       "isConsumable": false,
       "canBeTied": true,
-      
       "equippable": true,
-      "equipmentSlot": "Hold",
+      "equipmentSlot": ["Hold", "Back"],
       "attunement": true,
-      
       "properties": ["Focus", "Versatile"],
       "range": "5",
-      
       "vtt_rolls": [
         {
           "label": "Strike",
@@ -350,24 +283,20 @@
         "fire_resistance": true,
         "spell_attack_bonus": 2
       },
-      
       "charges": {
         "max": 10,
         "reset": "dawn",
-        "formula": "1d6 + 4" 
+        "formula": "1d6 + 4"
       },
       "spells": [
-        { "spell_id": "spell_darkness", "cost": 1 },
         { "spell_id": "spell_fireball", "cost": 3 }
       ],
-      
       "isContainer": false,
       "capacityKg": 0,
       "canTieItems": false,
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
-
     "item_javelin": {
       "name": "Javelin",
       "icon": "ph:spear-bold",
@@ -381,14 +310,11 @@
       "stackable": true,
       "isConsumable": false,
       "canBeTied": true,
-      
       "equippable": true,
-      "equipmentSlot": "Hold",
+      "equipmentSlot": ["Hold", "Back"],
       "attunement": false,
-      
       "properties": ["Thrown", "Piercing"],
       "range": "30/120",
-      
       "vtt_rolls": [
         {
           "label": "Throw / Poke",
