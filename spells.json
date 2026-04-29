@@ -255,6 +255,31 @@
       "icon": "game-icons:vine-whip",
       "classes": ["Druid"]
     },
+  "spell_spectral_wave": {
+    "id": "spell_spectral_wave",
+    "name": "Spectral Wave",
+    "level": 4,
+    "school": "Soul Magic",
+    "casting_time": "1 Action",
+    "range": "30 m",
+    "components": "V, S, M ((80 Soul Power, which the spell consumes))",
+    "duration": "Instantaneous",
+    "description": "You summon a group of collected souls in the form of a gigantic wave that crashes down on an area within range. The wave can be up to 4.5 meters wide, and up to 9 meters tall, and travels in a 15 meter line. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 4d10 cold ❄️ damage and becomes withered. On a successful save, a creature takes half as much damage and isn’t withered.",
+    "saving_throw": "dexterity",
+    "source": "Faleria Core Rulebook",
+    "icon": "game-icons:static-waves",
+    "classes": [
+      "Soul Gatherer"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Damage",
+        "dice": "4d10",
+        "damage_type": "Cold",
+        "scaling": ""
+      }
+    ]
+  },
     "spell_moonbeam": {
       "id": "spell_moonbeam",
       "name": "Moonbeam",
