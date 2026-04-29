@@ -331,7 +331,7 @@
     "errata": [
       {
         "date": "2026-04-29",
-        "note": "Damaged changed from 8d6 to 6d6.",
+        "note": "Damaged reduced from 8d6 to 6d6.",
         "previous_version": "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 6-meters-radius sphere centered on that point must make a Dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.\n\nThe fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
       }
     ]
