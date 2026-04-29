@@ -266,59 +266,59 @@
       "tieCapacity": 3,
       "source": "Core Rulebook"
     },
-"item_winds_daggers": {
-  "name": "Wind's Daggers",
-  "icon": "ph:knife-bold",
-  "description": "This magic dagger is composed of five blades, that can be combined to form a single dagger. While they're all combined, they act as a regular dagger and cannot use any of its special properties.\n\nThis dagger has 5 charges and regains 1d4 + 1 expended charges daily at dawn. You can choose to activate these daggers at will, making them float around you as you wish. While they float around you, they can be used to attack as if you had a dagger on each hand, but can only be used as such when you are holding no other weapons or shields. While the daggers are floating and as a bonus action, you can choose to spend some of its charges to send daggers flying at a creature. This throw must follow the original weapon's throwing property's range. For each charge spent a dagger will be thrown, but you must roll to hit each throw. Once you throw the last of these daggers that is on your person, one of them flies back into your hand.",
-  "category": "Weapon",
-  "subCategory": "Simple Melee",
-  "rarity": "Uncommon",
-  "price": 200,
-  "weight": 1,
-  "unique": true,
-  "stackable": false,
-  "isConsumable": false,
-  "canBeTied": true,
-  
-  "equippable": true,
-  "equipmentSlot": ["Hold"],
-  "attunement": true,
-  
-  "properties": [
-    "Finesse",
-    "Light",
-    "Thrown"
-  ],
-  "range": "20/60",
-  
-  "vtt_rolls": [
-    {
-      "label": "Melee / Thrown Strike",
-      "dice": "1d4",
-      "damage_type": "Piercing",
-      "scaling": "DEX"
-    },
-    {
-      "label": "Flying Dagger (Per Charge)",
-      "dice": "1d4",
-      "damage_type": "Piercing",
-      "scaling": "DEX"
-    }
-  ],
-  "vtt_modifiers": {},
-  "spells": [],
-  
-  "charges": {
-    "max": 5,
-    "reset": "dawn",
-    "formula": "1d4 + 1"
-  },
-  
-  "isContainer": false,
-  "capacityKg": 0,
-  "canTieItems": false,
-  "tieCapacity": 0,
-  "source": "Custom Item"
+      "item_winds_daggers": {
+        "name": "Wind's Daggers",
+        "icon": "ph:knife-bold",
+        "description": "This magic dagger is composed of five blades, that can be combined to form a single dagger. While they're all combined, they act as a regular dagger and cannot use any of its special properties.\n\nThis dagger has 5 charges and regains 1d4 + 1 expended charges daily at dawn. You can choose to activate these daggers at will, making them float around you as you wish. While they float around you, they can be used to attack as if you had a dagger on each hand, but can only be used as such when you are holding no other weapons or shields. While the daggers are floating and as a bonus action, you can choose to spend some of its charges to send daggers flying at a creature. This throw must follow the original weapon's throwing property's range. For each charge spent a dagger will be thrown, but you must roll to hit each throw. Once you throw the last of these daggers that is on your person, one of them flies back into your hand.",
+        "category": "Weapon",
+        "subCategory": "Simple Melee",
+        "rarity": "Uncommon",
+        "price": 200,
+        "weight": 1,
+        "unique": true,
+        "stackable": false,
+        "isConsumable": false,
+        "canBeTied": true,
+        
+        "equippable": true,
+        "equipmentSlot": ["Hold"],
+        "attunement": true,
+        
+        "properties": [
+          "Finesse",
+          "Light",
+          "Thrown"
+        ],
+        "range": "20/60",
+        
+        "vtt_rolls": [
+          {
+            "label": "Melee / Thrown Strike",
+            "dice": "1d4",
+            "damage_type": "Piercing",
+            "scaling": "DEX"
+          },
+          {
+            "label": "Flying Dagger (Per Charge)",
+            "dice": "1d4",
+            "damage_type": "Piercing",
+            "scaling": "DEX"
+          }
+        ],
+        "vtt_modifiers": {},
+        "spells": [],
+        
+        "charges": {
+          "max": 5,
+          "reset": "dawn",
+          "formula": "1d4 + 1"
+        },
+        
+        "isContainer": false,
+        "capacityKg": 0,
+        "canTieItems": false,
+        "tieCapacity": 0,
+        "source": "Custom Item"
 },
     "item_staff_of_fire": {
       "name": "Staff of Fire",
