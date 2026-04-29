@@ -76,7 +76,7 @@
         "modifiers": [
           { "label": "Initiative", "value": "+5", "type": "initiative" }
         ],
-        "spells_fixed": ["spell_misty_step", "spell_detect_magic"],
+        "spells_fixed": ["spell_moonbeam", "spell_entangle"],
         "spells_choice": "2x Level 0 Sorcerer Spells"
       },
       "description": "You have touched the fabric of the Astral Sea..."
