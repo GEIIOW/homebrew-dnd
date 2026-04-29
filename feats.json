@@ -68,32 +68,32 @@
       "name": "War Caster",
       "description": "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:\n• You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.\n• You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.\n• When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
     },
-    "feat_astral_warden": {
+"feat_astral_warden": {
   "name": "Astral Warden",
   "icon": "ph:shield-star-bold",
   "source": "Astral Compendium",
-  "prerequisites": "Wisdom 13+ or Spellcasting trait",
-  "description": "You have been blessed by the astral tides, hardening your body and sharpening your mind.",
+  "prerequisites": "Wisdom 13+",
+  "description": "You have been blessed by astral tides, hardening your body and mind.",
   "vtt_data": {
-    "modifiers": [
-      { "label": "Initiative", "value": "+5", "type": "initiative" },
-      { "label": "Armor Class", "value": "+1", "type": "ac" },
-      { "label": "HP per Level", "value": "+2", "type": "hp_scaling" }
-    ],
+    "modifiers": {
+      "initiative": 5,
+      "ac": 1,
+      "hp_per_level": 2,
+      "speed": 10
+    },
+    "asi": { "wis": 1 },
     "resources": [
-      { "label": "Astral Spark", "max": "3", "reset": "Long Rest", "type": "resource" }
+      { "label": "Astral Spark", "max": 3, "reset": "long_rest" }
     ],
     "proficiencies": {
-      "fixed": ["Perception", "Saves: Wisdom"],
+      "skills": ["Perception"],
       "expertise": ["Arcana"],
-      "choice": { "amount": 1, "options": ["History", "Religion"], "type": "skill" }
+      "saves": ["wisdom"]
     },
-    "asi": { "choose": 1, "amount": 1, "options": ["INT", "WIS", "CHA"] },
-    "spells_fixed": ["spell_misty_step", "spell_shield"],
-    "spells_choice": "1x Level 1 Divination Spell",
-    "traits": ["Advantage against Charm", "Darkvision 60ft"]
+    "spells_fixed": ["spell_darkness", "spell_entangle"],
+    "spells_choice": { "amount": 1, "level": 0, "class": "Wizard" }
   },
-  "errata": [{ "date": "2026-04-29", "note": "Initial VTT implementation." }]
+  "errata": []
 }
   }  
 }
