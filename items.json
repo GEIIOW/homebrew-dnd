@@ -44,6 +44,196 @@
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
+    "item_potion_of_healing": {
+      "name": "Potion of Healing",
+      "icon": "ph:flask-bold",
+      "description": "A character who drinks the magical red fluid in this vial regains 2d4 + 2 hit points. Drinking or administering a potion takes an action.",
+      "category": "Consumable",
+      "subCategory": "Potion",
+      "rarity": "Common",
+      "price": 50,
+      "weight": 0.5,
+      "unique": false,
+      "stackable": true,
+      "isConsumable": true,
+      "canBeTied": false,
+      
+      "equippable": false,
+      "equipmentSlot": null,
+      "attunement": false,
+      
+      "properties": [],
+      "range": null,
+      
+      "vtt_rolls": [
+        {
+          "label": "Heal",
+          "dice": "2d4+2",
+          "damage_type": "Healing",
+          "scaling": ""
+        }
+      ],
+      "vtt_modifiers": {},
+      "spells": [],
+      
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
+    },
+
+    "item_mithral_half_plate": {
+      "name": "Mithral Half Plate",
+      "icon": "ph:shirt-folded-bold",
+      "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps. Mithral is a light, flexible metal. If the armor normally imposes disadvantage on Dexterity (Stealth) checks, the mithral version of the armor doesn't.",
+      "category": "Armor",
+      "subCategory": "Medium Armor",
+      "rarity": "Uncommon",
+      "price": 750,
+      "weight": 20,
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "canBeTied": true,
+      
+      "equippable": true,
+      "equipmentSlot": "Body",
+      "attunement": false,
+      
+      "properties": [],
+      "range": null,
+      
+      "vtt_rolls": [],
+      "vtt_modifiers": {
+        "ac_base": 15,
+        "max_dex_bonus": 2,
+        "stealth_disadvantage": false
+      },
+      "spells": [],
+      
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
+    },
+
+    "item_thieves_tools": {
+      "name": "Thieves' Tools",
+      "icon": "ph:wrench-bold",
+      "description": "This set of tools includes a small file, a set of lock picks, a small mirror mounted on a metal handle, a set of narrow-bladed scissors, and a pair of pliers. Proficiency with these tools lets you add your proficiency bonus to any ability checks you make to disarm traps or open locks.",
+      "category": "Gear",
+      "subCategory": "Tools",
+      "rarity": "Mundane",
+      "price": 25,
+      "weight": 1,
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "canBeTied": true,
+      
+      "equippable": false,
+      "equipmentSlot": null,
+      "attunement": false,
+      
+      "properties": [],
+      "range": null,
+      
+      "vtt_rolls": [],
+      "vtt_modifiers": {},
+      "spells": [],
+      
+      "isContainer": false,
+      "capacityKg": 0,
+      "canTieItems": false,
+      "tieCapacity": 0,
+      "source": "Core Rulebook"
+    },
+
+    "item_omega_gauntlet": {
+      "name": "Omega Gauntlet of the Archmage",
+      "icon": "ph:hand-fist-bold",
+      "description": "An overwhelmingly complex artifact forged at the dawn of time. It acts as a devastating melee weapon, a magical conduit, and somehow contains a localized pocket dimension within its primary gemstone. It practically radiates raw, unstable power.",
+      "category": "Weapon",
+      "subCategory": "Artifact Melee",
+      "rarity": "Artifact",
+      "price": 250000,
+      "weight": 8,
+      "unique": true,
+      "stackable": false,
+      "isConsumable": false,
+      "canBeTied": false,
+      
+      "equippable": true,
+      "equipmentSlot": "Hands",
+      "attunement": true,
+      
+      "properties": ["Versatile", "Thrown", "Focus", "Heavy", "Bludgeoning"],
+      "range": "20/60",
+      
+      "vtt_rolls": [
+        {
+          "label": "Titan Punch (Melee)",
+          "dice": "2d10",
+          "damage_type": "Bludgeoning",
+          "scaling": "STR"
+        },
+        {
+          "label": "Energy Blast (Ranged)",
+          "dice": "3d6",
+          "damage_type": "Force",
+          "scaling": "CHA"
+        },
+        {
+          "label": "Overload Burst",
+          "dice": "1d12",
+          "damage_type": "Radiant",
+          "scaling": ""
+        }
+      ],
+      "vtt_modifiers": {
+        "ac_bonus": 2,
+        "strength_score_set": 24,
+        "immune_fire": true,
+        "immune_cold": true
+      },
+      
+      "charges": {
+        "max": 50,
+        "reset": "dawn",
+        "formula": "4d10 + 10" 
+      },
+      "spells": [
+        { "spell_id": "spell_fireball", "cost": 3 },
+        { "spell_id": "spell_invisibility", "cost": 2 },
+        { "spell_id": "spell_eldritch_storm", "cost": 5 }
+      ],
+      
+      "isContainer": true,
+      "capacityKg": 500,
+      "canTieItems": true,
+      "tieCapacity": 5,
+      "source": "Ancient Mythos",
+      
+      "errata": [
+        {
+          "date": "2026-05-10",
+          "note": "Reduced pocket dimension capacity from 1000kg to 500kg. Players were exploiting it to carry literal dragons.",
+          "previous_version": "\"capacityKg\": 1000"
+        },
+        {
+          "date": "2025-12-01",
+          "note": "Added the 'Focus' property so spellcasters can use it without dropping it.",
+          "previous_version": "Did not act as a spellcasting focus."
+        },
+        {
+          "date": "2025-08-15",
+          "note": "Removed 'Finesse' property. A giant metal gauntlet shouldn't be scaling with Dexterity.",
+          "previous_version": "\"properties\": [\"Finesse\", \"Versatile\", \"Thrown\"]"
+        }
+      ]
+    },
 
     "item_adventurers_backpack": {
       "name": "Adventurer's Backpack",
