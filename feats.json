@@ -93,6 +93,29 @@
   },
   "errata": []
 },
+"feat_exemplo_logica": {
+  "name": "Blade Dancer",
+  "prerequisites": {
+    "text": "STR 13+ or DEX 13+, Mortal Type: Elf or Human.",
+    "conditions": [
+      {
+        "type": "OR",
+        "options": [
+          { "type": "attribute", "target": "str", "min": 13 },
+          { "type": "attribute", "target": "dex", "min": 13 }
+        ]
+      },
+      {
+        "type": "OR",
+        "options": [
+          { "type": "mortal_type", "target": "Elf" },
+          { "type": "mortal_type", "target": "Human" }
+        ]
+      }
+    ]
+  }
+},
+
 "feat_astral_warden": {
   "name": "Astral Warden",
   "icon": "ph:shield-star-bold",
