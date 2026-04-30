@@ -75,7 +75,7 @@
   "prerequisites": {
     "text": "Mage Aspiration",
     "conditions": [
-      { "type": "aspiration", "target": "Mage" }
+      { "type": "aspiration", "target": "asp_mage" } 
     ]
   },
   "description": "You learn two cantrips of your choice from your 1st level's class's spell list. In addition, you learn the Arcane Fever spell and can cast it once per long rest without using a spell slot.",
@@ -93,7 +93,14 @@
     "spells_choice": { 
       "amount": 2, 
       "level": 0, 
-      "class": ["Wizard", "Sorcerer", "Warlock", "Cleric", "Druid", "Bard"] 
+      "class": [
+        "class_wizard", 
+        "class_sorcerer", 
+        "class_warlock", 
+        "class_cleric", 
+        "class_druid", 
+        "class_bard"
+      ] 
     }
   },
   "errata": []
