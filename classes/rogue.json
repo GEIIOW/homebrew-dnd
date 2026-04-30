@@ -1,6 +1,6 @@
 {
-  "classes": [
-    {
+  "classes": {
+    "class_rogue": {
       "id": "class_rogue",
       "name": "Rogue",
       "description": "Masters of stealth, deception, and precise strikes. Rogues specialize in finding vulnerabilities in their enemies and exploiting them with deadly efficiency.",
@@ -20,15 +20,14 @@
         "saving_throws": ["dexterity", "intelligence"]
       },
       "starting_equipment": "• (a) fine clothes, (b) leather armor, or (c) 10 gc\n• (a) ranged simple weapon and 20 munitions or (b) shortsword\n• (a) 2 melee simple weapons or (b) thieves' tools\n• (a) burglar's pack or (b) explorer's pack",
-      "choice_configs": [
-        {
-          "id": "rog_skill_choice",
+      "choice_configs": {
+        "rog_skill_choice": {
           "name": "Rogue Class Skills",
           "type": "skill_selection",
           "count": 4,
           "options": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight of hand", "stealth"]
         }
-      ],
+      },
       "multiclassing": {
         "ability_score_minimum": { "dexterity": 13 },
         "proficiencies_gained": {
@@ -37,61 +36,62 @@
           "tools": ["thieves' tools"]
         }
       },
-      "progression": [
-        { "level": 1, "pb": 2, "sneak_attack": "1d6", "features": ["feat_rog_expertise", "feat_rog_sneak_attack", "feat_rog_thieves_cant"] },
-        { "level": 2, "pb": 2, "sneak_attack": "1d6", "features": ["feat_rog_cunning_action"] },
-        { "level": 3, "pb": 2, "sneak_attack": "2d6", "features": ["feat_rog_steady_aim", "feat_rog_archetype"] },
-        { "level": 4, "pb": 2, "sneak_attack": "2d6", "features": ["feat_rog_asi"] },
-        { "level": 5, "pb": 3, "sneak_attack": "3d6", "features": ["feat_rog_uncanny_dodge"] },
-        { "level": 6, "pb": 3, "sneak_attack": "3d6", "features": ["feat_rog_expertise_6"] },
-        { "level": 7, "pb": 3, "sneak_attack": "4d6", "features": ["feat_rog_evasion"] },
-        { "level": 8, "pb": 3, "sneak_attack": "4d6", "features": ["feat_rog_asi"] },
-        { "level": 9, "pb": 4, "sneak_attack": "5d6", "features": [] },
-        { "level": 10, "pb": 4, "sneak_attack": "5d6", "features": ["feat_rog_asi"] },
-        { "level": 11, "pb": 4, "sneak_attack": "6d6", "features": ["feat_rog_reliable_talent"] },
-        { "level": 12, "pb": 4, "sneak_attack": "6d6", "features": ["feat_rog_asi"] },
-        { "level": 13, "pb": 5, "sneak_attack": "7d6", "features": [] },
-        { "level": 14, "pb": 5, "sneak_attack": "7d6", "features": ["feat_rog_blindsense"] },
-        { "level": 15, "pb": 5, "sneak_attack": "8d6", "features": ["feat_rog_slippery_mind"] },
-        { "level": 16, "pb": 5, "sneak_attack": "8d6", "features": ["feat_rog_asi"] },
-        { "level": 17, "pb": 6, "sneak_attack": "9d6", "features": [] },
-        { "level": 18, "pb": 6, "sneak_attack": "9d6", "features": ["feat_rog_elusive"] },
-        { "level": 19, "pb": 6, "sneak_attack": "10d6", "features": ["feat_rog_asi"] },
-        { "level": 20, "pb": 6, "sneak_attack": "10d6", "features": ["feat_rog_stroke_luck"] }
-      ]
+      "progression": {
+        "1": { "pb": 2, "sneak_attack": "1d6", "features": ["feat_rog_expertise", "feat_rog_sneak_attack", "feat_rog_thieves_cant"] },
+        "2": { "pb": 2, "sneak_attack": "1d6", "features": ["feat_rog_cunning_action"] },
+        "3": { "pb": 2, "sneak_attack": "2d6", "features": ["feat_rog_steady_aim", "feat_rog_archetype"] },
+        "4": { "pb": 2, "sneak_attack": "2d6", "features": ["feat_rog_asi"] },
+        "5": { "pb": 3, "sneak_attack": "3d6", "features": ["feat_rog_uncanny_dodge"] },
+        "6": { "pb": 3, "sneak_attack": "3d6", "features": ["feat_rog_expertise_6"] },
+        "7": { "pb": 3, "sneak_attack": "4d6", "features": ["feat_rog_evasion"] },
+        "8": { "pb": 3, "sneak_attack": "4d6", "features": ["feat_rog_asi"] },
+        "9": { "pb": 4, "sneak_attack": "5d6", "features": [] },
+        "10": { "pb": 4, "sneak_attack": "5d6", "features": ["feat_rog_asi"] },
+        "11": { "pb": 4, "sneak_attack": "6d6", "features": ["feat_rog_reliable_talent"] },
+        "12": { "pb": 4, "sneak_attack": "6d6", "features": ["feat_rog_asi"] },
+        "13": { "pb": 5, "sneak_attack": "7d6", "features": [] },
+        "14": { "pb": 5, "sneak_attack": "7d6", "features": ["feat_rog_blindsense"] },
+        "15": { "pb": 5, "sneak_attack": "8d6", "features": ["feat_rog_slippery_mind"] },
+        "16": { "pb": 5, "sneak_attack": "8d6", "features": ["feat_rog_asi"] },
+        "17": { "pb": 6, "sneak_attack": "9d6", "features": [] },
+        "18": { "pb": 6, "sneak_attack": "9d6", "features": ["feat_rog_elusive"] },
+        "19": { "pb": 6, "sneak_attack": "10d6", "features": ["feat_rog_asi"] },
+        "20": { "pb": 6, "sneak_attack": "10d6", "features": ["feat_rog_stroke_luck"] }
+      }
     }
-  ],
-  "subclasses": [
-    {
+  },
+  "subclasses": {
+    "sub_rog_swashbuckler": {
       "id": "sub_rog_swashbuckler",
       "class_id": "class_rogue",
       "name": "Swashbuckler",
       "description": "Focuses on the art of the duel and elegance of motion. Your confidence in combat is your greatest weapon.",
       "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity", "feat_swash_panache", "feat_swash_elegant_maneuver", "feat_swash_master_duelist"],
-      "progression_ext": [
-        { "level": 3, "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity"] },
-        { "level": 9, "features": ["feat_swash_panache"] },
-        { "level": 13, "features": ["feat_swash_elegant_maneuver"] },
-        { "level": 17, "features": ["feat_swash_master_duelist"] }
-      ]
+      "progression_ext": {
+        "3": { "features": ["feat_swash_fancy_footwork", "feat_swash_rakish_audacity"] },
+        "9": { "features": ["feat_swash_panache"] },
+        "13": { "features": ["feat_swash_elegant_maneuver"] },
+        "17": { "features": ["feat_swash_master_duelist"] }
+      }
     }
-  ],
+  },
   "features": {
     "feat_rog_expertise": {
-      "id": "expertise_group",
+      "id": "feat_rog_expertise",
       "name": "Expertise",
       "description": "• Choose two of your skill proficiencies, or one skill proficiency and your Thieves' Tools.\n• Your PB is doubled for any ability check you make that uses either of the chosen proficiencies.",
       "type": "choice", "choose": 2,
       "options": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight of hand", "stealth", "thieves_tools"]
     },
     "feat_rog_expertise_6": {
-      "id": "expertise_group",
+      "id": "feat_rog_expertise_6",
       "name": "Expertise (Level 6)",
       "description": "Choose two more of your proficiencies (skills or Thieves' Tools) to gain the Expertise benefit.",
       "type": "choice", "choose": 2,
       "options": ["acrobatics", "athletics", "deception", "insight", "intimidation", "investigation", "perception", "performance", "persuasion", "sleight of hand", "stealth", "thieves_tools"]
     },
     "feat_rog_sneak_attack": {
+      "id": "feat_rog_sneak_attack",
       "name": "Sneak Attack",
       "description": "• Once per turn, you can deal extra damage to a creature you hit if you have Advantage on the attack roll.\n• You don't need Advantage if another enemy of the target is within 1.5m of it.\n• The attack must use a Finesse or Ranged weapon.",
       "actions": {
@@ -102,32 +102,34 @@
         }
       }
     },
-    "feat_rog_thieves_cant": { "name": "Thieves' Cant", "description": "You know a secret mix of dialect, jargon, and code used to hide messages in seemingly normal conversation." },
-    "feat_rog_cunning_action": { "name": "Cunning Action", "description": "You can take a Bonus Action on each of your turns in combat to take the Dash, Disengage, or Hide action." },
-    "feat_rog_steady_aim": { "name": "Steady Aim", "description": "• As a Bonus Action, you gain Advantage on your next attack roll this turn.\n• After you use it, your speed is 0 until the end of the turn." },
-    "feat_rog_asi": { "name": "Ability Score Improvement", "description": "Increase one score by 2, or two by 1, or take a Feat.", "type": "feat_selection" },
-    "feat_rog_uncanny_dodge": { "name": "Uncanny Dodge", "description": "When an attacker you see hits you, use your Reaction to halve the damage." },
-    "feat_rog_evasion": { "name": "Evasion", "description": "When you make a Dex Saving Throw for half damage, you take no damage on a success, and only half on a failure." },
-    "feat_rog_reliable_talent": { "name": "Reliable Talent", "description": "Treat a d20 roll of 9 or lower as a 10 for any proficiency check." },
-    "feat_rog_blindsense": { "name": "Blindsense", "description": "If you can hear, you are aware of hidden or Invisible creatures within 3 meters." },
-    "feat_rog_slippery_mind": { "name": "Slippery Mind", "description": "You gain proficiency in Wisdom Saving Throws.", "proficiencies": { "saving_throws": ["wisdom"] } },
-    "feat_rog_elusive": { "name": "Elusive", "description": "No attack roll has Advantage against you while you aren't Incapacitated." },
+    "feat_rog_thieves_cant": { "id": "feat_rog_thieves_cant", "name": "Thieves' Cant", "description": "You know a secret mix of dialect, jargon, and code used to hide messages in seemingly normal conversation." },
+    "feat_rog_cunning_action": { "id": "feat_rog_cunning_action", "name": "Cunning Action", "description": "You can take a Bonus Action on each of your turns in combat to take the Dash, Disengage, or Hide action." },
+    "feat_rog_steady_aim": { "id": "feat_rog_steady_aim", "name": "Steady Aim", "description": "• As a Bonus Action, you gain Advantage on your next attack roll this turn.\n• After you use it, your speed is 0 until the end of the turn." },
+    "feat_rog_asi": { "id": "feat_rog_asi", "name": "Ability Score Improvement", "description": "Increase one score by 2, or two by 1, or take a Feat.", "type": "feat_selection" },
+    "feat_rog_uncanny_dodge": { "id": "feat_rog_uncanny_dodge", "name": "Uncanny Dodge", "description": "When an attacker you see hits you, use your Reaction to halve the damage." },
+    "feat_rog_evasion": { "id": "feat_rog_evasion", "name": "Evasion", "description": "When you make a Dex Saving Throw for half damage, you take no damage on a success, and only half on a failure." },
+    "feat_rog_reliable_talent": { "id": "feat_rog_reliable_talent", "name": "Reliable Talent", "description": "Treat a d20 roll of 9 or lower as a 10 for any proficiency check." },
+    "feat_rog_blindsense": { "id": "feat_rog_blindsense", "name": "Blindsense", "description": "If you can hear, you are aware of hidden or Invisible creatures within 3 meters." },
+    "feat_rog_slippery_mind": { "id": "feat_rog_slippery_mind", "name": "Slippery Mind", "description": "You gain proficiency in Wisdom Saving Throws.", "proficiencies": { "saving_throws": ["wisdom"] } },
+    "feat_rog_elusive": { "id": "feat_rog_elusive", "name": "Elusive", "description": "No attack roll has Advantage against you while you aren't Incapacitated." },
     "feat_rog_stroke_luck": {
+      "id": "feat_rog_stroke_luck",
       "name": "Stroke of Luck",
       "description": "• Turn a missed attack into a hit, or treat a failed ability check d20 as a 20.\n• Regain use after a Short Rest or Long Rest.",
       "resources": { "max": 1, "reset": "short_rest" }
     },
-    "feat_rog_archetype": { "name": "Roguish Archetype", "description": "At 3rd level, you choose an archetype like Swashbuckler." },
-
-    "feat_swash_fancy_footwork": { "name": "Fancy Footwork", "description": "If you make a melee attack, the target can't make opportunity attacks against you this turn." },
+    "feat_rog_archetype": { "id": "feat_rog_archetype", "name": "Roguish Archetype", "description": "At 3rd level, you choose an archetype like Swashbuckler." },
+    "feat_swash_fancy_footwork": { "id": "feat_swash_fancy_footwork", "name": "Fancy Footwork", "description": "If you make a melee attack, the target can't make opportunity attacks against you this turn." },
     "feat_swash_rakish_audacity": {
+      "id": "feat_swash_rakish_audacity",
       "name": "Rakish Audacity",
       "description": "• Add your Charisma modifier to Initiative.\n• Use Sneak Attack if within 1.5m of the target and no other creatures are near you.",
       "modifiers": { "initiative": "cha" }
     },
-    "feat_swash_panache": { "name": "Panache", "description": "Use Persuasion vs Insight to charm non-hostiles or challenge hostiles." },
-    "feat_swash_elegant_maneuver": { "name": "Elegant Maneuver", "description": "Bonus Action to gain Advantage on next Acrobatics or Athletics check." },
+    "feat_swash_panache": { "id": "feat_swash_panache", "name": "Panache", "description": "Use Persuasion vs Insight to charm non-hostiles or challenge hostiles." },
+    "feat_swash_elegant_maneuver": { "id": "feat_swash_elegant_maneuver", "name": "Elegant Maneuver", "description": "Bonus Action to gain Advantage on next Acrobatics or Athletics check." },
     "feat_swash_master_duelist": {
+      "id": "feat_swash_master_duelist",
       "name": "Master Duelist",
       "description": "• Reroll a missed attack with Advantage.\n• Regain use after a Short Rest or Long Rest.",
       "resources": { "max": 1, "reset": "short_rest" }
