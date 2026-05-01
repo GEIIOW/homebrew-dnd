@@ -8,5 +8,78 @@
   "source": "Core Rulebook",
   "features": { "1": ["feat_spellcasting", "feat_arcane_recovery"], "2": ["feat_arcane_tradition"] }
     }
+  },
+  "subclasses": {
+    "sub_evocation": {
+      "id": "sub_evocation",
+      "class_id": "class_arcanist",
+      "name": "School of Evocation",
+      "description": "You focus your study on magic that creates powerful elemental effects.",
+      "progression": {
+        "2": ["feat_arc_evo_savant", "feat_arc_evo_sculpt"],
+        "6": ["feat_arc_evo_potent"],
+        "10": ["feat_arc_evo_empowered"],
+        "14": ["feat_arc_evo_overchannel"]
+      }
+    },
+    "sub_enchantment": {
+      "id": "sub_enchantment",
+      "class_id": "class_arcanist",
+      "name": "School of Enchantment",
+      "description": "Your magic focuses on influencing the minds of others.",
+      "progression": {}
+    }
+  },
+  "features": {
+    "feat_arc_spellcasting": {
+      "id": "feat_arc_spellcasting",
+      "name": "Arcanist's Spellcasting",
+      "description": "As a student of arcane magic, you have a spellbook containing spells. Intelligence is your spellcasting ability.",
+      "calc": {
+        "Spell Save DC": "8 + pb + int",
+        "Spell Attack": "pb + int"
+      }
+    },
+    "feat_arc_recovery": {
+      "id": "feat_arc_recovery",
+      "name": "Arcane Recovery",
+      "description": "Recover spell slots on a Short Rest equal to half your Arcanist level (rounded up).",
+      "calc": {
+        "Max Combined Levels": "Math.ceil(level / 2)"
+      }
+    },
+    "feat_arc_scripture": {
+      "id": "feat_arc_scripture",
+      "name": "Arcane Scripture",
+      "type": "choice",
+      "choose": 1,
+      "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth"],
+      "description": "Expertise in Arcanian and one chosen skill.",
+      "proficiencies": { "expertise": ["Arcanian"] }
+    },
+    "feat_arc_tradition": { "id": "feat_arc_tradition", "name": "Arcane Tradition", "description": "Choose your specialization." },
+    "feat_arc_asi": { "id": "feat_arc_asi", "name": "Ability Score Improvement", "type": "feat_selection" },
+    "feat_arc_spell_mastery": { "id": "feat_arc_spell_mastery", "name": "Spell Mastery", "description": "Cast a 1st and 2nd level spell without slots." },
+    "feat_arc_signature": { "id": "feat_arc_signature", "name": "Signature Spells", "description": "Two 3rd level spells are always prepared." },
+    "feat_arc_evo_savant": { "id": "feat_arc_evo_savant", "name": "Evocation Savant", "description": "Halved gold/time for evocation spells." },
+    "feat_arc_evo_sculpt": {
+      "id": "feat_arc_evo_sculpt",
+      "name": "Sculpt Spells",
+      "description": "Protect allies from your evocation spells.",
+      "calc": { "Safe Creatures": "1 + 'Spell Level'" }
+    },
+    "feat_arc_evo_potent": { "id": "feat_arc_evo_potent", "name": "Potent Cantrip", "description": "Half damage on save." },
+    "feat_arc_evo_empowered": {
+      "id": "feat_arc_evo_empowered",
+      "name": "Empowered Evocation",
+      "description": "Add Intelligence to evocation damage.",
+      "calc": { "Damage Bonus": "int" }
+    },
+    "feat_arc_evo_overchannel": {
+      "id": "feat_arc_evo_overchannel",
+      "name": "Overchannel",
+      "description": "Maximize damage of spells (1st-5th level).",
+      "calc": { "Necrotic Risk": "2d12 * 'Spell Level'" }
+    }
   }
 }
