@@ -150,7 +150,7 @@
           "saves": ["wisdom"]
         },
         "spells_fixed": ["spell_darkness", "spell_entangle"],
-        "spells_choice": { "amount": 1, "level": 0, "class": ["class_wizard"] }
+        "spells_choice": { "amount": 1, "level": 0, "class": ["class_rogue"] }
       },
       "errata": []
     }
