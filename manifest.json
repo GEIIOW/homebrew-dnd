@@ -12,6 +12,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/patchnotes.json",
 
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/arcanist.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/rogue.json"
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/rogue.json",
+        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/sorcerer.json"
   ]
 }
