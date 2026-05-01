@@ -50,7 +50,7 @@
           "type": "choice",
           "choose": 1,
           "options": [
-            [ { "item_id": "item_quarterstaff", "quantity": 1 } ],
+            [ { "item_id": "item_thieves_tools", "quantity": 1 } ],
             [ { "item_id": "item_dagger", "quantity": 1 } ]
           ]
         },
