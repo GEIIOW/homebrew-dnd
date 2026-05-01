@@ -1,5 +1,68 @@
 {
-  "name": "Sorcerer - Innate Magic",
+  "classes": [
+    {
+      "id": "class_sorcerer",
+      "name": "Sorcerer",
+      "subclass_level": 1,
+      "primary_stat": "charisma",
+      "description": "A spellcaster who draws on inherent magic from a gift or bloodline. You use Spell Points instead of slots to fuel your magic.",
+      "hit_die": 6,
+      "proficiencies": {
+        "armor": [],
+        "weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"],
+        "saving_throws": ["Constitution", "Charisma"],
+        "skills": {
+          "choose": 2,
+          "options": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"]
+        }
+      },
+      "starting_equipment": [
+        "A light crossbow and 20 bolts or any simple weapon",
+        "A component pouch or an arcane focus",
+        "A dungeoneer's pack or an explorer's pack",
+        "Two daggers"
+      ],
+      "subclasses": [
+        "sub_draconic_bloodline"
+      ],
+      "progression": [
+        { "level": 1, "pb": "+2", "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"], "sorcery_points": 0, "cantrips_known": 4, "spells_known": 2, "highest_spell_level": "1st", "spell_points": 4 },
+        { "level": 2, "pb": "+2", "features": ["feat_font_of_magic"], "sorcery_points": 2, "cantrips_known": 4, "spells_known": 3, "highest_spell_level": "1st", "spell_points": 6 },
+        { "level": 3, "pb": "+2", "features": ["feat_metamagic"], "sorcery_points": 3, "cantrips_known": 4, "spells_known": 4, "highest_spell_level": "2nd", "spell_points": 14 },
+        { "level": 4, "pb": "+2", "features": ["feat_sorcerer_asi_4", "feat_sorcerous_versatility"], "sorcery_points": 4, "cantrips_known": 5, "spells_known": 5, "highest_spell_level": "2nd", "spell_points": 17 },
+        { "level": 5, "pb": "+3", "features": ["feat_magical_guidance"], "sorcery_points": 5, "cantrips_known": 5, "spells_known": 6, "highest_spell_level": "3rd", "spell_points": 27 },
+        { "level": 6, "pb": "+3", "features": [], "sorcery_points": 6, "cantrips_known": 5, "spells_known": 7, "highest_spell_level": "3rd", "spell_points": 32 },
+        { "level": 7, "pb": "+3", "features": [], "sorcery_points": 7, "cantrips_known": 5, "spells_known": 8, "highest_spell_level": "4th", "spell_points": 38 },
+        { "level": 8, "pb": "+3", "features": ["feat_sorcerer_asi_8"], "sorcery_points": 8, "cantrips_known": 5, "spells_known": 9, "highest_spell_level": "4th", "spell_points": 44 },
+        { "level": 9, "pb": "+4", "features": [], "sorcery_points": 9, "cantrips_known": 5, "spells_known": 10, "highest_spell_level": "5th", "spell_points": 57 },
+        { "level": 10, "pb": "+4", "features": [], "sorcery_points": 10, "cantrips_known": 6, "spells_known": 11, "highest_spell_level": "5th", "spell_points": 64 },
+        { "level": 11, "pb": "+4", "features": [], "sorcery_points": 11, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
+        { "level": 12, "pb": "+4", "features": ["feat_sorcerer_asi_12"], "sorcery_points": 12, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
+        { "level": 13, "pb": "+5", "features": [], "sorcery_points": 13, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
+        { "level": 14, "pb": "+5", "features": [], "sorcery_points": 14, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
+        { "level": 15, "pb": "+5", "features": [], "sorcery_points": 15, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
+        { "level": 16, "pb": "+5", "features": ["feat_sorcerer_asi_16"], "sorcery_points": 16, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
+        { "level": 17, "pb": "+6", "features": [], "sorcery_points": 17, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 107 },
+        { "level": 18, "pb": "+6", "features": [], "sorcery_points": 18, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 114 },
+        { "level": 19, "pb": "+6", "features": ["feat_sorcerer_asi_19"], "sorcery_points": 19, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 123 },
+        { "level": 20, "pb": "+6", "features": ["feat_sorcerous_restoration"], "sorcery_points": 20, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 133 }
+      ]
+    }
+  ],
+  "subclasses": {
+    "sub_draconic_bloodline": {
+      "id": "sub_draconic_bloodline",
+      "name": "Draconic Bloodline",
+      "class_id": "class_sorcerer",
+      "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
+      "progression": [
+        { "level": 1, "features": ["feat_draconic_ancestor", "feat_draconic_resilience"] },
+        { "level": 6, "features": ["feat_elemental_affinity"] },
+        { "level": 14, "features": ["feat_dragon_wings"] },
+        { "level": 18, "features": ["feat_draconic_presence"] }
+      ]
+    }
+  },
   "features": {
     "feat_sorcerer_spellcasting": {
       "name": "Sorcerer's Spellcasting",
@@ -134,67 +197,5 @@
       "level": 18,
       "description": "As an Action, you can spend 5 sorcery points to exude an aura of awe or fear to a distance of 60 feet. For 1 minute or until you lose your concentration, each hostile creature that starts its turn in this aura must succeed on a Wisdom saving throw or be charmed or frightened (your choice) until the aura ends."
     }
-  },
-  "classes": [
-    {
-      "id": "class_sorcerer",
-      "name": "Sorcerer",
-      "subclass_level": 1,
-      "description": "A spellcaster who draws on inherent magic from a gift or bloodline.",
-      "hit_die": 6,
-      "proficiencies": {
-        "armor": [],
-        "weapons": ["Daggers", "Darts", "Slings", "Quarterstaffs", "Light Crossbows"],
-        "saving_throws": ["Constitution", "Charisma"],
-        "skillChoices": [
-          {
-            "choose": 2,
-            "options": ["Arcana", "Deception", "Insight", "Intimidation", "Persuasion", "Religion"]
-          }
-        ]
-      },
-      "subclasses": [
-        {
-          "id": "subclass_draconic_bloodline",
-          "name": "Draconic Bloodline",
-          "description": "Your innate magic comes from draconic blood mingled with your ancestry.",
-          "features": [
-            "feat_draconic_ancestor", 
-            "feat_draconic_resilience", 
-            "feat_elemental_affinity", 
-            "feat_dragon_wings", 
-            "feat_draconic_presence"
-          ],
-          "progression_ext": [
-            { "level": 1, "features": ["feat_draconic_ancestor", "feat_draconic_resilience"] },
-            { "level": 6, "features": ["feat_elemental_affinity"] },
-            { "level": 14, "features": ["feat_dragon_wings"] },
-            { "level": 18, "features": ["feat_draconic_presence"] }
-          ]
-        }
-      ],
-      "progression": [
-        { "level": 1, "pb": "+2", "features": ["feat_sorcerer_spellcasting", "feat_sorcerous_origin"], "sorcery_points": 0, "cantrips_known": 4, "spells_known": 2, "highest_spell_level": "1st", "spell_points": 4 },
-        { "level": 2, "pb": "+2", "features": ["feat_font_of_magic"], "sorcery_points": 2, "cantrips_known": 4, "spells_known": 3, "highest_spell_level": "1st", "spell_points": 6 },
-        { "level": 3, "pb": "+2", "features": ["feat_metamagic"], "sorcery_points": 3, "cantrips_known": 4, "spells_known": 4, "highest_spell_level": "2nd", "spell_points": 14 },
-        { "level": 4, "pb": "+2", "features": ["feat_sorcerer_asi_4", "feat_sorcerous_versatility"], "sorcery_points": 4, "cantrips_known": 5, "spells_known": 5, "highest_spell_level": "2nd", "spell_points": 17 },
-        { "level": 5, "pb": "+3", "features": ["feat_magical_guidance"], "sorcery_points": 5, "cantrips_known": 5, "spells_known": 6, "highest_spell_level": "3rd", "spell_points": 27 },
-        { "level": 6, "pb": "+3", "features": [], "sorcery_points": 6, "cantrips_known": 5, "spells_known": 7, "highest_spell_level": "3rd", "spell_points": 32 },
-        { "level": 7, "pb": "+3", "features": [], "sorcery_points": 7, "cantrips_known": 5, "spells_known": 8, "highest_spell_level": "4th", "spell_points": 38 },
-        { "level": 8, "pb": "+3", "features": ["feat_sorcerer_asi_8"], "sorcery_points": 8, "cantrips_known": 5, "spells_known": 9, "highest_spell_level": "4th", "spell_points": 44 },
-        { "level": 9, "pb": "+4", "features": [], "sorcery_points": 9, "cantrips_known": 5, "spells_known": 10, "highest_spell_level": "5th", "spell_points": 57 },
-        { "level": 10, "pb": "+4", "features": [], "sorcery_points": 10, "cantrips_known": 6, "spells_known": 11, "highest_spell_level": "5th", "spell_points": 64 },
-        { "level": 11, "pb": "+4", "features": [], "sorcery_points": 11, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
-        { "level": 12, "pb": "+4", "features": ["feat_sorcerer_asi_12"], "sorcery_points": 12, "cantrips_known": 6, "spells_known": 12, "highest_spell_level": "6th", "spell_points": 73 },
-        { "level": 13, "pb": "+5", "features": [], "sorcery_points": 13, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
-        { "level": 14, "pb": "+5", "features": [], "sorcery_points": 14, "cantrips_known": 6, "spells_known": 13, "highest_spell_level": "7th", "spell_points": 83 },
-        { "level": 15, "pb": "+5", "features": [], "sorcery_points": 15, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
-        { "level": 16, "pb": "+5", "features": ["feat_sorcerer_asi_16"], "sorcery_points": 16, "cantrips_known": 6, "spells_known": 14, "highest_spell_level": "8th", "spell_points": 94 },
-        { "level": 17, "pb": "+6", "features": [], "sorcery_points": 17, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 107 },
-        { "level": 18, "pb": "+6", "features": [], "sorcery_points": 18, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 114 },
-        { "level": 19, "pb": "+6", "features": ["feat_sorcerer_asi_19"], "sorcery_points": 19, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 123 },
-        { "level": 20, "pb": "+6", "features": ["feat_sorcerous_restoration"], "sorcery_points": 20, "cantrips_known": 6, "spells_known": 15, "highest_spell_level": "9th", "spell_points": 133 }
-      ]
-    }
-  ]
+  }
 }
