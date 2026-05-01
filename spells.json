@@ -142,7 +142,7 @@
       "source": "Player's Handbook",
       "icon": "game-icons:glowing-artifact",
       "classes": [
-        "class_artificer",
+        "class_rogue",
         "class_bard",
         "class_cleric",
         "class_sorcerer",
@@ -364,7 +364,7 @@
       "source": "Player's Handbook 2014",
       "icon": "game-icons:fire-tail",
       "classes": [
-        "class_sorcerer"
+        "class_rogue"
       ],
       "vtt_rolls": [
         {

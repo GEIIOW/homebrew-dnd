@@ -5,7 +5,7 @@
       "description": "Always on the lookout for danger, you gain the following benefits:\n• You gain a +5 bonus to initiative.\n• You can't be surprised while you are conscious.\n• Other creatures don't gain advantage on attack rolls against you as a result of being unseen by you.",
       "modifiers": {
          "initiative": 5
-     }
+      }
     },
     "feat_great_weapon_master": {
       "name": "Great Weapon Master",
@@ -39,17 +39,17 @@
       }
     },
     "feat_apprentice_magic": {
-          "name": "Apprentice Magic",
-          "description": "Your studies have paid off. You learn two Cantrips of your choice from the wizard spell list. Additionally, you learn one 1st-level spell and can cast it once per long rest without expending a spell slot.",
-          "spellChoices": [
-            { "choose": 2, "level": 0, "label": "Cantrips" },
-            { "choose": 1, "level": 1, "label": "1st-Level Spell" }
-          ],
-          "resources": {
-            "max": 1,
-            "reset": "long_rest"
-          }
-        },
+      "name": "Apprentice Magic",
+      "description": "Your studies have paid off. You learn two Cantrips of your choice from the wizard spell list. Additionally, you learn one 1st-level spell and can cast it once per long rest without expending a spell slot.",
+      "spellChoices": [
+        { "choose": 2, "level": 0, "label": "Cantrips", "class": ["class_wizard"] },
+        { "choose": 1, "level": 1, "label": "1st-Level Spell", "class": ["class_wizard"] }
+      ],
+      "resources": {
+        "max": 1,
+        "reset": "long_rest"
+      }
+    },
     "feat_sharpshooter": {
       "name": "Sharpshooter",
       "description": "You have mastered ranged weapons and can make shots that others find impossible:\n• Attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls.\n• Your ranged weapon attacks ignore half cover and three-quarters cover.\n• Before you make an attack with a ranged weapon that you are proficient with, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack's damage."
@@ -68,92 +68,91 @@
       "name": "War Caster",
       "description": "You have practiced casting spells in the midst of combat, learning techniques that grant you the following benefits:\n• You have advantage on Constitution saving throws that you make to maintain your concentration on a spell when you take damage.\n• You can perform the somatic components of spells even when you have weapons or a shield in one or both hands.\n• When a hostile creature's movement provokes an opportunity attack from you, you can use your reaction to cast a spell at the creature, rather than making an opportunity attack. The spell must have a casting time of 1 action and must target only that creature."
     },
-"feat_magic_initiate_aspiration": {
-  "name": "Magic Initiate (Aspiration)",
-  "icon": "ph:magic-wand-bold",
-  "source": "Beginner's Guide",
-  "prerequisites": {
-    "text": "Mage Aspiration",
-    "conditions": [
-      { "type": "aspiration", "target": "asp_mage" } 
-    ]
-  },
-  "description": "You learn two cantrips of your choice from your 1st level's class's spell list. In addition, you learn the Arcane Fever spell and can cast it once per long rest without using a spell slot.",
-  "vtt_data": {
-    "resources": [
-      { 
-        "label": "Arcane Fever (Free Cast)", 
-        "max": 1, 
-        "reset": "long_rest" 
-      }
-    ],
-    "spells_fixed": [
-      "spell_arcane_fever"
-    ],
-    "spells_choice": { 
-      "amount": 2, 
-      "level": 0, 
-      "class": [
-        "class_wizard", 
-        "class_sorcerer", 
-        "class_warlock", 
-        "class_cleric", 
-        "class_druid", 
-        "class_bard"
-      ] 
-    }
-  },
-  "errata": []
-},
-"feat_exemplo_logica": {
-  "name": "Blade Dancer",
-  "prerequisites": {
-    "text": "STR 13+ or DEX 13+, Mortal Type: Elf or Human.",
-    "conditions": [
-      {
-        "type": "OR",
-        "options": [
-          { "type": "attribute", "target": "str", "min": 13 },
-          { "type": "attribute", "target": "dex", "min": 13 }
+    "feat_magic_initiate_aspiration": {
+      "name": "Magic Initiate (Aspiration)",
+      "icon": "ph:magic-wand-bold",
+      "source": "Beginner's Guide",
+      "prerequisites": {
+        "text": "Mage Aspiration",
+        "conditions": [
+          { "type": "aspiration", "target": "asp_mage" } 
         ]
       },
-      {
-        "type": "OR",
-        "options": [
-          { "type": "mortal_type", "target": "Elf" },
-          { "type": "mortal_type", "target": "Human" }
+      "description": "You learn two cantrips of your choice from your 1st level's class's spell list. In addition, you learn the Arcane Fever spell and can cast it once per long rest without using a spell slot.",
+      "vtt_data": {
+        "resources": [
+          { 
+            "label": "Arcane Fever (Free Cast)", 
+            "max": 1, 
+            "reset": "long_rest" 
+          }
+        ],
+        "spells_fixed": [
+          "spell_arcane_fever"
+        ],
+        "spells_choice": { 
+          "amount": 2, 
+          "level": 0, 
+          "class": [
+            "class_wizard", 
+            "class_sorcerer", 
+            "class_warlock", 
+            "class_cleric", 
+            "class_druid", 
+            "class_bard"
+          ] 
+        }
+      },
+      "errata": []
+    },
+    "feat_exemplo_logica": {
+      "name": "Blade Dancer",
+      "prerequisites": {
+        "text": "STR 13+ or DEX 13+, Mortal Type: Elf or Human.",
+        "conditions": [
+          {
+            "type": "OR",
+            "options": [
+              { "type": "attribute", "target": "str", "min": 13 },
+              { "type": "attribute", "target": "dex", "min": 13 }
+            ]
+          },
+          {
+            "type": "OR",
+            "options": [
+              { "type": "mortal_type", "target": "race_elf" },
+              { "type": "mortal_type", "target": "race_human" }
+            ]
+          }
         ]
       }
-    ]
-  }
-},
-
-"feat_astral_warden": {
-  "name": "Astral Warden",
-  "icon": "ph:shield-star-bold",
-  "source": "Astral Compendium",
-  "prerequisites": "Wisdom 13+",
-  "description": "You have been blessed by astral tides, hardening your body and mind.",
-  "vtt_data": {
-    "modifiers": {
-      "initiative": 5,
-      "ac": 1,
-      "hp_per_level": 2,
-      "speed": 10
     },
-    "asi": { "wis": 1 },
-    "resources": [
-      { "label": "Astral Spark", "max": 3, "reset": "long_rest" }
-    ],
-    "proficiencies": {
-      "skills": ["Perception"],
-      "expertise": ["Arcana"],
-      "saves": ["wisdom"]
-    },
-    "spells_fixed": ["spell_darkness", "spell_entangle"],
-    "spells_choice": { "amount": 1, "level": 0, "class": "Wizard" }
-  },
-  "errata": []
-}
+    "feat_astral_warden": {
+      "name": "Astral Warden",
+      "icon": "ph:shield-star-bold",
+      "source": "Astral Compendium",
+      "prerequisites": "Wisdom 13+",
+      "description": "You have been blessed by astral tides, hardening your body and mind.",
+      "vtt_data": {
+        "modifiers": {
+          "initiative": 5,
+          "ac": 1,
+          "hp_per_level": 2,
+          "speed": 10
+        },
+        "asi": { "wis": 1 },
+        "resources": [
+          { "label": "Astral Spark", "max": 3, "reset": "long_rest" }
+        ],
+        "proficiencies": {
+          "skills": ["Perception"],
+          "expertise": ["Arcana"],
+          "saves": ["wisdom"]
+        },
+        "spells_fixed": ["spell_darkness", "spell_entangle"],
+        "spells_choice": { "amount": 1, "level": 0, "class": ["class_wizard"] }
+      },
+      "errata": []
+    }
   }  
 }
