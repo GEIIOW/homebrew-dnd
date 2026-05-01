@@ -1,85 +1,106 @@
 {
-  "classes": {
-    "class_arcanist": {
-  "name": "Arcanist",
-  "hit_die": 6,
-  "primary_stat": "INT",
-  "caster_type": "FULL",
-  "source": "Core Rulebook",
-  "features": { "1": ["feat_spellcasting", "feat_arcane_recovery"], "2": ["feat_arcane_tradition"] }
+  "classes": [
+    {
+      "id": "class_arcanist",
+      "name": "Arcanist",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=512,h=512,f=auto,dpr=2,fit=contain/f1756210603627x699657610376123600/Wizard%20Gitzo%20Letterist%20699-Portrait.png",
+      "subclass_level": 2,
+      "primary_stat": "int",
+      "description": "A scholarly magic-user capable of manipulating the structures of reality.",
+      "hit_die": 6,
+      "prerequisites": {
+        "aspiration": "asp_mage"
+      },
+      "multiclassing": {
+        "requirements": {
+          "int": 13
+        }
+      },
+      "proficiencies": {
+        "armor": [],
+        "weapons": [
+          "item_dagger", 
+          "item_dart", 
+          "item_sling", 
+          "item_quarterstaff", 
+          "item_light_crossbow"
+        ],
+        "saving_throws": ["int", "wis"],
+        "skills": {
+          "choose": 2,
+          "options": ["arcana", "history", "insight", "investigation", "medicine", "religion"]
+        }
+      },
+      "starting_equipment": [
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            [ { "item_id": "item_fine_clothes", "quantity": 1 } ],
+            [ 
+              { 
+                "query": { "type": "tool", "max_cost_gp": 30 }, 
+                "quantity": 1, 
+                "label": "A tool (below 30 gp)" 
+              } 
+            ]
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            [ { "item_id": "item_quarterstaff", "quantity": 1 } ],
+            [ { "item_id": "item_dagger", "quantity": 1 } ]
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            [ { "item_id": "item_component_pouch", "quantity": 1 } ],
+            [ 
+              { 
+                "query": { "type": "equipment", "tag": "arcane_focus" }, 
+                "quantity": 1, 
+                "label": "An Arcane Focus" 
+              } 
+            ]
+          ]
+        },
+        {
+          "type": "choice",
+          "choose": 1,
+          "options": [
+            [ { "item_id": "item_scholars_pack", "quantity": 1 } ],
+            [ { "item_id": "item_explorers_pack", "quantity": 1 } ]
+          ]
+        },
+        {
+          "type": "fixed",
+          "items": [
+            { "item_id": "item_spellbook", "quantity": 1 }
+          ]
+        }
+      ],
+      "quick_build": {
+        "primary_stat": "int",
+        "secondary_stats": ["con", "dex"],
+        "suggested_background": "bg_sage",
+        "suggested_spells": [
+          "spell_mage_hand",
+          "spell_light",
+          "spell_ray_of_frost",
+          "spell_burning_hands",
+          "spell_charm_person",
+          "spell_feather_fall",
+          "spell_mage_armor",
+          "spell_magic_missile",
+          "spell_sleep"
+        ]
+      },
+      "subclasses": [],
+      "progression": []
     }
-  },
-  "subclasses": {
-    "sub_evocation": {
-      "id": "sub_evocation",
-      "class_id": "class_arcanist",
-      "name": "School of Evocation",
-      "description": "You focus your study on magic that creates powerful elemental effects.",
-      "progression": {
-        "2": ["feat_arc_evo_savant", "feat_arc_evo_sculpt"],
-        "6": ["feat_arc_evo_potent"],
-        "10": ["feat_arc_evo_empowered"],
-        "14": ["feat_arc_evo_overchannel"]
-      }
-    },
-    "sub_enchantment": {
-      "id": "sub_enchantment",
-      "class_id": "class_arcanist",
-      "name": "School of Enchantment",
-      "description": "Your magic focuses on influencing the minds of others.",
-      "progression": {}
-    }
-  },
-  "features": {
-    "feat_arc_spellcasting": {
-      "id": "feat_arc_spellcasting",
-      "name": "Arcanist's Spellcasting",
-      "description": "As a student of arcane magic, you have a spellbook containing spells. Intelligence is your spellcasting ability.",
-      "calc": {
-        "Spell Save DC": "8 + pb + int",
-        "Spell Attack": "pb + int"
-      }
-    },
-    "feat_arc_recovery": {
-      "id": "feat_arc_recovery",
-      "name": "Arcane Recovery",
-      "description": "Recover spell slots on a Short Rest equal to half your Arcanist level (rounded up).",
-      "calc": {
-        "Max Combined Levels": "Math.ceil(level / 2)"
-      }
-    },
-    "feat_arc_scripture": {
-      "id": "feat_arc_scripture",
-      "name": "Arcane Scripture",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Acrobatics", "Athletics", "Deception", "Insight", "Intimidation", "Investigation", "Perception", "Performance", "Persuasion", "Sleight of Hand", "Stealth"],
-      "description": "Expertise in Arcanian and one chosen skill.",
-      "proficiencies": { "expertise": ["Arcanian"] }
-    },
-    "feat_arc_tradition": { "id": "feat_arc_tradition", "name": "Arcane Tradition", "description": "Choose your specialization." },
-    "feat_arc_asi": { "id": "feat_arc_asi", "name": "Ability Score Improvement", "type": "feat_selection" },
-    "feat_arc_spell_mastery": { "id": "feat_arc_spell_mastery", "name": "Spell Mastery", "description": "Cast a 1st and 2nd level spell without slots." },
-    "feat_arc_signature": { "id": "feat_arc_signature", "name": "Signature Spells", "description": "Two 3rd level spells are always prepared." },
-    "feat_arc_evo_savant": { "id": "feat_arc_evo_savant", "name": "Evocation Savant", "description": "Halved gold/time for evocation spells." },
-    "feat_arc_evo_sculpt": {
-      "id": "feat_arc_evo_sculpt",
-      "name": "Sculpt Spells",
-      "description": "Protect allies from your evocation spells.",
-      "calc": { "Safe Creatures": "1 + 'Spell Level'" }
-    },
-    "feat_arc_evo_potent": { "id": "feat_arc_evo_potent", "name": "Potent Cantrip", "description": "Half damage on save." },
-    "feat_arc_evo_empowered": {
-      "id": "feat_arc_evo_empowered",
-      "name": "Empowered Evocation",
-      "description": "Add Intelligence to evocation damage.",
-      "calc": { "Damage Bonus": "int" }
-    },
-    "feat_arc_evo_overchannel": {
-      "id": "feat_arc_evo_overchannel",
-      "name": "Overchannel",
-      "description": "Maximize damage of spells (1st-5th level).",
-      "calc": { "Necrotic Risk": "2d12 * 'Spell Level'" }
-    }
-  }
+  ]
 }
