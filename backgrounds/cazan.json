@@ -1,0 +1,54 @@
+{
+  "features": {
+    "feat_cazan_military_rank": {
+      "id": "feat_cazan_military_rank",
+      "name": "Cazan's Military Rank",
+      "icon": "ph:medal-bold",
+      "description": "You have a military rank from your career as a cazan. People loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+    },
+    "feat_cazan_specialty": {
+      "id": "feat_cazan_specialty",
+      "name": "Cazan Specialty",
+      "icon": "ph:strategy-bold",
+      "description": "During your time as a cazan, you had a specific role to play in your unit or army. \n\n**d8 Role**\n1. Officer\n2. Scout\n3. Infantry\n4. Cavalry\n5. Healer\n6. Quartermaster\n7. Standard-bearer\n8. Support staff (cook, blacksmith, or the like)"
+    }
+  },
+
+  "backgrounds": {
+    "bg_cazan": {
+      "id": "bg_cazan",
+      "name": "Cazan",
+      "source": "Silvermace Empire",
+      "icon": "ph:shield-star-bold",
+      "description": "Cazan is a title given to any member of the Silvanian military who serve in war campaigns. They are the pride of the Silvermace Empire and the first path to political power, as only those who have served as a Cazan can become imperial guards or join the imperial senate.",
+      "money": 10,
+      "origin": {
+        "type": "choice",
+        "options": ["Silvermace Empire", "Lesdownia"]
+      },
+      "proficiencies": {
+        "skills": {
+          "fixed": ["History", "Religion"]
+        },
+        "languages": {
+          "amount": 2,
+          "from": ["High Oritian", "Low Lesdownian", "Silvanian", "Zeiloryn"]
+        },
+        "tools": {
+          "choose": {
+            "amount": 1,
+            "query": "category:Artisan's Tools",
+            "from": ["Alchemist's Supplies", "Brewer's Supplies", "Cook's Utensils", "Smith's Tools", "Tinker's Tools"]
+          }
+        }
+      },
+      "equipment": [
+        { "label": "Rank Insignia", "quantity": 1 },
+        { "label": "Military Trophy", "quantity": 1 },
+        { "label": "Common Clothes", "quantity": 1 },
+        { "label": "Pouch", "quantity": 1 }
+      ],
+      "features": ["feat_cazan_military_rank", "feat_cazan_specialty"]
+    }
+  }
+}
