@@ -6,6 +6,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/human.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/kouniklos.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/elf.json",
+        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/fairy.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/galitarko.json"
   ]
 }

@@ -1,0 +1,22 @@
+{
+  "races": [
+    {
+      "id": "fairy",
+      "name": "Fairy",
+      "creature_type": "Humanoid",
+      "size": "Small",
+      "speed": 7,
+      "description": "",
+      "biology": "",
+      "source": "Tropical Wasteland",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=2,fit=contain/f1754090600370x848046310727416000/token_2%20%2814%29.png",
+      "features": [
+        "feat_race_arcane_intuition"
+      ],
+      "stat_maximums": {
+        "wisdom": 22
+      },
+      "subraces": []
+    }
+  ]
+}
