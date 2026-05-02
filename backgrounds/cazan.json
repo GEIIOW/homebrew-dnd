@@ -24,15 +24,18 @@
       "money": 10,
       "origin": {
         "type": "choice",
-        "options": ["Silvermace Empire", "Lesdownia"]
+        "options": ["loc_silvermace_empire", "loc_lesdownia"]
       },
       "proficiencies": {
         "skills": {
           "fixed": ["History", "Religion"]
         },
         "languages": {
-          "amount": 2,
-          "from": ["High Oritian", "Low Lesdownian", "Silvanian", "Zeiloryn"]
+          "choose": {
+            "amount": 2,
+            "level": "proficiency",
+            "from": ["lang_high_oritian", "lang_low_lesdownian", "lang_silvanian", "lang_zeiloryn"]
+          }
         },
         "tools": {
           "choose": {
