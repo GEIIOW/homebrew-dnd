@@ -8,6 +8,9 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/spells.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/feats.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/patchnotes.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/locations.json",
+        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/languages.json",
+
 
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/arcanist.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/rogue.json",

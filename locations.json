@@ -1,0 +1,32 @@
+{
+  "locations": {
+    "loc_lesdownia": {
+      "id": "loc_lesdownia",
+      "name": "Lesdownia",
+      "type": "Country",
+      "icon": "ph:flag-banner-bold",
+      "description": "A land of fractured allegiances and ancient farming traditions. Known primarily for the Tripartate Valley, it is a region where the simple life of a farmer is often interrupted by the politics of Great Houses.",
+      "languages": ["lang_common", "lang_low_lesdownian"],
+      "source": "Elirium Setting"
+    },
+    "loc_tripartate_valley": {
+      "id": "loc_tripartate_valley",
+      "name": "Tripartate Valley",
+      "type": "Subregion",
+      "icon": "ph:mountains-bold",
+      "description": "The fertile heart of Lesdownia. Most of the region's Elirium crops are harvested here, under the watchful eye of House Kirko.",
+      "languages": ["lang_low_lesdownian"],
+      "parent_id": "loc_lesdownia",
+      "source": "Elirium Setting"
+    },
+    "loc_lefkada_maw": {
+      "id": "loc_lefkada_maw",
+      "name": "Lefkada - The Maw",
+      "type": "Lefkada",
+      "icon": "ph:fire-bold",
+      "description": "A layer of Hell where the geography is as shifting and cruel as the devils that inhabit it. The air is thick with the scent of brimstone and iron.",
+      "languages": ["lang_infernal"],
+      "source": "Infernal Records"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "languages": {
+    "lang_common": {
+      "id": "lang_common",
+      "name": "Common",
+      "script": "Common Script",
+      "rarity": "Standard",
+      "description": "The trade tongue of the Silvermace Empire and beyond. Most sentient beings speak at least a broken version of it.",
+      "source": "Core"
+    },
+    "lang_low_lesdownian": {
+      "id": "lang_low_lesdownian",
+      "name": "Low Lesdownian",
+      "script": "Rustic Lesdownian",
+      "rarity": "Regional",
+      "description": "A non-legacy language spoken primarily by farmers and plebeians in the Lesdownia region.",
+      "source": "Elirium Setting"
+    },
+    "lang_infernal": {
+      "id": "lang_infernal",
+      "name": "Infernal",
+      "script": "Infernal Glyph",
+      "rarity": "Exotic",
+      "description": "A language of absolute law and hidden cruelty. Used by devils and those brave (or foolish) enough to treat with them.",
+      "source": "Planar Codex"
+    },
+    "lang_silvanian": {
+      "id": "lang_silvanian",
+      "name": "Silvanian",
+      "script": "High Imperial",
+      "rarity": "Standard",
+      "description": "The formal language of the Silvermace Empire's military and nobility.",
+      "source": "Silvermace Lore"
+    }
+  }
+}
