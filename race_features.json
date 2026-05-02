@@ -45,6 +45,34 @@
         { "level": 1, "spellId": "spell_prestidigitation" },
         { "level": 3, "spellId": "spell_detect_magic" }
       ]
+    },
+    "feat_race_dual_mind": {
+      "id": "feat_race_dual_mind",
+      "name": "Dual Mind",
+      "type": "race",
+      "description": "Your mind is a complex fortress. You have advantage on all Wisdom saving throws and resistance to psychic damage.",
+      "icon": "ph:shield-star-bold"
+    },
+    "feat_race_mind_link": {
+      "id": "feat_race_mind_link",
+      "name": "Mind Link",
+      "type": "race",
+      "description": "You can speak telepathically to any creature you can see within a range equal to 10 times your level (feet). You don't need a shared language, but the creature must understand at least one. As an action, you can grant the creature the ability to speak back for 1 hour.",
+      "icon": "ph:broadcast-bold",
+      "vtt_rolls": [
+        {
+          "label": "Mind Link Range",
+          "formula": "10 * @lvl",
+          "type": "utility"
+        }
+      ]
+    },
+    "feat_race_safe_sleep": {
+      "id": "feat_race_safe_sleep",
+      "name": "Safe Sleep",
+      "type": "race",
+      "description": "Agnostos share a deep connection to the Goddess Elana. You are immune to spells and magical effects that require you to dream, such as the *Dream* spell, but you can still be affected by effects that put you to sleep, like the *Sleep* spell.",
+      "icon": "ph:moon-stars-bold"
     }
   }
 }
