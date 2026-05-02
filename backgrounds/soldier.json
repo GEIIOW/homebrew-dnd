@@ -1,0 +1,19 @@
+{
+  "backgrounds": [
+    {
+        "id": "bg_soldier",
+        "name": "Soldier",
+        "source": "Core Rulebook",
+        "icon": "ph:shield-check-bold",
+        "origin": { "type": "fixed", "value": "Iron Peaks" }, 
+        "money": 15,
+        "proficiencies": {
+            "skills": { "fixed": ["Athletics"], "choose": { "amount": 1, "from": ["Intimidation", "Survival"] } },
+            "languages": { "half_prof": true, "amount": 1, "from": ["Dwarvish", "Orcish"] }
+        },
+        "equipment": [ { "item_id": "item_longsword", "quantity": 1 }, { "label": "Rank Insignia", "quantity": 1 } ],
+        "features": ["feat_military_rank"],
+        "description": "You were trained for war..."
+    }
+  ]
+}
