@@ -1,0 +1,50 @@
+{
+  "features": {
+    "feat_race_dwarven_resilience": {
+      "id": "feat_race_dwarven_resilience",
+      "name": "Dwarven Resilience",
+      "type": "race",
+      "description": "Your bond with the mountain grants you protection against toxins. You have advantage on saving throws against poison. At 3rd level, you can cast *Shield of Faith*. At 5th level, you can cast *Warding Bond*.",
+      "icon": "ph:shield-checkered-bold",
+      "unlocks": [
+        { "level": 3, "spellId": "spell_shield_of_faith" },
+        { "level": 5, "spellId": "spell_warding_bond" }
+      ],
+      "vtt_rolls": [
+        {
+          "label": "Dwarven Fortitude",
+          "formula": "1d10 + @con",
+          "type": "healing"
+        }
+      ]
+    },
+    "feat_race_feline_agility": {
+      "id": "feat_race_feline_agility",
+      "name": "Feline Agility",
+      "type": "race",
+      "description": "Your reflexes allow you to move with a burst of speed. When you move on your turn in combat, you can double your speed until the end of the turn. At 3rd level, you can cast *Jump*.",
+      "icon": "ph:cat-bold",
+      "unlocks": [
+        { "level": 3, "spellId": "spell_jump" }
+      ],
+      "vtt_rolls": [
+        {
+          "label": "Agile Strike",
+          "formula": "1d6 + @dex",
+          "type": "slashing"
+        }
+      ]
+    },
+    "feat_race_arcane_intuition": {
+      "id": "feat_race_arcane_intuition",
+      "name": "Arcane Intuition",
+      "type": "race",
+      "description": "Born with magic in your veins, you possess a natural talent for the arcane. You know the *Prestidigitation* cantrip. At 3rd level, you can cast *Detect Magic* at will.",
+      "icon": "ph:magic-wand-bold",
+      "unlocks": [
+        { "level": 1, "spellId": "spell_prestidigitation" },
+        { "level": 3, "spellId": "spell_detect_magic" }
+      ]
+    }
+  }
+}
