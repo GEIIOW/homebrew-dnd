@@ -1,0 +1,56 @@
+{
+  "features": {
+    "feat_blood_son_military_rank": {
+      "id": "feat_blood_son_military_rank",
+      "name": "Blood Son's Military Rank",
+      "icon": "ph:medal-bold",
+      "description": "You have a military rank from your career as a soldier. Soldiers loyal to your former military organization still recognize your authority and influence, and they defer to you if they are of a lower rank. You can invoke your rank to exert influence over other soldiers and requisition simple equipment or horses for temporary use. You can also usually gain access to friendly military encampments and fortresses where your rank is recognized."
+    },
+    "feat_blood_son_specialty": {
+      "id": "feat_blood_son_specialty",
+      "name": "Specialty",
+      "icon": "ph:strategy-bold",
+      "description": "During your time as a soldier, you had a specific role to play in your unit or army. Roll a d8 or choose from the options in the table below to determine your role:\n\n**d8 Role**\n1. Officer\n2. Scout\n3. Infantry\n4. Cavalry\n5. Healer\n6. Quartermaster\n7. Standard-bearer\n8. Support staff"
+    }
+  },
+
+  "backgrounds": {
+    "bg_blood_son": {
+      "id": "bg_blood_son",
+      "name": "Blood Son",
+      "source": "Issadrem",
+      "icon": "ph:drop-bold",
+      "description": "Blood sons are military officers who are training to be a village's leader. They have endured war against the Silvermace Empire and now seek something more. Since youth they have been fighting to repel the empire’s expansion attempt and they managed to live through it, now it has shapen them into the people they are today. Blood sons were part of an army and were welcomed back home once the fighting was over. As veterans of war in Issadrem, they began being groomed for leadership of their local villages by first learning how to shape mud to their will and then how to shape people.",
+      "money": 25,
+      "origin": {
+        "type": "fixed",
+        "value": "loc_issadrem"
+      },
+      "proficiencies": {
+        "skills": {
+          "fixed": ["Insight", "Persuasion"]
+        },
+        "tools": {
+          "fixed": ["Potter's Tools"]
+        },
+        "languages": {
+          "fixed": [
+            { "id": "lang_ixali", "level": "proficiency" }
+          ],
+          "choose": {
+            "amount": 1,
+            "level": "proficiency",
+            "query": "region:loc_issadrem"
+          }
+        }
+      },
+      "equipment": [
+        { "label": "Fine Clothes", "quantity": 1 },
+        { "label": "Signet Ring", "quantity": 1 },
+        { "label": "Scroll of Investiture", "quantity": 1 },
+        { "label": "Purse", "quantity": 1 }
+      ],
+      "features": ["feat_blood_son_military_rank", "feat_blood_son_specialty"]
+    }
+  }
+}
