@@ -54,9 +54,12 @@
   "features": {
     "feat_dark_elf_shadowborn": {
       "name": "Shadowborn",
-      "description": "You know the *Control Flames* cantrip. Starting at 3rd level, you can cast *Ice Knife*. Starting at 5th level, you can cast *Darkness*.",
-      "icon": "ph:moon-stars-bold",
-      "spells": ["spell_control_flames", "spell_ice_knife", "spell_darkness"]
+      "description": "Explicação em texto...",
+      "unlocks": [
+        { "level": 1, "spellId": "spell_control_flames" },
+        { "level": 3, "spellId": "spell_ice_knife" },
+        { "level": 5, "spellId": "spell_darkness" }
+      ]
     },
     "feat_imperial_elf_highborn": {
       "name": "Highborn",
