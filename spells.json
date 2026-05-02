@@ -162,7 +162,7 @@
       "source": "Player's Handbook",
       "icon": "game-icons:fairy-wings",
       "classes": [
-        "class_artificer",
+        "sub_rog_swashbuckler",
         "class_bard",
         "class_druid"
       ]
