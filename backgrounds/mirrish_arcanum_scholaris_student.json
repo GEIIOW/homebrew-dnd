@@ -1,0 +1,73 @@
+{
+  "features": {
+    "feat_mirrish_arcanum_well_read": {
+      "id": "feat_mirrish_arcanum_well_read",
+      "name": "Well Read",
+      "icon": "ph:books-bold",
+      "description": "To study for your classes you spent countless hours in a library reading scrolls. Once you learn something about your speciality you can recall it easily and without delay and most knowledge that would be commonplace for someone who has studied the subject is know to you as well. Specialists of that field would take a quick liking to you, if for nothing else, for your curiosity for the subject."
+    },
+    "feat_mirrish_arcanum_specialty": {
+      "id": "feat_mirrish_arcanum_specialty",
+      "name": "Specialty",
+      "icon": "ph:microscope-bold",
+      "description": "During your time as a student, you studied a particular field to advance your curriculum. Roll a d10 or choose from the options in the table below to determine your role:\n\n**d10 Role**\n1. Botany\n2. Humanoid Anatomy\n3. Astronomy\n4. Zoology\n5. Arcanology\n6. Engineering\n7. Petrology\n8. Naval Architecture\n9. Alchemy\n10. Metallurgy"
+    }
+  },
+
+  "backgrounds": {
+    "bg_mirrish_arcanum_scholaris_student": {
+      "id": "bg_mirrish_arcanum_scholaris_student",
+      "name": "Mirrish Arcanum Scholaris Student",
+      "source": "Silvermace Empire",
+      "icon": "ph:student-bold",
+      "description": "The Mirrish Arcanum Scholaris is an institute from the Silvermace Empire that prides itself on being the best in the world when it comes to molding and developing young minds into experts of magic and science. To get into this institute you must be brilliant to start with, but to get the bare minimum of acceptable results you must study day and night the subject that you are interested in.",
+      "money": 10,
+      "origin": {
+        "type": "fixed",
+        "value": "loc_silvermace_empire"
+      },
+      "proficiencies": {
+        "skills": {
+          "choose": [
+            {
+              "amount": 1,
+              "query": "stat:INT"
+            },
+            {
+              "amount": 1,
+              "query": "stat:WIS"
+            }
+          ]
+        },
+        "tools": {
+          "fixed": ["Calligrapher's Supplies"]
+        },
+        "languages": {
+          "fixed": [
+            {
+              "id": "lang_silvanian",
+              "level": "expertise"
+            }
+          ],
+          "choose": {
+            "amount": 1,
+            "level": "half",
+            "query": "rarity:common"
+          }
+        }
+      },
+"equipment": [
+        { "item_id": "item_pouch", "quantity": 1 },
+        { "item_id": "item_common_clothes", "quantity": 1 },
+        { "item_id": "item_small_knife", "quantity": 1 },
+        { "item_id": "item_ink_bottle", "quantity": 1 },
+        { "item_id": "item_quill", "quantity": 1 },
+        { "item_id": "item_colleagues_letter", "quantity": 1 }
+      ],
+      "features": [
+        "feat_mirrish_arcanum_well_read",
+        "feat_mirrish_arcanum_specialty"
+      ]
+    }
+  }
+}
