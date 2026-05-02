@@ -1,40 +1,49 @@
 {
-    "features": {
+  "features": {
     "bg_elirium_farmer_plebeian_charm": {
-        "name": "Plebeian Charm",
-        "description": "You have a face that is relatable to other commoners. Your simple roots are easily recognizable by people of low and high birth and will treat you accordingly. Some of your fellow plebeians might lend you a hand when you most need it, while some nobles might look at you as expendable."
-    },
+      "id": "bg_elirium_farmer_plebeian_charm",
+      "name": "Plebeian Charm",
+      "icon": "ph:users-three-bold",
+      "description": "You have a face that is relatable to other commoners. Your simple roots are easily recognizable by people of low and high birth and will treat you accordingly. Some of your fellow plebeians might lend you a hand when you most need it, while some nobles might look at you as expendable."
+    }
+  },
 
-   "backgrounds": [
-    {
-    "id": "elirium_farmer",
-    "name": "Elirium Farmer",
-    "description": "You are a farmer from the Tripartate Valley, you were either subservient to House Kirko or their opposition. Regardless of your allegiances, you have lived a simple and peaceful life on a farm, broken only by the occasional raid by the Rouvyr Tribals.",
-    "money": "5gp",
-    "items": "Common Clothes, Family Trinket, Small Knife, Pouch",
-     "languages": [
-        {
-        "name": "One non-legacy language from Lesdownia",
-        "level": "Half-Proficient"
+  "backgrounds": {
+    "bg_elirium_farmer": {
+      "id": "bg_elirium_farmer",
+      "name": "Elirium Farmer",
+      "source": "Elirium Setting",
+      "icon": "ph:plant-bold",
+      "description": "You are a farmer from the Tripartate Valley, you were either subservient to House Kirko or their opposition. Regardless of your allegiances, you have lived a simple and peaceful life on a farm, broken only by the occasional raid by the Rouvyr Tribals.",
+      "money": 5,
+      "origin": {
+        "type": "fixed",
+        "value": "Lesdownia"
+      },
+      "proficiencies": {
+        "skills": {
+          "fixed": ["Athletics", "Nature"]
+        },
+        "languages": {
+          "half_prof": true,
+          "amount": 1,
+          "from": ["Common", "Lower Lesdownian", "High Oritian"] 
+        },
+        "tools": {
+          "fixed": ["Cook's Utensils"],
+          "choose": {
+            "amount": 1,
+            "from": ["Lute", "Flute", "Drum", "Lyre"]
+          }
         }
-    ],
-    "proficiencies": {
-        "skills": [
-        "athletics",
-        "nature"
-        ],
-        "tools": [
-        "Cook's Utensils",
-        "One instrument of your choice"
-        ]
-    },
-    "features": [
-        "bg_elirium_farmer_plebeian_charm"
-    ],
-    "origin_options": [
-        "Lesdownia"
-    ]
+      },
+      "equipment": [
+        { "label": "Common Clothes", "quantity": 1 },
+        { "label": "Family Trinket", "quantity": 1 },
+        { "label": "Small Knife", "quantity": 1 },
+        { "label": "Pouch", "quantity": 1 }
+      ],
+      "features": ["bg_elirium_farmer_plebeian_charm"]
     }
-    ]
-    }
+  }
 }
