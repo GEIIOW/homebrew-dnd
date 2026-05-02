@@ -1,0 +1,58 @@
+{
+  "features": {
+    "feat_old_son_fugitive_contact": {
+      "id": "feat_old_son_fugitive_contact",
+      "name": "Old Son's Fugitive",
+      "icon": "ph:users-four-bold",
+      "description": "To flee from the Silvermace Empire you had to start dealing with some sketchy individuals. These people might be associated with the criminal underworld, the rough-and-tumble folk of the streets, or members of high society. This connection comes in the form of a contact in any city you visit, a person who provides information about the people and places of the local area."
+    },
+    "feat_old_son_speciality": {
+      "id": "feat_old_son_speciality",
+      "name": "Defining Event",
+      "icon": "ph:Warning-circle-bold",
+      "description": "You were once either a citizen of the empire or a Newlon, someone who was not born inside the empire but later became part of it. Now, after commiting a crime against the empire, you have become an Old son. \n\n**d10 Defining Event**\n1. I stood up to an agent of the empire.\n2. I saved people who were not meant to be saved.\n3. I went against direct orders.\n4. I stole from a merchant.\n5. I led a militia in a revolt.\n6. I was caught praying to an illegal god.\n7. I was suspected to have murdered someone.\n8. I rose against a castellier’s new decree.\n9. I gave shelter to another old son.\n10. I rose to a leadership position in the army and disagreed with the new truths I learned."
+    }
+  },
+
+  "backgrounds": {
+    "bg_old_son_fugitive": {
+      "id": "bg_old_son_fugitive",
+      "name": "Old Son Fugitive",
+      "source": "Silvermace Lore",
+      "icon": "ph:mask-sad-bold",
+      "description": "The Silvermace Empire has renounced you. Whether you were a citizen or a Newlon, a single defining event turned you into an 'Old Son'—a fugitive hunted by the very empire you once called home. Dealing with sketchy individuals became your only way to survive the transition from the empire's light to the shadows of the world.",
+      "money": 10,
+      "origin": {
+        "type": "fixed",
+        "value": "Silvermace Empire"
+      },
+      "proficiencies": {
+        "skills": {
+          "fixed": ["Stealth"],
+          "choose": {
+            "amount": 1,
+            "from": ["Persuasion", "Deception", "Intimidation", "Performance"]
+          }
+        },
+        "languages": {
+          "amount": 1,
+          "from": ["Zeiloryn", "Silvanian"]
+        },
+        "tools": {
+          "fixed": ["Forgery Kit"]
+        }
+      },
+      "equipment": [
+        { "label": "Small Knife", "quantity": 1 },
+        { "label": "Map (Nostalgic)", "quantity": 1 },
+        { "label": "Common Clothes", "quantity": 1 },
+        { "label": "Pouch", "quantity": 1 },
+        { "label": "Family Trinket", "quantity": 1 }
+      ],
+      "features": [
+        "feat_old_son_fugitive_contact", 
+        "feat_old_son_speciality"
+      ]
+    }
+  }
+}
