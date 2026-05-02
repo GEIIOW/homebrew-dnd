@@ -15,8 +15,8 @@
   },
 
   "backgrounds": {
-    "bg_old_son_fugitive": {
-      "id": "bg_old_son_fugitive",
+    "bg_old_son": {
+      "id": "bg_old_son",
       "name": "Old Son Fugitive",
       "source": "Silvermace Lore",
       "icon": "ph:mask-sad-bold",
