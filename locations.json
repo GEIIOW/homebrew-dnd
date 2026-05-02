@@ -1,5 +1,24 @@
 {
   "locations": {
+    "loc_aethelgard": {
+      "id": "loc_aethelgard",
+      "name": "Aethelgard",
+      "type": "Continent",
+      "icon": "ph:globe-hemisphere-west-bold",
+      "description": "The great western continent. A massive landmass housing vast empires, untamed wilderness, and ancient ruins from forgotten eras.",
+      "languages": ["lang_common", "lang_silvanian"],
+      "source": "Core Rulebook"
+    },
+    "loc_silvermace_empire": {
+      "id": "loc_silvermace_empire",
+      "name": "Silvermace Empire",
+      "type": "Country",
+      "icon": "ph:castle-turquoise-bold",
+      "description": "The largest and most militant human empire in Aethelgard. Known for its heavily armored Cazan legions and strict political senate.",
+      "languages": ["lang_common", "lang_silvanian"],
+      "parent_id": "loc_aethelgard",
+      "source": "Silvermace Lore"
+    },
     "loc_lesdownia": {
       "id": "loc_lesdownia",
       "name": "Lesdownia",
@@ -7,16 +26,57 @@
       "icon": "ph:flag-banner-bold",
       "description": "A land of fractured allegiances and ancient farming traditions. Known primarily for the Tripartate Valley, it is a region where the simple life of a farmer is often interrupted by the politics of Great Houses.",
       "languages": ["lang_common", "lang_low_lesdownian"],
+      "parent_id": "loc_aethelgard",
+      "source": "Elirium Setting"
+    },
+    "loc_iron_peaks": {
+      "id": "loc_iron_peaks",
+      "name": "The Iron Peaks",
+      "type": "Region",
+      "icon": "ph:mountains-bold",
+      "description": "A treacherous mountain range acting as a natural border in northern Lesdownia. Rich in iron ore but plagued by freezing winds and monstrous threats.",
+      "languages": ["lang_common", "lang_dwarvish"],
+      "parent_id": "loc_lesdownia",
+      "source": "Elirium Setting"
+    },
+    "loc_highwatch": {
+      "id": "loc_highwatch",
+      "name": "Highwatch Citadel",
+      "type": "City",
+      "icon": "ph:fortress-bold",
+      "description": "A heavily fortified dwarven and human settlement built directly into the cliffs of the Iron Peaks. It serves as a mining hub and the first line of defense against northern raids.",
+      "languages": ["lang_common", "lang_dwarvish"],
+      "parent_id": "loc_iron_peaks",
       "source": "Elirium Setting"
     },
     "loc_tripartate_valley": {
       "id": "loc_tripartate_valley",
       "name": "Tripartate Valley",
       "type": "Subregion",
-      "icon": "ph:mountains-bold",
+      "icon": "ph:tree-evergreen-bold",
       "description": "The fertile heart of Lesdownia. Most of the region's Elirium crops are harvested here, under the watchful eye of House Kirko.",
       "languages": ["lang_low_lesdownian"],
       "parent_id": "loc_lesdownia",
+      "source": "Elirium Setting"
+    },
+    "loc_kirkos_rest": {
+      "id": "loc_kirkos_rest",
+      "name": "Kirko's Rest",
+      "type": "Town",
+      "icon": "ph:house-line-bold",
+      "description": "A bustling agricultural town in the center of the Tripartate Valley. The local taverns are always full of farmers spending their hard-earned coin after the Elirium harvest.",
+      "languages": ["lang_common", "lang_low_lesdownian"],
+      "parent_id": "loc_tripartate_valley",
+      "source": "Elirium Setting"
+    },
+    "loc_mudbottom": {
+      "id": "loc_mudbottom",
+      "name": "Mudbottom",
+      "type": "Village",
+      "icon": "ph:tent-bold",
+      "description": "A tiny, squalid settlement at the edge of the valley swamps. The people here are poor, superstitious, and deeply distrustful of outsiders or empire officials.",
+      "languages": ["lang_low_lesdownian"],
+      "parent_id": "loc_tripartate_valley",
       "source": "Elirium Setting"
     },
     "loc_lefkada_maw": {
