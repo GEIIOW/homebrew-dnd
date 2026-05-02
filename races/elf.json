@@ -3,53 +3,50 @@
     {
       "id": "elf",
       "name": "Elf",
-      "description": "\"Far greater is the admiration I harbor for the elves than for any other type of mortal in this world of ours. Only the Gods could stand in my way, had I been gifted with an elven body at birth. I admit to be envious of their natural link with magic, even if most misuse it. My own dear friend, the late Emperor Talahil, showed me what his kind was capable of when he partook in a tourney some time before his tragic end. I regret having no part in the ceremonies following his death, and even more not having been able to place him back on his throne yet. Soon. If all my research bears fruit, that crown will fall back into its rightful head.\"\n\n- Y. Mageshell, Manyhals of Death\n\nThe tall and slender elves were born into magic. Many are the elves that adore the finer things in life, such as silk, silver and adornments that connect them with the life around them. Due to their long life they may come off as uncaring, stagnant or even lazy, when in reality they just see the world in a completly different way than any other mortal could hope to. They have the rare luxury of both time and patience. To an elf twenty years are the equivalent to four human years. When the whole world is burning, why prevent it when it will all blow over in no time? To others it might be years, an eternity, but for elves it's just another decade.\n\nArcane Masters\nIt's said that of the three primary Kássian races elves were the last to emerge in Faleria, being created alongside humans and dwarves by Yivor, Myllad and Kássia as servants in their godly works. Elves were created for Myllad, God of knowledge, magic and libraries, to serve in his vast library. Through the years, elves organized and catalogued his many scrolls and tomes and, sometimes, even conducted field research, alongside humans. Due to these many tasks, they slowly absorved the pages' magic into their own bodies.\n\nElf Names\nElven names are full of voiced sounds, making it difficult to find and elf with an f, s, sh, p, t, c or k in their name. Furthermore, elven names tend to involve diphthongs, l's and r's. Examples of elven names are Hemcriel, Zavandriel and Emaria.\n\nBroken People\nElves had already settled in Faleria for many generations once the Great Penury broke out. The large elven population in Scanduri was heavily affected by the demonic hordes' attacks. A local elf called Balágriel became a legendary figure during this period, recieving a silver greatmace from Yivor. Once the war ended, he rallied his fellow elves and some other allies into following him to conquer all of Faleria, starting with Zeiloryn. Frustrated by the seemingly worthless catastrophic losses they endured during the war, a huge number of elves followed him into his conquest, deeming all other elves who refused the call as traitors.\n\nSo the Silvermace Empire was founded and quickly established itself as a military power that was impossible to ignore. As they gained more territory, they proclaimed themselves as the capital of the world. Scanduri was still in ruins due to the Penury, Manyhal had not yet been united under Halwin, Nyjörsa was as it is today, a frozen tundra, and neither Raydis nor the Bysso Isles had been discovered, leaving the elven nation as the most powerful and dangerous nation in Faleria. As some elves tried to commune with nature and others tried to rebuild homes, the ancestors of the imperial elves razed fields and enlarged their new empire.",
+      "creature_type": "Humanoid",
+      "description": "\"Far greater is the admiration I harbor for the elves...\"\n\n- Y. Mageshell, Manyhals of Death\n\nThe tall and slender elves were born into magic...",
+      "biology": "Elves reach adulthood at the age of 15. They have the rare luxury of both time and patience. They can live up to 750 years.",
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1766146451134x545674489115742800/ACR%20Steel%20Plate%20Armor%20Copy%20Cop-Portrait%20%287%29.png",
       "speed": 9,
       "size": "Medium",
+      "source": "Core Rulebook",
       "features": [
-        "feat_elf_asi",
         "feat_elf_darkvision",
         "feat_elf_keen_senses",
-        "feat_elf_researchers",
-        "feat_elf_rest"
+        "feat_elf_researchers"
       ],
       "subraces": [
         {
           "id": "elf_dark",
           "name": "Dark Elf",
-          "description": "Dark Elves are natural to the frozen tundras of Nyjörsa. They are often mistaken for dwarves in literature due to both being described as “ice-born” in silvanian, but physically they are very different. Like most elves, these are a tall and slender people, but dark elves tend to be the bulkiest of the elves. They have a distinct charcoal or dark blue skin, purple or pink eyes and silver white hair.",
-          "features": [
-            "feat_dark_elf_vision",
-            "feat_dark_elf_shadowborn"
-          ]
+          "description": "Dark Elves are natural to the frozen tundras of Nyjörsa. Physically tall and slender, they tend to be the bulkiest of the elves.",
+          "image": "image_941988.png",
+          "stat_maximums": { "dexterity": 20, "constitution": 20 },
+          "features": ["feat_dark_elf_shadowborn"]
         },
         {
           "id": "elf_imperial",
           "name": "Imperial Elf",
-          "description": "Imperial Elves are closely related to light elves, directly deriving from them in “recent” times. Over the centuries, they have been raised only to serve the emperor. These elves have blonde or light brown hair, blue or green eyes and fair skin. Their ears are the longest of any elf, their length being a symbol of virtue, being adorned elegantly to show power or achievements.",
-          "features": [
-            "feat_imperial_elf_training",
-            "feat_imperial_elf_highborn"
-          ]
+          "description": "Raised only to serve the emperor. Their long ears are a symbol of virtue and power.",
+          "image": "image_941988.png",
+          "stat_maximums": { "intelligence": 22 },
+          "features": ["feat_imperial_elf_highborn"]
         },
         {
           "id": "elf_light",
           "name": "Light Elf",
-          "description": "Light Elves are the long lost cousins to the imperial elves. Natural to Scanduri, they are descendants of the elves that chose not to join the empire. These elves have brownish skin, brown or black hair, brown or black eyes and have the shortest ears of all elvish subtypes, with some being mistaken for Half-Elves. Despite their darker features, they call themselves light elves due to their enlightened decision to stay in Scanduri. Imperial elves only call them traitors.",
-          "features": [
-            "feat_light_elf_vision",
-            "feat_light_elf_lightborn"
-          ]
+          "description": "Descendants of the elves that chose not to join the empire. They call themselves light elves due to their enlightened decisions.",
+          "image": "image_941988.png",
+          "stat_maximums": { "wisdom": 22 },
+          "features": ["feat_light_elf_lightborn"]
         },
         {
           "id": "elf_night",
           "name": "Night Elf",
-          "description": "Night Elves were the first elves to set foot in Faleria. Their purpose is lost to time, but now they remain in Manyhal. Having spent millenea in this world, their magic has attuned with the very nature that surrounds them. Their bodies have adapted to nature and transformed to resemble it. Their hair comes in almost any colour, as long as nature presents it. Their eyes either have a humanlike iris or an iris that covers their whole eye and these can be orange, yellow, brown, green or blue. Their skin has become a variation of the colour of tree trunks, so in a range from spruce to dark oak.",
-          "features": [
-            "feat_night_elf_ancestral",
-            "feat_night_elf_oakborn"
-          ]
+          "description": "The first elves in Faleria. Their magic has attuned with nature, transforming their bodies to resemble tree trunks.",
+          "image": "image_941988.png",
+          "stat_maximums": { "constitution": 22 },
+          "features": ["feat_night_elf_oakborn"]
         }
       ]
     }
@@ -57,51 +54,42 @@
   "features": {
     "feat_dark_elf_shadowborn": {
       "name": "Shadowborn",
-      "description": "You know the *Control Flames* cantrip. Starting at 3rd level, you can cast the *Ice Knife* spell with this trait. Starting at 5th level, you can also cast the *Darkness* spell with this trait. Once you cast *Ice Knife* or *Darkness* with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Intelligence", "Wisdom", "Charisma"],
-      "grantedSpells": [
-        { "spellId": "spell_control_flames", "unlockLevel": 1 },
-        { "spellId": "spell_ice_knife", "unlockLevel": 3 },
-        { "spellId": "spell_darkness", "unlockLevel": 5 }
-      ]
+      "description": "You know the *Control Flames* cantrip. Starting at 3rd level, you can cast *Ice Knife*. Starting at 5th level, you can cast *Darkness*.",
+      "icon": "ph:moon-stars-bold",
+      "spells": ["spell_control_flames", "spell_ice_knife", "spell_darkness"]
     },
     "feat_imperial_elf_highborn": {
       "name": "Highborn",
-      "description": "You know the *True Strike* cantrip. Starting at 3rd level, you can cast the *Wrathful Smite* spell with this trait. Starting at 5th level, you can also cast the *Crown of Madness* spell with this trait. Once you cast *Wrathful Smite* or *Crown of Madness* with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Intelligence", "Wisdom", "Charisma"],
-      "grantedSpells": [
-        { "spellId": "spell_true_strike", "unlockLevel": 1 },
-        { "spellId": "spell_wrathful_smite", "unlockLevel": 3 },
-        { "spellId": "spell_crown_of_madness", "unlockLevel": 5 }
-      ]
+      "description": "You know the *True Strike* cantrip. Starting at 3rd level, you can cast *Wrathful Smite*. Starting at 5th level, you can cast *Crown of Madness*.",
+      "icon": "ph:crown-simple-bold",
+      "spells": ["spell_true_strike", "spell_wrathful_smite", "spell_crown_of_madness"]
     },
     "feat_light_elf_lightborn": {
       "name": "Lightborn",
-      "description": "You know the *Light* cantrip. Starting at 3rd level, you can cast the *Faerie Fire* spell with this trait. Starting at 5th level, you can also cast the *Invisibility* spell with this trait. Once you cast *Faerie Fire* or *Invisibility* with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Intelligence", "Wisdom", "Charisma"],
-      "grantedSpells": [
-        { "spellId": "spell_light", "unlockLevel": 1 },
-        { "spellId": "spell_faerie_fire", "unlockLevel": 3 },
-        { "spellId": "spell_invisibility", "unlockLevel": 5 }
-      ]
+      "description": "You know the *Light* cantrip. Starting at 3rd level, you can cast *Faerie Fire*. Starting at 5th level, you can cast *Invisibility*.",
+      "icon": "ph:sun-bold",
+      "spells": ["spell_light", "spell_faerie_fire", "spell_invisibility"]
     },
     "feat_night_elf_oakborn": {
       "name": "Oakborn",
-      "description": "You know the *Druidcraft* cantrip. Starting at 3rd level, you can cast the *Entangle* spell with this trait. Starting at 5th level, you can also cast the *Moonbeam* spell with this trait. Once you cast *Entangle* or *Moonbeam* with this trait, you can't cast that spell with it again until you finish a long rest. You can also cast either of those spells using any spell slots you have of the appropriate level.\n\nIntelligence, Wisdom, or Charisma is your spellcasting ability for these spells when you cast them with this trait.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["Intelligence", "Wisdom", "Charisma"],
-      "grantedSpells": [
-        { "spellId": "spell_druidcraft", "unlockLevel": 1 },
-        { "spellId": "spell_entangle", "unlockLevel": 3 },
-        { "spellId": "spell_moonbeam", "unlockLevel": 5 }
-      ]
+      "description": "You know the *Druidcraft* cantrip. Starting at 3rd level, you can cast *Entangle*. Starting at 5th level, you can cast *Moonbeam*.",
+      "icon": "ph:tree-evergreen-bold",
+      "spells": ["spell_druidcraft", "spell_entangle", "spell_moonbeam"]
+    },
+    "feat_elf_darkvision": {
+      "name": "Darkvision",
+      "description": "You can see in dim light within 18 meters as if it were bright light.",
+      "icon": "ph:eye-bold"
+    },
+    "feat_elf_keen_senses": {
+      "name": "Keen Senses",
+      "description": "You have proficiency in the Perception skill.",
+      "icon": "ph:ear-bold"
+    },
+    "feat_elf_researchers": {
+      "name": "Arcane Researchers",
+      "description": "You have advantage on Intelligence (Arcana) checks to identify magic items.",
+      "icon": "ph:magnifying-glass-bold"
     }
   }
 }
