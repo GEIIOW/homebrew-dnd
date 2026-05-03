@@ -1,0 +1,21 @@
+{
+  "npcs": {
+    "npc_elara_vane": {
+      "id": "npc_elara_vane",
+      "name": "Elara",
+      "surname": "Vane",
+      "image": "https://link-para-imagem.png",
+      "about": "A High Sage of the Agnostos Council, known for her prophetic dreams.",
+      "race": "race_agnostos",
+      "subrace": "",
+      "class": "class_mage",
+      "subclass": "sub_oracle",
+      "birth_date": "12/05/1120",
+      "is_alive": true,
+      "death_date": "",
+      "affiliations": ["House of Whispers", "The Silver Council"],
+      "parents": ["npc_id_pai", "npc_id_mae"],
+      "consorts": ["npc_id_marido_ou_esposa"]
+    }
+  }
+}
