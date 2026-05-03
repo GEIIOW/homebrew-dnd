@@ -4,7 +4,7 @@
   "sources": [
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/races/manifest_race.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/backgrounds/manifest_backgrounds.json",
-    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/npcs/manifest_npcs.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/npcs/manifest_npc.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/spells.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/feats.json",
