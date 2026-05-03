@@ -4,7 +4,7 @@
       "id": "npc_elara_vane",
       "name": "Elara",
       "surname": "Vane",
-      "image": "https://link-para-imagem.png",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=384,h=384,f=auto,dpr=1,fit=contain/f1767478320529x925868955397872500/Fighter%20Arelia%20Vulgore-Portrait.png",
       "about": "A High Sage of the Agnostos Council, known for her prophetic dreams.",
       "race": "race_agnostos",
       "subrace": "",
@@ -16,6 +16,42 @@
       "affiliations": ["House of Whispers", "The Silver Council"],
       "parents": ["npc_id_pai", "npc_id_mae"],
       "consorts": ["npc_id_marido_ou_esposa"]
+    },
+    "npc_kaelen_vane": {
+      "id": "npc_kaelen_vane",
+      "name": "Kaelen",
+      "surname": "Vane",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=384,h=384,f=auto,dpr=1,fit=contain/f1767478330000x123456789/Paladin-Kaelen-Portrait.png",
+      "about": "Comandante da guarda da House of Whispers e marido de Elara. Dedicou a sua vida a proteger as visões da esposa.",
+      "race": "race_agnostos",
+      "subrace": "",
+      "class": "class_fighter",
+      "subclass": "sub_guardian",
+      "birth_date": "05/09/1115",
+      "is_alive": true,
+      "death_date": "",
+      "relation": 95,
+      "affiliations": ["House of Whispers", "The Silver Shield"],
+      "parents": ["npc_vane_elder_1", "npc_vane_elder_2"],
+      "consorts": ["npc_elara_vane"]
+    },
+    "npc_valerius_vane": {
+      "id": "npc_valerius_vane",
+      "name": "Valerius",
+      "surname": "Vane",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=384,h=384,f=auto,dpr=1,fit=contain/f1767478340000x987654321/Young-Mage-Valerius.png",
+      "about": "O filho primogénito de Elara e Kaelen. Demonstra uma aptidão precoce para a magia onírica, herdada da linhagem da sua mãe.",
+      "race": "race_agnostos",
+      "subrace": "",
+      "class": "class_mage",
+      "subclass": "sub_apprentice",
+      "birth_date": "22/11/1150",
+      "is_alive": true,
+      "death_date": "",
+      "relation": 100,
+      "affiliations": ["House of Whispers"],
+      "parents": ["npc_elara_vane", "npc_kaelen_vane"],
+      "consorts": []
     }
   }
 }
