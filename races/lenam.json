@@ -1,7 +1,7 @@
 {
   "races": [
     {
-      "id": "lenam",
+      "id": "race_lenam",
       "name": "Lenam",
       "creature_type": "Humanoid",
       "size": "Medium",
