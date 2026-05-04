@@ -180,20 +180,22 @@
       "parents": [],
       "consorts": ["npc_caranor_lesdow"]
     },
-    "npc_aurelia_vane": {
-      "id": "npc_aurelia_vane",
-      "name": "Aurelia",
-      "surname": "Vane",
-      "gender": "f",
-      "image": "",
-      "about": "A jovem filha de Valerius. A mãe é desconhecida.",
-      "race": "race_agnostos",
-      "class": "class_commoner",
-      "birth_date": "01/01/1175",
+"npc_patilo": {
+      "id": "npc_patilo",
+      "name": "Patilo",
+      "surname": "",
+      "gender": "m",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=384,h=384,f=auto,dpr=1,fit=contain/f1765665505127x947993944495095900/Druid%20Patilo-Portrait.png",
+      "about": "Patilo is a young minotaur druid from the village of Mestória. Preferring nature over his father's forge, he was taught magic by a mysterious tiger at Mestós Creek. After successfully battling corrupted elementals and saving Keelan alongside a group of adventurers, he left his home to travel with them, under the condition that he continues his education in reading and writing.",
+      "race": "race_minotaur",
+      "class": "class_druid",
+      "subclass": "sub_circle_of_the_shepherd",
+      "birth_date": "11/05/0692",
       "is_alive": true,
-      "relation": 95,
-      "affiliations": ["House of Whispers"],
-      "parents": ["npc_valerius_vane"],
+      "death_date": "",
+      "relation": 50,
+      "affiliations": [],
+      "parents": [],
       "consorts": []
     }
   }
