@@ -12,6 +12,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/locations.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/languages.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/race_features.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/aspiration/manifest_aspiration.json",
 
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/arcanist.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/classes/rogue.json",
