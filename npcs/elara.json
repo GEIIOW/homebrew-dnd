@@ -88,7 +88,7 @@
       "relation": 50,
       "affiliations": ["House Lesdow"],
       "parents": [],
-      "consorts": ["npc_tasma"]
+      "consorts": ["npc_tasma_lesdow"]
     },
 "npc_alastor_lesdow": {
       "id": "npc_alastor_lesdow",
