@@ -73,6 +73,35 @@
       "type": "race",
       "description": "Agnostos share a deep connection to the Goddess Elana. You are immune to spells and magical effects that require you to dream, such as the *Dream* spell, but you can still be affected by effects that put you to sleep, like the *Sleep* spell.",
       "icon": "ph:moon-stars-bold"
+    },
+    "feat_lenam_darkvision": {
+      "id": "feat_lenam_darkvision",
+      "name": "Lenam Darkvision",
+      "type": "race",
+      "description": "Thanks to your elven blood, you have superior vision in dark and dim conditions. You can see in dim light within 18 meters of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray.",
+      "icon": "game-icons:angry-eyes"
+    },
+    "feat_fey_ancestry": {
+      "id": "feat_fey_ancestry",
+      "name": "Fey Ancestry",
+      "type": "race",
+      "description": "You have advantage on saving throws against being charmed, and magic can't put you to sleep.",
+      "icon": "game-icons:elf-ear"
+    },
+    "feat_skill_versatility": {
+      "id": "feat_skill_versatility",
+      "name": "Skill Versatility",
+      "type": "race",
+      "description": "You gain proficiency in two skills of your choice.",
+      "icon": "game-icons:earrings",
+      "choices": [
+        {
+          "type": "skill",
+          "count": "2",
+          "filterLvl": 0,
+          "manualList": ""
+        }
+      ]
     }
   }
 }

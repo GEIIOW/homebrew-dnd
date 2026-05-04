@@ -1,0 +1,21 @@
+{
+  "races": [
+    {
+      "id": "lenam",
+      "name": "Lenam",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": 9,
+      "description": "",
+      "biology": "",
+      "source": "Library Of Visions",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753092817995x787763753496344700/Cristovao%20Diniz-Portrait%20%281%29.png",
+      "features": [],
+      "stat_maximums": {
+        "charisma": 22
+      },
+      "subraces": []
+    }
+  ]
+  
+}
