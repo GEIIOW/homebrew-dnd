@@ -41,6 +41,7 @@
       "name": "Rip and Tear",
       "type": "race",
       "icon": "game-icons:wolverine-claws",
+      "action_type" :"action",
       "description": "Lykaras have sharp teeth and claws. Your teeth and claws are natural weapons with which you are proficient. You may add your Wisdom modifier instead of your Strength modifier, to the attack and damage rolls when you attack with your bite or claws. Your bite deals 1d6 piercing damage on a hit and your claws deal 1d4 slashing damage on a hit.",
       "vtt_rolls": [
         {
