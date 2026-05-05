@@ -45,12 +45,12 @@
       "vtt_rolls": [
         {
           "label": "Bite",
-          "formula": "1d6 + @str",
+          "formula": "1d6",
           "type": "piercing"
         },
         {
           "label": "Claws",
-          "formula": "1d4 + @str",
+          "formula": "1d4",
           "type": "slashing"
         }
       ]
