@@ -1,150 +1,204 @@
 {
-  "races": [
-    {
-      "id": "kriteri",
-      "name": "Kriteri (Ourágros)",
-      "creature_type": "Humanoid",
-      "size": "Medium",
-      "speed": 9,
-      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753097684899x354666894607502680/Godslayer%20Armor%20v2%20Copy-Portrait%20%282%29.png",
-      "description": "Kriteri average 1,50-2,50 meters tall and live about 400 years. They are humanoids deeply connected to the Ourolight, reaching adulthood at 50.",
-      "stat_maximums": {
-        "charisma": 22
-      },
-      "features": [
-        "feat_kriteri_asi",
-        "feat_kriteri_solmosis_base"
-      ],
-      "subraces": [
-        {
-          "id": "sub_fallen_kriteron",
-          "name": "Fallen Kriteron",
-          "description": "Descendants of lost celestials with a broken connection to the Ourolight.",
-          "features": ["feat_fallen_res", "feat_fallen_black_sun"]
-        },
-        {
-          "id": "sub_lightbearer_kriteron",
-          "name": "Lightbearer Kriteron",
-          "description": "Descendants of celestial guardians, radiant and righteous.",
-          "features": ["feat_light_res", "feat_light_sunshine"]
-        }
-      ]
-    }
-  ],
   "features": {
-    "feat_kriteri_asi": {
-      "id": "feat_kriteri_asi",
-      "name": "Ability Score Increase",
+    "feat_kriteron_asi": {
+      "id": "feat_kriteron_asi",
+      "name": "Ourágros' Ability Score Increase",
+      "type": "race",
       "action_type": "passive",
-      "description": "Choose +2/+1 or three +1. Your Charisma maximum is 22.",
-      "effects": [{ "type": "stat_max", "stat": "charisma", "value": "22" }],
-      "choices": [{ "type": "stat_bonus", "count": 1, "manualList": "+2/+1 or +1/+1/+1" }]
-    },
-    "feat_kriteri_solmosis_base": {
-      "id": "feat_kriteri_solmosis_base",
-      "name": "Solmosis",
-      "action_type": "passive",
-      "icon": "ph:sparkle-fill",
-      "description": "Permanently gain effects at levels 1, 4, 8, 12, 16, and 19. You cannot choose the same effect twice.",
+      "icon": "ph:trend-up-bold",
+      "description": "You may choose to increase an ability score by 2 and one other ability score by 1 or increase three different ability scores by 1. Your Charisma score maximum is 22, instead of the normal 20.",
+      "effects": [
+        { "type": "stat_max", "stat": "charisma", "value": "22" }
+      ],
       "choices": [
-        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
-        { "type": "feat", "count": 1, "filterLvl": 4, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
-        { "type": "feat", "count": 1, "filterLvl": 8, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
-        { "type": "feat", "count": 1, "filterLvl": 12, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
-        { "type": "feat", "count": 1, "filterLvl": 16, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
-        { "type": "feat", "count": 1, "filterLvl": 19, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" }
+        { "type": "stat_bonus", "count": 1, "manualList": "+2/+1 or +1/+1/+1" }
+      ]
+    },
+    "feat_kriteron_solmosis_progression": {
+      "id": "feat_kriteron_solmosis_progression",
+      "name": "Solmosis",
+      "type": "race",
+      "action_type": "passive",
+      "icon": "ph:sparkle-bold",
+      "description": "Your connection with the Ourolight emboldens you! When you reach levels 1, 4, 8, 12, 16 and 19, permanently gain one Solmosis effect. You cannot choose an effect twice.",
+      "choices": [
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 4, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 8, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 12, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 16, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 19, "manualList": "feat_sol_flight,feat_sol_radiance,feat_sol_aura,feat_sol_protector,feat_sol_crystal" }
       ]
     },
     "feat_sol_flight": {
       "id": "feat_sol_flight",
       "name": "Solmosis: Flight",
+      "type": "race",
       "action_type": "passive",
-      "icon": "ph:butterfly-fill",
-      "description": "Wings sprout from your back. Flying speed: 9m (unencumbered).",
-      "effects": [{ "type": "speed_bonus", "value": "9", "notes": "Flying" }]
+      "icon": "ph:butterfly-bold",
+      "description": "Wings sprout from your back. You have a base flying speed of 9 meters if you are not encumbered."
+    },
+    "feat_sol_radiance": {
+      "id": "feat_sol_radiance",
+      "name": "Solmosis: Golden Radiance",
+      "type": "race",
+      "action_type": "passive",
+      "icon": "ph:eye-bold",
+      "description": "You can see in dim light within 18 meters of you as if it were bright light, and in darkness as if it was dim light. You can’t discern color in darkness, only shades of gold."
     },
     "feat_sol_aura": {
       "id": "feat_sol_aura",
       "name": "Solmosis: Flaming Aura",
+      "type": "race",
       "action_type": "action",
-      "icon": "ph:fire-fill",
-      "description": "Surround yourself with a flaming aura for light (6m bright/3m dim).",
+      "icon": "ph:fire-bold",
+      "description": "Twice per short rest and as an action, you can choose to surround yourself with a flaming aura. You shed bright light in a 6-meter radius and dim light for 3 meters.",
       "resources": [{ "name": "Aura", "max": "2", "reset": "short_rest" }]
+    },
+    "feat_sol_protector": {
+      "id": "feat_sol_protector",
+      "name": "Solmosis: Mark of the Protector",
+      "type": "race",
+      "action_type": "reaction",
+      "icon": "ph:shield-check-bold",
+      "description": "Once per long rest and as a reaction, you can cast one of your prepared spells with a range of self on a willing creature within 9 meters of you.",
+      "resources": [{ "name": "Protector Mark", "max": "1", "reset": "long_rest" }]
     },
     "feat_sol_crystal": {
       "id": "feat_sol_crystal",
       "name": "Solmosis: Celestial Crystal",
+      "type": "race",
       "action_type": "action",
-      "icon": "ph:gem-fill",
-      "description": "Touch a creature to heal $lvl$ HP.",
-      "resources": [{ "name": "Healing Touch", "max": "1", "reset": "long_rest" }],
+      "icon": "ph:gem-bold",
+      "description": "Once per long rest and as an action, you can touch a creature and cause it to regain a number of hit points equal to your level.",
+      "resources": [{ "name": "Crystal Touch", "max": "1", "reset": "long_rest" }],
       "vtt_rolls": [{ "label": "Crystal Healing", "dice": "@lvl", "damage_type": "healing" }]
-    },
-    "feat_sol_protector": {
-        "id": "feat_sol_protector",
-        "name": "Solmosis: Mark of the Protector",
-        "action_type": "reaction",
-        "icon": "ph:shield-plus-fill",
-        "description": "Cast a prepared 'Self' spell on a willing creature within 9m.",
-        "resources": [{ "name": "Mark", "max": "1", "reset": "long_rest" }]
-    },
-    "feat_sol_radiance": {
-        "id": "feat_sol_radiance",
-        "name": "Solmosis: Golden Radiance",
-        "action_type": "passive",
-        "icon": "ph:eye-fill",
-        "description": "Darkvision 18m (shades of gold).",
-        "effects": [{ "type": "vision", "value": "18m Gold Darkvision" }]
     },
     "feat_fallen_res": {
       "id": "feat_fallen_res",
       "name": "Necrotic Resistance",
+      "type": "race",
       "action_type": "passive",
-      "description": "Resistance to necrotic damage.",
-      "effects": [{ "type": "resistance", "value": "necrotic" }]
+      "icon": "ph:skull-bold",
+      "description": "You have resistance to necrotic damage."
     },
     "feat_fallen_black_sun": {
       "id": "feat_fallen_black_sun",
       "name": "Black Sun",
+      "type": "race",
       "action_type": "passive",
-      "description": "Expands Solmosis with darker options.",
+      "icon": "ph:moon-stars-bold",
+      "description": "Your Solmosis effects become darker. Additionally, your Solmosis gains specific dark options.",
       "choices": [
-        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_eyes_dread, feat_sol_skin_fallen" },
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_eyes_dread,feat_sol_skin_fallen" },
         { "type": "feat", "count": 1, "filterLvl": 11, "manualList": "feat_sol_exile_crown" }
       ]
     },
+    "feat_sol_eyes_dread": {
+      "id": "feat_sol_eyes_dread",
+      "name": "Eyes of Dread",
+      "type": "race",
+      "action_type": "action",
+      "icon": "ph:ghost-bold",
+      "description": "Twice per long rest and as an action, turn your eyes terrorizing for a minute. You have advantage on Charisma (Intimidation) checks.",
+      "resources": [{ "name": "Dread", "max": "2", "reset": "long_rest" }]
+    },
+    "feat_sol_skin_fallen": {
+      "id": "feat_sol_skin_fallen",
+      "name": "Skin of the Fallen",
+      "type": "race",
+      "action_type": "passive",
+      "icon": "ph:shield-bold",
+      "description": "When not wearing armor, you have a natural armor of 13."
+    },
     "feat_sol_exile_crown": {
-        "id": "feat_sol_exile_crown",
-        "name": "Exile’s Crown",
-        "action_type": "action",
-        "icon": "ph:crown-fill",
-        "description": "For 1 minute: cannot be flanked; advantage on 1st attack if no allies within 6m.",
-        "resources": [{ "name": "Crown", "max": "1", "reset": "dawn" }]
+      "id": "feat_sol_exile_crown",
+      "name": "Exile’s Crown",
+      "type": "race",
+      "action_type": "action",
+      "icon": "ph:crown-bold",
+      "description": "Starting at lvl 11. As an action, invoke a crown for 1 minute: you cannot be flanked and have advantage on your first attack every turn if no allies are within 6m.",
+      "resources": [{ "name": "Exile Crown", "max": "1", "reset": "dawn" }]
     },
     "feat_light_res": {
-        "id": "feat_light_res",
-        "name": "Radiant Resistance",
-        "action_type": "passive",
-        "description": "Resistance to radiant damage.",
-        "effects": [{ "type": "resistance", "value": "radiant" }]
+      "id": "feat_light_res",
+      "name": "Radiant Resistance",
+      "type": "race",
+      "action_type": "passive",
+      "icon": "ph:sun-bold",
+      "description": "You have resistance to radiant damage."
     },
     "feat_light_sunshine": {
       "id": "feat_light_sunshine",
       "name": "Sunshine",
+      "type": "race",
       "action_type": "passive",
-      "description": "Expands Solmosis with radiant options.",
+      "icon": "ph:sun-dim-bold",
+      "description": "Your Solmosis effects become brighter. Additionally, your Solmosis gains specific radiant options.",
       "choices": [
-        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_sunburst, feat_sol_fourth_wing" },
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_sunburst,feat_sol_fourth_wing" },
         { "type": "feat", "count": 1, "filterLvl": 11, "manualList": "feat_sol_protector_crown" }
       ]
     },
     "feat_sol_sunburst": {
-        "id": "feat_sol_sunburst",
-        "name": "Sunburst",
-        "action_type": "bonus_action",
-        "icon": "ph:sun-fill",
-        "description": "Pass Flaming Aura to weapons. Gain 1.5m reach and radiant damage = @pb.",
-        "vtt_rolls": [{ "label": "Sunburst Bonus", "dice": "@pb", "damage_type": "radiant" }]
+      "id": "feat_sol_sunburst",
+      "name": "Sunburst",
+      "type": "race",
+      "action_type": "bonus_action",
+      "icon": "ph:sparkle-bold",
+      "description": "As a bonus action while Aura is active, pass effects to weapons. Gain 1.5m reach and deal additional radiant damage equal to @pb.",
+      "vtt_rolls": [{ "label": "Sunburst Damage", "dice": "@pb", "damage_type": "radiant" }]
+    },
+    "feat_sol_fourth_wing": {
+      "id": "feat_sol_fourth_wing",
+      "name": "Fourth Wing",
+      "type": "race",
+      "action_type": "passive",
+      "icon": "ph:wind-bold",
+      "description": "Two additional wings sprout. While flying you can perform the dash action as a bonus action."
+    },
+    "feat_sol_protector_crown": {
+      "id": "feat_sol_protector_crown",
+      "name": "Protector's Crown",
+      "type": "race",
+      "action_type": "action",
+      "icon": "ph:crown-simple-bold",
+      "description": "Starting at lvl 11. As an action, invoke a crown for 1 minute: any allied creature within 3 meters gains +1 to its AC.",
+      "resources": [{ "name": "Protector Crown", "max": "1", "reset": "dawn" }]
     }
-  }
+  },
+  "races": [
+    {
+      "id": "race_kriteron",
+      "name": "Kriteron (Ourágros)",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": 9,
+      "description": "Descendants of celestial beings connected to the Ourolight.",
+      "biology": "Kriteri are 1,50-2,50 meters tall, average 80 kg and are humanoids. Kriteri reach adulthood at the age of 50 but are considered young until the age of 120. On average, they live about 400 years.",
+      "source": "Faleria Core Rulebook",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753097684899x354666894607502680/Godslayer%20Armor%20v2%20Copy-Portrait%20%282%29.png",
+      "features": [
+        "feat_kriteron_asi",
+        "feat_kriteron_solmosis_progression"
+      ],
+      "stat_maximums": {
+        "charisma": 22
+      },
+      "subraces": [
+        {
+          "id": "sub_fallen_kriteron",
+          "name": "Fallen Kriteron",
+          "description": "Exiled or forgotten celestials with broken light.",
+          "features": ["feat_fallen_res", "feat_fallen_black_sun"]
+        },
+        {
+          "id": "sub_lightbearer_kriteron",
+          "name": "Lightbearer Kriteron",
+          "description": "Righteous descendants of celestial guardians.",
+          "features": ["feat_light_res", "feat_light_sunshine"]
+        }
+      ]
+    }
+  ]
 }
