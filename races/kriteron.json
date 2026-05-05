@@ -1,19 +1,5 @@
 {
   "features": {
-    "feat_kriteron_asi": {
-      "id": "feat_kriteron_asi",
-      "name": "Ourágros' Ability Score Increase",
-      "type": "race",
-      "action_type": "passive",
-      "icon": "ph:trend-up-bold",
-      "description": "You may choose to increase an ability score by 2 and one other ability score by 1 or increase three different ability scores by 1. Your Charisma score maximum is 22, instead of the normal 20.",
-      "effects": [
-        { "type": "stat_max", "stat": "charisma", "value": "22" }
-      ],
-      "choices": [
-        { "type": "stat_bonus", "count": 1, "manualList": "+2/+1 or +1/+1/+1" }
-      ]
-    },
     "feat_kriteron_solmosis_progression": {
       "id": "feat_kriteron_solmosis_progression",
       "name": "Solmosis",
@@ -170,7 +156,7 @@
   "races": [
     {
       "id": "race_kriteron",
-      "name": "Kriteron (Ourágros)",
+      "name": "Kriteron",
       "creature_type": "Humanoid",
       "size": "Medium",
       "speed": 9,
@@ -179,7 +165,6 @@
       "source": "Faleria Core Rulebook",
       "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753097684899x354666894607502680/Godslayer%20Armor%20v2%20Copy-Portrait%20%282%29.png",
       "features": [
-        "feat_kriteron_asi",
         "feat_kriteron_solmosis_progression"
       ],
       "stat_maximums": {
@@ -188,13 +173,13 @@
       "subraces": [
         {
           "id": "sub_fallen_kriteron",
-          "name": "Fallen Kriteron",
+          "name": "Fallen",
           "description": "Exiled or forgotten celestials with broken light.",
           "features": ["feat_fallen_res", "feat_fallen_black_sun"]
         },
         {
           "id": "sub_lightbearer_kriteron",
-          "name": "Lightbearer Kriteron",
+          "name": "Lightbearer",
           "description": "Righteous descendants of celestial guardians.",
           "features": ["feat_light_res", "feat_light_sunshine"]
         }
