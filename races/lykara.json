@@ -46,12 +46,12 @@
         {
           "label": "Bite",
           "dice": "1d6 + @str",
-          "type": "piercing"
+          "damage_type": "piercing"
         },
         {
           "label": "Claws",
           "dice": "1d4 + @str",
-          "type": "slashing"
+          "damage_type": "slashing"
         }
       ]
     }
