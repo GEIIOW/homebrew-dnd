@@ -1,0 +1,83 @@
+{
+  "features": {
+    "feat_darkvision": {
+      "id": "feat_darkvision",
+      "name": "Darkvision",
+      "type": "race",
+      "icon": "game-icons:angry-eyes",
+      "description": "Accustomed to hunting at night, you have superior vision in dark and dim conditions. You can see in dim light within 18 meters of you as if it were bright light and in darkness as if it were dim light. You can’t discern colors in that darkness only as shades of red."
+    },
+    "feat_bestial_hunter": {
+      "id": "feat_bestial_hunter",
+      "name": "Bestial Hunter",
+      "type": "race",
+      "icon": "game-icons:wolf-howl",
+      "description": "You are proficient with two skills of your choosing: Athletics, Acrobatics, Nature, Survival or Stealth.",
+      "choices": [
+        {
+          "type": "skill",
+          "count": "2",
+          "filterLvl": 0,
+          "manualList": "Athletics,Acrobatis,Nature,Survival,Stealth"
+        }
+      ]
+    },
+    "feat_hunters_sense": {
+      "id": "feat_hunters_sense",
+      "name": "Hunter's Sense",
+      "type": "race",
+      "icon": "game-icons:direwolf",
+      "description": "You have advantage on Wisdom (Perception) checks made to hear or smell."
+    },
+    "feat_running_leap": {
+      "id": "feat_running_leap",
+      "name": "Running Leap",
+      "type": "race",
+      "icon": "game-icons:jump-across",
+      "description": "You count your strength score as double for the purposes of performing a long or high jump."
+    },
+    "feat_rip_and_tear": {
+      "id": "feat_rip_and_tear",
+      "name": "Rip and Tear",
+      "type": "race",
+      "icon": "game-icons:wolverine-claws",
+      "description": "Lykaras have sharp teeth and claws. Your teeth and claws are natural weapons with which you are proficient. You may add your Wisdom modifier instead of your Strength modifier, to the attack and damage rolls when you attack with your bite or claws. Your bite deals 1d6 piercing damage on a hit and your claws deal 1d4 slashing damage on a hit.",
+      "vtt_rolls": [
+        {
+          "label": "Bite",
+          "formula": "1d6 + @str",
+          "type": "piercing"
+        },
+        {
+          "label": "Claws",
+          "formula": "1d4 + @str",
+          "type": "slashing"
+        }
+      ]
+    }
+  },
+  "races": [
+    {
+      "id": "race_lykara",
+      "name": "Lykara",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": 10,
+      "description": "\"There are beasts even I cannot start to comprehend. On my voyage to Manyhal, whilst staying overnight in a small village, the howling commenced and then the screams. My guards and I rushed to the streets to see what was happening, but as we opened our doors we heard others lock. In a flash of darkness, one by one my men started to be whisked away in agony. I did try to help them, but they were too quick, even for me. As the slaughter ended, I managed to injure one of the creature's legs. For my remaining time in that village, I studied it and found them neither to be lycanthropes nor intelligent. The townsfolk call them Lykaras and speak of a cursed woman. I found it all fascinating, but unimportant to my current research. One day I may try to find a cure to these beasts.\"\n\n- Y. Mageshell, Manyhals of Death\n\nA silhouette with dark fur lit by moonlight jumps from tiled roof to tiled roof, causing a tile to fall and shatter on the cobblestone floor. The tune of steps on the tiles aligns with your racing heartbeat, until it stops. For months or years you go from town to town sinking your sharp teeth into whatever flesh you can find, until one day you wake up, sound of mind but still in this bestial body.\n\n\nPlaying a Lykara\nMost Lykara are mindless beasts who live to feast and pass Elignia's curse onto others. On very rare occasions, a Lykara may regain their sane mind. It is advised that the Lykara you play be sentient.\n\n\nThe Curse of Elignia\nIt's said that long ago there was a girl named Elignia who loved dogs very much. She was a shy, gentle and naive child who had trouble with getting along with the other children of her town. One day, the other kids found a wolf den and decided to play a prank on Elignia. They guided her to the den, with the promise of introducing her to a cuddliest dog on that side of the realm. Once at the den, they pushed her inside, exclaiming that if she loved dogs as much as she said, she should live with them. Her fall spooked the wolves who were fast asleep inside their home and so, they ripped her to shreds. Elignia cried for help, but none of the children came to her aid. Only Nezorous, aspect of vengeance, came. She skinned the beasts alive and placed their fur where Elignia's injuries where. She molded her into a living wolf and encouraged the girl to go take vengeance on the ones who betrayed her. \n\n\n\n\nLykara Kin\nOnce cursed, a creature's nature fundamentally changes both physically and mentally. Although now cured from the mental curse, some old habits remain. Lykaras seek companionship from others to help deal with the trauma of their curse. Lykaras still affected by the mental curse don't typically attack sane Lykaras, unless provoked, and could even be friendly towards them. A pack of Lykaras will be led by the strongest Lykara.\n\n\nOnce transformed, some Lykaras retain traits from their previous mortal type such as fins, longer tusks and small horns. In general Lykaras retain their eye colour when cursed and their fur varies from gray, brown, white and black.\n\n\nLykara Names\nLykaras don't really have naming conventions as they are essentially mindless. Once the curse is removed a Lykara may choose to keep their old name or a new one that fits their new identity.",
+      "biology": "Lykaras are 1,50-2,40 meters tall, average 90 kg and are humanoids. Lykaras aren’t born but turned by their curse. They seem to age at the same rate as dwarves but their maximum lifespan remains a mystery.",
+      "source": "Cursed Crusaders",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1768135969051x137208872520051540/token_3%20%2810%29_cropped_processed_by_imagy.png",
+      "features": [
+        "feat_darkvision",
+        "feat_bestial_hunter",
+        "feat_hunters_sense",
+        "feat_running_leap",
+        "feat_rip_and_tear"
+      ],
+      "stat_maximums": {
+        "wisdom": 22
+      },
+      "subraces": []
+    }
+  ]
+}
