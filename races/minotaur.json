@@ -19,7 +19,7 @@
       "id": "feat_goring_rush",
       "name": "Goring Rush",
       "type": "race",
-    "action_type" :"bonus action",
+    "action_type" :"bonus_action",
       "icon": "game-icons:minotaur",
       "description": "Immediately after you move at least 6 meters on your turn, you can make one melee attack with your horns as a bonus action."
     },
