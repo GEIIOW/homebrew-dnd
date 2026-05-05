@@ -50,7 +50,7 @@
         },
         {
           "label": "Claws",
-          "dice": "1d4",
+          "formula": "1d4",
           "type": "slashing"
         }
       ]

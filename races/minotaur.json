@@ -1,0 +1,70 @@
+{
+  "features": {
+    "feat_horns": {
+      "id": "feat_horns",
+      "name": "Horns",
+      "type": "race",
+      "icon": "game-icons:bull-horns",
+      "description": "Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
+      "vtt_rolls": [
+        {
+          "label": "Horns",
+          "dice": "1d6 + @str",
+          "damage_type": "bludgeoning"
+        }
+      ]
+    },
+    "feat_goring_rush": {
+      "id": "feat_goring_rush",
+      "name": "Goring Rush",
+      "type": "race",
+      "icon": "game-icons:minotaur",
+      "description": "Immediately after you move at least 6 meters on your turn, you can make one melee attack with your horns as a bonus action."
+    },
+    "feat_hammering_horns": {
+      "id": "feat_hammering_horns",
+      "name": "Hammering Horns",
+      "type": "race",
+      "icon": "game-icons:charging-bull",
+      "description": "Immediately after you hit a creature with a melee attack on your turn, you can use a bonus action to attempt to shove that target with your horns. The target must be no more than one size larger than you and within 1.5 meters of you. Unless it succeeds on a Strength saving throw against a DC equal to 8 + your proficiency bonus + your Strength modifier, you push it up to 3 meters away from you."
+    },
+    "feat_imposing_presence": {
+      "id": "feat_imposing_presence",
+      "name": "Imposing Presence",
+      "type": "race",
+      "icon": "game-icons:bull-horns",
+      "description": "You have proficiency in one of the following skills of your choice: Intimidation or Persuasion.",
+      "choices": [
+        {
+          "type": "skill",
+          "count": 1,
+          "filterLvl": 0,
+          "manualList": "Intimidation,Persuasion"
+        }
+      ]
+    }
+  },
+  "races": [
+    {
+      "id": "race_minotaur",
+      "name": "Minotaur",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": 9,
+      "description": "",
+      "biology": "Minotaurs are 1,70-2,30 meters tall, average 120 kg and are humanoids. Minotaurs reach adulthood at age 19 but are considered young until the age of 25. On average, they live about 150 years.",
+      "source": "Cursed Crusaders",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753092601706x621642170296036200/Minotaur-Portrait.png",
+      "features": [
+        "feat_horns",
+        "feat_goring_rush",
+        "feat_hammering_horns",
+        "feat_imposing_presence"
+      ],
+      "stat_maximums": {
+        "strength": 22
+      },
+      "subraces": []
+    }
+  ]
+}
