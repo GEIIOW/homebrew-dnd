@@ -4,6 +4,7 @@
       "id": "feat_horns",
       "name": "Horns",
       "type": "race",
+        "action_type" :"action",
       "icon": "game-icons:bull-horns",
       "description": "Your horns are natural melee weapons, which you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.",
       "vtt_rolls": [
@@ -18,6 +19,7 @@
       "id": "feat_goring_rush",
       "name": "Goring Rush",
       "type": "race",
+    "action_type" :"bonus action",
       "icon": "game-icons:minotaur",
       "description": "Immediately after you move at least 6 meters on your turn, you can make one melee attack with your horns as a bonus action."
     },
