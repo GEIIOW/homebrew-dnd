@@ -1,110 +1,150 @@
 {
-  "name": "Expansão: Ourolight",
-  "features": {
-    "solmosis_1": {
-      "name": "Solmosis",
-      "level": 1,
-      "description": "A tua ligação com o Ourolight fortalece-te. Escolhe o teu primeiro efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "solmosis_4": {
-      "name": "Solmosis (Nível 4)",
-      "level": 4,
-      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "solmosis_8": {
-      "name": "Solmosis (Nível 8)",
-      "level": 8,
-      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "solmosis_12": {
-      "name": "Solmosis (Nível 12)",
-      "level": 12,
-      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "solmosis_16": {
-      "name": "Solmosis (Nível 16)",
-      "level": 16,
-      "description": "A tua ligação com o Ourolight cresce. Escolhe um novo efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "solmosis_19": {
-      "name": "Solmosis (Nível 19)",
-      "level": 19,
-      "description": "A tua ligação com o Ourolight atinge o zénite. Escolhe o teu último efeito permanente.",
-      "type": "choice",
-      "choose": 1,
-      "options": ["sol_flight", "sol_radiance", "sol_aura", "sol_mark", "sol_crystal"]
-    },
-    "sol_flight": {
-      "name": "Flight",
-      "description": "Asas nascem das tuas costas. Tens velocidade de voo de 9m se não estiveres sobrecarregado.",
-      "speed": { "fly": 9 }
-    },
-    "sol_radiance": {
-      "name": "Golden Radiance",
-      "description": "Os teus olhos ficam dourados/prateados. Visão no Escuro (18m) apenas em tons de ouro."
-    },
-    "sol_aura": {
-      "name": "Flaming Aura",
-      "description": "Duas vezes por descanso curto como ação: crias uma aura de fogo (luz brilhante 6m, penumbra 3m)."
-    },
-    "sol_mark": {
-      "name": "Mark of the Protector",
-      "description": "Uma vez por descanso longo como reação: podes conjurar um feitiço de 'self' num aliado a 9m."
-    },
-    "sol_crystal": {
-      "name": "Celestial Crystal",
-      "description": "Uma vez por descanso longo como ação: tocas numa criatura e curas HP igual ao teu nível."
-    },
-    "resistance_necrotic": {
-      "name": "Necrotic Resistance",
-      "description": "Tens resistência a dano necrótico (necrotic damage)."
-    },
-    "ice_troll_res": {
-      "name": "Ice Troll Resilience",
-      "description": "A tua adaptação às montanhas nevadas concede-te resistência a dano de Gelo (Cold)."
-    }
-  },
   "races": [
     {
-      "id": "kriteron",
-      "name": "Kriteron",
-      "description": "Seres tocados pelo poder cósmico do Ourolight.",
+      "id": "kriteri",
+      "name": "Kriteri (Ourágros)",
+      "creature_type": "Humanoid",
       "size": "Medium",
       "speed": 9,
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753097684899x354666894607502680/Godslayer%20Armor%20v2%20Copy-Portrait%20%282%29.png",
+      "description": "Kriteri average 1,50-2,50 meters tall and live about 400 years. They are humanoids deeply connected to the Ourolight, reaching adulthood at 50.",
+      "stat_maximums": {
+        "charisma": 22
+      },
       "features": [
-        "solmosis_1", 
-        "solmosis_4", 
-        "solmosis_8", 
-        "solmosis_12", 
-        "solmosis_16", 
-        "solmosis_19"
+        "feat_kriteri_asi",
+        "feat_kriteri_solmosis_base"
       ],
       "subraces": [
         {
-          "id": "kriteron_fallen",
-          "name": "Fallen",
-          "description": "Adaptados às montanhas nevadas e dotados de uma força monstruosa.",
-          "stat_maximums": {
-            "strength": 22
-          },
-          "features": ["ice_troll_res", "resistance_necrotic"]
+          "id": "sub_fallen_kriteron",
+          "name": "Fallen Kriteron",
+          "description": "Descendants of lost celestials with a broken connection to the Ourolight.",
+          "features": ["feat_fallen_res", "feat_fallen_black_sun"]
+        },
+        {
+          "id": "sub_lightbearer_kriteron",
+          "name": "Lightbearer Kriteron",
+          "description": "Descendants of celestial guardians, radiant and righteous.",
+          "features": ["feat_light_res", "feat_light_sunshine"]
         }
-      ]   
+      ]
     }
-  ]
+  ],
+  "features": {
+    "feat_kriteri_asi": {
+      "id": "feat_kriteri_asi",
+      "name": "Ability Score Increase",
+      "action_type": "passive",
+      "description": "Choose +2/+1 or three +1. Your Charisma maximum is 22.",
+      "effects": [{ "type": "stat_max", "stat": "charisma", "value": "22" }],
+      "choices": [{ "type": "stat_bonus", "count": 1, "manualList": "+2/+1 or +1/+1/+1" }]
+    },
+    "feat_kriteri_solmosis_base": {
+      "id": "feat_kriteri_solmosis_base",
+      "name": "Solmosis",
+      "action_type": "passive",
+      "icon": "ph:sparkle-fill",
+      "description": "Permanently gain effects at levels 1, 4, 8, 12, 16, and 19. You cannot choose the same effect twice.",
+      "choices": [
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 4, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 8, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 12, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 16, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" },
+        { "type": "feat", "count": 1, "filterLvl": 19, "manualList": "feat_sol_flight, feat_sol_radiance, feat_sol_aura, feat_sol_protector, feat_sol_crystal" }
+      ]
+    },
+    "feat_sol_flight": {
+      "id": "feat_sol_flight",
+      "name": "Solmosis: Flight",
+      "action_type": "passive",
+      "icon": "ph:butterfly-fill",
+      "description": "Wings sprout from your back. Flying speed: 9m (unencumbered).",
+      "effects": [{ "type": "speed_bonus", "value": "9", "notes": "Flying" }]
+    },
+    "feat_sol_aura": {
+      "id": "feat_sol_aura",
+      "name": "Solmosis: Flaming Aura",
+      "action_type": "action",
+      "icon": "ph:fire-fill",
+      "description": "Surround yourself with a flaming aura for light (6m bright/3m dim).",
+      "resources": [{ "name": "Aura", "max": "2", "reset": "short_rest" }]
+    },
+    "feat_sol_crystal": {
+      "id": "feat_sol_crystal",
+      "name": "Solmosis: Celestial Crystal",
+      "action_type": "action",
+      "icon": "ph:gem-fill",
+      "description": "Touch a creature to heal $lvl$ HP.",
+      "resources": [{ "name": "Healing Touch", "max": "1", "reset": "long_rest" }],
+      "vtt_rolls": [{ "label": "Crystal Healing", "dice": "@lvl", "damage_type": "healing" }]
+    },
+    "feat_sol_protector": {
+        "id": "feat_sol_protector",
+        "name": "Solmosis: Mark of the Protector",
+        "action_type": "reaction",
+        "icon": "ph:shield-plus-fill",
+        "description": "Cast a prepared 'Self' spell on a willing creature within 9m.",
+        "resources": [{ "name": "Mark", "max": "1", "reset": "long_rest" }]
+    },
+    "feat_sol_radiance": {
+        "id": "feat_sol_radiance",
+        "name": "Solmosis: Golden Radiance",
+        "action_type": "passive",
+        "icon": "ph:eye-fill",
+        "description": "Darkvision 18m (shades of gold).",
+        "effects": [{ "type": "vision", "value": "18m Gold Darkvision" }]
+    },
+    "feat_fallen_res": {
+      "id": "feat_fallen_res",
+      "name": "Necrotic Resistance",
+      "action_type": "passive",
+      "description": "Resistance to necrotic damage.",
+      "effects": [{ "type": "resistance", "value": "necrotic" }]
+    },
+    "feat_fallen_black_sun": {
+      "id": "feat_fallen_black_sun",
+      "name": "Black Sun",
+      "action_type": "passive",
+      "description": "Expands Solmosis with darker options.",
+      "choices": [
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_eyes_dread, feat_sol_skin_fallen" },
+        { "type": "feat", "count": 1, "filterLvl": 11, "manualList": "feat_sol_exile_crown" }
+      ]
+    },
+    "feat_sol_exile_crown": {
+        "id": "feat_sol_exile_crown",
+        "name": "Exile’s Crown",
+        "action_type": "action",
+        "icon": "ph:crown-fill",
+        "description": "For 1 minute: cannot be flanked; advantage on 1st attack if no allies within 6m.",
+        "resources": [{ "name": "Crown", "max": "1", "reset": "dawn" }]
+    },
+    "feat_light_res": {
+        "id": "feat_light_res",
+        "name": "Radiant Resistance",
+        "action_type": "passive",
+        "description": "Resistance to radiant damage.",
+        "effects": [{ "type": "resistance", "value": "radiant" }]
+    },
+    "feat_light_sunshine": {
+      "id": "feat_light_sunshine",
+      "name": "Sunshine",
+      "action_type": "passive",
+      "description": "Expands Solmosis with radiant options.",
+      "choices": [
+        { "type": "feat", "count": 1, "filterLvl": 1, "manualList": "feat_sol_sunburst, feat_sol_fourth_wing" },
+        { "type": "feat", "count": 1, "filterLvl": 11, "manualList": "feat_sol_protector_crown" }
+      ]
+    },
+    "feat_sol_sunburst": {
+        "id": "feat_sol_sunburst",
+        "name": "Sunburst",
+        "action_type": "bonus_action",
+        "icon": "ph:sun-fill",
+        "description": "Pass Flaming Aura to weapons. Gain 1.5m reach and radiant damage = @pb.",
+        "vtt_rolls": [{ "label": "Sunburst Bonus", "dice": "@pb", "damage_type": "radiant" }]
+    }
+  }
 }
