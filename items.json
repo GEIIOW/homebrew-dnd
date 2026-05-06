@@ -325,6 +325,34 @@
       "tieCapacity": 0,
       "source": "Core Rulebook"
     },
+  "item_dragons_kiss": {
+    "name": "Dragon's Kiss",
+    "icon": "game-icons:fire-bottle",
+    "description": "A round earthenware pot filled with a flammable liquid and rag sticking out as a fuse. It can be held in your hand. \n\nYou can use your Action to light the fuse, if you're able to quickly produce fire, or someone else using their Help or Ready Action.  - Once the fuse has been lit, the combustion will break the pot after 10 to 12 seconds, meaning it will break at the end of the next turn of the creature that lit the fuse.\n\nUsing an Action, or as part of attack during the Attack Action, it can be thrown up to 30 feet where it will shatter and create a small grease fire on a 10 feet square that deals 1d6 fire damage to any creature or object that starts their turn in the area or moves into it.",
+    "category": "Gear",
+    "subCategory": "",
+    "rarity": "Mundane",
+    "price": 5,
+    "weight": 0.9,
+    "unique": false,
+    "stackable": true,
+    "isConsumable": true,
+    "canBeTied": false,
+    "equippable": false,
+    "equipmentSlot": null,
+    "attunement": false,
+    "properties": [],
+    "range": "30",
+    "source": "Core Rulebook",
+    "vtt_rolls": [
+      {
+        "label": "Grease",
+        "dice": "1d6",
+        "damage_type": "Fire",
+        "scaling": ""
+      }
+    ]
+  },
     "item_javelin": {
       "name": "Javelin",
       "icon": "ph:spear-bold",
