@@ -353,6 +353,45 @@
       }
     ]
   },
+  "item_longbow_of_shadows": {
+    "name": "Longbow of Shadows",
+    "icon": "game-icons:pocket-bow",
+    "description": "Common Magic Item\nThis bow can magically generate its own ammunition. These arrows deals necrotic damage instead of piercing damage. Additionally, if you roll a nat 20 on the attack roll, the ammunition deals an additional 1d6 necrotic damage.",
+    "category": "Weapon",
+    "subCategory": "",
+    "rarity": "Common",
+    "price": 75,
+    "weight": 0.9,
+    "unique": true,
+    "stackable": false,
+    "isConsumable": false,
+    "canBeTied": true,
+    "equippable": true,
+    "equipmentSlot": "Hold",
+    "attunement": true,
+    "properties": [
+      "Ammunation",
+      "Range",
+      "Two-Handed",
+      "Heavy"
+    ],
+    "range": "45/180",
+    "source": "Faleria",
+    "vtt_rolls": [
+      {
+        "label": "Arrow",
+        "dice": "1d8",
+        "damage_type": "Necrotic",
+        "scaling": "DEX"
+      },
+      {
+        "label": "Crit",
+        "dice": "1d6",
+        "damage_type": "Necrotic",
+        "scaling": ""
+      }
+    ]
+  },
     "item_javelin": {
       "name": "Javelin",
       "icon": "ph:spear-bold",
