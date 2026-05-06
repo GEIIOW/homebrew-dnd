@@ -358,7 +358,7 @@
     "icon": "game-icons:pocket-bow",
     "description": "Common Magic Item\nThis bow can magically generate its own ammunition. These arrows deals necrotic damage instead of piercing damage. Additionally, if you roll a nat 20 on the attack roll, the ammunition deals an additional 1d6 necrotic damage.",
     "category": "Weapon",
-    "subCategory": "",
+    "subCategory": "Martial Range",
     "rarity": "Common",
     "price": 75,
     "weight": 0.9,
