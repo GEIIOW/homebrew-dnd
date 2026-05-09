@@ -1,0 +1,76 @@
+{
+  "features": {
+    "feat_vodorda_squire": {
+      "id": "feat_vodorda_squire",
+      "name": "Vodorda Squire's Mercenary Life",
+      "icon": "ph:medal-bold",
+      "description": "You know the mercenary life as only someone who has experienced it can. You are able to identify mercenary companies by their emblems, and you know a little about any such company, including who has hired them recently. You can find the taverns and festhalls where mercenaries abide in any area, as long as you speak the language. You can find mercenary work between adventures sufficient to maintain a comfortable lifestyle."
+     }
+    },
+  "backgrounds": {
+    "bg_vodorda_squire": {
+    "id": "bg_vodorda_squire",
+    "name": "Vodorda Squire",
+    "source": "Beginner's Guide",
+    "icon": "ph:book-open-text-bold",
+    "description": "Vodorda is a mercenary group dating back to the Huddle Empire of Manyhal. Based on the former imperial capital of Galistan, the vodorda acquired customs and a culture of their own during their 500 year history. Their uniform is composed of 3 layers of clothing: the white undergarment shirt, that represents the purity all hold deep within, a black laced woolen vest for warmth and a buttoned long black leather jacket. To complete their uniform, once accepted into the group, recruits are given a hoodless woolen black cloak to hang on their shoulders and learn how to fight with. The vodorda don’t pin their cloaks down to their clothes, nor do they use any type of fibula or laces, a tru vodorda warrior is able to defeat any opponent without having their cloak fall off their body.\n\nAnyone can try to join the vodorda, but there’s some challenges one needs to face to be accepted, such as a year of training on how to handle a sword, to learn a new language, a musical instrument and how to survive alone in the wild. After being accepted and trained on how to use their cloak, anyone who is seen accidentaly dropping their cloak will be victim to a week of torment by the hand of their piers. Dirty water will be poured on them, rotten eggs thrown at them, and many other small punishments will be the result.\n\nBesides man-at-arms, the vodorda also organize themselves into small bands to perform plays while in times of peace and study to become proficient in various topics.\n\nDuring training, recruits follow ten veterans who give them orders and shape their training. At the end of their training process the rectruits must choose a veteran that they have grown to like and ask them to be their godfathers by gifting them a stolen wooden spoon. If the veteran accepts, they will protect the rookie and be the one to give them a metal pin, to be hanged on the jacket.",
+    "money": 10,
+    "origin": {
+      "type": "fixed",
+      "value": "loc_mew_briermol"
+    },
+    "proficiencies": {
+      "skills": {
+        "fixed": [
+          "Athletics",
+          "Survival"
+        ]
+      },
+      "tools": {
+        "choose": [
+          {
+            "amount": 1,
+            "query": "Gaming Set"
+          },
+          {
+            "amount": 1,
+            "query": "Instrument"
+          }
+        ]
+      },
+      "languages": {
+        "fixed": [
+          {
+            "id": "lang_new_briermol",
+            "level": "expertise"
+          }
+        ],
+        "choose": {
+          "amount": 1,
+          "level": "proficiency",
+          "query": "common"
+        }
+      }
+    },
+    "equipment": [
+      {
+        "quantity": 1,
+        "item_id": "item_vodordan_attire"
+      },
+      {
+        "quantity": 1,
+        "item_id": "item_mentors_pin"
+      },
+      {
+        "quantity": 1,
+        "item_id": "item_vodordan_cloak"
+      },
+      {
+        "quantity": 1,
+        "item_id": "item_pouch"
+      }
+    ],
+    "features": ["feat_vodorda_squire"]
+  }
+}
+}
