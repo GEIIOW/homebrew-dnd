@@ -216,7 +216,7 @@
 
     "item_chain_mail": {
     "id": "item_chain_mail",
-    "name": "Chain mail",
+    "name": "Chain Mail",
     "icon": "game-icons:abdominal-armor",
     "category": "Armor",
     "subCategory": "Heavy Armor",
@@ -267,6 +267,29 @@
       }
     ]
   },
+"item_pouch": {
+    "id": "item_pouch",
+    "name": "Pouch",
+    "icon": "game-icons:swap-bag",
+    "category": "Adventuring Gear",
+    "subCategory": null,
+    "rarity": "Mundane",
+    "price": 0.5,
+    "weight": 1,
+    "source": "Player's Handbook",
+    "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot, including up to 50 Pebbles or up to 20 Stones.",
+    "unique": false,
+    "stackable": false,
+    "isConsumable": false,
+    "equippable": true,
+    "isContainer": true,
+    "capacityLbs": 6,
+    "equipmentSlot": [
+      "Waist",
+      "Wrist"
+    ]
+  },
+
     "item_winds_daggers": {
       "name": "Wind's Daggers",
       "icon": "ph:knife-bold",
