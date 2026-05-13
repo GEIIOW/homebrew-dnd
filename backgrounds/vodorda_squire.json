@@ -30,11 +30,11 @@
         "choose": [
           {
             "amount": 1,
-            "query": "Gaming Set"
+            "query": "category:Gaming Set"
           },
           {
             "amount": 1,
-            "query": "Instrument"
+            "query": "category:Instrument"
           }
         ]
       },
