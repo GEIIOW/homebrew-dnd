@@ -18,6 +18,22 @@
           "equipmentSlot": [
             "Hold"
           ]
-        }
+        },
+      "item_dice_set": {
+        "id": "item_dice_set",
+        "name": "Dice Set",
+        "icon": "game-icons:rolling-dices",
+        "category": "Tool",
+        "subCategory": "Gaming Set",
+        "rarity": "Mundane",
+        "price": 0,
+        "weight": 0,
+        "source": "Player's Handbook",
+        "description": "If you are proficient with a gaming set, you can add your proficiency bonus to ability checks you make to play a game with that set. Each type of gaming set requires a separate proficiency.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false
+      }
     }
 }
