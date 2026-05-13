@@ -1,0 +1,45 @@
+{
+    "items": {
+"item_winds_daggers": {
+    "id": "item_winds_daggers",
+    "name": "Wind's Daggers",
+    "icon": "game-icons:daggers",
+    "category": "Magical Weapon",
+    "subCategory": "Simple Weapon, Melee",
+    "rarity": "Uncommon",
+    "price": 100,
+    "weight": 1,
+    "source": "Begginer's Book",
+    "description": "This magic dagger is composed of five blades, that can be combined to form a single dagger. While they're all combined, they act as a regular dagger and cannot use any of it's special properties.",
+    "unique": true,
+    "stackable": false,
+    "isConsumable": false,
+    "equippable": true,
+    "properties": [
+      "Finesse",
+      "Light",
+      "Thrown"
+    ],
+    "range": "20/60 ft",
+    "weaponStats": {
+      "damage": "1d4",
+      "type": "piercing",
+      "versatile": ""
+    },
+    "isMagic": true,
+    "attunement": true,
+    "magicEffect": "This dagger has 5 charges and regains 1d4 + 1 expended charges daily at dawn. You can choose to activate these daggers at will, making them float around you as you wish. While they float around you, they can be used to attack as if you had a dagger on each hand, but can only be used as such when you are holding no other weapons or shields. While the daggers are floating and as a bonus action, you can choose to spend some of it's charges to send daggers flying at a creature. This throw must follow the original weapon's throwing property's range. For each charge spent a dagger will be thrown, but you must roll to hit each throw. Once you throw the last of these dagggers that is on your person, one of them flies back into your hand.",
+    "isStrappable": true,
+    "equipmentSlot": [
+      "Hold"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "Throw ",
+        "dice": "1d4",
+        "damage_type": "Piercing"
+      }
+    ]
+  }
+  }
+}
