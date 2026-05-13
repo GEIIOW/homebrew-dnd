@@ -49,6 +49,29 @@
           "Waist",
           "Wrist"
         ]
-      }
+      },
+        "item_backpack": {
+          "id": "item_backpack",
+          "name": "Backpack",
+          "icon": "game-icons:backpack",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 1,
+          "weight": 5,
+          "source": "Player's Handbook",
+          "description": "A Backpack holds up to 30 pounds within 1 cubic foot. It can also serve as a saddlebag.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": true,
+          "isContainer": true,
+          "capacityLbs": 30,
+          "canTieItems": true,
+          "tieCapacity": 4,
+          "equipmentSlot": [
+            "Back"
+          ]
+        }
     }
 }
