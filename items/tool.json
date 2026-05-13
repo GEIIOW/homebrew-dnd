@@ -1,0 +1,23 @@
+{
+  "items": {
+      "item_flute": {
+          "id": "item_flute",
+          "name": "Flute",
+          "icon": "game-icons:flute",
+          "category": "Tool",
+          "subCategory": "Instrument",
+          "rarity": "Mundane",
+          "price": 2,
+          "weight": 1,
+          "source": "Player's Handbook",
+          "description": "If you have proficiency with a given musical instrument, you can add your proficiency bonus to any ability checks you make to play music with the instrument. A bard can use a musical instrument as a spellcasting focus. Each type of musical instrument requires a separate proficiency.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": true,
+          "equipmentSlot": [
+            "Hold"
+          ]
+        }
+    }
+}
