@@ -1,0 +1,54 @@
+{
+  "items": {
+    "item_torch": {
+      "name": "Torch",
+      "icon": "game-icons:primitive-torch",
+      "description": "A torch burns for 1 hour, providing bright light in a 20-foot radius and dim light for an additional 20 feet. If you make a melee attack with a burning torch and hit, it deals 1 fire damage.",
+      "category": "Adventuring Gear",
+      "subCategory": null,
+      "rarity": "Mundane",
+      "price": 0,
+      "weight": 0.45,
+      "unique": false,
+      "stackable": true,
+      "isConsumable": false,
+      "canBeTied": true,
+      "equippable": false,
+      "equipmentSlot": null,
+      "attunement": false,
+      "properties": [],
+      "range": null,
+      "source": "Player's Handbook",
+      "vtt_rolls": [
+        {
+          "label": "Improved Attack",
+          "dice": "1",
+          "damage_type": "Fire",
+          "scaling": ""
+        }
+      ]
+    },
+    "item_pouch": {
+        "id": "item_pouch",
+        "name": "Pouch",
+        "icon": "game-icons:swap-bag",
+        "category": "Adventuring Gear",
+        "subCategory": null,
+        "rarity": "Mundane",
+        "price": 0.5,
+        "weight": 1,
+        "source": "Player's Handbook",
+        "description": "A Pouch holds up to 6 pounds within one-fifth of a cubic foot, including up to 50 Pebbles or up to 20 Stones.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "isContainer": true,
+        "capacityLbs": 6,
+        "equipmentSlot": [
+          "Waist",
+          "Wrist"
+        ]
+      }
+    }
+}

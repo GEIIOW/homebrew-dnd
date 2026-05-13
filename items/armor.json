@@ -1,0 +1,29 @@
+{
+    "items": {
+      "item_chain_mail": {
+      "id": "item_chain_mail",
+      "name": "Chain Mail",
+      "icon": "game-icons:abdominal-armor",
+      "category": "Armor",
+      "subCategory": "Heavy Armor",
+      "rarity": "Common",
+      "price": 75,
+      "weight": 55,
+      "source": "Player's Handbook",
+      "description": "Heavy armor of AC 16\n\nMade of interlocking metal rings, chain mail includes a layer of quilted fabric worn underneath the mail to prevent chafing and to cushion the impact of blows. The suit includes gauntlets.\n\nThe wearer has Disadvantage on Dexterity (Stealth) checks.\n\nIf the wearer has a Strength score lower than 13, their speed is reduced by 10 feet.",
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "equippable": true,
+      "armorStats": {
+        "ac": 16,
+        "maxDex": 99,
+        "stealthDisadv": true,
+        "minStr": 0
+      },
+      "equipmentSlot": [
+        "Body"
+      ]
+    }
+  }
+}

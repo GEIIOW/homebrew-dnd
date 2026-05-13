@@ -1,0 +1,6 @@
+{
+  "sources": [
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/gear.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/armor.json"
+  ]
+}
