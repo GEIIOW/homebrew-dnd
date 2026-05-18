@@ -1,0 +1,86 @@
+{
+"features": {
+    "feat_1779104735627": {
+      "id": "feat_1779104735627",
+      "name": "",
+      "type": "race",
+      "icon": "ph:sparkle-bold",
+      "action_type": "passive",
+      "description": "",
+      "effects": [
+        {
+          "type": "speed_swim",
+          "value": "+5"
+        }
+      ],
+      "proficiencies": {
+        "skills": {
+          "choose": {
+            "amount": 2
+          }
+        }
+      }
+    },
+    "feat_poder_do_mal": {
+      "id": "feat_poder_do_mal",
+      "name": "Poder do mal",
+      "type": "race",
+      "icon": "ph:sparkle-bold",
+      "action_type": "passive",
+      "description": "",
+      "effects": [
+        {
+          "type": "speed_swim",
+          "value": "+5"
+        }
+      ],
+      "proficiencies": {
+        "skills": {
+          "choose": {
+            "amount": 2
+          }
+        }
+      }
+    }
+  },
+  "races": {
+    "race_someone": {
+      "id": "race_someone",
+      "name": "Someone",
+      "creature_type": "Humanoid",
+      "size": "Medium",
+      "speed": {
+        "walk": 9,
+        "fly": 9,
+        "swim": 9,
+        "climb": 9,
+        "burrow": 9
+      },
+      "description": "Um testo sobre ele",
+      "biology": "Como ele é fisicamente.",
+      "source": "Test Book",
+      "image": "https://6e97130cec59272e140ab9fe07025fe2.cdn.bubble.io/cdn-cgi/image/w=192,h=192,f=auto,dpr=1,fit=contain/f1753836194414x874532332066788600/Hero-Portrait%20%2811%29.png",
+      "features": [],
+      "stat_maximums": {
+        "dexterity": 22
+      },
+      "subraces": [
+        {
+          "name": "New Lineage",
+          "description": "1232132131",
+          "image": "",
+          "stat_maximums": {},
+          "features": [
+            "feat_poder_do_mal"
+          ],
+          "id": "race_someone_new_lineage",
+          "speed": {
+            "walk": 11,
+            "fly": 11,
+            "swim": 11
+          }
+        }
+      ]
+    }
+  }
+}
