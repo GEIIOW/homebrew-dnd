@@ -38,7 +38,7 @@
       "item_disguise_kit": {
         "id": "item_disguise_kit",
         "name": "Disguise Kit",
-        "icon": " roentgen:vanity-mirror",
+        "icon": "mdi:mirror",
         "category": "Tool",
         "subCategory": null,
         "rarity": "Mundane",
