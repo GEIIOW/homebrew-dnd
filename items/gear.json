@@ -72,6 +72,25 @@
           "equipmentSlot": [
             "Back"
           ]
+        },
+        "item_crowbar": {
+          "id": "item_crowbar",
+          "name": "Crowbar",
+          "icon": "game-icons:crowbar",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 2,
+          "weight": 5,
+          "source": "Player's Handbook",
+          "description": "Using a crowbar grants advantage to Strength checks where the crowbar's leverage can be applied.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": true,
+          "equipmentSlot": [
+            "Hold"
+          ]
         }
     }
 }
