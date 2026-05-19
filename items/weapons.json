@@ -14,7 +14,10 @@
             "unique": false,
             "stackable": true,
             "isConsumable": false,
-            "equippable": false,
+            "equippable": true,
+            "equipmentSlot": [
+            "Hold"
+            ],
             "properties": [
             "Finesse",
             "Light",
