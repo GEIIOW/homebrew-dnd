@@ -18,6 +18,11 @@
             "isMagic": true,
             "attunement": true,
             "magicEffect": null,
+            "spells": [
+            {
+                "id": "spell_jump"
+            }
+            ],
             "equipmentSlot": [
             "Feet"
             ]

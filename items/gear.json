@@ -91,6 +91,23 @@
           "equipmentSlot": [
             "Hold"
           ]
+        },
+        "item_bedroll": {
+          "id": "item_bedroll",
+          "name": "Bedroll",
+          "icon": "lets-icons:roll",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 1,
+          "weight": 7,
+          "source": "Player's Handbook",
+          "description": null,
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": false,
+          "isStrappable": true
         }
     }
 }
