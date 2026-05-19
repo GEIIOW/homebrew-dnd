@@ -30,6 +30,42 @@
             "versatile": ""
             },
             "isStrappable": true
+        },
+        "item_flail": {
+            "id": "item_flail",
+            "name": "Flail",
+            "icon": "game-icons:flail",
+            "category": "Weapon",
+            "subCategory": "Martial Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 10,
+            "weight": 2,
+            "source": "Begginer's Book",
+            "description": null,
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "errata": [
+            {
+                "date": "2026-05-14",
+                "note": "Added reach property."
+            }
+            ],
+            "properties": [
+            "Reach"
+            ],
+            "isStrappable": true,
+            "equipmentSlot": [
+            "Hold"
+            ],
+            "vtt_rolls": [
+            {
+                "label": "Hit",
+                "damage_type": "Bludgeoning",
+                "dice": "1d8"
+            }
+            ]
         }
     }
 }

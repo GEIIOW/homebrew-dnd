@@ -20,7 +20,7 @@
             "magicEffect": null,
             "spells": [
             {
-                "id": "spell_firebolt"
+                "id": "spell_jump"
             }
             ],
             "equipmentSlot": [
