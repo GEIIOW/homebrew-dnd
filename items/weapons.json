@@ -66,6 +66,34 @@
                 "dice": "1d8"
             }
             ]
+        },
+        "item_battleaxe": {
+            "id": "item_battleaxe",
+            "name": "Battleaxe",
+            "icon": "game-icons:battle-axe",
+            "category": "Weapon",
+            "subCategory": "Martial Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 10,
+            "weight": 4,
+            "source": "Player's Handbook",
+            "description": null,
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "properties": [
+            "Versatile"
+            ],
+            "weaponStats": {
+            "damage": "1d8",
+            "type": "slashing",
+            "versatile": "1d10"
+            },
+            "isStrappable": true,
+            "equipmentSlot": [
+            "Hold"
+            ]
         }
     }
 }
