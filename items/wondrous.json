@@ -1,0 +1,26 @@
+{
+    "items": {
+        "item_boots_of_jumping": {
+            "id": "item_boots_of_jumping",
+            "name": "Boots of Jumping",
+            "icon": "game-icons:steeltoe-boots",
+            "category": "Wondrous Item",
+            "subCategory": null,
+            "rarity": "Common",
+            "price": 0,
+            "weight": 0.5,
+            "source": "Player's Handbook",
+            "description": "While attuned to these boots, you can cast the Jump spell on yourself at will.",
+            "unique": true,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "isMagic": true,
+            "attunement": true,
+            "magicEffect": null,
+            "equipmentSlot": [
+            "Feet"
+            ]
+        }
+  }
+}
