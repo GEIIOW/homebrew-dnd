@@ -3,6 +3,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/gear.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/magic_weapons.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/armor.json",
-        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/tool.json"
+        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/tool.json",
+        "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/weapons.json"
   ]
 }

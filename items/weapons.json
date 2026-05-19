@@ -1,0 +1,32 @@
+{
+  "items": {
+        "item_dagger": {
+            "id": "item_dagger",
+            "name": "Dagger",
+            "icon": "game-icons:broad-dagger",
+            "category": "Weapon",
+            "subCategory": "Simple Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 1,
+            "weight": 1,
+            "source": "Player's Handbook",
+            "description": null,
+            "unique": false,
+            "stackable": true,
+            "isConsumable": false,
+            "equippable": false,
+            "properties": [
+            "Finesse",
+            "Light",
+            "Thrown"
+            ],
+            "range": "20/60 ft",
+            "weaponStats": {
+            "damage": "1d4",
+            "type": "piercing",
+            "versatile": ""
+            },
+            "isStrappable": true
+        }
+    }
+}
