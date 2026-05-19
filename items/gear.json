@@ -108,22 +108,6 @@
           "isConsumable": false,
           "equippable": false,
           "isStrappable": true
-        },
-        "item_explorers_pack": {
-          "id": "item_explorers_pack",
-          "name": "Explorer's Pack",
-          "icon": "game-icons:packed-planks",
-          "category": "Adventuring Gear",
-          "subCategory": null,
-          "rarity": "Mundane",
-          "price": 10,
-          "weight": 59,
-          "source": "Player's Handbook",
-          "description": "Includes:\n\n- a backpack\n- a bedroll\n- a mess kit\n- a tinderbox\n- 10 torches\n- 10 days of rations\n- a waterskin\n- 50 feet of hempen rope",
-          "unique": false,
-          "stackable": false,
-          "isConsumable": false,
-          "equippable": false
         }
     }
 }
