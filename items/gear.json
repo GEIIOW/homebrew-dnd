@@ -108,6 +108,45 @@
           "isConsumable": false,
           "equippable": false,
           "isStrappable": true
+        },
+        "item_abacus": {
+          "id": "item_abacus",
+          "name": "Abacus",
+          "icon": "game-icons:abacus",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 2,
+          "weight": 2,
+          "source": "Player's Handbook",
+          "description": "An instrument for math.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": false
+        },
+        "item_acid_vial": {
+          "id": "item_acid_vial",
+          "name": "Acid (vial)",
+          "icon": "game-icons:vial",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 25,
+          "weight": 1,
+          "source": "Player's Handbook",
+          "description": "As an action, you can splash the contents of this vial onto a creature within 5 feet of you or throw the vial up to 20 feet, shattering it on impact. In either case, make a ranged attack against a creature or object, treating the acid as an improvised weapon. On a hit, the target takes 2d6 acid damage.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": true,
+          "equippable": false,
+          "vtt_rolls": [
+            {
+              "label": "Thrown",
+              "damage_type": "Acid",
+              "dice": "2d6"
+            }
+          ]
         }
     }
 }
