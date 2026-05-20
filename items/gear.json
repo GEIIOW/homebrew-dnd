@@ -147,6 +147,29 @@
               "dice": "2d6"
             }
           ]
+        },
+        "item_alchemists_fire": {
+          "id": "item_alchemists_fire",
+          "name": "Alchemist's Fire",
+          "icon": "game-icons:fire-bottle",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 50,
+          "weight": 1,
+          "source": "Player's Handbook",
+          "description": "When you take the Attack action, you can replace one of your attacks with throwing a flask of Alchemist's Fire. Target one creature or object you can see within 6 meters (20 feet) of yourself. The target must succeed on a Dexterity saving throw (DC 8 plus your Dexterity modifier and Proficiency Bonus) or take 1d4 Fire damage and start burning.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": true,
+          "equippable": false,
+          "vtt_rolls": [
+            {
+              "label": "Action",
+              "damage_type": "Fire",
+              "dice": "1d4"
+            }
+          ]
         }
     }
 }
