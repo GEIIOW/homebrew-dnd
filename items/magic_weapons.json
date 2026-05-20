@@ -84,6 +84,50 @@
             "dice": "1d6"
           }
         ]
+      },
+      "item_runeblade": {
+    "id": "item_runeblade",
+    "name": "Runeblade",
+    "icon": "game-icons:rune-sword",
+    "category": "Weapon",
+    "subCategory": "Martial Weapon, Melee",
+    "rarity": "Rare",
+    "price": 1500,
+    "weight": 6,
+    "source": "Begginer's Book",
+    "description": null,
+    "unique": true,
+    "stackable": false,
+    "isConsumable": false,
+    "equippable": true,
+    "properties": [
+      "Heavy",
+      "Two-Handed"
+    ],
+    "weaponStats": {
+      "damage": "2d6+1",
+      "type": "slashing",
+      "versatile": ""
+    },
+    "isMagic": true,
+    "attunement": true,
+    "magicEffect": "This blade has been magically enhanced to contain magic within it. Three deactivated runes adorn the blade. Once activated, each rune glows a vibrant baby blue.\n\nOnly one rune can be activated per turn. To activate a rune the creature attuned to it must deal magic damage to a creature other than itself or use any type of rune magic.\n\nYou have a +1 bonus to attack and damage rolls made with this magic weapon.\n\nYou can expend activated runes as a bonus action.\n\n1 rune cost - Cast Green-Flame Blade as a bonus action\n\n2 rune cost - As a bonus action strike the ground beneath your blade. All creatures within 1,5 meters of you must make a Constitution saving throw of a DC 14 or become stunned until the start of their next turn\n\n3 rune cost - Activating all 3 runes makes the blade you're holding grow. The light within the runes is now a slight aura aura the whole blade. The weapon gains the light, finesse and throwable (10/18 meters) properties, if it didn't already. Its damage increases from 2d6 to 2d8. This effect lasts for 1 minute, until dispelled or until your concentration is broken.",
+    "spells": [
+      {
+        "id": "spell_green_flame_blade",
+        "cost": 1
       }
+    ],
+    "equipmentSlot": [
+      "Hold"
+    ],
+    "vtt_rolls": [
+      {
+        "label": "3 Runes",
+        "damage_type": "Slashing",
+        "dice": "2d8+1"
+      }
+    ]
+  }
   }
 }
