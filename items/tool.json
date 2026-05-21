@@ -50,6 +50,22 @@
         "stackable": false,
         "isConsumable": false,
         "equippable": false
+      },
+      "item_woodcarvers_tools": {
+        "id": "item_woodcarvers_tools",
+        "name": "Woodcarver's Tools",
+        "icon": "game-icons:crosscut-saw",
+        "category": "Tool",
+        "subCategory": "Crafting Tool",
+        "rarity": "Mundane",
+        "price": 1,
+        "weight": 5,
+        "source": "Player's Handbook",
+        "description": "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.\nWoodcarver's tools allow you to craft intricate objects from wood, such as wooden tokens or arrows.\n\nComponents. Woodcarver's tools consist of a knife, a gouge, and a small saw.\nArcana, History. Your expertise lends you additional insight when you examine wooden objects, such as figurines or arrows.\nNature. Your knowledge of wooden objects gives you some added insight when you examine trees.\nRepair. As part of a short rest, you can repair a single damaged wooden object.\nCraft Arrows. As part of a short rest, you can craft up to five arrows. As part of a long rest, you can craft up to twenty. You must have enough wood on hand to produce them.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false
       }
     }
 }
