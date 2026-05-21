@@ -82,6 +82,22 @@
         "stackable": false,
         "isConsumable": false,
         "equippable": false
+      },
+      "item_smiths_tools": {
+        "id": "item_smiths_tools",
+        "name": "Smith's Tools",
+        "icon": "game-icons:sword-smithing",
+        "category": "Tool",
+        "subCategory": "Crafting Tool",
+        "rarity": "Mundane",
+        "price": 20,
+        "weight": 8,
+        "source": "Player's Handbook",
+        "description": "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.\n\nSmith's tools allow you to work metal, heating it to alter its shape, repair damage, or work raw ingots into useful items.\n\nComponents. Smith's tools include hammers, tongs, charcoal, rags, and a whetstone.\n\nArcana and History. Your expertise lends you additional insight when examining metal objects, such as weapons.\n\nInvestigation. You can spot clues and make deductions that others might overlook when an investigation involves armor, weapons, or other metalwork.\n\nRepair. With access to your tools and an open flame hot enough to make metal pliable, you can restore 10 hit points to a damaged metal object for each hour of work.\n\nSmith's Tools\nActivity | DC\nSharpen a dull blade | 10\nRepair a suit of armor | 15\nSunder a nonmagical metal object | 15\n\n\nPrerequisite Space: Forge",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false
       }
   }
 }
