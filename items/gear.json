@@ -165,7 +165,7 @@
           "equippable": false,
           "vtt_rolls": [
             {
-              "label": "Action",
+              "label": "Thrown",
               "damage_type": "Fire",
               "dice": "1d4"
             }

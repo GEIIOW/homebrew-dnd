@@ -1,63 +1,145 @@
 {
-"features": {
-    "feat_omega": {
-      "id": "feat_omega",
-      "name": "OMEGA",
+  "features": {
+    "feat_omni_senses": {
+      "id": "feat_omni_senses",
+      "name": "Omni Anatomy",
       "type": "race",
-      "icon": "ph:sparkle-bold",
+      "icon": "ph:eye-bold",
       "action_type": "passive",
-      "description": "",
+      "description": "You possess the ruggedness of a dozen beasts spliced together.",
+      "senses": [
+        { "type": "Darkvision", "range": "120ft" },
+        { "type": "Tremorsense", "range": "10ft" }
+      ],
       "stat_increases": [
-        {
-          "stat": "strength",
-          "bonus": 1
-        }
+        { "stat": "any", "bonus": 2 },
+        { "stat": "con", "bonus": 1 }
       ],
-      "effects": [
-        {
-          "type": "speed_fly",
-          "value": "+9"
-        }
-      ],
-      "spell_choices": {
-        "amount": 1,
-        "from": [
-          "spell_firebolt",
-          "spell_darkness"
-        ]
-      },
+      "resistances": ["Fire", "Poison"],
+      "immunities": ["Disease"],
+      "vulnerabilities": ["Radiant"],
+      "modifiers": {
+        "ac": 1,
+        "hp_flat": 5
+      }
+    },
+    "feat_omni_training": {
+      "id": "feat_omni_training",
+      "name": "Genetic Memory",
+      "type": "race",
+      "icon": "ph:brain-bold",
+      "action_type": "passive",
+      "description": "The memories of your donors flood your mind, granting you disparate talents.",
       "proficiencies": {
         "skills": {
-          "choose": {
-            "amount": 1,
-            "query": "Acrobatics, Medicine"
-          }
+          "fixed": ["perception", { "id": "athletics", "level": "expertise" }],
+          "choose": { "amount": 2, "query": "" }
+        },
+        "languages": {
+          "fixed": ["draconic"],
+          "choose": { "amount": 1, "query": "" }
+        },
+        "tools": {
+          "choose": { "amount": 1, "query": "category:instrument" }
+        },
+        "weapons": {
+          "fixed": ["longsword"]
         }
       }
+    },
+    "feat_omni_magic": {
+      "id": "feat_omni_magic",
+      "name": "Arcane Bloodline",
+      "type": "race",
+      "icon": "ph:magic-wand-bold",
+      "action_type": "action",
+      "description": "Raw magic flows through your spliced veins.",
+      "spell_choices": [
+        { "amount": 1, "query": "level:0" },
+        { "amount": 1, "from": ["spell_shield", "spell_magic_missile"] }
+      ]
+    },
+    "feat_omni_evolution": {
+      "id": "feat_omni_evolution",
+      "name": "Adaptive Mutagen",
+      "type": "race",
+      "icon": "ph:dna-bold",
+      "action_type": "passive",
+      "description": "Your body reacts to your environment. Choose an evolutionary path.",
+      "feature_choices": { "amount": 1, "query": "category:evolution" }
+    },
+    "feat_evo_wings": {
+      "id": "feat_evo_wings",
+      "name": "Vestigial Wings",
+      "type": "feat",
+      "category": "evolution",
+      "icon": "ph:bird-bold",
+      "description": "You sprout leathery wings. Grants a flying speed and Acrobatics.",
+      "modifiers": { "speed_fly": 12 },
+      "proficiencies": {
+        "skills": { "fixed": ["acrobatics"] }
+      }
+    },
+    "feat_evo_gills": {
+      "id": "feat_evo_gills",
+      "name": "Amphibious Gills",
+      "type": "feat",
+      "category": "evolution",
+      "icon": "ph:waves-bold",
+      "description": "You grow gills and webbed digits. You can cast a water-based spell.",
+      "modifiers": { "speed_swim": 12 },
+      "spell_choices": { "amount": 1, "from": ["spell_shape_water"] }
+    },
+    "feat_sub_oceanic": {
+      "id": "feat_sub_oceanic",
+      "name": "Deep Sea Pressure",
+      "type": "race",
+      "icon": "ph:drop-bold",
+      "description": "Your skin hardens like a crab's shell due to oceanic pressure.",
+      "modifiers": { "ac": 1 }
     }
   },
   "races": {
-    "race_someone": {
-      "id": "race_someone",
-      "name": "Someone",
+    "race_omni_chimera": {
+      "id": "race_omni_chimera",
+      "name": "Omni-Chimera",
       "creature_type": "Monstrosity",
-      "size": "Small",
-      "speed": {
-        "walk": 9,
-        "fly": 3,
-        "swim": 3
-      },
-      "description": "",
-      "biology": "",
-      "source": "Test Book",
-      "image": "",
+      "size": "Medium",
+      "speed": { "walk": 9, "climb": 4 },
+      "description": "A forbidden organism forged in an arcane laboratory to test the very limits of reality and game engine design.",
+      "biology": "It breathes everything, digests anything, and adapts rapidly.",
+      "source": "Developer Sandbox",
+      "image": "https://i.imgur.com/5J3t3Q4.png",
       "features": [
-        "feat_omega"
+        "feat_omni_senses",
+        "feat_omni_training",
+        "feat_omni_magic",
+        "feat_omni_evolution"
       ],
       "stat_maximums": {
-        "strength": 22
+        "str": 22,
+        "con": 24
       },
-      "subraces": []
+      "subraces": [
+        {
+          "id": "sub_oceanic_chimera",
+          "name": "Oceanic Strain",
+          "description": "A variant designed for the crushing depths.",
+          "image": "",
+          "speed": { "swim": 12 },
+          "stat_maximums": { "str": 24 },
+          "features": ["feat_sub_oceanic"]
+        },
+        {
+          "id": "sub_aerial_chimera",
+          "name": "Aerial Strain",
+          "description": "A light-boned variant capable of brief glides.",
+          "image": "",
+          "speed": { "fly": 15 },
+          "stat_maximums": { "dex": 22 },
+          "features": []
+        }
+      ]
     }
   }
 }
