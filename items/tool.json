@@ -98,6 +98,38 @@
         "stackable": false,
         "isConsumable": false,
         "equippable": false
+      },
+      "item_cartographers_tools": {
+        "id": "item_cartographers_tools",
+        "name": "Cartographer's Tools",
+        "icon": "game-icons:compass",
+        "category": "Tool",
+        "subCategory": "Crafting Tool",
+        "rarity": "Mundane",
+        "price": 15,
+        "weight": 6,
+        "source": "Player's Handbook",
+        "description": "Ability: Wisdom\n\nUtilize: Draft a map of a small area (DC 15)\n\nCraft: Map\n\nArtisan's Tools are each focused on crafting items and pursuing a trade. Each type of Artisan's Tools tools requires a separate proficiency.\n\nIf you have proficiency with a tool, add your Proficiency Bonus to any ability check you make that uses the tool. If you have proficiency in a skill that's used with that check, you have Advantage on the check too.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false
+      },
+      "item_brewers_supplies": {
+        "id": "item_brewers_supplies",
+        "name": "Brewer's Supplies",
+        "icon": "game-icons:barrel",
+        "category": "Tool",
+        "subCategory": "Crafting Tool",
+        "rarity": "Mundane",
+        "price": 20,
+        "weight": 9,
+        "source": "Player's Handbook",
+        "description": "These special tools include the items needed to pursue a craft or trade. Proficiency with a set of artisan's tools lets you add your proficiency bonus to any ability checks you make using the tools in your craft. Each type of artisan's tools requires a separate proficiency.\n\nBrewing is the art of producing beer. Not only does beer serve as an alcoholic beverage, but the process of brewing purifies water. Crafting beer takes weeks of fermentation, but only a few hours of work.\nComponents. Brewer's supplies include a large glass jug, a quantity of hops, a siphon, and several feet of tubing.\nHistory. Proficiency with brewer's supplies gives you additional insight on Intelligence (History) checks concerning events that involve alcohol as a significant element.\nMedicine. This tool proficiency grants additional insight when you treat anyone suffering from alcohol poisoning or when you can use alcohol to dull pain.\nPersuasion. A stiff drink can help soften the hardest heart. Your proficiency with brewer's supplies can help you ply someone with drink, giving them just enough alcohol to mellow their mood.\nPotable Water. Your knowledge of brewing enables you to purify water that would otherwise be undrinkable. As part of a long rest, you can purify up to 6 gallons of water, or 1 gallon as part of a short rest.\n\nDC 10: Detect poison or impurities in a drink\nDC 15: Identify alcohol\nDC 20: Ignore effects of alcohol",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false
       }
   }
 }
