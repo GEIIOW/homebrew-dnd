@@ -17,7 +17,7 @@
     "money": 10,
     "origin": {
       "type": "fixed",
-      "value": "loc_mew_briermol"
+      "value": "loc_new_briermol"
     },
     "proficiencies": {
       "skills": {
