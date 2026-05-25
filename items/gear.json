@@ -170,6 +170,32 @@
               "dice": "1d4"
             }
           ]
+        },
+        "item_explorers_pack": {
+          "id": "item_explorers_pack",
+          "name": "Explorer's Pack",
+          "icon": "game-icons:box-unpacking",
+          "category": "Adventuring Gear",
+          "subCategory": null,
+          "rarity": "Mundane",
+          "price": 10,
+          "weight": 59,
+          "source": "Player's Handbook",
+          "description": "Includes a backpack, a bedroll, a mess kit, a tinderbox, 10 torches, 10 days of rations, and a waterskin. The pack also has 50 feet of hempen rope strapped to the side of it.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": false,
+          "contents": {
+            "item_torch": 10,
+            "item_bedroll": 1,
+            "item_backpack": 1,
+            "item_mess_kit": 1,
+            "item_tinderbox": 1,
+            "item_rations": 10,
+            "item_waterskin": 1,
+            "item_rope": 1
+          }
         }
     }
 }
