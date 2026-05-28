@@ -81,20 +81,20 @@
             "equippable": false
         },
         "item_steel": {
-    "id": "item_steel",
-            "name": "Steel",
-            "icon": "game-icons:metal-bar",
-            "category": "Material",
-            "subCategory": "Metal",
-            "rarity": "Rare",
-            "price": 50,
-            "weight": 0.22,
-            "source": "Beginner's Book",
-            "description": "This is a material used for crafting or building.\n\nRare Material\nMetal used to craft or build strong equipment.",
-            "unique": false,
-            "stackable": true,
-            "isConsumable": false,
-            "equippable": false
+            "id": "item_steel",
+                    "name": "Steel",
+                    "icon": "game-icons:metal-bar",
+                    "category": "Material",
+                    "subCategory": "Metal",
+                    "rarity": "Rare",
+                    "price": 50,
+                    "weight": 0.22,
+                    "source": "Beginner's Book",
+                    "description": "This is a material used for crafting or building.\n\nRare Material\nMetal used to craft or build strong equipment.",
+                    "unique": false,
+                    "stackable": true,
+                    "isConsumable": false,
+                    "equippable": false
         }
   }
 }

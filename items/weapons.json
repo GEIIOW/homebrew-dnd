@@ -94,6 +94,36 @@
             "equipmentSlot": [
             "Hold"
             ]
+        },
+        "item_kwikwik": {
+            "id": "item_kwikwik",
+            "name": "Kwikwik",
+            "icon": "game-icons:curvy-knife",
+            "category": "Weapon",
+            "subCategory": "Martial Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 2.5,
+            "weight": 3,
+            "source": "Beginner's Book",
+            "description": null,
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "properties": [
+            "Versatile",
+            "Light",
+            "Finesse"
+            ],
+            "weaponStats": {
+            "damage": "1d6",
+            "type": "slashing",
+            "versatile": "1d8"
+            },
+            "isStrappable": true,
+            "equipmentSlot": [
+            "Hold"
+            ]
         }
     }
 }
