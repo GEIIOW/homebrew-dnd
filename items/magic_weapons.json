@@ -85,7 +85,7 @@
           }
         ]
       },
-      "item_runeblade": {
+    "item_runeblade": {
       "id": "item_runeblade",
       "name": "Runeblade",
       "icon": "game-icons:rune-sword",
@@ -128,52 +128,52 @@
           "dice": "2d8+1"
         }
       ]
+     },
+    "item_flame_tongue_kwikwik": {
+      "id": "item_flame_tongue_kwikwik",
+      "name": "Flame Tongue Kwikwik",
+      "icon": "game-icons:curvy-knife",
+      "category": "Magical Weapon",
+      "subCategory": "Martial Weapon, Melee",
+      "rarity": "Rare",
+      "price": 1150,
+      "weight": 3,
+      "source": "Beginner's Book",
+      "description": "Rare Magic Item\nYou can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 12-meter radius and dim light for an additional 12 meters. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "equippable": true,
+      "properties": [
+        "Versatile",
+        "Light",
+        "Finesse"
+      ],
+      "weaponStats": {
+        "damage": "1d6",
+        "type": "slashing",
+        "versatile": "1d8"
+      },
+      "isMagic": true,
+      "attunement": false,
+      "magicEffect": null,
+      "isStrappable": true,
+      "equipmentSlot": [
+        "Hold"
+      ],
+      "craftingRecipe": {
+        "item_steel": 10,
+        "item_fire_elemental's_core": 1,
+        "item_gold_bar": 10,
+        "item_bronze": 2
+      },
+      "vtt_rolls": [
+        {
+          "label": "Fire",
+          "damage_type": "Fire",
+          "dice": "2d6"
+        }
+      ]
     }
-  },
-  "item_flame_tongue_kwikwik": {
-    "id": "item_flame_tongue_kwikwik",
-    "name": "Flame Tongue Kwikwik",
-    "icon": "game-icons:curvy-knife",
-    "category": "Magical Weapon",
-    "subCategory": "Martial Weapon, Melee",
-    "rarity": "Rare",
-    "price": 1150,
-    "weight": 3,
-    "source": "Beginner's Book",
-    "description": "Rare Magic Item\nYou can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 12-meter radius and dim light for an additional 12 meters. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
-    "unique": false,
-    "stackable": false,
-    "isConsumable": false,
-    "equippable": true,
-    "properties": [
-      "Versatile",
-      "Light",
-      "Finesse"
-    ],
-    "weaponStats": {
-      "damage": "1d6",
-      "type": "slashing",
-      "versatile": "1d8"
-    },
-    "isMagic": true,
-    "attunement": false,
-    "magicEffect": null,
-    "isStrappable": true,
-    "equipmentSlot": [
-      "Hold"
-    ],
-    "craftingRecipe": {
-      "item_steel": 10,
-      "item_fire_elemental's_core": 1,
-      "item_gold_bar": 10,
-      "item_bronze": 2
-    },
-    "vtt_rolls": [
-      {
-        "label": "Fire",
-        "damage_type": "Fire",
-        "dice": "2d6"
-      }
-    ]
   }
 }
