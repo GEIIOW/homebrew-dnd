@@ -15,6 +15,22 @@
             "stackable": true,
             "isConsumable": false,
             "equippable": false
-        }
+        },
+        "item_gold_bar": {
+            "id": "item_gold_bar",
+            "name": "Gold Bar",
+            "icon": "game-icons:gold-bar",
+            "category": "Material",
+            "subCategory": null,
+            "rarity": "Rare",
+            "price": 50,
+            "weight": 2,
+            "source": "Player's Handbook",
+            "description": "This is a material used for crafting or building.\n\nRare Material\nMetal used to craft or build strong equipment.",
+            "unique": false,
+            "stackable": true,
+            "isConsumable": false,
+            "equippable": false
+  }
   }
 }
