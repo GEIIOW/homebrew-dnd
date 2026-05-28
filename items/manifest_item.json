@@ -5,6 +5,7 @@
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/armor.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/tool.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/weapons.json",
+    "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/material.json",
     "https://raw.githubusercontent.com/GEIIOW/homebrew-dnd/refs/heads/main/items/wondrous.json"
   ]
 }

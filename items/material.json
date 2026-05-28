@@ -1,0 +1,20 @@
+{
+    "items": {
+        "item_ironwool": {
+            "id": "item_ironwool",
+            "name": "Ironwool",
+            "icon": "game-icons:wool",
+            "category": "Material",
+            "subCategory": null,
+            "rarity": "Rare",
+            "price": 50,
+            "weight": 0.02,
+            "source": "Beginner's Book",
+            "description": "This is a material used for crafting or building.\n\nRare Material\nCloth used to craft or build strong equipment.",
+            "unique": false,
+            "stackable": true,
+            "isConsumable": false,
+            "equippable": false
+        }
+  }
+}
