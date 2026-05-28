@@ -9,7 +9,7 @@
         "rarity": "Uncommon",
         "price": 100,
         "weight": 1,
-        "source": "Begginer's Book",
+        "source": "Beginner's Book",
         "description": "This magic dagger is composed of five blades, that can be combined to form a single dagger. While they're all combined, they act as a regular dagger and cannot use any of it's special properties.",
         "unique": true,
         "stackable": false,
@@ -86,48 +86,94 @@
         ]
       },
       "item_runeblade": {
-    "id": "item_runeblade",
-    "name": "Runeblade",
-    "icon": "game-icons:rune-sword",
-    "category": "Weapon",
+      "id": "item_runeblade",
+      "name": "Runeblade",
+      "icon": "game-icons:rune-sword",
+      "category": "Weapon",
+      "subCategory": "Martial Weapon, Melee",
+      "rarity": "Rare",
+      "price": 1500,
+      "weight": 6,
+      "source": "Beginner's Book",
+      "description": null,
+      "unique": true,
+      "stackable": false,
+      "isConsumable": false,
+      "equippable": true,
+      "properties": [
+        "Heavy",
+        "Two-Handed"
+      ],
+      "weaponStats": {
+        "damage": "2d6+1",
+        "type": "slashing",
+        "versatile": ""
+      },
+      "isMagic": true,
+      "attunement": true,
+      "magicEffect": "This blade has been magically enhanced to contain magic within it. Three deactivated runes adorn the blade. Once activated, each rune glows a vibrant baby blue.\n\nOnly one rune can be activated per turn. To activate a rune the creature attuned to it must deal magic damage to a creature other than itself or use any type of rune magic.\n\nYou have a +1 bonus to attack and damage rolls made with this magic weapon.\n\nYou can expend activated runes as a bonus action.\n\n1 rune cost - Cast Green-Flame Blade as a bonus action\n\n2 rune cost - As a bonus action strike the ground beneath your blade. All creatures within 1,5 meters of you must make a Constitution saving throw of a DC 14 or become stunned until the start of their next turn\n\n3 rune cost - Activating all 3 runes makes the blade you're holding grow. The light within the runes is now a slight aura aura the whole blade. The weapon gains the light, finesse and throwable (10/18 meters) properties, if it didn't already. Its damage increases from 2d6 to 2d8. This effect lasts for 1 minute, until dispelled or until your concentration is broken.",
+      "spells": [
+        {
+          "id": "spell_greenflame_blade",
+          "cost": 1
+        }
+      ],
+      "equipmentSlot": [
+        "Hold"
+      ],
+      "vtt_rolls": [
+        {
+          "label": "3 Runes",
+          "damage_type": "Slashing",
+          "dice": "2d8+1"
+        }
+      ]
+    }
+  },
+  "item_flame_tongue_kwikwik": {
+    "id": "item_flame_tongue_kwikwik",
+    "name": "Flame Tongue Kwikwik",
+    "icon": "game-icons:curvy-knife",
+    "category": "Magical Weapon",
     "subCategory": "Martial Weapon, Melee",
     "rarity": "Rare",
-    "price": 1500,
-    "weight": 6,
-    "source": "Begginer's Book",
-    "description": null,
-    "unique": true,
+    "price": 1150,
+    "weight": 3,
+    "source": "Beginner's Book",
+    "description": "Rare Magic Item\nYou can use a bonus action to speak this magic sword's command word, causing flames to erupt from the blade. These flames shed bright light in a 12-meter radius and dim light for an additional 12 meters. While the sword is ablaze, it deals an extra 2d6 fire damage to any target it hits. The flames last until you use a bonus action to speak the command word again or until you drop or sheathe the sword.",
+    "unique": false,
     "stackable": false,
     "isConsumable": false,
     "equippable": true,
     "properties": [
-      "Heavy",
-      "Two-Handed"
+      "Versatile",
+      "Light",
+      "Finesse"
     ],
     "weaponStats": {
-      "damage": "2d6+1",
+      "damage": "1d6",
       "type": "slashing",
-      "versatile": ""
+      "versatile": "1d8"
     },
     "isMagic": true,
-    "attunement": true,
-    "magicEffect": "This blade has been magically enhanced to contain magic within it. Three deactivated runes adorn the blade. Once activated, each rune glows a vibrant baby blue.\n\nOnly one rune can be activated per turn. To activate a rune the creature attuned to it must deal magic damage to a creature other than itself or use any type of rune magic.\n\nYou have a +1 bonus to attack and damage rolls made with this magic weapon.\n\nYou can expend activated runes as a bonus action.\n\n1 rune cost - Cast Green-Flame Blade as a bonus action\n\n2 rune cost - As a bonus action strike the ground beneath your blade. All creatures within 1,5 meters of you must make a Constitution saving throw of a DC 14 or become stunned until the start of their next turn\n\n3 rune cost - Activating all 3 runes makes the blade you're holding grow. The light within the runes is now a slight aura aura the whole blade. The weapon gains the light, finesse and throwable (10/18 meters) properties, if it didn't already. Its damage increases from 2d6 to 2d8. This effect lasts for 1 minute, until dispelled or until your concentration is broken.",
-    "spells": [
-      {
-        "id": "spell_greenflame_blade",
-        "cost": 1
-      }
-    ],
+    "attunement": false,
+    "magicEffect": null,
+    "isStrappable": true,
     "equipmentSlot": [
       "Hold"
     ],
+    "craftingRecipe": {
+      "item_steel": 10,
+      "item_fire_elemental's_core": 1,
+      "item_gold_bar": 10,
+      "item_bronze": 2
+    },
     "vtt_rolls": [
       {
-        "label": "3 Runes",
-        "damage_type": "Slashing",
-        "dice": "2d8+1"
+        "label": "Fire",
+        "damage_type": "Fire",
+        "dice": "2d6"
       }
     ]
-  }
   }
 }
