@@ -302,6 +302,31 @@
         "equipmentSlot": [
         "Hold"
         ]
+    },
+    "item_greatclub": {
+        "id": "item_greatclub",
+        "name": "Greatclub",
+        "icon": "game-icons:wood-club",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 0.2,
+        "weight": 4.5,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": false,
+        "properties": [
+        "Two-Handed"
+        ],
+        "weaponStats": {
+        "damage": "1d8",
+        "type": "bludgeoning",
+        "versatile": ""
+        },
+        "isStrappable": true
     }
-  }
+    }
 }
