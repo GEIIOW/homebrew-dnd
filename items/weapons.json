@@ -200,7 +200,7 @@
         "isConsumable": false,
         "equippable": true,
         "properties": [
-        "Ammunation",
+        "Ammunition",
         "Range",
         "Loading",
         "Two-Handed"
