@@ -25,31 +25,54 @@
         "Body"
       ]
     },
-    "item_half_plate_armor": {
-    "id": "item_half_plate_armor",
-    "name": "Half Plate Armor",
-    "icon": "game-icons:breastplate",
-    "category": "Armor",
-    "subCategory": "Medium Armor",
+      "item_half_plate_armor": {
+      "id": "item_half_plate_armor",
+      "name": "Half Plate Armor",
+      "icon": "game-icons:breastplate",
+      "category": "Armor",
+      "subCategory": "Medium Armor",
+      "rarity": "Mundane",
+      "price": 750,
+      "weight": 40,
+      "source": "Player's Handbook",
+      "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.",
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "equippable": true,
+      "armor_class": 15,
+      "armorStats": {
+        "ac": 15,
+        "maxDex": 2,
+        "stealthDisadv": true,
+        "minStr": 0
+      },
+      "equipmentSlot": [
+        "Body"
+      ]
+    },
+    "item_shield": {
+    "id": "item_shield",
+    "name": "Shield",
+    "icon": "game-icons:round-shield",
+    "category": "Shield",
+    "subCategory": "Shield",
     "rarity": "Mundane",
-    "price": 750,
-    "weight": 40,
+    "price": 5,
+    "weight": 6,
     "source": "Player's Handbook",
-    "description": "Half plate consists of shaped metal plates that cover most of the wearer's body. It does not include leg protection beyond simple greaves that are attached with leather straps.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.",
+    "description": "Wearing this shield grants you +2 to your armor class (AC).\n\nEquipping or unequipping this shield takes an action.",
     "unique": false,
     "stackable": false,
     "isConsumable": false,
     "equippable": true,
-    "armor_class": 15,
-    "armorStats": {
-      "ac": 15,
-      "maxDex": 2,
-      "stealthDisadv": true,
-      "minStr": 0
-    },
+    "armor_class": 0,
     "equipmentSlot": [
-      "Body"
-    ]
+      "Hold"
+    ],
+    "modifiers": {
+      "ac": "2"
+    }
   }
   }
 }
