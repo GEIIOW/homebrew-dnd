@@ -124,6 +124,35 @@
             "equipmentSlot": [
             "Hold"
             ]
+        },
+        "item_gauntlet": {
+            "id": "item_gauntlet",
+            "name": "Gauntlet",
+            "icon": "ph:package-bold",
+            "category": "Weapon",
+            "subCategory": "Simple Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 1,
+            "weight": 1,
+            "source": "Beginner's Book",
+            "description": null,
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "properties": [
+            "Finesse",
+            "Donned",
+            "Light"
+            ],
+            "weaponStats": {
+            "damage": "1d4",
+            "type": "bludgeoning",
+            "versatile": ""
+            },
+            "equipmentSlot": [
+            "Hold"
+            ]
         }
     }
 }
