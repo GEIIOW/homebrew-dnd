@@ -95,6 +95,22 @@
                     "stackable": true,
                     "isConsumable": false,
                     "equippable": false
+        },
+        "item_elemental_core_fire": {
+            "id": "item_elemental_core_fire",
+            "name": "Elemental Core (Fire)",
+            "icon": "game-icons:fire-gem",
+            "category": "Material",
+            "subCategory": null,
+            "rarity": "Rare",
+            "price": 50,
+            "weight": 2.2,
+            "source": "Beginner's Book",
+            "description": "This is a material used for crafting or building.\n\nRare Material\nA Fire Elemental's Core, it burns to the touch.\n\nWith one you can make items such as the Flame Tongue.",
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": false
         }
   }
 }

@@ -163,7 +163,7 @@
       ],
       "craftingRecipe": {
         "item_steel": 10,
-        "item_fire_elemental's_core": 1,
+        "item_elemental_core_fire": 1,
         "item_gold_bar": 10,
         "item_bronze": 2
       },
