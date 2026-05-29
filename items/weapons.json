@@ -244,6 +244,64 @@
         "equipmentSlot": [
         "Hold"
         ]
+    },
+        "item_shortsword": {
+        "id": "item_shortsword",
+        "name": "Shortsword",
+        "icon": "game-icons:broadsword",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+        "Finesse",
+        "Light"
+        ],
+        "weaponStats": {
+        "damage": "1d6",
+        "type": "piercing",
+        "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+        "Hold"
+        ]
+    },
+    "item_greatsword": {
+        "id": "item_greatsword",
+        "name": "Greatsword",
+        "icon": "game-icons:croc-sword",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 25,
+        "weight": 6,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+        "Heavy",
+        "Two-Handed"
+        ],
+        "weaponStats": {
+        "damage": "2d6",
+        "type": "slashing",
+        "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+        "Hold"
+        ]
     }
   }
 }
