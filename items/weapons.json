@@ -150,6 +150,7 @@
             "type": "bludgeoning",
             "versatile": ""
             },
+            "isStrappable": true,
             "equipmentSlot": [
             "Hold"
             ]
@@ -178,9 +179,42 @@
             "type": "bludgeoning",
             "versatile": ""
             },
+            "isStrappable": true,
             "equipmentSlot": [
             "Hold"
             ]
         }
+    },
+        "item_light_crossbow": {
+        "id": "item_light_crossbow",
+        "name": "Light Crossbow",
+        "icon": "game-icons:crossbow",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 12.5,
+        "weight": 5,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+        "Ammunation",
+        "Range",
+        "Loading",
+        "Two-Handed"
+        ],
+        "range": "80/320 ft",
+        "weaponStats": {
+        "damage": "1d8",
+        "type": "piercing",
+        "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+        "Hold"
+        ]
     }
 }
