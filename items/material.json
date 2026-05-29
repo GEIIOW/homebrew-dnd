@@ -101,7 +101,7 @@
             "name": "Elemental Core (Fire)",
             "icon": "game-icons:fire-gem",
             "category": "Material",
-            "subCategory": null,
+            "subCategory": "Monster Harverst",
             "rarity": "Rare",
             "price": 50,
             "weight": 11,
