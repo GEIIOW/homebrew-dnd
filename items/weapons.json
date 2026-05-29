@@ -183,8 +183,7 @@
             "equipmentSlot": [
             "Hold"
             ]
-        }
-    },
+        },
         "item_light_crossbow": {
         "id": "item_light_crossbow",
         "name": "Light Crossbow",
@@ -217,4 +216,5 @@
         "Hold"
         ]
     }
+  }
 }
