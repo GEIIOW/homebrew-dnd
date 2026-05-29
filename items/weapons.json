@@ -215,6 +215,35 @@
         "equipmentSlot": [
         "Hold"
         ]
+    },
+        "item_hooked_shortspear": {
+        "id": "item_hooked_shortspear",
+        "name": "Hooked Shortspear",
+        "icon": "game-icons:meat-hook",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 2.5,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+        "Light",
+        "Hooked"
+        ],
+        "weaponStats": {
+        "damage": "1d4",
+        "type": "piercing",
+        "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+        "Hold"
+        ]
     }
   }
 }
