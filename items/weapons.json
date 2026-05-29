@@ -153,6 +153,34 @@
             "equipmentSlot": [
             "Hold"
             ]
+        },
+        "item_heavy_gauntlets": {
+            "id": "item_heavy_gauntlets",
+            "name": "Heavy Gauntlets",
+            "icon": "game-icons:mailed-fist",
+            "category": "Weapon",
+            "subCategory": "Martial Weapon, Melee",
+            "rarity": "Mundane",
+            "price": 7.5,
+            "weight": 11,
+            "source": "Beginner's Book",
+            "description": null,
+            "unique": false,
+            "stackable": false,
+            "isConsumable": false,
+            "equippable": true,
+            "properties": [
+            "Donned",
+            "Oversized"
+            ],
+            "weaponStats": {
+            "damage": "2d6",
+            "type": "bludgeoning",
+            "versatile": ""
+            },
+            "equipmentSlot": [
+            "Hold"
+            ]
         }
     }
 }
