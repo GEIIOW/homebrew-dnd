@@ -189,7 +189,7 @@
         "name": "Light Crossbow",
         "icon": "game-icons:crossbow",
         "category": "Weapon",
-        "subCategory": "Martial Weapon, Melee",
+        "subCategory": "Martial Weapon, Range",
         "rarity": "Mundane",
         "price": 12.5,
         "weight": 5,
