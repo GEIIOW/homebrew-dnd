@@ -174,6 +174,36 @@
           "dice": "2d6"
         }
       ]
+    },
+      "item_fire_whip": {
+      "id": "item_fire_whip",
+      "name": "Fire Whip",
+      "icon": "game-icons:whip",
+      "category": "Magical Weapon",
+      "subCategory": "Martial Weapon, Melee",
+      "rarity": "Common",
+      "price": 30,
+      "weight": 3,
+      "source": "Beginner's Book",
+      "description": "Common Magic Item\nAn imbued wood focus is a rod, staff, or wand cut from a tree infused with extraplanar energy. If you're a spellcaster, you can use this item as a spellcasting focus.",
+      "unique": false,
+      "stackable": false,
+      "isConsumable": false,
+      "equippable": true,
+      "properties": [
+        "Finesse",
+        "Reach"
+      ],
+      "isMagic": true,
+      "attunement": false,
+      "magicEffect": "When you cast a damage-dealing spell using this item as your spellcasting focus, you gain a +1 bonus to one fire damage roll of the spell.",
+      "isStrappable": true,
+      "equipmentSlot": [
+        "Hold"
+      ],
+      "modifiers": {
+        "spell_attack_bonus": "+1"
+      }
     }
   }
 }
