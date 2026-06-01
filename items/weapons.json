@@ -327,6 +327,37 @@
         "versatile": ""
         },
         "isStrappable": true
+    },
+        "item_halberd": {
+        "id": "item_halberd",
+        "name": "Halberd",
+        "icon": "game-icons:war-axe",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 20,
+        "weight": 6,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+        "Heavy",
+        "Reach",
+        "Two-Handed"
+        ],
+        "weaponStats": {
+        "damage": "1d10",
+        "type": "slashing",
+        "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+        "Hold",
+        "Back"
+        ]
     }
     }
 }
