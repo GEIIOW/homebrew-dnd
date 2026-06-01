@@ -1,0 +1,33 @@
+{
+    "items": {
+      "item_leather_armor_of_gleaming": {
+          "id": "item_leather_armor_of_gleaming",
+          "name": "Leather Armor of Gleaming",
+          "icon": "game-icons:leather-armor",
+          "category": "Armor",
+          "subCategory": null,
+          "rarity": "Common",
+          "price": 30,
+          "weight": 10,
+          "source": "Player's Handbook",
+          "description": "Common Magic Item\nLight armor of AC 11 + Dex modifier\n\nThe breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
+          "unique": false,
+          "stackable": false,
+          "isConsumable": false,
+          "equippable": true,
+          "armor_class": 11,
+          "armorStats": {
+            "ac": 11,
+            "maxDex": 99,
+            "stealthDisadv": false,
+            "minStr": 0
+          },
+          "isMagic": true,
+          "attunement": false,
+          "magicEffect": "This armor can never get dirty.",
+          "equipmentSlot": [
+            "Body"
+          ]
+        }
+  }
+}
