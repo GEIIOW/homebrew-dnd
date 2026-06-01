@@ -1,0 +1,30 @@
+  {
+    "items": {
+        "item_divine_potion_of_healing": {
+            "id": "item_divine_potion_of_healing",
+            "name": "Divine Potion of Healing",
+            "icon": "game-icons:potion-ball",
+            "category": "Potion",
+            "subCategory": "Potion",
+            "rarity": "Common",
+            "price": 25,
+            "weight": 0.5,
+            "source": "Player's Handbook",
+            "description": "You regain 2d4 + 4 hit points when you drink this potion. The potion's red liquid glimmers when agitated.",
+            "unique": true,
+            "stackable": false,
+            "isConsumable": true,
+            "equippable": false,
+            "isMagic": true,
+            "attunement": false,
+            "magicEffect": null,
+            "vtt_rolls": [
+            {
+                "label": "Drink",
+                "damage_type": "Healing",
+                "dice": "1d4 + 2"
+            }
+            ]
+        }
+  }
+}
