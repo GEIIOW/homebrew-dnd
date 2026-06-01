@@ -72,6 +72,256 @@
     "modifiers": {
       "ac": "2"
     }
-  }
+  },
+    "item_padded_armor": {
+        "id": "item_padded_armor",
+        "name": "Padded Armor",
+        "icon": "game-icons:gambeson",
+        "category": "Armor",
+        "subCategory": "Light Armor",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 8,
+        "source": "Player's Handbook",
+        "description": "Padded armor consists of quilted layers of cloth and batting.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 11,
+            "maxDex": 99,
+            "stealthDisadv": true,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_leather_armor": {
+        "id": "item_leather_armor",
+        "name": "Leather Armor",
+        "icon": "game-icons:leather-armor",
+        "category": "Armor",
+        "subCategory": "Light Armor",
+        "rarity": "Mundane",
+        "price": 10,
+        "weight": 10,
+        "source": "Player's Handbook",
+        "description": "The breastplate and shoulder protectors of this armor are made of leather that has been stiffened by being boiled in oil. The rest of the armor is made of softer and more flexible materials.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 11,
+            "maxDex": 99,
+            "stealthDisadv": false,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_studded_leather_armor": {
+        "id": "item_studded_leather_armor",
+        "name": "Studded Leather Armor",
+        "icon": "game-icons:studded-leather-armor",
+        "category": "Armor",
+        "subCategory": "Light Armor",
+        "rarity": "Mundane",
+        "price": 45,
+        "weight": 13,
+        "source": "Player's Handbook",
+        "description": "Made from tough but flexible leather, studded leather is reinforced with close-set rivets or spikes.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 12,
+            "maxDex": 99,
+            "stealthDisadv": false,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_hide_armor": {
+        "id": "item_hide_armor",
+        "name": "Hide Armor",
+        "icon": "game-icons:fur-shirt",
+        "category": "Armor",
+        "subCategory": "Medium Armor",
+        "rarity": "Mundane",
+        "price": 10,
+        "weight": 12,
+        "source": "Player's Handbook",
+        "description": "This crude armor consists of thick furs and pelts. It is commonly worn by barbarian tribes, evil humanoids, and other folk who lack access to the tools and materials needed to create better armor.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 12,
+            "maxDex": 2,
+            "stealthDisadv": false,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_chain_shirt": {
+        "id": "item_chain_shirt",
+        "name": "Chain Shirt",
+        "icon": "game-icons:chain-mail",
+        "category": "Armor",
+        "subCategory": "Medium Armor",
+        "rarity": "Mundane",
+        "price": 50,
+        "weight": 20,
+        "source": "Player's Handbook",
+        "description": "Made of interlocking metal rings, a chain shirt is worn between layers of clothing or leather. This armor offers modest protection to the wearer's upper body and allows the sound of the rings rubbing against one another to be muffled by outer layers.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 13,
+            "maxDex": 2,
+            "stealthDisadv": false,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_scale_mail": {
+        "id": "item_scale_mail",
+        "name": "Scale Mail",
+        "icon": "game-icons:scale-mail",
+        "category": "Armor",
+        "subCategory": "Medium Armor",
+        "rarity": "Mundane",
+        "price": 50,
+        "weight": 45,
+        "source": "Player's Handbook",
+        "description": "This armor consists of a coat and leggings (and perhaps a separate skirt) of leather covered with overlapping pieces of metal, much like the scales of a fish. The suit includes gauntlets.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 14,
+            "maxDex": 2,
+            "stealthDisadv": true,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_breastplate": {
+        "id": "item_breastplate",
+        "name": "Breastplate",
+        "icon": "game-icons:breastplate",
+        "category": "Armor",
+        "subCategory": "Medium Armor",
+        "rarity": "Mundane",
+        "price": 400,
+        "weight": 20,
+        "source": "Player's Handbook",
+        "description": "This armor consists of a fitted metal chest piece worn with supple leather. Although it leaves the legs and arms relatively unprotected, this armor provides good protection for the wearer's vital organs while leaving the wearer unencumbered.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 14,
+            "maxDex": 2,
+            "stealthDisadv": false,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_ring_mail": {
+        "id": "item_ring_mail",
+        "name": "Ring Mail",
+        "icon": "game-icons:lamellar",
+        "category": "Armor",
+        "subCategory": "Heavy Armor",
+        "rarity": "Mundane",
+        "price": 30,
+        "weight": 40,
+        "source": "Player's Handbook",
+        "description": "This armor is leather armor with heavy rings sewn into it. The rings help reinforce the armor against blows from swords and axes. Ring mail is inferior to chain mail, and it's usually worn only by those who can't afford better armor.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 14,
+            "maxDex": 0,
+            "stealthDisadv": true,
+            "minStr": 0
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_splint_armor": {
+        "id": "item_splint_armor",
+        "name": "Splint Armor",
+        "icon": "game-icons:banded-armor",
+        "category": "Armor",
+        "subCategory": "Heavy Armor",
+        "rarity": "Mundane",
+        "price": 200,
+        "weight": 60,
+        "source": "Player's Handbook",
+        "description": "This armor is made of narrow vertical strips of metal riveted to a backing of leather that is worn over cloth padding. Flexible chain mail protects the joints.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.\n\nIf the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 17,
+            "maxDex": 0,
+            "stealthDisadv": true,
+            "minStr": 15
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    },
+    "item_plate_armor": {
+        "id": "item_plate_armor",
+        "name": "Plate Armor",
+        "icon": "game-icons:crested-helmet",
+        "category": "Armor",
+        "subCategory": "Heavy Armor",
+        "rarity": "Mundane",
+        "price": 1500,
+        "weight": 65,
+        "source": "Player's Handbook",
+        "description": "Plate consists of shaped, interlocking metal plates to cover the entire body. A suit of plate includes gauntlets, heavy leather boots, a visored helmet, and thick layers of padding underneath the armor. Buckles and straps distribute the weight over the body.\n\nThe wearer has disadvantage on Dexterity (Stealth) checks.\n\nIf the wearer has a Strength score lower than 15, their speed is reduced by 10 feet.",
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "armorStats": {
+            "ac": 18,
+            "maxDex": 0,
+            "stealthDisadv": true,
+            "minStr": 15
+        },
+        "equipmentSlot": [
+            "Body"
+        ]
+    }
   }
 }
