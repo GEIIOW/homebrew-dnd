@@ -1,0 +1,28 @@
+{
+  "feats": {
+        "feat_aquatic_adaptation": {
+            "id": "feat_aquatic_adaptation",
+            "name": "Aquatic Adaptation",
+            "type": "feat",
+            "icon": "game-icons:frog-foot",
+            "source": "Beginner's Guide",
+            "description": "You are far more comfortable in water than other.\n\n-Increase your Constitution or Wisdom by 1, to a maximum of 20.\n-The time you can spend underwater is multiplied by 10.\n-Gain a swim speed equal to your walking speed.",
+            "stat_increases": [
+            {
+                "type": "choice",
+                "options": [
+                "constitution",
+                "wisdom"
+                ],
+                "bonus": 1,
+                "max": 20
+            }
+            ],
+            "vtt_data": {
+            "modifiers": {
+                "speed_swim": "@speed_walk"
+            }
+        }
+    }
+  }  
+}
