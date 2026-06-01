@@ -328,10 +328,370 @@
         },
         "isStrappable": true
     },
-        "item_halberd": {
-        "id": "item_halberd",
-        "name": "Halberd",
-        "icon": "game-icons:war-axe",
+    "item_halberd": {
+    "id": "item_halberd",
+    "name": "Halberd",
+    "icon": "game-icons:war-axe",
+    "category": "Weapon",
+    "subCategory": "Martial Weapon, Melee",
+    "rarity": "Mundane",
+    "price": 20,
+    "weight": 6,
+    "source": "Player's Handbook",
+    "description": null,
+    "unique": false,
+    "stackable": false,
+    "isConsumable": false,
+    "equippable": true,
+    "properties": [
+      "Heavy",
+      "Reach",
+      "Two-Handed"
+    ],
+    "weaponStats": {
+      "damage": "1d10",
+      "type": "slashing",
+      "versatile": ""
+    },
+    "isStrappable": true,
+    "equipmentSlot": [
+      "Hold",
+      "Back"
+    ]
+  },
+    "item_club": {
+        "id": "item_club",
+        "name": "Club",
+        "icon": "game-icons:wood-club",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 0.1,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Light"
+        ],
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "bludgeoning",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold"
+        ]
+    },
+    "item_handaxe": {
+        "id": "item_handaxe",
+        "name": "Handaxe",
+        "icon": "game-icons:tomahawk",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Light",
+            "Thrown"
+        ],
+        "range": "20/60 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "slashing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_javelin": {
+        "id": "item_javelin",
+        "name": "Javelin",
+        "icon": "game-icons:spear-head",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 0.5,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": true,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Thrown"
+        ],
+        "range": "30/120 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_light_hammer": {
+        "id": "item_light_hammer",
+        "name": "Light Hammer",
+        "icon": "game-icons:hammer-drop",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 2,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Light",
+            "Thrown"
+        ],
+        "range": "20/60 ft",
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "bludgeoning",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_mace": {
+        "id": "item_mace",
+        "name": "Mace",
+        "icon": "game-icons:flanged-mace",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 4,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [],
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "bludgeoning",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_quarterstaff": {
+        "id": "item_quarterstaff",
+        "name": "Quarterstaff",
+        "icon": "game-icons:bo",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 0.2,
+        "weight": 4,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Versatile"
+        ],
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "bludgeoning",
+            "versatile": "1d8"
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_sickle": {
+        "id": "item_sickle",
+        "name": "Sickle",
+        "icon": "game-icons:sickle",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 1,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Light"
+        ],
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "slashing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_spear": {
+        "id": "item_spear",
+        "name": "Spear",
+        "icon": "game-icons:spear-hook",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 1,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Thrown",
+            "Versatile"
+        ],
+        "range": "20/60 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "piercing",
+            "versatile": "1d8"
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_dart": {
+        "id": "item_dart",
+        "name": "Dart",
+        "icon": "game-icons:dart",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Range",
+        "rarity": "Mundane",
+        "price": 0.05,
+        "weight": 0.25,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": true,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Finesse",
+            "Thrown"
+        ],
+        "range": "20/60 ft",
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold"
+        ]
+    },
+    "item_shortbow": {
+        "id": "item_shortbow",
+        "name": "Shortbow",
+        "icon": "game-icons:heavy-bow",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Range",
+        "rarity": "Mundane",
+        "price": 25,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Range",
+            "Two-Handed"
+        ],
+        "range": "80/320 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_sling": {
+        "id": "item_sling",
+        "name": "Sling",
+        "icon": "game-icons:slingshot",
+        "category": "Weapon",
+        "subCategory": "Simple Weapon, Range",
+        "rarity": "Mundane",
+        "price": 0.1,
+        "weight": 0,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Range"
+        ],
+        "range": "30/120 ft",
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "bludgeoning",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_glaive": {
+        "id": "item_glaive",
+        "name": "Glaive",
+        "icon": "game-icons:glaive",
         "category": "Weapon",
         "subCategory": "Martial Weapon, Melee",
         "rarity": "Mundane",
@@ -344,19 +704,534 @@
         "isConsumable": false,
         "equippable": true,
         "properties": [
-        "Heavy",
-        "Reach",
-        "Two-Handed"
+            "Heavy",
+            "Reach",
+            "Two-Handed"
         ],
         "weaponStats": {
-        "damage": "1d10",
-        "type": "slashing",
-        "versatile": ""
+            "damage": "1d10",
+            "type": "slashing",
+            "versatile": ""
         },
         "isStrappable": true,
         "equipmentSlot": [
-        "Hold",
-        "Back"
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_greataxe": {
+        "id": "item_greataxe",
+        "name": "Greataxe",
+        "icon": "game-icons:battered-axe",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 30,
+        "weight": 7,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Heavy",
+            "Two-Handed"
+        ],
+        "weaponStats": {
+            "damage": "1d12",
+            "type": "slashing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_lance": {
+        "id": "item_lance",
+        "name": "Lance",
+        "icon": "game-icons:lance",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 10,
+        "weight": 6,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Reach",
+            "Special"
+        ],
+        "weaponStats": {
+            "damage": "1d12",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_longsword": {
+        "id": "item_longsword",
+        "name": "Longsword",
+        "icon": "game-icons:sword-clash",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 15,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Versatile"
+        ],
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "slashing",
+            "versatile": "1d10"
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_maul": {
+        "id": "item_maul",
+        "name": "Maul",
+        "icon": "game-icons:thor-hammer",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 10,
+        "weight": 10,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Heavy",
+            "Two-Handed"
+        ],
+        "weaponStats": {
+            "damage": "2d6",
+            "type": "bludgeoning",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_morningstar": {
+        "id": "item_morningstar",
+        "name": "Morningstar",
+        "icon": "game-icons:morning-star",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 15,
+        "weight": 4,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [],
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_pike": {
+        "id": "item_pike",
+        "name": "Pike",
+        "icon": "game-icons:pikeman",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 18,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Heavy",
+            "Reach",
+            "Two-Handed"
+        ],
+        "weaponStats": {
+            "damage": "1d10",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_rapier": {
+        "id": "item_rapier",
+        "name": "Rapier",
+        "icon": "game-icons:rapier",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 25,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Finesse"
+        ],
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_scimitar": {
+        "id": "item_scimitar",
+        "name": "Scimitar",
+        "icon": "game-icons:scimitar",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 25,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Finesse",
+            "Light"
+        ],
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "slashing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_trident": {
+        "id": "item_trident",
+        "name": "Trident",
+        "icon": "game-icons:trident",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 4,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Thrown",
+            "Versatile"
+        ],
+        "range": "20/60 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "piercing",
+            "versatile": "1d8"
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_war_pick": {
+        "id": "item_war_pick",
+        "name": "War Pick",
+        "icon": "game-icons:mining",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 5,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [],
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_warhammer": {
+        "id": "item_warhammer",
+        "name": "Warhammer",
+        "icon": "game-icons:warhammer",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 15,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Versatile"
+        ],
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "bludgeoning",
+            "versatile": "1d10"
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_whip": {
+        "id": "item_whip",
+        "name": "Whip",
+        "icon": "game-icons:whip",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Melee",
+        "rarity": "Mundane",
+        "price": 2,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Finesse",
+            "Reach"
+        ],
+        "weaponStats": {
+            "damage": "1d4",
+            "type": "slashing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_blowgun": {
+        "id": "item_blowgun",
+        "name": "Blowgun",
+        "icon": "game-icons:blowpipe",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Range",
+        "rarity": "Mundane",
+        "price": 10,
+        "weight": 1,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Loading",
+            "Range"
+        ],
+        "range": "25/100 ft",
+        "weaponStats": {
+            "damage": "1",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold"
+        ]
+    },
+    "item_hand_crossbow": {
+        "id": "item_hand_crossbow",
+        "name": "Hand Crossbow",
+        "icon": "game-icons:crossbow",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Range",
+        "rarity": "Mundane",
+        "price": 75,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Light",
+            "Loading",
+            "Range"
+        ],
+        "range": "30/120 ft",
+        "weaponStats": {
+            "damage": "1d6",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
+        ]
+    },
+    "item_heavy_crossbow": {
+        "id": "item_heavy_crossbow",
+        "name": "Heavy Crossbow",
+        "icon": "game-icons:crossbow",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Range",
+        "rarity": "Mundane",
+        "price": 50,
+        "weight": 18,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Heavy",
+            "Loading",
+            "Range",
+            "Two-Handed"
+        ],
+        "range": "100/400 ft",
+        "weaponStats": {
+            "damage": "1d10",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_longbow": {
+        "id": "item_longbow",
+        "name": "Longbow",
+        "icon": "game-icons:high-shot",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Range",
+        "rarity": "Mundane",
+        "price": 50,
+        "weight": 2,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Ammunition",
+            "Heavy",
+            "Range",
+            "Two-Handed"
+        ],
+        "range": "150/600 ft",
+        "weaponStats": {
+            "damage": "1d8",
+            "type": "piercing",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Back"
+        ]
+    },
+    "item_net": {
+        "id": "item_net",
+        "name": "Net",
+        "icon": "game-icons:fishing-net",
+        "category": "Weapon",
+        "subCategory": "Martial Weapon, Range",
+        "rarity": "Mundane",
+        "price": 1,
+        "weight": 3,
+        "source": "Player's Handbook",
+        "description": null,
+        "unique": false,
+        "stackable": false,
+        "isConsumable": false,
+        "equippable": true,
+        "properties": [
+            "Special",
+            "Thrown"
+        ],
+        "range": "5/15 ft",
+        "weaponStats": {
+            "damage": "0",
+            "type": "none",
+            "versatile": ""
+        },
+        "isStrappable": true,
+        "equipmentSlot": [
+            "Hold",
+            "Belt"
         ]
     }
     }
