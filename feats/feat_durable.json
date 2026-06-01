@@ -1,0 +1,20 @@
+{
+  "feats": {
+        "feat_durable": {
+        "id": "feat_durable",
+        "name": "Durable",
+        "type": "feat",
+        "icon": "game-icons:heart-shield",
+        "source": "Player's Handbook 24",
+        "description": "You gain the following benefits.\n\n• Increase your Constitution score by 1, to a maximum of 20.\n• You have Advantage on Death Saving Throws.\n• As a Bonus Action, you can expend one of your Hit Point Dice, roll the die, and regain a number of Hit Points equal to the roll.",
+        "stat_increases": [
+        {
+            "type": "fixed",
+            "stat": "constitution",
+            "bonus": 1,
+            "max": 20
+        }
+        ]
+        }
+    }
+}  
