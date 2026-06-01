@@ -22,7 +22,7 @@
             {
                 "label": "Drink",
                 "damage_type": "Healing",
-                "dice": "1d4+2"
+                "dice": "1d4+4"
             }
             ]
         }
